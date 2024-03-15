@@ -81,6 +81,3 @@ function changeEmentas(){
     makeEmentas();
 
 }
-
-
-makeEmentas();

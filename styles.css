@@ -1,4 +1,13 @@
 
 .table {
     margin-top: 2rem;
+    display: none;
 }
+
+#btn1 {
+    margin-top: 2rem;
+} 
+
+#change-ementa {
+    margin-top: 5rem;
+} 

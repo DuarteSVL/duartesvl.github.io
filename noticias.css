@@ -1,0 +1,75 @@
+:root{
+    font-size: 16px;
+}
+#logo{
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+
+    & img{
+        max-height: 80px;
+    }
+}
+
+.bg-logo{
+    background:radial-gradient(circle at 30% 107%, #f3eb03bf 5%, #dfc51ec6 45%, #e49011 60%, #efecca);
+    margin-bottom: 80px;
+}
+
+#banner{
+    background-image: url('https://images.unsplash.com/photo-1543857778-c4a1a3e0b2eb?q=80&w=1910&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: center center;
+    background-size: cover;
+    display: flex;/*Activa a flexbox*/
+    justify-content: center;/*Alinha o conteúdo(box) ao centro na horizontal*/
+    align-items: center;/*Alinha o conteúdo(box) ao centro na vertical*/
+    margin-bottom: 80px;
+}
+
+h4{
+    font-size: 35px;
+}
+
+.card-group{
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 40px;
+    display: flex;
+    gap: 40px;
+}
+
+.card-text{
+    margin-bottom: 0;
+}
+
+.btn{
+    background-color: #5abfe1;
+    color: #fff; /* cor do texto branca */
+    border-radius: 5px; /* bordas arredondadas */
+    padding: 5px 10px; /* padding interno */
+    text-decoration: none; /* remove sublinhado padrão */
+    display: inline-block; /* exibe como um bloco */
+}
+
+img{
+    height: 350px;
+}
+
+.clearfix{
+    margin-left: 500px;
+    & p{
+        margin-right: 500px;
+    }
+    & a{
+        text-decoration: none;
+    }
+}
+
+.imgjudo{
+    margin-right: 500px;
+    height: 250px;
+    width: 500px;
+}
+
+nav{
+    margin-left: 500px;
+}

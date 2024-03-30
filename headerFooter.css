@@ -2,7 +2,7 @@
    Styles navbar e footer
 ************************* */
 
-.navbar{
+.navbar, .footer{
     background-color: #FEF4AE;
     font-family: Ubuntu;
     font-weight: bold; 
@@ -10,6 +10,7 @@
 
     & .nav-item{
         border-radius: 15px;
+        transition-duration: 0.5s;
     }
     
     & .nav-item:hover {
@@ -30,6 +31,10 @@
     }
 }
 
+#navLogo{
+  margin-left: 2%;
+}
+
 #miniNav{
     background-color: #FFFAD4;
     text-align: center;
@@ -43,7 +48,10 @@
     padding-top: 1%;
 }
 
-/* este código faz as animações dropdown */
+
+/* *************************
+ código animações dropdown
+************************* */
 
 @media (min-width: 768px) {
     .animate {

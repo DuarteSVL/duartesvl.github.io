@@ -1,8 +1,11 @@
 /* *************************
-   Styles navbar e footer
+        Styles navbar
 ************************* */
 
-.navbar, .footer{
+/* Font Ubuntu */
+@import url(https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap);
+
+.navbar{
     background-color: #FEF4AE;
     font-family: Ubuntu;
     font-weight: bold; 
@@ -41,7 +44,7 @@
     font-weight: 600;
 }
 
-#logo2{
+#logoNav{
   display: flex;
     max-width: 100%;
     height:max-content;
@@ -102,7 +105,33 @@
   }
   
 
+/* *************************
+      Styles footer
+************************* */
 
+footer{
+  background-color: #FEF4AE;
+  font-family: Ubuntu;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
 
+#logoFoot{
+    display: flex;
+    max-width: 5%;
+    height:max-content;
+}
 
+#footButton:hover{
+  border-radius: 5px;
+    background-color: #FEE234;
+    transition-duration: 0.5s;
+}
 
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

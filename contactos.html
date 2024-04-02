@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    
+     <!-- Bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+ 
+ 
+     <!-- Próprios -->
+    <link rel="stylesheet" href="styles_valencia.css">
+     <script src="contactos.js"></script>
+ 
+</head>
+<body>
+
+    <h1 style="text-align: center;">Contacte-nos</h1>
+    <br><br>
+    <p style="text-align: center;">Se tiver questões, dúvidas, sugestões, não hesite em deixar-nos uma mensagem através do formulário abaixo.</p>
+        <br><br>
+        
+        <!--Formulário-->
+        <div class="form-container">
+        <form >
+            <div class="row">
+            <div class="col-4 form-group">
+              <label for="exampleFormControlInput1"></label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nome">
+            </div>
+            </div>
+
+            <div class="row">
+            <div class="col-4 form-group">
+                <label for="exampleFormControlInput1"></label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+              </div>
+              </div>
+
+              <div class="row">
+              <div class="col-4 form-group">
+                <label for="exampleFormControlInput1"></label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Assunto">
+              </div>
+              </div>
+
+              <div class="row">
+              <div class="col-4 form-group">
+              <div class="form-group">
+              <label for="exampleFormControlTextarea1"></label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="A sua mensagem"></textarea>
+            </div>
+            </div>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary mb-2">Enviar</button>
+          </form>
+        </div>
+    
+        <br>
+
+        <div class="btn-group-lg" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+            <label class="btn btn-outline-primary" for="btnradio1">Berçário e Creche</label>
+          
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio2">Jardim de Infância</label>
+          
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio3">1º Ciclo</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio4">Centro de Apoio Escolar</label>
+          </div>
+            <br>
+          
+        
+</body>
+</html>

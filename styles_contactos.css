@@ -143,12 +143,35 @@
     width: 16.5rem;
   }
 
-  .form-container{
-   display: flex;
-   text-align: center;
-   justify-content: right;
+  /*Formulário*/
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
+  
+form{
+   width: 50%;
+}
 
-  form {
-    width: 100%; 
-  }
+#submit{
+    background-color: #aae491;
+    width: 10%;
+}
+
+/*contactos*/
+
+#btnContactos{
+    display: flex;
+    background-color: transparent;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: space-around;
+
+    & :hover{
+        background-color: #aae491;
+    }
+}
+

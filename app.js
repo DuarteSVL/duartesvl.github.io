@@ -196,3 +196,17 @@ function changeEmentas() {
 }
 
 
+// *********************************************************************************************
+// *********************************************************************************************
+
+//Function Contactos submenu
+function mudarSite(id) {       
+    var contacto = document.getElementsByClassName('contacto');
+
+    for (jar of contacto){
+        jar.style.display="none";
+    }
+
+    document.getElementById(id).style.display="block"; 
+
+};

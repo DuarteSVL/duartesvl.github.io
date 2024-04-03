@@ -1,0 +1,154 @@
+/* *************************
+        Styles contactos
+************************* */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  body {
+    position: relative;
+    height: 100%;
+  }
+
+  h1{
+    padding-bottom: 100px;
+  }
+
+/*Fontes*/
+/* Font Ubuntu */
+@import url(https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap);
+/* Font Nunito sans */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/*Titulos*/
+@font-face {
+    font-family: "Ubuntu";
+    src: url("fonts/Ubuntu/Ubuntu-Bold.ttf") format("truetype");
+    font-weight:700;
+  }
+  
+  /*Texto*/
+  @font-face {
+    font-family: "NunitoSans";
+    src: url("fonts/nunitoSans/NunitoSans_10pt-Light.ttf") format("truetype");
+    font-weight:300;
+  }
+  @font-face {
+    font-family: "NunitoSans";
+    src: url("fonts/nunitoSans/NunitoSans_10pt-Regular.ttf") format("truetype");
+    font-weight:400;
+  }
+  @font-face {
+    font-family: "NunitoSans";
+    src: url("fonts/nunitoSans/NunitoSans_10pt-Medium.ttf") format("truetype");
+    font-weight:500;
+  }
+  @font-face {
+    font-family: "NunitoSans";
+    src: url("fonts/nunitoSans/NunitoSans_10pt-Bold.ttf") format("truetype");
+    font-weight:700;
+  }
+  
+  /*Titulos h1-h6*/
+  h1, h2, h3, h4, h5, h6{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+  }
+  
+  /*Texto*/
+  p {
+    font-family: "NunitoSans", sans-serif;
+    font-weight: 400;
+  }
+
+  @media (min-width: 768px)  { 
+    h1{
+      font-size: 2.125rem;
+    }
+    h2{
+      font-size: 1.75rem;
+    }
+    h3{
+      font-size: 1.375rem;
+    }
+    h4{
+      font-size: 1.25rem;
+    }
+    h5{
+      font-size: 1.063rem;
+    }
+    h6{
+      font-size: 1rem;
+    }
+  p {
+    font-size: 1rem;
+  }
+   }
+  
+  @media (min-width: 992px)  { 
+    h1{
+      font-size: 3.75rem;
+    }
+    h2{
+      font-size: 3rem;
+    }
+    h3{
+      font-size: 2.125rem;
+    }
+    h4{
+      font-size: 1.5rem;
+    }
+    h5{
+      font-size: 1.25rem;
+    }
+    h6{
+      font-size: 1.125rem;
+    }
+  p {
+    font-size: 1.125rem;
+  }
+   }
+
+/*Botão pdf*/
+.btnPdf {
+    background-color: none;
+    color: blue;
+    border-radius: 15px;
+    border: solid 1.5px blue;
+    height: 3.5rem;
+    width: 16.5rem;
+  }
+
+  /*Botão pdf desativado*/
+.btnPdf:disabled {
+    background-color: none;
+    color: gray;
+    border-radius: 15px;
+    border: solid 1.5px gray;
+    height: 3.5rem;
+    width: 16.5rem;
+  }
+
+  /*Botão primario*/
+.btnPrimary {
+    background-color: blue;
+    color: #dddcdc;
+    border-radius: 15px;
+    border: solid 1.5px blue;
+    height: 3.5rem;
+    width: 16.5rem;
+  }
+
+  .form-container{
+   display: flex;
+   text-align: center;
+   justify-content: right;
+  }
+
+  form {
+    width: 100%; 
+  }

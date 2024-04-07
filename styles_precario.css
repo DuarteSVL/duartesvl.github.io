@@ -1,5 +1,5 @@
 /* *************************
-        Styles contactos
+        Styles Preçário
 ************************* */
 
 * {
@@ -20,7 +20,7 @@
 
 /*Fontes*/
 /* Font Ubuntu */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap);
 /* Font Nunito sans */
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
@@ -85,7 +85,7 @@
   }
    }
 
-/*Botão pdf*/
+   /*Botão pdf*/
 .btnPdf {
     background-color: none;
     color: blue;
@@ -115,56 +115,12 @@
     width: 16.5rem;
   }
 
-  /*Formulário*/
-  .form-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-form{
-   width: 50%;
-}
-
-#submit{
-    background-color: #aae491;
-    width: 10%;
-}
-
-/*menu contactos*/
-#btnContactos{
-   margin: auto;
-    background-color: transparent;
-    border-radius: 10px;
-    justify-content: center;
-    border-style: ridge;
-    width: fit-content;
-
-    & :hover{
-        background-color: #aae491;
-    }
-
-    & :focus, :active{
-      background-color: aqua;
-    }
-}
-
-
-.contacto{
-  background-color: #aae491;
-  border-radius: 15px;
-  padding: 1rem;
-
-  & iframe{
-    border-radius: 15px;
-  }
-
-  & p, h6{
-    margin-top: 2.5rem;
-  }
-}
-
-
+  /*Lightbox galeria de imagens*/
+  .lightbox-gallery{
+      color: #000;
+      overflow-x: hidden}
+@media (max-width:767px){
+    .lightbox-gallery h2{margin-bottom:25px;padding-top:25px;font-size:24px}}
+.lightbox-gallery .photos{padding-bottom:20px}
+.lightbox-gallery .item{padding-bottom:30px}
 

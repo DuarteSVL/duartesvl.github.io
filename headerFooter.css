@@ -1,164 +1,174 @@
 /* *************************
-        Styles navbar
+    Styles navbar
 ************************* */
-
+ 
 /* Font Ubuntu */
 @import url(https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap);
-
-.navbar{
+ 
+.navbar {
     background-color: #FEF4AE;
     font-family: Ubuntu;
-    font-weight: bold; 
-
-    & .nav-item{
+    font-weight: bold;
+ 
+    .nav-item {
         border-radius: 15px;
         transition-duration: 0.5s;
     }
-    
-    & .nav-item:hover {
+ 
+    .nav-item:hover {
         background-color: #FEE234;
         transition-duration: 0.5s;
     }
-
-    & .dropdown-menu{
+ 
+    .dropdown-menu {
         background-color: #FFFAD4;
         border-radius: 15px;
-        
     }
-
-    & .dropdown-item:hover {
+ 
+    .dropdown-item:hover {
         border-radius: 15px;
         background-color: #FEE234;
         transition-duration: 0.5s;
     }
+    /* Alinhar os itens de navegação à direita */
+    .navbar-nav {
+        margin-left: auto;
+    }
 }
-
-#navLogo{
-  margin-left: 2%;
-  justify-content: center;
+ 
+#navLogo {
+    margin-left: 2%;
+    justify-content: center;
 }
-
-#miniNav{
+ 
+#miniNav {
     background-color: #FFFAD4;
     text-align: center;
     font-weight: 600;
 }
-
-#logo{
+ 
+#logo {
     display: flex;
     max-width: 50%;
-    height:max-content;
+    height: max-content;
     padding-top: 1%;
     margin-left: 25%;
 }
+ 
+#educabiz {
+    display: inline-block;
+    width: 50%;
+    padding-top: 1rem;
+    margin-left: 1rem;
+}
 
-#educabiz{
-  display: flex;
-  max-width: 20%;
+#educabiz:hover {
+    background-color: #FEE234;
 }
 
 
-/* *************************
- código animações dropdown
-************************* */
 
+
+ 
+/* *************************
+    código animações dropdown
+************************* */
+ 
 @media (min-width: 768px) {
     .animate {
-      animation-duration: 0.3s;
-      -webkit-animation-duration: 0.3s;
-      animation-fill-mode: both;
-      -webkit-animation-fill-mode: both;
+        animation-duration: 0.3s;
+        -webkit-animation-duration: 0.3s;
+        animation-fill-mode: both;
+        -webkit-animation-fill-mode: both;
     }
-  }
-  
-  @keyframes slideIn {
+}
+ 
+@keyframes slideIn {
     0% {
-      transform: translateY(1rem);
-      opacity: 0;
+        transform: translateY(1rem);
+        opacity: 0;
     }
-  
+ 
     100% {
-      transform: translateY(0rem);
-      opacity: 1;
+        transform: translateY(0rem);
+        opacity: 1;
     }
-  
+ 
     0% {
-      transform: translateY(1rem);
-      opacity: 0;
+        transform: translateY(1rem);
+        opacity: 0;
     }
-  }
-  
-  @-webkit-keyframes slideIn {
+}
+ 
+@-webkit-keyframes slideIn {
     0% {
-      -webkit-transform: transform;
-      -webkit-opacity: 0;
+        -webkit-transform: transform;
+        -webkit-opacity: 0;
     }
-  
+ 
     100% {
-      -webkit-transform: translateY(0);
-      -webkit-opacity: 1;
+        -webkit-transform: translateY(0);
+        -webkit-opacity: 1;
     }
-  
+ 
     0% {
-      -webkit-transform: translateY(1rem);
-      -webkit-opacity: 0;
+        -webkit-transform: translateY(1rem);
+        -webkit-opacity: 0;
     }
-  }
-  
-  .slideIn {
+}
+ 
+.slideIn {
     -webkit-animation-name: slideIn;
     animation-name: slideIn;
-  }
-  
-
-/* *************************
-      Styles footer
-************************* */
-
-footer{
-  background-color: #FEF4AE;
-  font-family: Ubuntu;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
 }
-
-#imgFoot{
+ 
+/* *************************
+    Styles footer
+************************* */
+ 
+footer {
+    background-color: #FEF4AE;
+    font-family: Ubuntu;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+ 
+#imgFoot {
     display: flex;
     max-width: 40%;
-    height:max-content;
+    height: max-content;
     padding: 0%;
     margin-top: 5%;
     margin-bottom: 5%;
 }
-
-#footButton{
-  background-color: #FFFAD4;
-
-  &:hover{
-    border-radius: 5px;
-     background-color: #FEE234;
-     transition-duration: 0.5s;
- }
+ 
+#footButton {
+    background-color: #FFFAD4;
+ 
+    & :hover {
+        border-radius: 5px;
+        background-color: #FEE234;
+        transition-duration: 0.5s;
+    }
 }
-
-
+ 
 .container {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
-
-#social-icons{
-  color: black;
+ 
+#social-icons {
+    color: black;
 }
-#social-icons:hover{
-  color: #FEE234;
-  transition-duration: 0.5s;
+ 
+#social-icons:hover {
+    color: #FEE234;
+    transition-duration: 0.5s;
 }
-
-#footText{
-  text-align: center;
-  font-size: 80%;
+ 
+#footText {
+    text-align: center;
+    font-size: 80%;
 }
-

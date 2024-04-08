@@ -32,7 +32,8 @@
     }
     /* Alinhar os itens de navegação à direita */
     .navbar-nav {
-        margin-left: auto;
+        display: flex;
+        justify-content: end;
     }
 }
  
@@ -56,14 +57,8 @@
 }
  
 #educabiz {
-    display: inline-block;
-    width: 50%;
     padding-top: 1rem;
     margin-left: 1rem;
-}
-
-#educabiz:hover {
-    background-color: #FEE234;
 }
 
 

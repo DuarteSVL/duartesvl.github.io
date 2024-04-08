@@ -199,7 +199,7 @@ function changeEmentas() {
 // *********************************************************************************************
 // *********************************************************************************************
 
-//Function Contactos submenu
+//Function Contactos submenu da página de Contactos (menu com morada, tel e mapa google)
 function mudarMenu(id) {       
     var contacto = document.getElementsByClassName('contacto');
 

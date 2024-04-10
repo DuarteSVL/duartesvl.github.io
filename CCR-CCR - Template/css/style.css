@@ -58,10 +58,13 @@
     max-width: 500px;
 }
 
-/*** BackGround Image ***/
-/*.all-content{
-    background-image: url(../images/body-bg.jpg);
-}*/
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh; /* Isso garante que o conteúdo seja centralizado verticalmente */
+}
 
 /*** Side Nav ***/
 .content-container {
@@ -76,9 +79,12 @@
   
   .toc-container {
     top: 80px; /*isto é a distância a que a sidenav fica do topo quando sticky*/
+    bottom: 150px;
     z-index: 800; /* Garante que a barra lateral esteja abaixo da barra superior */
     margin-top: -80px; /* Truque para o sticky-top do con*/
     padding-top: 80px;
+    margin-bottom: -150px;
+    padding-bottom: 150px;
   
     & ul {
       list-style: none;
@@ -123,12 +129,20 @@
     transition: .5s;
 }
 
-.btn.btn-primary {
+.btn .btn-primary,
+
+    .btn-outline-primary {
     color: #ffffff;
     background-color: #FF874F;
     border:none;
-    
 }
+
+.btn-primary:hover,
+.btn-outline-primary:hover {
+    color: white; /* Nova cor do texto ao passar o mouse */
+    background-color: #993100; /* Nova cor de fundo ao passar o mouse */
+}
+
 
 .btn-square {
     width: 38px;
@@ -487,36 +501,48 @@ q {
   }
   
   /*Accordions*/
-  .accordion{
-    & ul li a {
-        color: #000;
-        text-decoration: none;
-        cursor: default;
-    }
 
-    & ul li a:hover {
-        color: #FF874F; /* Muda a cor do link quando passa o rato por cima */
+.accordion {
+    ul li a {
+      color: #000;
+      text-decoration: none;
+      cursor: default;
+  
+      &:hover {
+        color: #FF874F; /* Muda a cor do link quando passa o mouse por cima */
+      }
     }
   
-    & .accordion-button{
-      background-color:  none;
+    .accordion-button {
+        background-color: none;
+    
+        &.collapsed show {
+          background-color: #FF874F; /* Altera a cor do botão quando está em estado "collapsed" */
+          color: white; /* Altera a cor do texto */
+        }
+      }
+  
+    &.accordion-header {
+      text-align: center;
     }
-    &.accordion-header{
-      text-align:center;
-    }
-    & .accordion-button:focus{
+  
+    .accordion-button:focus {
       z-index: 3;
       border-color: #f5f5f5 !important;
       outline: 0;
       box-shadow: none !important;
     }
-    & .accordion-button:not(.collapsed) {
+  
+    .accordion-button:not(.collapsed) {
       background-color: #FF874F !important;
+      color: white;
     }
-    & .accordion-body{
-      background-color: #ff874f1a!important;
+  
+    .accordion-body {
+      background-color: #FFF3ED !important;
     }
   }
+  
 
 
  /**************************
@@ -650,6 +676,7 @@ footer {
     width: 100%; /* Faz com que o footer ocupe 100% da largura da página */
     bottom: 0; /* Coloca o footer na parte inferior */
     left: 0;
+
   }
 
   #imgFoot {
@@ -694,3 +721,5 @@ footer {
     font-size: 80% !important;
     font-family: Ubuntu;
   }
+
+  

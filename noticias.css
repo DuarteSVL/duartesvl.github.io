@@ -1,44 +1,10 @@
-:root{
-    font-size: 16px;
-}
-#logo{
-    padding-top: 0.1rem;
-    padding-bottom: 0.1rem;
+/* *************************
+        Styles notícias
+************************* */
 
-    & img{
-        max-height: 80px;
-    }
-}
-
-.bg-logo{
-    background:radial-gradient(circle at 30% 107%, #f3eb03bf 5%, #dfc51ec6 45%, #e49011 60%, #efecca);
-    margin-bottom: 80px;
-}
-
-#banner{
-    background-image: url('https://images.unsplash.com/photo-1543857778-c4a1a3e0b2eb?q=80&w=1910&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-position: center center;
-    background-size: cover;
-    display: flex;/*Activa a flexbox*/
-    justify-content: center;/*Alinha o conteúdo(box) ao centro na horizontal*/
-    align-items: center;/*Alinha o conteúdo(box) ao centro na vertical*/
-    margin-bottom: 80px;
-}
-
-h4{
-    font-size: 35px;
-}
-
-.card-group{
-    margin-left: 100px;
-    margin-right: 100px;
-    padding-bottom: 40px;
-    display: flex;
-    gap: 40px;
-}
-
-.card-text{
-    margin-bottom: 0;
+.slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
 }
 
 .btn{
@@ -50,27 +16,196 @@ h4{
     display: inline-block; /* exibe como um bloco */
 }
 
+.border{
+    border-radius: 15px;
+    background-color: #FEF4AE;
+}
+
 img{
-    height: 350px;
+    display: block;
+    width: 100%; 
+    height: auto;
+    border-radius: 10px;
+    }
+
+/* Styles Cards */
+
+ .card{
+    display: flex;
+    width: 30%;
+    height: auto;
 }
 
-.clearfix{
-    margin-left: 500px;
-    & p{
-        margin-right: 500px;
-    }
+a{
+  margin-left: 35%;
+}
+ 
+.card-title{
+    display: flex;
+    text-align: center;
+}
+
+.card-text{
+    margin-bottom: 0;
+    font-weight: 200;
+}
+
+/* Styles Paginação */
+#paginacao{
+    display: flex;
+    justify-content: center;
+
     & a{
-        text-decoration: none;
+        border-radius: 50%;
+        display:inline-block;
+        margin: 1rem;
+        padding: 0.5rem 1rem;
+        border: 1px solid #ddd;
+    }
+
+    & a:hover{
+        background-color: #FF874F;
+    }
+
+    & a:active, a:focus{
+        background-color: #FFF3ED;
     }
 }
 
-.imgjudo{
-    margin-right: 500px;
-    height: 250px;
-    width: 500px;
-}
+/* Styles Filtros */
+#filtros {
+    top: 80px; /*isto é a distância a que a sidenav fica do topo quando sticky*/
+    z-index: 700; /* Garante que a barra lateral esteja abaixo da barra superior */
+    margin-top: -80px; /* Truque para o sticky-top do con*/
+    padding-top: 80px;
+    border: solid 2px #dddcdc;
+    border-radius: 15px;
+    color: black;
+    padding: 0.8rem;
+    }
+  
 
 
-nav{
-    margin-left: 500px;
-}
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  /* Fontes */
+  /* Titulos */
+  @font-face {
+    font-family: "Ubuntu";
+    src: url("fonts/Ubuntu/Ubuntu-Bold.ttf") format("truetype");
+    font-weight: 700;
+  }
+  
+  /* Texto */
+  @font-face {
+    font-family: "NunitoSans";
+    src: url("fonts/nunitoSans/NunitoSans_10pt-Light.ttf") format("truetype");
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: "NunitoSans";
+    src: url("fonts/nunitoSans/NunitoSans_10pt-Regular.ttf") format("truetype");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "NunitoSans";
+    src: url("fonts/nunitoSans/NunitoSans_10pt-Medium.ttf") format("truetype");
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: "NunitoSans";
+    src: url("fonts/nunitoSans/NunitoSans_10pt-Bold.ttf") format("truetype");
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: "NunitoSans Italic";
+    src: url("fonts/nunitoSans/NunitoSans_10pt-Italic.ttf") format("truetype");
+    font-weight: 400;
+  }
+  
+  /* Titulos h1-h6 */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+  }
+  
+  /* Texto */
+  p {
+    font-family: "NunitoSans", sans-serif;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  /* Quotes */
+  q {
+    font-family: "NunitoSans Italic", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+  }
+  
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 2.125rem;
+    }
+    h2 {
+      font-size: 1.75rem;
+    }
+    h3 {
+      font-size: 1.375rem;
+    }
+    h4 {
+      font-size: 1.25rem;
+    }
+    h5 {
+      font-size: 1.063rem;
+    }
+    h6 {
+        text-align: center;
+      font-size: 1rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+    q {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    h1 {
+      font-size: 3.75rem;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+    h3 {
+      font-size: 2.125rem;
+    }
+    h4 {
+      font-size: 1.5rem;
+    }
+    h5 {
+      font-size: 1.25rem;
+    }
+    h6 {
+      font-size: 1.125rem;
+    }
+    p {
+      font-size: 1.125rem;
+    }
+    q {
+      font-size: 1.125rem;
+    }
+  }
+

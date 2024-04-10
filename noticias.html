@@ -5,155 +5,218 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noticias e Eventos</title>
 
-    <!--BOOTSTRAP-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   <!-- Bootstrap -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+   integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    
-
-    <!--MONTSERRAT-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="noticias.css">
+   <!-- Próprios -->
+  <link rel="stylesheet" href="noticias.css">
+   <script src="app.js"></script>
 
 </head>
 <body>
 
-  <header class="container d-none d-lg-block">
-    <div class="row">
-        
-        <header class="container d-none d-lg-block">
-    <div class="row">
-        
-        <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
-            <div class="container">
-                <a class="navbar-brand d-lg-none" href="#">
-                    <img src="img/logo.png" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <!--Titulo-->
+    <div class="d-flex justify-content-center">
+      <h1>Notícias e Eventos</h1>
+    </div>
     
-    
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#sobrenos">Sobre nós</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./ementas.html">Ementas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./info.html">Info</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./noticias.html">Notícias</a>
-                        </li>
-                    </ul>
-    
-    
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <!--Row e cols para espaçar filtros e noticias-->
+    <div class="row" style="width:100%">
 
-    <header class="container d-none d-lg-block"> 
-        <div class="row">   
-            <div class="col-4 col-md-3 bg-logo" id="logo">
-                <img src="imgs/logo.png" alt="logo" class="img-fluid">
-            </div>
-            <div class="col d-flex justify-content-center align-items-center" id="banner"><!--d-flex justify-content-center align-items-center faz o mesmo que os elementos feitos em css-->
-                <h4 class="d-none d-md-block me-auto">Notícias e Eventos</h4></div><!-- d-none retira o h4 e d-md-block retira só a partir daquela resolução minima-->
-            
-        </div>
-    </header> <!--header.container>div.row>div.col*2 ele faz logo a div e as classes automáticamente criando assim a grelha-->
+    <div class="col-2">
 
-    <div class="card-group">
-        <div class="card">
-          <img src="imgs/judo.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Vem praticar Judo no CCR CCR!</h5>
-            <p class="card-text">Com o arranque do ano letivo, o CCR CCR deu início à época desportiva!
-                O Judo é mais uma modalidade que podes praticar connosco e que te traz muitos benefícios, contribuindo para o teu
-                desenvolvimento físico, psíquico e social de forma integrada.</p>
-            <a href="./noticia0.html" class="btn btn-primary">Vem experimentar</a>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">20 de Outubro de 2023</small>
-          </div>
-        </div>
-        <div class="card">
-          <img src="imgs/popDance.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">A POP Dance chegou ao CCR CCR!</h5>
-            <p class="card-text">Inovamos e ampliamos o leque da nossa oferta de atividades desportivas.
-                Nas aulas de Pop Dance, podes contar dançar aos ritmos contagiantes da Pop, Hip Hop, RNB e Dancehall, entre outros.</p>
-            <a href="./noticia1.html" class="btn btn-primary">Vem experimentar</a>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">11 Outubro 2023</small>
-          </div>
-        </div>
-        <div class="card">
-          <img src="imgs/Inicio-Ano-Letivo_2023_2024.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Início do Ano Letivo 2023/2024 – 12/09/2023</h5>
-            <p class="card-text">Terminado está mais um ano letivo, estamos já em preparação do novo que irá começar.</p>
-            <a href="" class="btn btn-primary">Saber mais</a>
-        </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">10 Julho 2023</small>
-          </div>
-        </div>
+  <!--Filtros-->
+  <div class="navbar-form navbar-left sticky-top d-none d-md-block" id="filtros">
+    <h6>Filtros</h6>
+    <hr>
+
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Direção
+      </label>
+    </div>
+
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Eventos
+      </label>
+    </div>
+
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Área Desportiva
+      </label>
+    </div>
+
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Voluntariado
+      </label>
+    </div>
+
+    <hr>
+
+    <div>
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Procurar Notícia"> <br>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Procurar</button></div>
+    <!--Inserir aqui searchbar em vez de filtros em checkbox-->
+  </div>
+</div>
+  
+
+   
+  <div class="col">
+   <!-- Noticias -->
+
+   <!-- Card Deck 1 -->
+   <div class="card-deck d-flex justify-content-between">
+
+    <!-- Noticia 1 -->
+    <div class="card">
+      <!-- Imagem -->
+      <img class="card-img-top" src="imgs/noticias/popDance.png" alt="Card image cap">
+      <div class="card-body">
+        <!-- Titulo -->
+        <h5 class="card-title">A POP Dance chegou ao CCRCCR!</h5>
+        <!-- Subtitulo/texto -->
+        <p class="card-text">Nas aulas de Pop Dance, podes contar dançar aos ritmos contagiantes da Pop, Hip Hop, RNB e Dancehall, entre outros.</p>
       </div>
-
-      <div class="card-group">
-        <div class="card">
-          <img src="imgs/CCR-CCR_page-0001-1024x724.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">É com enorme orgulho que anunciamos que o CCR CCR foi, também neste ano letivo (2022/2023) destacado como parceiro que tem contribuído para o crescimento e reforço do Programa de Educação Olímpica.</p>
-            <a href="" class="btn btn-primary">Saber mais</a>
-        </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">01 Agosto 2023</small>
-          </div>
-        </div>
-        <div class="card">
-          <img src="imgs/pascoa.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Horário da Páscoa – Escola Primária</h5>
-            <p class="card-text">Conheça o noss planeamento de atividades da Escola Primária, para esta semana de pausa letiva.</p>
-            <a href="" class="btn btn-primary">Saber mais</a>
-        </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">28 Março 2021</small>
-          </div>
-        </div>
-        <div class="card">
-          <img src="imgs/crescer.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Dia Internacional do Brincar – Teatro na Escola</h5>
-            <p class="card-text">No dia 28/05 comemora-se o Dia Internacional do Brincar!
-                Para nós é mesmo uma data muito importante 😀</p>
-                <a href="" class="btn btn-primary">Saber mais</a>
-        </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">25 Maio 2022</small>
-          </div>
-        </div>
+      <div class="card-footer">
+        <!-- Data -->
+        <small class="text-muted">11 Outubro 2023</small>
+        <!-- Link para página da noticia -->
+        <a href="noticia_exemplo.html" class="card-link">Ver Mais</a>
       </div>
+    </div>
 
-      
+    <!-- Noticia 1 -->
+    <div class="card">
+      <!-- Imagem -->
+      <img class="card-img-top" src="imgs/noticias/pascoa.png" alt="Card image cap">
+      <div class="card-body">
+        <!-- Titulo -->
+        <h5 class="card-title">Horário da Páscoa: Escola Primária</h5>
+        <!-- Subtitulo/texto -->
+        <p class="card-text">Conheça AQUI o planeamento de atividades da Escola Primária, para esta semana de pausa letiva. <br> Votos de Boa Páscoa, com muita saúde! </p>
+      </div>
+      <div class="card-footer">
+        <!-- Data -->
+        <small class="text-muted">28 Março 2021</small>
+        <!-- Link para página da noticia -->
+        <a href="noticia_exemplo.html" class="card-link">Ver Mais</a>
+      </div>
+    </div>
+
+    <!-- Noticia 1 -->
+    <div class="card">
+      <!-- Imagem -->
+      <img class="card-img-top" src="imgs/noticias/judo.png" alt="Card image cap">
+      <div class="card-body">
+        <!-- Titulo -->
+        <h5 class="card-title">Vem praticar Judo no CCR CCR!</h5>
+        <!-- Subtitulo/texto -->
+        <p class="card-text">O Judo é mais uma modalidade que podes praticar connosco e que contribui para o teu desenvolvimento físico, psíquico e social de forma integrada.</p>
+      </div>
+      <div class="card-footer">
+        <!-- Data -->
+        <small class="text-muted">20 Outubro 2023</small>
+        <!-- Link para página da noticia -->
+        <a href="noticia_exemplo.html" class="card-link">Ver Mais</a>
+      </div>
+    </div>
+
+  </div>
+  <br> <!-- Break entre Card Decks -->
+
+  <!-- Card Deck 2 -->
+  <div class="card-deck d-flex justify-content-between">
+
+    <!-- Noticia 1 -->
+    <div class="card">
+      <!-- Imagem -->
+      <img class="card-img-top" src="imgs/noticias/Inicio-Ano-Letivo_2023_2024.png" alt="Card image cap">
+      <div class="card-body">
+        <!-- Titulo -->
+        <h5 class="card-title">Início do Ano Letivo 2023/2024 – 12/09/2023</h5>
+        <!-- Subtitulo/texto -->
+        <p class="card-text">Terminado está mais um ano letivo, estamos já em preparação do novo que irá começar.</p>
+      </div>
+      <div class="card-footer">
+        <!-- Data -->
+        <small class="text-muted">10 Julho 2023</small>
+        <!-- Link para página da noticia -->
+        <a href="noticia_exemplo.html" class="card-link">Ver Mais</a>
+      </div>
+    </div>
+
+    <!-- Noticia 1 -->
+    <div class="card">
+      <!-- Imagem -->
+      <img class="card-img-top" src="imgs/noticias/crescer.png" alt="Card image cap">
+      <div class="card-body">
+        <!-- Titulo -->
+        <h5 class="card-title">Dia Internacional do Brincar – Teatro na Escola</h5>
+        <!-- Subtitulo/texto -->
+        <p class="card-text">Dia 28/05 comemora-se o Dia Internacional do Brincar, e é por isso que, no próximo dia 27/05, Sexta-Feira, o Teatro vem à escola, com a peça “ao CRESCER quero SER”.</p>
+      </div>
+      <div class="card-footer">
+        <!-- Data -->
+        <small class="text-muted">25 Maio 2022</small>
+        <!-- Link para página da noticia -->
+        <a href="noticia_exemplo.html" class="card-link">Ver Mais</a>
+      </div>
+    </div>
+
+    <!-- Noticia 1 -->
+    <div class="card">
+      <!-- Imagem -->
+      <img class="card-img-top" src="imgs/noticias/CCR-CCR_page-0001-1024x724.png" alt="Card image cap">
+      <div class="card-body">
+        <!-- Titulo -->
+        <h5 class="card-title">CCR CCR recebe certificado do Programa de Educação Olímpica 2022/2023</h5>
+        <!-- Subtitulo/texto -->
+        <p class="card-text">Nas aulas de Pop Dance, podes contar dançar aos ritmos contagiantes da Pop, Hip Hop, RNB e Dancehall, entre outros.</p>
+      </div>
+      <div class="card-footer">
+        <!-- Data -->
+        <small class="text-muted">01 Agosto 2023</small>
+        <!-- Link para página da noticia -->
+        <a href="noticia_exemplo.html" class="card-link">Ver Mais</a>
+      </div>
+    </div>
+
+  </div>
+
+
+    
+
+<!-- Fim Noticias -->
+</div>
+
+<!-- Fim row -->
+</div>
+
+<br><br>
+
+<!-- Paginação -->
+<nav aria-label="...">
+  <ul class="pagination pagination-sm justify-content-center" id="paginacao">
+    <li class="page-item"><a class="page-link" href="#" tabindex="-1">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">4</a></li>
+    <li class="page-item"><a class="page-link" href="#">5</a></li>
+    <li class="page-item"><a class="page-link" href="#">6</a></li>
+  </ul>
+</nav>
+
     
 </body>
 </html>

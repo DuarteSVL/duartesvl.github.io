@@ -198,8 +198,8 @@ function changeEmentas() {
 
 // *********************************************************************************************
 // *********************************************************************************************
-
 //Function Contactos submenu da página de Contactos (menu com morada, tel e mapa google)
+
 function mudarMenu(id) {       
     var contacto = document.getElementsByClassName('contacto');
 
@@ -210,3 +210,16 @@ function mudarMenu(id) {
     document.getElementById(id).style.display="block"; 
 
 };
+
+
+// *********************************************************************************************
+// *********************************************************************************************
+//Script Filtros da página de Noticias e Eventos
+
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 300) {
+      $("#navbar").addClass("").css("top", "0");
+    } else {
+      $("#navbar").removeClass("shadow-sm").css("top", "-100px");
+    }
+  });

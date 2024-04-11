@@ -1,25 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-pt">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Berçário e Creche</title>
+    <meta charset="utf-8" />
+    <title>Berçário e Creche - CCR CCR</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
 
-    <!--BOOTSTRAP-->
+    <!-- Favicon -->
+    <link rel="icon" type="images" href="imagens/logo2.png" />
+
+    <!--BOOTSTRAP -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Icons-->
+    <!--BOOTSTRAP Icons-->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-
-    <!--BOOTSTRAP JS-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-
     <!--FONTAWESOME-->
     <link
       rel="stylesheet"
@@ -35,304 +33,241 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
-    <link rel="stylesheet" href="styles_valencia.css" />
+    <!--Owl Carousel-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate.css/animate.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/css/main.min.css" rel="stylesheet" />
+
+    <!-- Stylesheet -->
+    <link href="css/styles_valencia.css" rel="stylesheet" />
   </head>
 
   <body>
-    <!--FALTA ADD NAVBAR-->
-    <nav class="navbar navbar-expand-lg bg-light sticky-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+    <div class="container-xxl bg-white p-0">
+      <!-- Spinner Start -->
+      <div
+        id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+      >
+        <div
+          class="spinner-border text-primary"
+          style="width: 3rem; height: 3rem"
+          role="status"
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
+          <span class="sr-only">Loading...</span>
         </div>
       </div>
-    </nav>
-    <!--FALTA ADD NAVBAR-->
+      <!-- Spinner End -->
 
-    <div class="container d-.none d-md-block">
-      <div class="container">
-        <!--BREADCRUMBS-->
-        <div class="row">
-          <div class="col">
-            <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Início</a></li>
-                <li class="breadcrumb-item"><a href="#">Valências</a></li>
-                <li class="breadcrumb-item active" aria-current="page">
+
+      
+      <!-- Page Header End -->
+      <div class="container-xxl py-5 page-header position-relative mb-5">
+        <div class="container py-5">
+          <h1 class="display-2 text-white animated slideInDown mb-4">
+            Berçário e Creche
+          </h1>
+          <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Início</a></li>
+              <li class="breadcrumb-item text-white active" aria-current="page">
                 Berçário e Creche
-                </li>
-              </ol>
-            </nav>
-          </div>
+              </li>
+            </ol>
+          </nav>
         </div>
-        <!--FIM BREADCRUMBS-->
+      </div>
+      <!-- Page Header End -->
 
-        <!--Titulo-->
+      <!--Container sidenav e conteudo-->
+      <div class="container position-relative">
         <div class="row">
-          <div class="d-none d-md-block col-md-4 col-lg-3"></div>
-          <div class="col-12 col-md-8 col-lg-9 text-center">
-            <h1>Berçário e Creche</h1>
-          </div>
-        </div>
-        <!--FIM Titulo-->
-      </div>
+          <!--Sidenav (table of contents)-->
+          <div class="d-none d-md-block col-md-4 col-lg-3">
+            <div class="toc-container sticky-top">
+              <div>
+                <!--Titulo da sidenav-->
+                <div class="toc-header text-center">
+                  <span class="toc-title">
+                    <h3>Conteúdos</h3>
+                  </span>
+                </div>
 
- <!--Container sidenav e textos-->
-    <div class="container"> 
-       <div class="row">
-        
-         <!--Sidenav (table of contents)-->  
-        <div class="d-none d-md-block col-md-4 col-lg-3">
-          <div class="toc-container sticky-top">
-            <div>
-              <!--Titulo da sidenav-->
-              <div class="toc-header text-center">
-                <span class="toc-title">
-                  <h3>Conteúdos</h3>
-                </span>
+                <!--Conteudo da sidenav-->
+                <ul class="toc">
+                  <a href="#sobre">
+                    <li class="toc-item">Sobre</li>
+                  </a>
+
+                  <a href="#plano-atividades">
+                    <li class="toc-item">Plano de Atividades</li>
+                  </a>
+
+                  <a href="#regulamento-interno">
+                    <li class="toc-item">Regulamento Interno</li>
+                  </a>
+                </ul>
               </div>
-
-              <!--Conteudo da sidenav-->
-              <ul class="toc">
-                <a href="#sobre">
-                  <li class="toc-item">Sobre</li>
-                </a>
-
-
-                <a href="#plano-atividades">
-                  <li class="toc-item">Plano de Atividades</li>
-                </a>
-
-
-                <a href="#contactos">
-                  <li class="toc-item">Contactos</li>
-                </a>
-
-                <a href="#regulamento-interno">
-                  <li class="toc-item">Regulamento Interno</li>
-                </a>
-                <a href="#guiao-regresso">
-                  <li class="toc-item">
-                   Guião “Práticas de Regresso à Creche”
-                  </li>
-                </a>
-              </ul>
             </div>
           </div>
-      </div>
-        <!--FIM Sidenav (table of contents)-->
+          <!--FIM Sidenav (table of contents)-->
 
-        <!--Conteúdo/textos da pagina-->
-        <div class="col-12 col-md-8 col-lg-9"> <!--Col do conteúdo todo-->
+          <!--Conteúdo/textos da pagina Start-->
+          <div class="col-12 col-md-8 col-lg-9">
             <div class="row">
-              <div class="col-12">
-                <section id="sobre">
-                  <p>
-                    O espaço onde a criança vive é decisivo para o seu desenvolvimento global. Ela precisa de o conhecer para se situar, se movimentar e estabelecer relações físicas e afetivas entre o seu corpo, espaço e objetivos.
-                  </p>
 
-              </div>
-              <!--Tabela Sobre-->
-              <div class="col-12 tabela-sobre">
-                <div class="row">
-                  <div class="col-12 col-md-8 col-lg-8
-                   populacao-sobre text-center mb-2">
-                    <h6>População alvo</h6>
-                    <p>Crianças dos 4 meses aos 3 anos de idade</p>
-                  </div>
-                  <div class="col-12 col-md-4 col-lg-4  horario-sobre text-center mb-2">
-                    <h6>Horários</h6>
-                    <p>2ª a 6ª Feira, 8:00 - 19:00 horas</p>
-                  </div>
-                  <div class="col objetivos-sobre">
-                    <h6 class="text-center">Objetivos</h6>
-                    <p class="px-4">
-                      <ul>
-                        <li>Garantir um espaço securizante onde a criança adquira confiança e segurança para interagir com outras crianças;</li>
-                        <li>Estimular a criança em todos as suas vertentes de desenvolvimento;</li>
-                        <li>Implementar rotinas - rotinas de alimentação, higiene e sono por se repetirem sistematicamente, constituindo, um referencial de segurança para a criança, criando ao mesmo tempo momentos privilegiados para a troca de afetos, linguagem e comportamentos;</li>
-                        <li>Disponibilizar material didático em qualidade e quantidade (a noção de partilha ainda não está presente) proporcionando atividades globalizantes ao seu desenvolvimento;</li>
-                        <li>Criar processos de identificação de objetos e pessoas.</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!--fim Tabela Sobre-->
-
-                <!--secção Instalações-->
-             <div class="col-12">
-                <div class="row">
-                  <div class="col-12 text-center">
-                    <h5>Instalações</h5>
-                  </div>
-                  <!-- Swiper -->
-                  <div class="col">
-                    <div class="swiper mySwiper">
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="imagens/Bercario/foto01.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="imagens/Bercario/foto02.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="imagens/Bercario/foto03.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="imagens/Bercario/foto04.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="imagens/Bercario/foto05.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="imagens/Bercario/foto06.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="imagens/Creche/foto01.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="imagens/Creche/foto02.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="imagens/Creche/foto03.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="imagens/Creche/foto04.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="imagens/Creche/foto05.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="imagens/Creche/foto06.jpg" alt=""></div>
-                      </div>
-                      <div class="swiper-button-next"></div>
-                      <div class="swiper-button-prev"></div>
-                      <div class="swiper-pagination"></div>
-                    </div>
-
-                   <!-- The Modal -->
-                    <div id="myModal" class="modal">
-                      <span class="close">&times;</span>
-                      <img class="modal-content" id="img01">
-                      <span class="prev" id="prevBtn">&#10094;</span>
-                      <span class="next" id="nextBtn">&#10095;</span>
-                    </div>
-
-                  </div> 
-                  <!--fim swiper-->
-                </div>
-              </div>
-              <!--Fim secção Instalações-->
+            <!-- Sobre Start -->
               
-              <!--Secção reencaminhar para ementas-->
-              <div class="col">
-                <div class="row">
-                  <div class="col-lg-1"></div>
-                  <div class="col col-lg-10">
-                    <div class="row align-items-center text-center consultar-ementas-card">
-                      <div class="col-12 col-lg-6">
-                        <h6>Consultar ementas da semana</h6>
-                      </div>
-                      <div class="col-12 col-lg-6">
-                        <!--BOTÃO EMENTAS FALTA O LINK PARA REDIRECIONAMENTO FINAL-->
-                        <a href="#"><button id="btnEmentas">Ir para ementas</button></a>
+                <div class="col-12 mx-auto mb-5"> <section id="sobre"><h1 class="mb-3 text-center">Sobre</h1></section>
+                <p class="mb-4">
+                  O espaço onde a criança vive é decisivo para o seu desenvolvimento global. Ela precisa de o conhecer para se situar, se movimentar e estabelecer relações físicas e afetivas entre o seu corpo, espaço e objetivos.
+                </p>
+                </div>
+                <!--Galeria de fotos start-->
+                <!--Galeria de fotos end-->
+
+                <!--Tabela de fotos start-->
+                <!--Tabela de fotos end-->
+
+                <!--Instalações start-->
+                <!--Instalações end-->
+
+                <!-- Ementas Card Start -->
+                <div class="col-12">
+                  <div class="bg-light rounded">
+                  <div class="row g-0 consultar-ementas-card">
+                    <div class="col-lg-6 imgEmentasCard" >
+                      <div class="position-relative h-100">
+                        <img
+                          class="position-absolute w-100 h-100 rounded"
+                          src="img/call-to-action.jpg"
+                          style="object-fit: cover"
+                        />
                       </div>
                     </div>
-                    <div class="col-lg-1"></div>
+                    <div class="col-lg-6">
+                      <div
+                        class="h-100 d-flex flex-column p-4"
+                      >
+                        <h4 class="mb-4 text-center">Consultar ementas da semana</h4>
+                        <a class="btn btn-primary py-3 px-5" href="">Ir para ementas<i class="fa fa-arrow-right ms-2"></i></a></a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                </section>
               </div>
-              <!--FIM Secção reencaminhar para ementas-->
+                <!-- Ementas Card End -->
+            <!-- Sobre End -->
 
 
-              <!--Secção plano atividades-->
-              <div class="col-12">
-                <div class="row">
-                  <section id="plano-atividades"></section>
-                  <div class="col-12 text-center">
-                    <h2>Plano de Atividades</h2>
-                    <p>Plano anual de atividades (brevemente disponível) </p>
-                    <a href="" target="_blank"><button class="btnPdf" disabled>Ver plano <i
-                          class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
-                  </div>
-                  </section>
+            <!-- Plano atividades start -->
+            <div class="container-xxl py-5">
+                <div class="container">
+                    <div class="bg-light rounded">
+                        <div class="row g-0">
+                          <div class="col-lg-6 d-block d-lg-none" style="min-height: 400px;">
+                                <div class="position-relative h-100">
+                                    <img class="position-absolute w-100 h-100 rounded" src="images/qualidade.jpg" style="object-fit: cover;">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="h-100 d-flex flex-column justify-content-center p-5">
+                                    <section id="plano-atividades"><h1 class="mb-4">Plano de Atividades</h1></section>
+                                    <p class="mb-4">Plano anual de atividades (brevemente disponível)</p>
+                                     <a class="btn btn-outline-primary disabled py-3 px-5" href="">Ver plano <i
+                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-none d-lg-block" style="min-height: 400px;">
+                                <div class="position-relative h-100">
+                                    <img class="position-absolute w-100 h-100 rounded" src="images/qualidade.jpg" style="object-fit: cover;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <!-- Plano atividades End -->
+
+
+            <!-- Regulamento interno Start --> 
+             <div class="container-xxl py-5">
+            <div class="container">
+                <div class="bg-light rounded">
+                    <div class="row g-0">
+                        <div class="col-lg-6" style="min-height: 400px;">
+                            <div class="position-relative h-100">
+                                <img class="position-absolute w-100 h-100 rounded" src="" style="object-fit: cover;">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="h-100 d-flex flex-column justify-content-center p-5">
+                                <section id="regulamento-interno"><h1 class="mb-4">Regulamento Interno</h1></section>
+                                <p class="mb-4">Consulte aqui o Regulamento Interno do Jardim de Infância</p>
+                                <a class="btn btn-outline-primary py-3 px-5" href="">Ver regulamento <i
+                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!--Fim Secção plano atividades-->
-
-              <!--Secção contactos-->
-              <div class="col-12 text-center">
-              <section id="contactos">
-                <h2>Contactos</h2>
-                <p>Clique abaixo para mais informações e contactos </p>
-                <a href=""><button class="btnPrimary" disabled>Ir para contactos</button></a>
-              </section>
             </div>
-            <!--Fim Secção contactos-->
-
-            <!--Secção regulamento interno-->
-            <div class="col-12 text-center">
-              <section id="regulamento-interno">
-                <h2>Regulamento Interno</h2>
-                <p>Consulte aqui o Regulamento Interno do Berçário e Creche</p>
-                <a href="#" target="_blank"><button class="btnPdf">Ver regulamento <i
-                  class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
-              </section>
-            </div>
-            <!--Fim secção regulamento interno-->
-
-            <!--Secção Orientações de reabertura-->
-             <div class="col-12 text-center">
-              <section id="guiao-regresso">
-                <h2>Guião “Práticas de Regresso à Creche”</h2>
-                <p>No Plano de desconfinamento pós-estado de emergência, divulgado pelo Governo consta a reabertura de creches.
-                O presente guião define um conjunto de normas a observar na reabertura da Creche do CCR CCR, no dia 18 de maio de 2020, no sentido de orientar e harmonizar o processo de um modo seguro e informado, tendo em vista a segurança das crianças e dos profissionais.</p>
-                <a href="#" target="_blank"><button class="btnPdf">Ver guião de práticas <i
-                  class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
-              </section>
-            </div>
-            <!--Fim Secção Orientações de reabertura-->
-
-            </div>
-          <!--FIM Conteúdo/textos da pagina-->
+        </div>
+            <!-- Regulamento interno End -->
+            
+          </div>
+        </div>
+        <!--Conteúdo/textos da pagina End-->
 
         </div>
       </div>
-    </div>   
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+      <!-- Back to Top -->
+      <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+        ><i class="bi bi-arrow-up"></i
+      ></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!--Javascript-->
     <script src="app_valencia.js"></script>
   </body>
 </html>

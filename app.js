@@ -210,15 +210,18 @@ function mudarMenu(id) {
     document.getElementById(id).style.display="block"; 
 
     //Este código muda a cor do botão selecionado nos menus para dar relevância
-  const btnElList = document.querySelectorAll('.btn');
+ const btnElList = document.querySelectorAll('.btn');
+
+ const currentBtn = document.querySelector('.btn');
 
   btnElList.forEach(btnEl => {
     btnEl.addEventListener('click', () => {
-        document.querySelector('.active')?.classList.remove('active');
-        btnEl.classList.add('active');
+        document.querySelector('.visited')?.classList.remove('visited');
+        btnEl.classList.add('visited');
     });
   });
 
+  currentBtn.add('visited');
 };
 
 
@@ -235,3 +238,20 @@ $(window).scroll(function () {
   });
 
  
+
+
+
+  const currentUrl = new URL(window.location.href);
+const isRedirected = !!currentUrl.searchParams.get('r');
+
+if (!isRedirected) {
+  fetch(window.location.href, {
+    method: 'HEAD',
+  }).then((response) => {
+    if (response.status !== 404) return;
+
+    const redirectUrl = new URL([window.location.origin, '/posts', window.location.pathname].join(''));
+    redirectUrl.searchParams.set('r', 1);
+    window.location.href = redirectUrl.href;
+  });
+}

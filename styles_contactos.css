@@ -166,7 +166,7 @@ form{
   }
 }
 
-.active {
-  background-color: deeppink;
+.visited {
+  background-color: #aae491;
 }
 

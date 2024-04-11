@@ -198,16 +198,26 @@ function changeEmentas() {
 
 // *********************************************************************************************
 // *********************************************************************************************
-//Function Contactos submenu da página de Contactos (menu com morada, tel e mapa google)
+//Function Submenus das páginas de Contactos e das Ementas
 
 function mudarMenu(id) {       
-    var contacto = document.getElementsByClassName('contacto');
+    var submenu = document.getElementsByClassName('submenu');
 
-    for (jar of contacto){
+    for (jar of submenu){
         jar.style.display="none";
     }
 
     document.getElementById(id).style.display="block"; 
+
+    //Este código muda a cor do botão selecionado nos menus para dar relevância
+  const btnElList = document.querySelectorAll('.btn');
+
+  btnElList.forEach(btnEl => {
+    btnEl.addEventListener('click', () => {
+        document.querySelector('.active')?.classList.remove('active');
+        btnEl.classList.add('active');
+    });
+  });
 
 };
 
@@ -223,3 +233,5 @@ $(window).scroll(function () {
       $("#navbar").removeClass("shadow-sm").css("top", "-100px");
     }
   });
+
+ 

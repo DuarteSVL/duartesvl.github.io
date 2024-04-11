@@ -1,25 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-pt">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Área Desportiva e Recreativa</title>
+    <meta charset="utf-8" />
+    <title>Área Desportiva e Recreativa - CCR CCR</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
 
-    <!--BOOTSTRAP-->
+    <!-- Favicon -->
+    <link rel="icon" type="images" href="imagens/logo2.png" />
+
+<!--BOOTSTRAP -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!--Icons-->
+    <!--BOOTSTRAP Icons-->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-
-    <!--BOOTSTRAP JS-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-
     <!--FONTAWESOME-->
     <link
       rel="stylesheet"
@@ -35,104 +34,71 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
-    <link rel="stylesheet" href="styles_valencia.css" />
+    <!--Owl Carousel-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate.css/animate.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/css/main.min.css" rel="stylesheet" />
+
+    <!-- Stylesheet -->
+    <link href="css/styles_valencia.css" rel="stylesheet" />
   </head>
 
   <body>
-    <!--FALTA ADD NAVBAR-->
-    <nav class="navbar navbar-expand-lg bg-light sticky-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+    <div class="container-xxl bg-white p-0">
+      <!-- Spinner Start -->
+      <div
+        id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+      >
+        <div
+          class="spinner-border text-primary"
+          style="width: 3rem; height: 3rem"
+          role="status"
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
+          <span class="sr-only">Loading...</span>
         </div>
       </div>
-    </nav>
-    <!--FALTA ADD NAVBAR-->
+      <!-- Spinner End -->
 
-    <div class="container">
-      <div class="container">
-        <!--BREADCRUMBS-->
-        <div class="row">
-          <div class="col">
-            <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Início</a></li>
-                <li class="breadcrumb-item"><a href="#">Valências</a></li>
-                <li class="breadcrumb-item active" aria-current="page">
-                  Área Desportiva e Recreativa
-                </li>
-              </ol>
-            </nav>
-          </div>
-        </div>
-        <!--FIM BREADCRUMBS-->
 
-        <!--Titulo-->
-        <div class="row">
-          <div class="d-none d-md-block col-md-4 col-lg-3"></div>
-          <div class="col-12 col-md-8 col-lg-9 text-center">
-            <h1>Área Desportiva e Recreativa</h1>
-          </div>
+      <!-- Page Header End -->
+      <div class="container-xxl py-5 page-header position-relative mb-5">
+        <div class="container py-5">
+          <h1 class="display-2 text-white animated slideInDown mb-4">
+            Área Desportiva e Recreativa
+          </h1>
+          <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Início</a></li>
+              <li class="breadcrumb-item text-white active" aria-current="page">
+                Área Desportiva e Recreativa
+              </li>
+            </ol>
+          </nav>
         </div>
-        <!--FIM Titulo-->
       </div>
+      <!-- Page Header End -->
 
-      <!--Container sidenav e textos-->
-      <div class="container">
+      <!--Container sidenav e conteudo-->
+      <div class="container position-relative">
         <div class="row">
           <!--Sidenav (table of contents)-->
           <div class="d-none d-md-block col-md-4 col-lg-3">
@@ -168,255 +134,136 @@
                   <a href="#inscricoes-desporto">
                     <li class="toc-item">Inscrições</li>
                   </a>
-                  <a href="#contactos">
-                    <li class="toc-item">Contactos</li>
-                  </a>
                 </ul>
               </div>
             </div>
           </div>
           <!--FIM Sidenav (table of contents)-->
 
-          <!--Conteúdo/textos da pagina-->
+          <!--Conteúdo/textos da pagina Start-->
           <div class="col-12 col-md-8 col-lg-9">
-            <!--Col do conteúdo todo-->
             <div class="row">
-              <!--secç
-              ao sobre-->
-              <div class="col-12">
+              <!-- Sobre Start -->
+              <div class="col mx-auto mb-5">
                 <section id="sobre">
-                  <p>
-                    As nossas classes desportivas são formadas por crianças,
-                    jovens e adultos e visam promover a autoestima e o
-                    positivismo dos utentes da instituição.
-                  </p>
-                  <p>
-                    O CCR CCR tem classes de formação geral e de competição,
-                    participando em diversos eventos de nível nacional.
-                  </p>
+                  <h1 class="mb-3 text-center">Sobre</h1>
                 </section>
-              </div>
-              <!--fim secç
-              ao sobre-->
+                <p class="mb-4">
+                  As nossas classes desportivas são formadas por crianças,
+                  jovens e adultos e visam promover a autoestima e o positivismo
+                  dos utentes da instituição.
+                </p>
 
-              <!--secção Instalações-->
-              <div class="col-12">
-                <div class="row">
-                  <div class="col-12 text-center">
-                    <h5>Instalações</h5>
-                  </div>
-                  <!-- Swiper -->
-                  <div class="col">
-                    <div class="swiper mySwiper">
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                <p>
+                  O CCR CCR tem classes de formação geral e de competição,
+                  participando em diversos eventos de nível nacional.
+                </p>
+              </div>
+              <!--Galeria de fotos start-->
+              <!--Galeria de fotos end-->
+
+              <!--Tabela de fotos start-->
+              <!--Tabela de fotos end-->
+
+              <!--Instalações start-->
+              <!--Instalações end-->
+
+              <!-- Sobre End -->
+
+              <!-- oferta desportiva Start -->
+              <div class="container-xxl py-5">
+                <div class="container">
+                  <div class="bg-light rounded">
+                    <div class="row g-0">
+                      <div class="col-lg-6" style="min-height: 400px">
+                        <div class="position-relative h-100">
                           <img
-                            src="imagens/DesportoRecreativa/foto01.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="swiper-slide">
-                          <img
-                            src="imagens/DesportoRecreativa/foto02.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="swiper-slide">
-                          <img
-                            src="imagens/DesportoRecreativa/foto03.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="swiper-slide">
-                          <img
-                            src="imagens/DesportoRecreativa/foto04.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="swiper-slide">
-                          <img
-                            src="imagens/DesportoRecreativa/foto05.jpg"
-                            alt=""
+                            class="position-absolute w-100 h-100 rounded"
+                            src=""
+                            style="object-fit: cover"
                           />
                         </div>
                       </div>
-                      <div class="swiper-button-next"></div>
-                      <div class="swiper-button-prev"></div>
-                      <div class="swiper-pagination"></div>
-                    </div>
-
-                    <!-- The Modal -->
-                    <div id="myModal" class="modal">
-                      <span class="close">&times;</span>
-                      <img class="modal-content" id="img01" />
-                      <span class="prev" id="prevBtn">&#10094;</span>
-                      <span class="next" id="nextBtn">&#10095;</span>
-                    </div>
-                  </div>
-                  <!--fim swiper-->
-                </div>
-              </div>
-              <!--Fim secção Instalações-->
-
-              <!--Secção oferta desportiva-->
-              <div class="col-12">
-                <div class="row">
-                    <div class="col-12 text-center">
-                     <section id="oferta-desportiva">  <h2>Oferta Desportiva</h2>
-                      <p>
-                        Consulte aqui os horários e oferta desportiva
-                        (brevemente disponível)
-                      </p>
-                      <a href="" target="_blank"
-                        ><button class="btnPdf" disabled>
-                          Ver oferta
-                          <i
-                            class="fa-solid fa-arrow-up-right-from-square"
-                          ></i></button
-                      ></a>
-                  </section>
-                </div>
-                </div>
-              </div>
-              <!--Fim Secção oferta desportiva-->
-
-              <!--Secção academia ginastica-->
-              <div class="col-12">
-                <section id="academia-ginastica">
-                  <h2 class="text-center">Academia de Ginástica</h2>
-                  <div>
-                    <p>
-                      A Ginástica Rítmica é um desporto essencialmente feminino
-                      onde se desenvolve a Beleza e a Elegância do movimento
-                      corporal e a sua Musicalidade, em simultâneo com as suas
-                      capacidades físicas de eleição, tais como, a flexibilidade
-                      e a coordenação motora.
-                    </p>
-
-                    <p>
-                      As apresentações de Ginástica Rítmica pod em ser
-                      realizadas em conjuntos compostos por cinco ginastas ou
-                      individualmente, com as mãos livres ou com a presença dos
-                      aparelhos específicos da modalidade, que são a corda, a
-                      bola, o arco, a fita e as maças.
-                    </p>
-
-                    <p>
-                      Esta modalidade, por ser uma atividade rica em movimentos,
-                      propiciando a criação e exploração de gestos,
-                      acompanhamento musical e manuseio de aparelhos, por
-                      exemplo, contribui bastante para o desenvolvimento dos
-                      aspetos psicomotores, principalmente, nas crianças. É, sem
-                      dúvida, uma modalidade que facilita o desenvolvimento
-                      global, constituído pelos campos cognitivo, afetivo,
-                      psicomotor e social.
-                    </p>
-                  </div>
-                  <div>
-                    <!-- Swiper -->
-                    <div class="col">
-                      <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <img
-                              src="imagens/DesportoRecreativa/foto01.jpg"
-                              alt=""
-                            />
-                          </div>
-                          <div class="swiper-slide">
-                            <img
-                              src="imagens/DesportoRecreativa/foto02.jpg"
-                              alt=""
-                            />
-                          </div>
-                          <div class="swiper-slide">
-                            <img
-                              src="imagens/DesportoRecreativa/foto03.jpg"
-                              alt=""
-                            />
-                          </div>
-                          <div class="swiper-slide">
-                            <img
-                              src="imagens/DesportoRecreativa/foto04.jpg"
-                              alt=""
-                            />
-                          </div>
-                          <div class="swiper-slide">
-                            <img
-                              src="imagens/DesportoRecreativa/foto05.jpg"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
-                      </div>
-
-                      <!-- The Modal -->
-                      <div id="myModal" class="modal">
-                        <span class="close">&times;</span>
-                        <img class="modal-content" id="img01" />
-                        <span class="prev" id="prevBtn">&#10094;</span>
-                        <span class="next" id="nextBtn">&#10095;</span>
-                      </div>
-                    </div>
-                    <!--fim swiper-->
-                  </div>
-                  <!--Secção reencaminhar para horarios da academia-->
-                  <div class="col">
-                    <div class="row">
-                      <div class="col-lg-1"></div>
-                      <div class="col col-lg-10">
+                      <div class="col-lg-6">
                         <div
-                          class="row align-items-center text-center consultar-horarios-card"
+                          class="h-100 d-flex flex-column justify-content-center p-5"
                         >
-                          <div class="col-12 col-lg-6">
-                            <h6>Consultar horários da Academia</h6>
-                          </div>
-                          <div class="col-12 col-lg-6">
-                            <!--BOTÃO horarios FALTA O PDF-->
-                            <a href="#"
-                              ><button id="btnHorarios">Ver horários</button></a
-                            >
-                          </div>
+                          <section id="oferta-desportiva">
+                            <h1 class="mb-4">Oferta Desportiva</h1>
+                          </section>
+                          <p class="mb-4">
+                            Consulte aqui os horários e oferta desportiva
+                            (brevemente disponível)
+                          </p>
+                          <a
+                            class="btn btn-outline-primary py-3 px-5 disabled"
+                            href=""
+                            >Ver oferta
+                            <i
+                              class="fa-solid fa-arrow-up-right-from-square"
+                            ></i
+                          ></a>
                         </div>
-                        <div class="col-lg-1"></div>
                       </div>
                     </div>
                   </div>
-                </section>
+                </div>
               </div>
-              <!--FIM Secção reencaminhar para horarios da academia-->
-            </div>
-            <!--Fim Secção academia ginastica-->
+              <!-- oferta desportiva End -->
 
-            <!--Secção academia de danças-->
-            <div class="col-12">
-              <section id="academia-dancas">
-                <h2 class="text-center">Academia de Danças</h2>
+
+            <!-- Academia de Ginástica Start -->
+                <div class="col-12 mx-auto py-5"> <section id="academia-ginastica"><h1 class="mb-3 text-center">Academia de Ginástica</h1></section>
+                <p>A Ginástica Rítmica é um desporto essencialmente feminino onde se desenvolve a Beleza e a Elegância do movimento corporal e a sua Musicalidade, em simultâneo com as suas capacidades físicas de eleição, tais como, a flexibilidade e a coordenação motora.</p>
+                <p>As apresentações de Ginástica Rítmica pod em ser realizadas em conjuntos compostos por cinco ginastas ou individualmente, com as mãos livres ou com a presença dos aparelhos específicos da modalidade, que são a corda, a bola, o arco, a fita e as maças.</p>
+                <p class="mb-4">
+                 Esta modalidade, por ser uma atividade rica em movimentos, propiciando a criação e exploração de gestos, acompanhamento musical e manuseio de aparelhos, por exemplo, contribui bastante para o desenvolvimento dos aspetos psicomotores, principalmente, nas crianças. É, sem dúvida, uma modalidade que facilita o desenvolvimento global, constituído pelos campos cognitivo, afetivo, psicomotor e social.
+                </p>
+                
+
+                <!--Galeria start-->
+                <!--Galeria end-->
+
+                <!--Horarios Card Start -->
+                <div class="col-12">
+                  <div class="bg-light rounded">
+                  <div class="row g-0">
+                   
+                    <div class="col-lg-6 mx-auto">
+                      <div
+                        class="h-100 d-flex flex-column p-4"
+                      >
+                        <h4 class="mb-4 text-center">Consultar horários da Academia</h4>
+                        <a class="btn btn-primary py-3 px-5" href="">Ver horários  <i
+                            class="fa-solid fa-arrow-up-right-from-square"
+                          ></i></a></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <!-- Horarios Card End -->
+                </div>
+              <!-- Academia de Ginástica End -->
+
+
+                <!-- Academia de Danças Start -->
+                <div class="col-12 mx-auto py-5"> <section id="academia-dancas"><h1 class="mb-3 text-center">Academia de Danças</h1></section>
                 <!--Secção CITAÇÃO-->
-                <div class="col">
-                  <div class="row align-items-center quote-card">
-                    <div class="col-lg-1"></div>
-                    <div class="col col-lg-10">
-                      <p>
+                <div class="col-12 mb-4">
+                  <div class="row align-items-center ">
+                   <div class="col-12 p-4 mb-4"><div class="bg-light rounded p-4">
                         <q>
                           A dança tradicional portuguesa é cultura, signo e
                           significado, é passado e é presente, é sem dúvida um
                           património social, tradicional português que merece
                           ser conhecido, vivido e divulgado</q
                         >
-                        (Moura, 1998, pg.143)
+                        <p> - (Moura, 1998, pg.143)
                       </p>
                     </div>
-                    <div class="col-lg-1"></div>
-                  </div>
-                </div>
-                <!--fIM Secção CITAÇÃO-->
-               <div class="col">
-                <div class="row">
-                  <div class="col-12 col-lg-6">
+                    </div>
+                  <div class="col-12 col-lg-12 mb-4">
                     <p>Tem por objetivos:
                       <ul>
                         <li>garantir uma base de formação técnica assente numa manopla de passos, movimentos e deslocamentos;</li>
@@ -428,61 +275,51 @@
                       </ul>
                     </p>
                   </div>
-                  <div class="col-12 col-lg-6">
-                    <img src="" alt=""><!--FALTA POR IMAGEM-->
-                  </div>
-                </div>
-               </div>
-                                 <!--Secção reencaminhar para horarios da academia-->
-                  <div class="col">
-                    <div class="row">
-                      <div class="col-lg-1"></div>
-                      <div class="col col-lg-10">
-                        <div
-                          class="row align-items-center text-center consultar-horarios-card"
-                        >
-                          <div class="col-12 col-lg-6">
-                            <h6>Consultar horários da Academia</h6>
-                          </div>
-                          <div class="col-12 col-lg-6">
-                            <!--BOTÃO horarios FALTA O PDF-->
-                            <a href="#"
-                              ><button id="btnHorarios">Ver horários</button></a
-                            >
-                          </div>
-                        </div>
-                        <div class="col-lg-1"></div>
+               
+
+                  <!--Horarios Card Start -->
+                <div class="col-12">
+                  <div class="bg-light rounded">
+                  <div class="row g-0">
+                   
+                    <div class="col-lg-6 mx-auto">
+                      <div
+                        class="h-100 d-flex flex-column p-4"
+                      >
+                        <h4 class="mb-4 text-center">Consultar horários da Academia</h4>
+                        <a class="btn btn-primary py-3 px-5" href="">Ver horários  <i
+                            class="fa-solid fa-arrow-up-right-from-square"
+                          ></i></a></a>
                       </div>
                     </div>
                   </div>
-              </section>
-            </div>
-            <!--Fim Secção academia de danças-->
-
-            <!--Secção academia de judo-->
-            <div class="col-12">
-              <section id="academia-judo">
-                <h2 class="text-center">Academia de Judo</h2>
-                <!--Secção CITAÇÃO-->
-                <div class="col">
-                  <div class="row quote-card">
-                    <div class="col-lg-1"></div>
-                    <div class="col col-lg-10">
-                      <p>
-                        <q>
-                         O Judo é o caminho para o uso ideal da força espiritual e física. Esse treino, através da prática da defesa e do ataque aperfeiçoa o corpo e o espírito entrando na moral. Assim, pelo próprio aperfeiçoamento torna-se útil à humanidade que é o objetivo capital do Judo.</q
-                        >
-                         - Jigoro Kano (1860 - 1938)
-                      </p>
-                    </div>
-                    <div class="col-lg-1"></div>
-                  </div>
                 </div>
-                <!--fIM Secção CITAÇÃO-->
-               <div class="col">
-                <div class="row">
-                  <div class="col-12 col-lg-6"">
-                    <p>
+              </div>
+                <!-- Horarios Card End -->
+              <!-- Academia de Ginástica End -->
+               </div>
+                </div>
+                <!-- Horarios Card End -->
+
+            </div>
+             <!-- Academia de Danças End -->
+
+               <!-- Academia de judo Start -->
+                <div class="col-12 mx-auto py-5"> <section id="academia-judo"><h1 class="mb-3 text-center">Academia de Judo</h1></section>
+                <!--Secção CITAÇÃO-->
+                <div class="col-12 mb-4">
+                  
+                  <div class="row align-items-center ">
+                    <div class="col-12 p-4 mb-4"><div class="bg-light rounded p-4">
+                        <q>
+                        O Judo é o caminho para o uso ideal da força espiritual e física. Esse treino, através da prática da defesa e do ataque aperfeiçoa o corpo e o espírito entrando na moral. Assim, pelo próprio aperfeiçoamento torna-se útil à humanidade que é o objetivo capital do Judo</q
+                        > - Jigoro Kano (1860 - 1938)
+                      </p>
+                      </div>
+                    </div>
+                     
+                  <div class="col-12 col-lg-12 mb-4">
+                     <p>
                       O Judo é uma modalidade desportiva olímpica com origem numa antiga disciplina de combate praticada no Japão, o Ju-Jitsu. Depois de retirar os movimentos técnicos mais perigosos, o Mestre Jigoro Kano criou um método inovador e abrangente de ensino, assente em dois princípios, prosperidade mútua e melhor emprego da energia.</p>
                       <p>
                       A este método foi dado o nome de JUDO (Caminho da Suavidade).
@@ -492,80 +329,71 @@
                     </p>
                     <p>Possuindo um património muito rico e uma grande variabilidade de situações motoras ímpares, promove e estimula o aumento da coordenação motora geral.</p>
                   </div>
-                  <div class="col-12 col-lg-6"">
-                    <img src="" alt=""><!--FALTA POR IMAGEM-->
-                  </div>
-                </div>
-               </div>
-                                 <!--Secção reencaminhar para horarios da academia-->
-                  <div class="col">
-                    <div class="row">
-                      <div class="col-lg-1"></div>
-                      <div class="col col-lg-10">
-                        <div
-                          class="row align-items-center text-center consultar-horarios-card"
-                        >
-                          <div class="col-12 col-lg-6">
-                            <h6>Consultar horários da Academia</h6>
-                          </div>
-                          <div class="col-12 col-lg-6">
-                            <!--BOTÃO horarios FALTA O PDF-->
-                            <a href="#"
-                              ><button id="btnHorarios">Ver horários</button></a
-                            >
-                          </div>
-                        </div>
-                        <div class="col-lg-1"></div>
+
+                <!--Horarios Card Start -->
+                <div class="col-12 mb-5">
+                  <div class="bg-light rounded">
+                  <div class="row g-0">
+                   
+                    <div class="col-lg-6 mx-auto">
+                      <div
+                        class="h-100 d-flex flex-column p-4"
+                      >
+                        <h4 class="mb-4 text-center">Consultar horários da Academia</h4>
+                        <a class="btn btn-primary py-3 px-5" href="">Ver horários  <i
+                            class="fa-solid fa-arrow-up-right-from-square"
+                          ></i></a></a>
                       </div>
                     </div>
                   </div>
-              </section>
-            </div>
-            <!--Fim Secção academia de judo-->
-
-            <!--Secção inscrições-->
-              <div class="col-12">
-                <div class="row">
-                    <div class="col-12 text-center">
-                      <section id="inscricoes-desporto">
-                      <h2>Inscrições</h2>
-                      <p>
-                      Inscreva-se no formulário abaixo:
-                      </p>
-
-                      <!--FALTA FORM AQUI-->
-
-
-                      <a href="" target="_blank"
-                        ><button class="btnPdf" disabled>
-                          Obter folha de inscrição
-                          <i
-                            class="fa-solid fa-arrow-up-right-from-square"
-                          ></i></button
-                      ></a>
-                  </section>  
-                </div>
                 </div>
               </div>
-            <!--Fim secção inscrições-->
-            
-            <!--Secção contactos-->
-            <div class="col-12 text-center">
-              <section id="contactos">
-                <h2>Contactos</h2>
-                <p>Clique abaixo para mais informações e contactos</p>
-                <a href=""
-                  ><button class="btnPrimary">Ir para contactos</button></a
-                >
-              </section>
-            </div>
-            <!--Fim Secção contactos-->
+                <!-- Horarios Card End -->
+                </div>
+                 </div>
+                  </div>
+             <!-- Academia de judoEnd -->
+
+            <!--Inscrições form start-->
+            inscriçoes form
+             <!--Inscrições form end-->
+
           </div>
-          <!--FIM Conteúdo/textos da pagina-->
-        </div>
+          </div>
+          <!--Conteúdo/textos da pagina End-->
+
       </div>
+  </div>
+
+
+      <!-- Back to Top -->
+      <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+        ><i class="bi bi-arrow-up"></i
+      ></a>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript Libraries -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!--Javascript-->
     <script src="app_valencia.js"></script>
   </body>
 </html>

@@ -122,6 +122,10 @@
     opacity: 1;
 }
 
+/*** Formulário ***/
+.bg-form {
+    background-color: #FFF3ED; /* Cor de fundo desejada */
+}
 
 /*** Button ***/
 .btn {
@@ -511,6 +515,10 @@ q {
       &:hover {
         color: #FF874F; /* Muda a cor do link quando passa o mouse por cima */
       }
+    }
+
+    .accordion-item .accordion-body ul {
+        text-align: justify;
     }
   
     .accordion-button {

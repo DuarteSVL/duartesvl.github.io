@@ -26,31 +26,18 @@
     // Botão "Voltar ao Topo" - torna o botão visível quando o utilizador rola a página para baixo e regressa ao topo quando clicado
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
-            $('.back-to-top').fadeIn('slow');
+            $('.back-to-top').fadeIn();
         } else {
-            $('.back-to-top').fadeOut('slow');
+            $('.back-to-top').fadeOut();
         }
     });
+    
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({scrollTop: 0}, 500); // Alteração para 500 milissegundos (0.5 segundos)
         return false;
     });
 
-    // Carrossel do Cabeçalho - exibe um carrossel de imagens no cabeçalho
-    $(".header-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1500,
-        items: 1,
-        dots: true,
-        loop: true,
-        nav: true,
-        navText: [
-            '<i class="bi bi-chevron-left"></i>',
-            '<i class="bi bi-chevron-right"></i>'
-        ]
-    });
-
-    // Carrossel de Testemunhos - exibe testemunhos num carrossel
+    // Carrossel de noticias -
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1000,

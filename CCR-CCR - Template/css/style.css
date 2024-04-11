@@ -495,16 +495,17 @@ q {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFFFFF;
+    color: white;
     background: var(--primary);
-    border-radius: 45px;
+    border-radius: 50%; /* Alterado para 50% para criar um círculo */
+    background-color: #FF874F;
     font-size: 20px;
     transition: .5s;
 }
 
 .testimonial-carousel .owl-nav .owl-prev:hover,
 .testimonial-carousel .owl-nav .owl-next:hover {
-    background: var(--dark);
+    background: #993100;
 }
 
 

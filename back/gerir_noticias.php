@@ -1,4 +1,3 @@
-
 <?php
 session_start();
 ?>
@@ -49,10 +48,10 @@ session_start();
 
 
 
-        
+
 
         <!-- Display success message if set -->
-        <?php if(isset($_SESSION['success'])): ?>
+        <?php if (isset($_SESSION['success'])): ?>
             <div class="alert alert-success" role="alert">
                 <?php echo $_SESSION['success']; ?>
             </div>
@@ -60,14 +59,14 @@ session_start();
         <?php endif; ?>
 
         <!-- Display error message if set -->
-        <?php if(isset($_SESSION['error'])): ?>
+        <?php if (isset($_SESSION['error'])): ?>
             <div class="alert alert-danger" role="alert">
                 <?php echo $_SESSION['error']; ?>
             </div>
             <?php unset($_SESSION['error']); ?>
         <?php endif; ?>
 
-        
+
 
 
 
@@ -85,10 +84,10 @@ session_start();
                 </tr>
             </thead>
             <tbody>
-                
-<?php
 
-include "db_conn.php";
+                <?php
+
+                include "db_conn.php";
 
 
                 if (isset($_GET['search'])) {

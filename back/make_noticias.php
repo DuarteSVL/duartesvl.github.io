@@ -93,7 +93,7 @@ if (!$result) {
                         echo '<div class="col-md-4 mb-4">';
                         echo '<div class="card h-100">';
                         // Imagem
-                        echo '<img class="card-img-top" src="' . '../img/' . $row['imagem'] . '" alt="Card image cap">';
+                        echo '<img class="card-img-top" src="' . '../img_noticia/' . $row['imagem'] . '" alt="Card image cap">';
                         echo '<div class="card-body">';
                         echo '<h5 class="card-title">';
                         // Título

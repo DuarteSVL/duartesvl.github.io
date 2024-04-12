@@ -209,7 +209,7 @@ function mudarMenu(id) {
 
     document.getElementById(id).style.display="block"; 
 
-    //Este código muda a cor do botão selecionado nos menus para dar relevância
+    //Este código muda a cor do botão selecionado nos submenus para dar relevância
  const btnElList = document.querySelectorAll('.btn');
 
  const currentBtn = document.querySelector('.btn');

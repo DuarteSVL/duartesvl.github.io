@@ -59,6 +59,5 @@
         }
     });
 
-
 })(jQuery); // Fim do código, passando jQuery como parâmetro para a função anónima
 

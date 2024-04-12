@@ -523,9 +523,8 @@ q {
   /*Botão pdf desativado*/
   .btnPdf:disabled {
     background-color: none;
-    color: gray;
+    color: #FF874F !important;
     border-radius: 15px;
-    border: solid 1.5px gray;
     height: 3.5rem;
     width: 16.5rem;
   }

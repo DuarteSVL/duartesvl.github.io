@@ -146,13 +146,13 @@ form{
         background-color: #aae491;
     }
 
-    & :focus, :active{
+   /* & :focus, :active{
       background-color: aqua;
-    }
+    } */
 }
 
 
-.contacto{
+.submenu{
   background-color: #aae491;
   border-radius: 15px;
   padding: 1rem;
@@ -166,5 +166,7 @@ form{
   }
 }
 
-
+.visited {
+  background-color: #aae491;
+}
 

@@ -40,12 +40,6 @@
   }
 
 
-:root {
-    --primary: #02BAF2;
-    --light: #FFF5F3;
-    --dark: #103741;
-}
-
 .back-to-top {
     position: fixed;
     display: none;
@@ -122,6 +116,10 @@
     opacity: 1;
 }
 
+/*** Formulário ***/
+.bg-form {
+    background-color: #FFF3ED; /* Cor de fundo desejada */
+}
 
 /*** Button ***/
 .btn {
@@ -169,6 +167,40 @@
     font-weight: normal;
     border-radius: 50px;
 }
+
+.btnValencias{
+    border-color: #FF874F;
+    color: #FF874F;
+    
+    &:hover{
+        background-color: #FF874F;
+        color: #fff;
+    }
+}
+
+/*** Vantagens ***/
+.bgVantagens{
+    background-color: #FF874F;
+    margin-bottom: 50px;
+}
+
+/* Card consultar ementas */
+.consultar-ementas-card {
+    & .imgEmentasCard {
+      @media (max-width: 992px) {
+        min-height: 200px;
+      }
+      @media (min-width: 992px) {
+        min-height: 300px;
+      }
+    }
+    & h4 {
+      @media (max-width: 992px) {
+        text-align: center;
+      }
+    }
+  }
+
 
 
 /*** Heading ***/
@@ -303,8 +335,6 @@ q {
     color: rgba(255, 255, 255, .5);
 }
 
-
-
 /*** Facility ***/
 .facility-item .facility-icon {
     position: relative;
@@ -419,8 +449,6 @@ q {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: #FFFFFF;
-    border: 17px solid var(--light);
     border-radius: 250px;
     transition: .5s;
 }
@@ -430,7 +458,7 @@ q {
 }
 
 
-/*** Testimonial ***/
+/*** Noticias Slider ***/
 .testimonial-carousel {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -467,17 +495,19 @@ q {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFFFFF;
+    color: white;
     background: var(--primary);
-    border-radius: 45px;
+    border-radius: 50%; /* Alterado para 50% para criar um círculo */
+    background-color: #FF874F;
     font-size: 20px;
     transition: .5s;
 }
 
 .testimonial-carousel .owl-nav .owl-prev:hover,
 .testimonial-carousel .owl-nav .owl-next:hover {
-    background: var(--dark);
+    background: #993100;
 }
+
 
 
 /*Botão pdf*/
@@ -511,6 +541,10 @@ q {
       &:hover {
         color: #FF874F; /* Muda a cor do link quando passa o mouse por cima */
       }
+    }
+
+    .accordion-item .accordion-body ul {
+        text-align: justify;
     }
   
     .accordion-button {

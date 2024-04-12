@@ -84,7 +84,7 @@ if (isset($_GET['id'])) {
     <!-- Imagem -->
     <div class="border col-md-4 float-md-end mb-3 mx-auto p-3" id="imgNoticia">
       <img 
-      src="../img/<?php echo $imagem; ?>" 
+      src="../img_noticia<?php echo $imagem; ?>" 
       class="img-fluid" alt="">
     </div>
 

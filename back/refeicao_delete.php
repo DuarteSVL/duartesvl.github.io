@@ -3,13 +3,8 @@
 if ( isset($_GET["id"])) {
     $id = $_GET ["id"];
 
-$servidor = "localhost";
-$baseDados = "ementas";
-$userBaseDados = "root";
-$passwordBasedados = "";
-$ligacaoBD =
-    mysqli_connect($servidor, $userBaseDados, $passwordBasedados, $baseDados)
-    or die("ERRO no acesso à DB");
+    include "db_conn.php";
+
 
 $sql = "DELETE FROM refeicao WHERE id_refeicao = $id";
 $ligacaoBD->query($sql);

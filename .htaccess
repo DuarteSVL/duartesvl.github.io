@@ -1,5 +1,5 @@
 
 
 Options -Indexes
-ErrorDocument 404 /back/back/error.php
-ErrorDocument 403 /back/back/error.php
+ErrorDocument 404 /back/error.php
+ErrorDocument 403 /back/error.php

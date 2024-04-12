@@ -36,11 +36,8 @@
                 <td>
                     <select name="teste">
                         <?php
-                        $servidor = "localhost";
-                        $baseDados = "ementas";
-                        $userBaseDados = "root";
-                        $passwordBasedados = "";
-                        $ligacaoBD = mysqli_connect($servidor, $userBaseDados, $passwordBasedados, $baseDados) or die("ERRO no acesso à DB");
+                        include "db_conn.php";
+
 
                         // Query to fetch data from the database
                         $sql = "SELECT * FROM refeicao WHERE tipo = 'sopa' ORDER BY nome ASC";
@@ -81,11 +78,8 @@
                 <td>
                 <select name="teste">
                         <?php
-                        $servidor = "localhost";
-                        $baseDados = "ementas";
-                        $userBaseDados = "root";
-                        $passwordBasedados = "";
-                        $ligacaoBD = mysqli_connect($servidor, $userBaseDados, $passwordBasedados, $baseDados) or die("ERRO no acesso à DB");
+                        include "db_conn.php";
+
 
                         // Query to fetch data from the database
                         $sql = "SELECT * FROM refeicao WHERE tipo = 'prato' ORDER BY nome ASC";

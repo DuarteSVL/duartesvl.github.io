@@ -85,12 +85,11 @@ session_start();
                 </tr>
             </thead>
             <tbody>
-                <?php
-                $servidor = "localhost";
-                $baseDados = "ementas";
-                $userBaseDados = "root";
-                $passwordBasedados = "";
-                $ligacaoBD = mysqli_connect($servidor, $userBaseDados, $passwordBasedados, $baseDados) or die("ERRO no acesso à DB");
+                
+<?php
+
+include "db_conn.php";
+
 
                 if (isset($_GET['search'])) {
                     $filtervalues = $_GET['search'];

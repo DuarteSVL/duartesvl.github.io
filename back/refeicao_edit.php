@@ -8,13 +8,11 @@ $descricao = "";
 $errorMessage = "";
 $successMessage = "";
 
-$servidor = "localhost";
-$baseDados = "ementas";
-$userBaseDados = "root";
-$passwordBasedados = "";
-$ligacaoBD =
-    mysqli_connect($servidor, $userBaseDados, $passwordBasedados, $baseDados)
-    or die("ERRO no acesso à DB");
+
+
+include "db_conn.php";
+
+
 
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 

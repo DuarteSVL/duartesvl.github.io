@@ -575,15 +575,82 @@ q {
       background-color: #FFF3ED !important;
     }
   }
+
+  /*Carousel insatalações*/
+/*Carousel Container Styles */
+.instalacao-carousel {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+   
+  @media (min-width: 576px) {
+    .instalacao-carousel {
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+  }
+   
+  /* Owl Carousel Item Styles */
+  .instalacao-item {
+    /* altura e largura fixa para cada carousel item */
+    width: 100%; /* Uss 100% width preencher container */
+    height: 100%; /* Usa 100% height para ser igual ao container height */
+    /* posicionado relativo ao carousel container */
+    position: relative;
+   
+    & img {
+      /* Garantir que a imagem ocupa todo os espaço do parent(.instalacao-item) */
+      width: 100%;
+      height: 100%;
+      /* Manter o ratio */
+      object-fit: cover; /* Crop the image to cover the entire space */
+      object-position: center; /* Center the image within its container */
+    }
+  }
+   
+  /*Carousel galeria*/
+  /* Owl Carousel Navigation Styles */
+  .instalacao-carousel .owl-nav {
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+  }
+  .instalacao-carousel .owl-dots {
+    display: none;
+  }
+   
+  .instalacao-carousel .owl-nav button.owl-prev,
+  .instalacao-carousel .owl-nav button.owl-next {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 50% !important; /* Alterado para 50% para criar um círculo */
+    background-color: #ff874f;
+    font-size: 20px;
+    transition: 0.5s;
+  }
+   
+  .instalacao-carousel .owl-nav .owl-prev:hover,
+  .instalacao-carousel .owl-nav .owl-next:hover {
+    background: #993100;
+  }
   
 
 
  /**************************
     Styles navbar
 ************************* */
- 
-/* Font Ubuntu */
-@import url(https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap);
+
  
 .navbar .nav-item .nav-link {
     color: black !important;
@@ -599,6 +666,27 @@ q {
         border-radius: 15px;
         transition-duration: 0.5s;
     }
+    
+    #navTexto{
+ 
+        & h5{
+            font-weight: 600;
+            align-self: self-end;
+        }
+ 
+        & p{
+            font-family: 'Nunito Sans';
+            font-weight: 250;
+            text-align: start;
+        }
+}
+ 
+#navLogo {
+    margin-left: 2%;
+    justify-content: center;
+    width: 15%;
+    height: auto;
+}
  
     .nav-item:hover {
         background-color: #FEE234;
@@ -705,6 +793,7 @@ q {
  
 footer {
     background-color: #FEF4AE;
+    font-family: Ubuntu;
     color: black; /* Cor do texto do footer */
     width: 100%; /* Faz com que o footer ocupe 100% da largura da página */
     bottom: 0; /* Coloca o footer na parte inferior */
@@ -754,5 +843,8 @@ footer {
     font-size: 80% !important;
     font-family: Ubuntu;
   }
+
+
+
 
   

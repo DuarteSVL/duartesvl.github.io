@@ -59,5 +59,31 @@
         }
     });
 
+    //Carousel fotos instalações
+    $(document).ready(function () {
+        $(".instalacao-carousel").owlCarousel({
+        autoplay: false,
+        items: 1, // Numero de intens a mostrar
+        loop: true,
+        margin: 30, // margem entre itens
+        nav: true,
+        navText: [
+            '<i class="bi bi-arrow-left"></i>',
+            '<i class="bi bi-arrow-right"></i>',
+        ],
+        responsive: {
+            0: {
+            items: 1,
+            },
+            576: {
+            items: 2,
+            },
+            992: {
+            items: 3,
+            },
+        },
+        });
+    });
+
 })(jQuery); // Fim do código, passando jQuery como parâmetro para a função anónima
 

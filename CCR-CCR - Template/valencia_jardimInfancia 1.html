@@ -82,16 +82,19 @@
         
         <!-- Spinner End -->
 
-
-        <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top" id="navbar">
 
     <div class="container-fluid"> 
   
-        <!-- Logotipo -->
+        <!-- Logotipo e Texto -->
       <div class="col-1" id="navLogo"> 
-        <div class="collapse navbar-collapse d-flex d-none d-md-block justify-content-around">CCR CCR</div>
-        <img class="img-fluid" src="images/logo2.png" id="logo">
+        <img class="img-fluid" src="imagens/logo2.png" id="logo">
+      </div>
+
+      <div class="col d-flex d-none d-md-block" id="navTexto"> 
+        <h5>CCR-CCR</h5> 
+        <p>Centro Cultural Recreativo <br> das Crianças do Cruzeiro e Rio-Seco</p>
       </div>
   
         <!-- button menu mobile -->
@@ -100,23 +103,22 @@
     </button>
   
     <!-- Lista botões -->
-    <a class="navbar-brand" href="#"></a>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ms-auto">
+    <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+    <ul class="navbar-nav">
   
       <!-- Homepage/Início -->
     <li class="nav-item m-2">
     <a class="nav-link active" aria-current="page" href="homepage.html">Início</a>
     </li>
   
-        <!-- CCR CCR/Sobre nós  -->
+    <!-- CCR CCR/Sobre nós  -->
     <li class="nav-item dropdown m-2">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">CCR CCR</a>
-        <ul class="dropdown-menu animate slideIn">
-            <li><a class="dropdown-item" href="about.html">Sobre nós</a></li>
-            <li><a class="dropdown-item" href="voluntariado.html">Voluntariado</a></li>
-            <li><a class="dropdown-item" href="planoContigencia.html">Plano de contingência Covid-19</a></li>
-        </ul>
+    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">CCR CCR</a>
+    <ul class="dropdown-menu animate slideIn">
+    <li><a class="dropdown-item" href="about.html">Sobre nós</a></li>
+    <li><a class="dropdown-item" href="voluntariado.html">Voluntariado</a></li>
+    <li><a class="dropdown-item" href="planoContigencia.html">Plano de contingência Covid-19</a></li>
+    </ul>
     </li>
   
     <!-- Valências -->
@@ -152,17 +154,18 @@
     <a class="nav-link" href="#">Contactos</a>
     </li>
   
-      <!-- Educabiz -->
-    <li>
-      <a href="https://www.educabiz.com/" target="_blank">
-      <img src="images/educabiz 2.png" alt="" id="educabiz"></a> 
-    </li>
+     <!-- Educabiz -->
+      <div>
+        <a href="https://www.educabiz.com/" target="_blank">
+          <img src="imgs/educabiz.png" alt="" id="educabiz">
+        </a>
+      </div>
   
     </ul>
     </div>
     </div>
     </nav>
-    <nav class="d-flex d-none d-md-block" id="miniNav">CCR CCR - Centro Cultural Recreativo das Crianças do Cruzeiro e Rio-Seco</nav>
+
   <!-- Fim da Navbar -->
 
 
@@ -271,25 +274,36 @@
 
             <!--Instalações start-->
             <!-- Instalaçoes galeria Slider -->
-                <div class="owl-carousel owl-theme instalacao-carousel">
-                    <div class="instalacao-item">
-                    <img class="img-fluid" src="imagens/DesportoRecreativa/foto01.jpg" alt="" />
-                    </div>
-                    <div class="instalacao-item">
-                    <img class="img-fluid" src="imagens/DesportoRecreativa/foto02.jpg" alt="" />
-                    </div>
-                    <div class="instalacao-item">
-                    <img class="img-fluid" src="imagens/DesportoRecreativa/foto03.jpg" alt="" />
-                    </div>
-                    <div class="instalacao-item">
-                    <img class="img-fluid" src="imagens/DesportoRecreativa/foto04.jpg" alt="" />
-                    </div>
-                    <div class="instalacao-item">
-                    <img class="img-fluid" src="imagens/DesportoRecreativa/foto05.jpg" alt="" />
-                    </div>
-                </div>
-                <!--Instalações end-->
-
+            <div class="col-12">
+                <div class="row">
+                  <div class="col-12 text-center">
+                    <h5>Instalações</h5>
+                  </div>
+                      <!-- Instalaçoes galeria Slider start -->
+                      <div class="owl-carousel owl-theme instalacao-carousel">
+                  <div class="instalacao-item">
+                      <img class="img-fluid"  src="imagens/JardimInfancia/foto01.jpg" alt="">
+                  </div>
+                  <div class="instalacao-item">
+                      <img class="img-fluid" src="imagens/JardimInfancia/foto0.jpg" alt="">
+                  </div>
+                  <div class="instalacao-item">
+                      <img class="img-fluid" src="imagens/JardimInfancia/foto03.jpg" alt="">
+                  </div>
+                      <div class="instalacao-item">
+                      <img class="img-fluid"  src="imagens/JardimInfancia/foto04.jpg" alt="">
+                  </div>
+                      <div class="instalacao-item">
+                      <img class="img-fluid" src="imagens/JardimInfancia/foto05.jpg" alt="">
+                  </div>
+                 
+              </div>
+              <!-- Instalaçoes galeria Slider end -->
+  
+        </div>
+    </div>
+              <!--Fim secção Instalações-->
+              
                 <!-- Ementas Card Start -->
         <div class="container">
             <div class="row">
@@ -353,7 +367,7 @@
                                 <div class="h-100 d-flex flex-column justify-content-center p-5">
                                     <section id="plano-atividades"><h1 class="mb-4">Plano de Atividades</h1></section>
                                     <p class="mb-4">Plano anual de atividades (brevemente disponível)</p>
-                                     <a class="btn btn-outline-primary disabled py-3 px-5" style="color: #FF874F;" href="">Ver plano <i
+                                     <a class="btn btn-outline disabled py-3 px-5" style="color: #FF874F;" href="">Ver plano <i
                         class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                 </div>
                             </div>
@@ -478,41 +492,41 @@
    
 <!--Inicio do Footer-->
 <footer>
-    <div class="container d-flex">
-        <div class="row justify-content-md-center">
-        <div class="col-sm p-0 align-self-center">
-            <img class="img-fluid mx-auto" src="images/logo2.png" alt="" id="imgFoot">
-        </div>
+  <div class="container d-flex">
+      <div class="row justify-content-md-center">
+      <div class="col-sm p-0 align-self-center">
+          <img class="img-fluid mx-auto" src="images/logo2.png" alt="" id="imgFoot">
+      </div>
 
-        <div class="col-sm d-none d-md-block align-self-center" id="footText">
-            <p>CCR CCR <br>
-            Centro Cultural Recreativo das Crianças Cruzeiro Rio-Seco </p>
-        </div>
+      <div class="col-sm d-none d-md-block align-self-center text-align-center" id="footText">
+          <p>CCR CCR <br>
+          Centro Cultural Recreativo das Crianças Cruzeiro Rio-Seco </p>
+      </div>
 
-        <div class="col-sm social-icons align-self-center">
-            <div class="row d-flex mx-auto socialLink">
-            <a class="col-sm" href="https://www.facebook.com/CCRCCR.Colegio" target="_blank"><i class="fa-brands fa-square-facebook fa-2xl" id="social-icons"></i></a>
-            <a class="col-sm" href="#" target="_blank"><i class="fab fa-youtube fa-2xl" id="social-icons"></i></a>
-            <a class="col-sm" href="#" target="_blank"><i class="fab fa-square-instagram fa-2xl" id="social-icons"></i></a>
-            </div>
-        </div>
-        
+      <div class="col-sm social-icons align-self-center">
+          <div class="row d-flex mx-auto socialLink">
+          <a class="col-sm" href="https://www.facebook.com/CCRCCR.Colegio" target="_blank"><i class="fa-brands fa-square-facebook fa-2xl" id="social-icons"></i></a>
+          <a class="col-sm" href="https://www.youtube.com/@CCRCCR.Colegio" target="_blank"><i class="fab fa-youtube fa-2xl" id="social-icons"></i></a>
+          <a class="col-sm" href="https://www.instagram.com/ccrccr.colegio/" target="_blank"><i class="fab fa-square-instagram fa-2xl" id="social-icons"></i></a>
+          </div>
+      </div>
+      
 
-        <div class="col-sm align-self-center d-flex justify-content-md-center">
-            <a href="#" class="btn contact-button border border-dark rounded" id="footButton">Contacte-nos</a>
-        </div>
+      <div class="col-sm align-self-center d-flex justify-content-md-center">
+          <a href="#" class="btn contact-button border border-dark rounded" id="footButton">Contacte-nos</a>
+      </div>
 
-        <div class="col-sm align-self-center">
-            <a href="https://www.livroreclamacoes.pt/Inicio/" target="_blank">
-                <img class="img-fluid" src="images/livro_reclamacoes.png" alt=""></a>
-            
-        </div>
+      <div class="col-sm align-self-center">
+          <a class="d-flex justify-content-end" href="https://www.livroreclamacoes.pt/Inicio/" target="_blank">
+              <img class="img-fluid" src="images/livro_reclamacoes.png" alt="" style="width: 55%;"></a>
+          
+      </div>
 
-        <div class="col-sm  align-self-center" id="footText">
-            Entidade Reguladora: ISS <br>
-            Centro Distrital de Lisboa
-        </div>
-    </div>
+      <div class="col-sm  align-self-center" id="footText">
+          Entidade Reguladora: ISS <br>
+          Centro Distrital de Lisboa
+      </div>
+  </div>
 </footer>
 
 <!--Fim do Footer-->
@@ -531,6 +545,11 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
 
 
 

@@ -10,12 +10,12 @@
  
 .navbar {
     background-color: #FEF4AE;
-    font-family: Ubuntu;
-    font-weight: bold;
- 
+    
     .nav-item {
         border-radius: 15px;
         transition-duration: 0.5s;
+        font-family: Ubuntu;
+        font-weight: bold;
     }
  
     .nav-item:hover {
@@ -38,11 +38,27 @@
         display: flex;
         justify-content: end;
     }
+
+    #navTexto{
+
+        & h5{
+            font-weight: 600;
+            align-self: self-end;
+        }
+
+        & p{
+            font-family: 'Nunito Sans';
+            font-weight: 250;
+            text-align: start;
+        }
+    }
 }
  
 #navLogo {
     margin-left: 2%;
     justify-content: center;
+    width: 10%;
+    height: auto;
 }
  
 #miniNav {

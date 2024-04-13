@@ -389,3 +389,37 @@ form{
 th, td{
  text-align: center;
 }
+
+
+/* *************************
+        Styles precario
+************************* */
+.page-header-precario {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent),
+    url(../imagens/Precario/precario.jpg) center center/cover no-repeat;
+  background-size: cover;
+}
+
+  /*Lightbox galeria de imagens*/
+  .lightbox-gallery{
+    color: #000;
+    overflow-x: hidden}
+@media (max-width:767px){
+  .lightbox-gallery h2{margin-bottom:25px;padding-top:25px;font-size:24px}}
+.lightbox-gallery .photos{padding-bottom:20px}
+.lightbox-gallery .item{padding-bottom:30px}
+
+.btnPdf{
+  color: #ffffff;
+  background-color: #ff874f;
+  border: none;
+  border-radius: 15px;
+    border: solid 1.5px #993100;
+    height: 3.5rem;
+    width: 16.5rem;
+
+    &:hover{
+      transition: 0.5s;
+      background-color: #993100;
+    }
+}

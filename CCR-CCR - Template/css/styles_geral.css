@@ -305,3 +305,87 @@ q {
   bottom: 45px;
   z-index: 99;
 }
+
+
+/* *************************
+        Styles Cookies
+************************* */
+.page-header-cookies {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent),
+    url(../imagens/Geral/cookies.jpg) center center/cover no-repeat;
+  background-size: cover;
+}
+
+
+/* *************************
+        Styles contactos
+************************* */
+
+.page-header-contactos {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent),
+    url(../imagens/Contactos/contactos.jpg) center center/cover no-repeat;
+  background-size: cover;
+}
+
+/*Formulário*/
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+form{
+ width: 50%;
+}
+
+#submit{
+  color: #ffffff;
+  background-color: #ff874f;
+  border: none;
+}
+
+#submit:hover { 
+  color: white; /* Nova cor do texto ao passar o mouse */
+  background-color: #993100; /* Nova cor de fundo ao passar o mouse */
+}
+
+/* *************************
+        Styles Submenus 
+************************* */
+/*Submenus de Contactos e das Ementas*/
+#btnContactos{
+  margin: auto;
+   background-color: transparent;
+   border-radius: 10px;
+   justify-content: center;
+   border-style: ridge;
+   width: fit-content;
+
+   & :hover{
+       background-color: #FF874F;
+   }
+}
+
+.submenu{
+ background-color: #fff3ed;
+ border-radius: 15px;
+ padding: 1rem;
+
+ & iframe{
+   border-radius: 15px;
+ }
+
+ & p, h6{
+   margin-top: 2.5rem;
+ }
+}
+
+.visited {
+ background-color: #FF874F;
+}
+
+th, td{
+ text-align: center;
+}

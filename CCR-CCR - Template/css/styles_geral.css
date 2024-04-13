@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*Acrescentar cor se necessario*/
+body {
+}
+
+/* Texto */
+/*Light (300)*/
+@font-face {
+  font-family: "NunitoSans";
+  src: url("fonts/nunitoSans/NunitoSans_10pt-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+/*Regular (400)*/
+@font-face {
+  font-family: "NunitoSans";
+  src: url("fonts/nunitoSans/NunitoSans_10pt-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+/*Medium (500)*/
+@font-face {
+  font-family: "NunitoSans";
+  src: url("fonts/nunitoSans/NunitoSans_10pt-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+/*Bold (700)*/
+@font-face {
+  font-family: "NunitoSans";
+  src: url("fonts/nunitoSans/NunitoSans_10pt-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+/*Italic (400)*/
+@font-face {
+  font-family: "NunitoSans Italic";
+  src: url("fonts/nunitoSans/NunitoSans_10pt-Italic.ttf") format("truetype");
+  font-weight: 400;
+}
+
+/* Titulos h1-h6 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+}
+
+/* Texto */
+p {
+  font-family: "NunitoSans", sans-serif;
+  font-weight: 400;
+}
+
+/* Quotes */
+q {
+  font-family: "NunitoSans Italic", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/*** Spinner loading ***/
+#spinner {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
+  z-index: 99999;
+}
+
+#spinner.show {
+  transition: opacity 0.5s ease-out, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1;
+}
+
+/*** Header ***/
+/*** muda a transparência da imagem inicial ***/
+.page-header {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent),
+    url(../images/sobrenos.jpg) center center/cover no-repeat;
+  background-size: cover;
+}
+
+.breadcrumb-item {
+  color: #ffffff !important; /* Cor do texto das breadcrumbs */
+}
+
+.breadcrumb-item a {
+  color: #ff874f; /* Cor do texto dos links das breadcrumbs */
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/*Accordions de todas as páginas*/
+.accordion {
+  ul li a {
+    color: #000;
+    text-decoration: none;
+    cursor: default;
+
+    &:hover {
+      color: #ff874f; /* Muda a cor do link quando passa o mouse por cima */
+    }
+  }
+
+  .accordion-item .accordion-body ul {
+    text-align: justify;
+  }
+
+  .accordion-button {
+    background-color: none;
+
+    &.collapsed show {
+      background-color: #ff874f; /* Altera a cor do botão quando está em estado "collapsed" */
+      color: white; /* Altera a cor do texto */
+    }
+  }
+
+  &.accordion-header {
+    text-align: center;
+  }
+
+  .accordion-button:focus {
+    z-index: 3;
+    border-color: #f5f5f5 !important;
+    outline: 0;
+    box-shadow: none !important;
+  }
+
+  .accordion-button:not(.collapsed) {
+    background-color: #ff874f !important;
+    color: white;
+  }
+
+  .accordion-body {
+    background-color: #fff3ed !important;
+  }
+}
+
+/*Homepage styles*/
+/*** cards das valências ***/
+.valencias-item {
+  transition: 0.5s;
+}
+
+.valencias-item:hover {
+  margin-top: -10px;
+}
+.btnValencias {
+  border-color: #ff874f;
+  color: #ff874f;
+
+  &:hover {
+    background-color: #ff874f;
+    color: #fff;
+  }
+}
+/*** Vantagens homepage***/
+.bgVantagens {
+  background-color: #ff874f;
+  margin-bottom: 50px;
+}
+
+/*** Noticias Slider ***/
+.owl-carousel.noticias-carousel {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 576px) {
+  .owl-carousel.noticias-carousel {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+.owl-carousel.noticias-carousel .owl-item .border {
+  border: 1px dashed rgba(0, 185, 142, 0.3) !important;
+}
+
+.owl-carousel.noticias-carousel .owl-nav {
+  position: absolute;
+  width: 100%;
+  height: 45px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.owl-carousel.noticias-carousel .owl-nav .owl-prev,
+.owl-carousel.noticias-carousel .owl-nav .owl-next {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: var(--primary);
+  border-radius: 50%; /* Alterado para 50% para criar um círculo */
+  background-color: #ff874f;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.owl-carousel.noticias-carousel .owl-nav .owl-prev:hover,
+.owl-carousel.noticias-carousel .owl-nav .owl-next:hover {
+  background: #993100;
+}
+
+/* Card consultar ementas */
+.consultar-ementas-card {
+  & .imgEmentasCard {
+    @media (max-width: 992px) {
+      min-height: 200px;
+    }
+    @media (min-width: 992px) {
+      min-height: 300px;
+    }
+  }
+  & h4 {
+    @media (max-width: 992px) {
+      text-align: center;
+    }
+  }
+}
+
+/*** Botões ***/
+.btn {
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.btn .btn-primary,
+.btn-outline-primary {
+  color: #ffffff;
+  background-color: #ff874f;
+  border: none;
+}
+
+.btn-primary:hover,
+.btn-outline-primary:hover {
+  color: white; /* Nova cor do texto ao passar o mouse */
+  background-color: #993100; /* Nova cor de fundo ao passar o mouse */
+}
+
+/*** Formulário Voluntariado ***/
+.bg-form {
+  background-color: #fff3ed; /* Cor de fundo desejada */
+}
+
+/*Back to top*/
+.btn-square {
+  width: 38px;
+  height: 38px;
+}
+
+.btn-sm-square {
+  width: 32px;
+  height: 32px;
+}
+
+.btn-lg-square {
+  width: 48px;
+  height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+  border-radius: 50px;
+}
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 45px;
+  bottom: 45px;
+  z-index: 99;
+}

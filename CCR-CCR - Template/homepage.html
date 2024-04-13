@@ -17,7 +17,6 @@
 
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!--BOOTSTRAP-->
     <link
@@ -33,6 +32,15 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+      <!--Owl Carousel-->
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!--FONTAWESOME-->
     <link
@@ -189,7 +197,7 @@
                 </div>
         <!-- Título Inicial -->
 
-        <!-- Classes Start -->
+        <!-- valencias Start -->
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp">
@@ -197,7 +205,7 @@
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="classes-item">
+                    <div class="valencias-item">
                         <div class="bg-light rounded mx-auto p-3">
                             <img class="img-fluid rounded" src="images/bercario.jpg" alt="">
                         </div>
@@ -226,7 +234,7 @@
                 </div>
                     
                 <div class="col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="classes-item">
+                    <div class="valencias-item">
                         <div class="bg-light rounded mx-auto p-3">
                             <img class="img-fluid rounded" src="images/ji.jpg" alt="">
                         </div>
@@ -255,7 +263,7 @@
                 </div>
 
                 <div class="col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="classes-item">
+                    <div class="valencias-item">
                         <div class="bg-light rounded mx-auto p-3">
                             <img class="img-fluid rounded" src="images/ensinobasico.jpg" alt="">
                         </div>
@@ -284,7 +292,7 @@
                 </div>
                 
                 <div class="col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="classes-item">
+                    <div class="valencias-item">
                         <div class="bg-light rounded mx-auto p-3">
                             <img class="img-fluid rounded" src="images/centroestudos.jpg" alt="">
                         </div>
@@ -312,7 +320,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="classes-item">
+                    <div class="valencias-item">
                         <div class="bg-light rounded mx-auto p-3">
                             <img class="img-fluid rounded" src="images/desporto.jpg" alt="">
                         </div>
@@ -341,7 +349,7 @@
                 </div>
 
                 <div class="col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="classes-item">
+                    <div class="valencias-item">
                         <div class="bg-light rounded mx-auto p-3">
                             <img class="img-fluid rounded" src="images/3idade.jpg" alt="">
                         </div>
@@ -371,7 +379,7 @@
                 </div>
             </div>
         </div>
-        <!-- Classes End -->
+        <!-- valencias End -->
 
         <!-- Ementas Card Start -->
         <div class="container">
@@ -431,34 +439,40 @@
         <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
             <h1 class="mb-3"> Últimas Notícias</h1>
         </div>
-        <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-            <div class="testimonial-item bg-light rounded p-5">
-                <p class="fs-5">Vem praticar Judo no CCR CCR!</p>
-                <div class="d-flex align-items-center bg-white justify-content-center mb-3" style="height: 200px; overflow: hidden;">
-                    <img class="img-fluid" src="images/judo.jpg">
-                </div>
-                <div class="text-center">
-                    <a class="btn py-2 px-4 btnValencias" href="#">Saber mais <i class="fa fa-arrow-right ms-2"></i></a>
-                </div>
-            </div>
-
-            <div class="testimonial-item bg-light rounded p-5">
-                <p class="fs-5">A POP Dance chegou ao CCR CCR!</p>
-                <div class="d-flex align-items-center bg-white justify-content-center mb-3" style="height: 200px; overflow: hidden;">
-                    <img class="img-fluid" src="images/POP-DANCE.jpg">
-                </div>
-                <div class="text-center">
-                    <a class="btn py-2 px-4 btnValencias" href="#">Saber mais <i class="fa fa-arrow-right ms-2"></i></a>
+        <div class="owl-carousel owl-theme noticias-carousel wow fadeInUp" data-wow-delay="0.1s">
+            <div class="item">
+                <div class="noticias-item bg-light rounded p-5">
+                    <p class="fs-5">Vem praticar Judo no CCR CCR!</p>
+                    <div class="d-flex align-items-center bg-white justify-content-center mb-3" style="height: 200px; overflow: hidden;">
+                        <img class="img-fluid" src="images/judo.jpg">
+                    </div>
+                    <div class="text-center">
+                        <a class="btn py-2 px-4 btnValencias" href="#">Saber mais <i class="fa fa-arrow-right ms-2"></i></a>
+                    </div>
                 </div>
             </div>
 
-            <div class="testimonial-item bg-light rounded p-5">
-                <p class="fs-5">Início do Ano Letivo 2023/2024 – 12/09/2023</p>
-                <div class="d-flex align-items-center bg-white justify-content-center mb-3" style="height: 200px; overflow: hidden;">
-                    <img class="img-fluid" src="images/Inicio-Ano-Letivo_2023_2024.jpg">
+            <div class="item">
+                <div class="noticias-item bg-light rounded p-5">
+                    <p class="fs-5">A POP Dance chegou ao CCR CCR!</p>
+                    <div class="d-flex align-items-center bg-white justify-content-center mb-3" style="height: 200px; overflow: hidden;">
+                        <img class="img-fluid" src="images/POP-DANCE.jpg">
+                    </div>
+                    <div class="text-center">
+                        <a class="btn py-2 px-4 btnValencias" href="#">Saber mais <i class="fa fa-arrow-right ms-2"></i></a>
+                    </div>
                 </div>
-                <div class="text-center">
-                    <a class="btn py-2 px-4 btnValencias" href="#">Saber mais <i class="fa fa-arrow-right ms-2"></i></a>
+            </div>
+
+            <div class="item">
+                <div class="noticias-item bg-light rounded p-5">
+                    <p class="fs-5">Início do Ano Letivo 2023/2024 – 12/09/2023</p>
+                    <div class="d-flex align-items-center bg-white justify-content-center mb-3" style="height: 200px; overflow: hidden;">
+                        <img class="img-fluid" src="images/Inicio-Ano-Letivo_2023_2024.jpg">
+                    </div>
+                    <div class="text-center">
+                        <a class="btn py-2 px-4 btnValencias" href="#">Saber mais <i class="fa fa-arrow-right ms-2"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -546,12 +560,20 @@
     </div>
     </div><!-- Não apagar é do loading -->
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
 
 
     <!-- Template Javascript -->

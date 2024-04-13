@@ -1,0 +1,268 @@
+/*** Side Nav ***/
+.content-container {
+  top: 200px;
+}
+
+section {
+  margin-top: -200px; /* Truque para o sticky-top do con*/
+  padding-top: 200px;
+}
+
+.toc-container {
+  top: 80px; /*isto é a distância a que a sidenav fica do topo quando sticky*/
+  bottom: 150px;
+  z-index: 800; /* Garante que a barra lateral esteja abaixo da barra superior */
+  margin-top: -80px; /* Truque para o sticky-top do con*/
+  padding-top: 80px;
+  margin-bottom: -150px;
+  padding-bottom: 150px;
+
+  & ul {
+    list-style: none;
+    border: solid 2px #dddcdc;
+    border-radius: 15px;
+    padding: 0;
+
+    & a {
+      text-decoration: none;
+      color: black;
+      & li {
+        padding: 0.8rem;
+        transition-duration: 0.5s;
+      }
+    }
+    & li:hover {
+      background-color: #dddcdc; /*mudar cor do botão*/
+      border-radius: 15px;
+      font-weight: bold;
+    }
+  }
+}
+
+/* Card secção */
+.imgCard {
+  @media (max-width: 992px) {
+    min-height: 200px;
+  }
+}
+
+/*Valência Jardim de Infância*/
+/*Page header - foto*/
+.page-header-jardim {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent),
+    url(../imagens/JardimInfancia/foto06.jpg) center center/cover no-repeat;
+  background-size: cover;
+}
+
+/*Valência Area desportiva e recreativa*/
+/*Page header - foto*/
+.page-header-desporto {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent),
+    url(../imagens/DesportoRecreativa/desporto-header.jpg) center center/cover
+      no-repeat;
+  background-size: cover;
+}
+
+/*Carousel insatalações*/
+/*Carousel Container Styles */
+.instalacao-carousel {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 576px) {
+  .instalacao-carousel {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+/* Owl Carousel Item Styles */
+.instalacao-item {
+  /* altura e largura fixa para cada carousel item */
+  width: 100%; /* Uss 100% width preencher container */
+  height: 100%; /* Usa 100% height para ser igual ao container height */
+  /* posicionado relativo ao carousel container */
+  position: relative;
+
+  & img {
+    /* Garantir que a imagem ocupa todo os espaço do parent(.instalacao-item) */
+    width: 100%;
+    height: 100%;
+    /* Manter o ratio */
+    object-fit: cover; /* Crop the image to cover the entire space */
+    object-position: center; /* Center the image within its container */
+  }
+}
+
+/*Carousel galeria*/
+/* Owl Carousel Navigation Styles */
+.instalacao-carousel .owl-nav {
+  position: absolute;
+  width: 100%;
+  height: 45px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+.instalacao-carousel .owl-dots {
+  display: none;
+}
+
+.instalacao-carousel .owl-nav button.owl-prev,
+.instalacao-carousel .owl-nav button.owl-next {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 50%; /* Alterado para 50% para criar um círculo */
+  background-color: #ff874f;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.instalacao-carousel .owl-nav .owl-prev:hover,
+.instalacao-carousel .owl-nav .owl-next:hover {
+  background: #993100;
+}
+
+/* Owl Carousel Navigation Styles */
+.galeria-carousel .owl-nav {
+  position: absolute;
+  width: 100%;
+  height: 45px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+.galeria-carousel .owl-dots {
+  display: none;
+}
+
+.galeria-carousel .owl-nav button.owl-prev,
+.galeria-carousel .owl-nav button.owl-next {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 50%; /* Alterado para 50% para criar um círculo */
+  background-color: #ff874f;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.galeria-carousel .owl-nav .owl-prev:hover,
+.galeria-carousel .owl-nav .owl-next:hover {
+  background: #993100;
+}
+
+/*Area desporto e recreativa*/
+.judoImg {
+  max-width: 60%; /* Ensure the image does not exceed its parent container's width */
+  height: auto; /* Maintain aspect ratio while adjusting width */
+}
+.dancasImg {
+  max-width: 60%; /* Ensure the image does not exceed its parent container's width */
+  height: auto; /* Maintain aspect ratio while adjusting width */
+}
+.ginasticaImg {
+  max-width: 60%; /* Ensure the image does not exceed its parent container's width */
+  height: auto; /* Maintain aspect ratio while adjusting width */
+}
+
+/*cor dos inputs do form*/
+.form-control,
+.form-check-input {
+  background-color: white;
+}
+
+/*valencia terceira idade*/
+.page-header-terceiraIdade {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent),
+    url(../imagens/TerceiraIdade/centroIdadeHeader.jpg) center center/cover
+      no-repeat;
+  background-size: cover;
+}
+
+/*/*** Cantinho Carousel ***/
+.cantinho-carousel {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 576px) {
+  .cantinho-carousel {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+.cantinho-carousel .cantinho-item .border {
+  border: 1px dashed rgba(0, 185, 142, 0.3) !important;
+}
+
+.cantinho-carousel .owl-nav {
+  position: absolute;
+  width: 100%;
+  height: 45px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.cantinho-carousel .owl-nav button.owl-prev,
+.cantinho-carousel .owl-nav button.owl-next {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #ff874f;
+  border-radius: 50%; /* Changed to 50% to create a circle */
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.cantinho-carousel .owl-nav button.owl-prev:hover,
+.cantinho-carousel .owl-nav button.owl-next:hover {
+  background: #993100;
+}
+
+/* Estilo para os itens do carrossel */
+.cantinho-carousel .owl-item {
+  width: 100%; /* Define a largura de cada item como 100% do container */
+}
+
+/* Estilo para as imagens dentro dos itens do carrossel */
+.cantinho-carousel .owl-item .cantinho-item .img-fluid {
+  width: 100%; /* Garante que a imagem preencha seu container horizontalmente */
+  height: 100%; /* Garante que a imagem preencha seu container verticalmente */
+  object-fit: cover; /* Mantém a proporção da imagem e cobre todo o container */
+}
+
+/* Garante que o conteúdo de texto dentro dos itens do carrossel esteja centralizado */
+.cantinho-carousel .owl-item .cantinho-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Garante que o conteúdo esteja centralizado verticalmente */
+  padding: 10px; /* Adiciona um espaçamento interno */
+  box-sizing: border-box; /* Inclui padding no tamanho total do item */
+}

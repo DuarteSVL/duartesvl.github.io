@@ -133,11 +133,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
                         <!-- Select drop-down option -->
                         <select class="form-select" name="imagem" id="imagem-select">
                             <?php
-                            foreach ($imagem as $image) {
-                                echo "<option value='$image'>$image</option>";
+                            // Perform the query using mysqli
+                            $query = "SELECT imagem FROM ementas ORDER BY imagem ASC";
+                            $result = mysqli_query($ligacaoBD, $query) or die(mysqli_error($ligacaoBD) . "[" . $query . "]");
+
+                            // Fetch rows from the result set
+                            while ($row = mysqli_fetch_assoc($result)) {
+                                echo "<option value='" . $row['imagem'] . "'>" . $row['imagem'] . "</option>";
                             }
+
+                            // Free the result set
+                            mysqli_free_result($result);
                             ?>
                         </select>
+
                     </div>
                 </div>
 

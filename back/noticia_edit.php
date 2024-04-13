@@ -133,7 +133,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
                         <!-- Select drop-down option -->
                         <select class="form-select" name="imagem" id="imagem-select">
                             <?php
-                            // Assuming $imagem is an array of image names
                             foreach ($imagem as $image) {
                                 echo "<option value='$image'>$image</option>";
                             }

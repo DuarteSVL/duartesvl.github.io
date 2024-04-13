@@ -133,6 +133,10 @@ form{
     width: 10%;
 }
 
+
+/* *************************
+        Styles Submenus 
+************************* */
 /*Submenus de Contactos e das Ementas*/
 #btnContactos{
    margin: auto;
@@ -169,3 +173,12 @@ th, td{
   text-align: center;
 }
 
+
+/* *************************
+        Styles Cookies
+************************* */
+.page-header-cookies {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent),
+    url(imgs/cookies.jpg) center center/cover no-repeat;
+  background-size: cover;
+}

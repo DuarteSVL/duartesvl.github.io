@@ -130,20 +130,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
                 <div class="row-mb-3">
                     <label class="col-sm-3 col-form-label">Imagem</label>
                     <div class="col-sm-6">
-                        <!-- Hidden file input -->
-                        <input type="file" class="form-control" name="imagem" id="imagem" style="display: none;"
-                            accept="image/*">
-                        <!-- Button to trigger file selection dialog -->
-                        <button type="button" class="btn btn-primary"
-                            onclick="document.getElementById('imagem').click();">Selecionar Imagem</button>
-                        <!-- Display the filename of the selected file -->
-                        <input type="text" class="form-control" id="imagem-name" placeholder="<?php echo $imagem; ?>"
-                            readonly>
                         <!-- Select drop-down option -->
-                        <select class="form-select" id="imagem-select"
-                            onchange="document.getElementById('imagem-name').value = this.value;">
-                            <option value="<?php echo $imagem; ?>" selected><?php echo $imagem; ?></option>
-                            <!-- Add other options if needed -->
+                        <select class="form-select" name="imagem" id="imagem-select">
+                            <?php
+                            // Query to fetch all imagem values
+                            $query = "SELECT imagem FROM noticia";
+                            $result = $ligacaoBD->query($query);
+
+                            // Check if the query was successful
+                            if ($result) {
+                                // Loop through the rows to generate options
+                                while ($row = $result->fetch_assoc()) {
+                                    $image = $row['imagem'];
+                                    echo "<option value='$image'>$image</option>";
+                                }
+                            }
+                            ?>
                         </select>
                     </div>
                 </div>

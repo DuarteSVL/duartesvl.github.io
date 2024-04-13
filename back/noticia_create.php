@@ -57,8 +57,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 
 
     <link rel="stylesheet" href="noticia_create.css">
@@ -71,7 +74,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nova notícia</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
         .submit-btn {
             width: 100%;
@@ -102,34 +106,26 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <div class="col-sm-6">
                     <input type="text" class="form-control" name="titulo" value="<?php echo $titulo ?>">
                 </div>
+                
                 <label class="col-sm-3 col-form-label">Texto</label>
                 <div class="col-sm-6">
-                    <input type="text" class="form-control" name="texto" value="<?php echo $texto ?>">
+                    <textarea class="form-control" name="texto" rows="5"><?php echo $texto ?></textarea>
                 </div>
+
 
 
                 <div class="row-mb-3">
                     <label class="col-sm-3 col-form-label">Imagem</label>
                     <div class="col-sm-6">
-                        <!-- Hidden file input -->
-                        <input type="file" class="form-control" name="imagem" id="imagem" style="display: none;"
-                            accept="image/*">
-                        <!-- Button to trigger file selection dialog -->
-                        <button type="button" class="btn btn-primary"
-                            onclick="document.getElementById('imagem').click();">Selecionar Imagem</button>
-                        <!-- Display the filename of the selected file -->
-                        <input type="text" class="form-control" id="imagem-name" placeholder="<?php echo $imagem?>" readonly>
+                        <!-- Select drop-down option -->
+                        <select class="form-select" name="imagem" id="imagem-select">
+                            <option value="<?php echo $imagem; ?>"><?php echo $imagem; ?></option>
+                            <!-- Add other options if needed -->
+                        </select>
                     </div>
                 </div>
 
-                <script>
-                    // Function to update the input field with the filename of the selected file
-                    document.getElementById('imagem').addEventListener('change', function () {
-                        var fileInput = document.getElementById('imagem');
-                        var fileNameDisplay = document.getElementById('imagem-name');
-                        fileNameDisplay.value = fileInput.files[0].name;
-                    });
-                </script>
+
 
 
 
@@ -171,7 +167,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <button type="submit" class="btn btn-primary submit-btn">Submit</button>
                     </div>
                     <div class="col-sm-3">
-                        <a class="btn btn-outline-primary cancel-btn" href="./gerir_noticias.php" role="button">Cancel</a>
+                        <a class="btn btn-outline-primary cancel-btn" href="./gerir_noticias.php"
+                            role="button">Cancel</a>
                     </div>
                 </div>
             </div>

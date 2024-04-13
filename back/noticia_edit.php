@@ -123,32 +123,26 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
                 </div>
                 <label class="col-sm-3 col-form-label">Texto</label>
                 <div class="col-sm-6">
-                    <input type="text" class="form-control" name="texto" value="<?php echo $texto; ?>">
+                    <textarea class="form-control" name="texto" rows="5"><?php echo $texto ?></textarea>
                 </div>
 
 
                 <div class="row-mb-3">
                     <label class="col-sm-3 col-form-label">Imagem</label>
                     <div class="col-sm-6">
-                        <!-- Hidden file input -->
-                        <input type="file" class="form-control" name="imagem" id="imagem" style="display: none;"
-                            accept="image/*">
-                        <!-- Button to trigger file selection dialog -->
-                        <button type="button" class="btn btn-primary"
-                            onclick="document.getElementById('imagem').click();">Selecionar Imagem</button>
-                        <!-- Display the filename of the selected file -->
-                        <input type="text" class="form-control" id="imagem-name" placeholder="<?php echo $imagem?>" readonly>
+                        <!-- Select drop-down option -->
+                        <select class="form-select" name="imagem" id="imagem-select">
+                            <?php
+                            // Assuming $imagem is an array of image names
+                            foreach ($imagem as $image) {
+                                echo "<option value='$image'>$image</option>";
+                            }
+                            ?>
+                        </select>
                     </div>
                 </div>
 
-                <script>
-                    // Function to update the input field with the filename of the selected file
-                    document.getElementById('imagem').addEventListener('change', function () {
-                        var fileInput = document.getElementById('imagem');
-                        var fileNameDisplay = document.getElementById('imagem-name');
-                        fileNameDisplay.value = fileInput.files[0].name;
-                    });
-                </script>
+
 
 
 

@@ -153,7 +153,21 @@
             </tr>
         </table>
 
+
+
+
         <a class="btn btn-primary" href="./refeicao_create.php">Actualizar Tabelas</a>
+ 
+        <?php
+
+        // $sql = "UPDATE noticia "
+        //     . "SET titulo = '$titulo', texto = '$texto'
+        //     "
+        //     . "WHERE id_noticia = $id";
+
+            
+
+        ?>
 
 
     </div>

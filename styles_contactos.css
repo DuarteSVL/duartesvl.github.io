@@ -133,7 +133,7 @@ form{
     width: 10%;
 }
 
-/*menu contactos*/
+/*Submenus de Contactos e das Ementas*/
 #btnContactos{
    margin: auto;
     background-color: transparent;
@@ -143,17 +143,13 @@ form{
     width: fit-content;
 
     & :hover{
-        background-color: #aae491;
+        background-color: #FF874F;
     }
-
-   /* & :focus, :active{
-      background-color: aqua;
-    } */
 }
 
 
 .submenu{
-  background-color: #aae491;
+  background-color: #FF874F;
   border-radius: 15px;
   padding: 1rem;
 
@@ -167,6 +163,10 @@ form{
 }
 
 .visited {
-  background-color: #aae491;
+  background-color: #FF874F;
+}
+
+th, td{
+  text-align: center;
 }
 

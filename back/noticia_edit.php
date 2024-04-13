@@ -134,12 +134,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
                         <select class="form-select" name="imagem" id="imagem-select">
                             <?php
                             foreach ($imagem as $image) {
-                                echo "<option value='$imagem'>$imagem</option>";
+                                echo "<option value='$image'>$image</option>";
                             }
                             ?>
                         </select>
                     </div>
                 </div>
+
 
 
 

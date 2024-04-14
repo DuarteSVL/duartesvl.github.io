@@ -338,6 +338,9 @@ q {
 
 form{
  width: 50%;
+ background-color: #F1FFEB; 
+ border-radius: 15px;;
+ padding: 1rem;
 }
 
 #submit{

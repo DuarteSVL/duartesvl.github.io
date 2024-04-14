@@ -21,8 +21,6 @@
     <div class="container my-5">
         <h2><a href="./gerir_tabelas.php"> Lista de Ementas</a></h2>
         <h2><a href="./make_ementas.php"> Ementas</a></h2>
-
-
         <?php
         include "db_conn.php";
         ?>
@@ -55,10 +53,23 @@
                     while ($row = mysqli_fetch_assoc($result)) {
                         echo "<tr>";
                         echo "<td>" . $row['valencia'] . "</td>";
-                        echo "<td>" . $row['dia'] . "</td>";
+                        echo "<td>" . ucfirst($row['dia']) . "</td>"; // Capitalize the first character of $row['dia']
                         echo "<td>" . $row['tipo'] . "</td>";
                         echo "<td>" . $row['refeicao_nome'] . "</td>"; // Display the nome value of refeicao
-                        echo "<td></td>"; // Placeholder for 'Nova Refeição'
+                
+                        // Query to fetch all 'nome' values from the 'refeicao' table where 'tipo' matches the current row's 'tipo'
+                        $query_refeicoes_tipo = "SELECT nome FROM refeicao WHERE tipo = '" . $row['tipo'] . "'";
+                        $result_refeicoes_tipo = mysqli_query($ligacaoBD, $query_refeicoes_tipo);
+
+                        echo "<td>";
+                        // Loop through fetched 'nome' values and display as options in select
+                        echo "<select>";
+                        while ($row_refeicao_tipo = mysqli_fetch_assoc($result_refeicoes_tipo)) {
+                            echo "<option value='" . $row_refeicao_tipo['nome'] . "'>" . $row_refeicao_tipo['nome'] . "</option>";
+                        }
+                        echo "</select>";
+                        echo "</td>";
+
                         echo "<td>";
                         echo "<a class='btn btn-primary btn-sm' href='./tabela_edit.php?id=" . $row['id_celula'] . "'>Editar</a>";
                         echo "</td>";

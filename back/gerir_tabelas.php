@@ -47,24 +47,25 @@
                     // Establish a database connection
                     include "db_conn.php";
 
-                    // Query to fetch 'nome' values where 'tipo' is equal to 'Sopa' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
-                    $query = "SELECT r.nome
-          FROM celula c
-          INNER JOIN refeicao r ON c.id_refeicao = r.id_refeicao
-          WHERE c.tipo = 'Sopa' AND c.valencia = 'Basico'
-          ORDER BY c.id_celula ASC";
+                    // Query to fetch distinct 'tipo' values from the 'celula' table
+                    $query_tipos = "SELECT DISTINCT tipo FROM celula WHERE valencia = 'Basico'";
+                    $result_tipos = mysqli_query($ligacaoBD, $query_tipos);
 
-                    $result = mysqli_query($ligacaoBD, $query);
-
-                    // Start select option menu
-                    echo '<select>';
-                    // Loop through the fetched data and populate select options
-                    while ($row = mysqli_fetch_assoc($result)) {
-                        echo '<option value="' . $row['nome'] . '">' . $row['nome'] . '</option>';
+                    // Loop through distinct 'tipo' values
+                    while ($row_tipo = mysqli_fetch_assoc($result_tipos)) {
+                        $tipo = $row_tipo['tipo'];
+                        echo "<select>";
+                        // Query to fetch 'nome' values from the 'refeicoes' table where 'tipo' is equal to the current 'tipo' value
+                        $query_refeicoes = "SELECT nome FROM refeicoes WHERE tipo = '$tipo'";
+                        $result_refeicoes = mysqli_query($ligacaoBD, $query_refeicoes);
+                        // Loop through fetched 'nome' values and populate select options
+                        while ($row_refeicao = mysqli_fetch_assoc($result_refeicoes)) {
+                            echo '<option value="' . $row_refeicao['nome'] . '">' . $row_refeicao['nome'] . '</option>';
+                        }
+                        echo "</select>";
                     }
-                    // End select option menu
-                    echo '</select>';
                     ?>
+
 
 
                 </td>
@@ -76,38 +77,7 @@
             <tr>
                 <th>Prato</th>
                 <td>
-                    <select name="teste">
-                        <?php
-                        include "db_conn.php";
 
-
-                        // Query to fetch data from the database
-                        $sql = "SELECT * FROM refeicao WHERE tipo = 'prato' ORDER BY nome ASC";
-                        $result = $ligacaoBD->query($sql);
-
-                        // Query to fetch the default value from the database
-                        $sql2 = "SELECT conteudo FROM celula WHERE id_celula = 1";
-                        $result2 = $ligacaoBD->query($sql2);
-                        $default_content = "";
-                        if ($row = mysqli_fetch_assoc($result2)) {
-                            $default_content = $row['conteudo'];
-                        }
-
-                        // Checking if form is submitted and getting selected value
-                        $select = isset($_POST['NEW']) ? $_POST['NEW'] : '';
-
-                        // Loop through the result set and populate the dropdown options
-                        while ($row_list = mysqli_fetch_assoc($result)) {
-                            ?>
-                            <option value="<?php echo $row_list['nome']; ?>" <?php if ($row_list['nome'] == $select) {
-                                   echo "selected";
-                               } ?>>
-            <?php echo $row_list['nome']; ?>
-                            </option>
-                            <?php
-                        }
-                        ?>
-                    </select>
                 </td>
                 <td></td>
                 <td></td>

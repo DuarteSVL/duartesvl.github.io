@@ -47,36 +47,38 @@
                     // Establish a database connection
                     include "db_conn.php";
 
-                    // Query to fetch distinct 'tipo' values from the 'celula' table where 'valencia' is equal to 'Basico'
+                    // Query to fetch distinct 'tipo' values from the 'celula' table
                     $query_tipos = "SELECT DISTINCT tipo FROM celula WHERE valencia = 'Basico'";
                     $result_tipos = mysqli_query($ligacaoBD, $query_tipos);
 
-                    // Check if the query was successful
-                    if ($result_tipos) {
-                        // Loop through distinct 'tipo' values
-                        while ($row_tipo = mysqli_fetch_assoc($result_tipos)) {
-                            $tipo = $row_tipo['tipo'];
+                    // Loop through distinct 'tipo' values
+                    while ($row_tipo = mysqli_fetch_assoc($result_tipos)) {
+                        $tipo = $row_tipo['tipo'];
+                        // Query to fetch the current 'id_refeicao' and 'nome' from 'celula' table
+                        $query_celula_refeicao = "SELECT c.id_refeicao, r.nome FROM celula c INNER JOIN refeicoes r ON c.id_refeicao = r.id_refeicao WHERE c.tipo = '$tipo' AND c.valencia = 'Basico'";
+                        $result_celula_refeicao = mysqli_query($ligacaoBD, $query_celula_refeicao);
+                        // Check if the query was successful
+                        if ($result_celula_refeicao) {
+                            // Fetch the 'id_refeicao' and 'nome' from the result
+                            $row_celula_refeicao = mysqli_fetch_assoc($result_celula_refeicao);
+                            $id_refeicao = $row_celula_refeicao['id_refeicao'];
+                            $nome_refeicao = $row_celula_refeicao['nome'];
+                            // Display the current 'nome' of the 'id_refeicao'
+                            echo '<p>Current Refeicao for ' . $tipo . ': ' . $nome_refeicao . '</p>';
+                            // Reset the result pointer to the beginning
+                            mysqli_data_seek($result_celula_refeicao, 0);
+                            // Start building the select options
                             echo "<select>";
-                            // Query to fetch 'nome' values from the 'refeicoes' table where 'tipo' is equal to the current 'tipo' value
-                            $query_refeicoes = "SELECT nome FROM refeicoes WHERE tipo = '$tipo'";
-                            $result_refeicoes = mysqli_query($ligacaoBD, $query_refeicoes);
-                            // Check if the query was successful
-                            if ($result_refeicoes) {
-                                // Loop through fetched 'nome' values and populate select options
-                                while ($row_refeicao = mysqli_fetch_assoc($result_refeicoes)) {
-                                    echo '<option value="' . $row_refeicao['nome'] . '">' . $row_refeicao['nome'] . '</option>';
-                                }
-                            } else {
-                                echo '<option value="">No options available</option>';
+                            // Loop through fetched 'nome' values and populate select options
+                            while ($row_refeicao = mysqli_fetch_assoc($result_celula_refeicao)) {
+                                echo '<option value="' . $row_refeicao['id_refeicao'] . '">' . $row_refeicao['nome'] . '</option>';
                             }
                             echo "</select>";
+                        } else {
+                            echo '<p>No Refeicao found for ' . $tipo . '</p>';
                         }
-                    } else {
-                        echo "Failed to fetch data";
                     }
                     ?>
-
-
 
 
                 </td>

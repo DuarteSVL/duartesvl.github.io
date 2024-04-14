@@ -62,7 +62,8 @@
                         echo "<td>" . $row['valencia'] . "</td>";
                         echo "<td>" . $row['dia'] . "</td>";
                         echo "<td>" . $row['tipo'] . "</td>";
-                        echo "<td>" . $row['imagem'] . "</td>";
+                        echo "<td>" . $row['refeicao'] . "</td>";
+                        echo "<td>"       . "</td>";
 
         
                         echo "<td>";

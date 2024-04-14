@@ -30,51 +30,71 @@
 
         ?>
 
-        <?php
-        // Assuming you have established a database connection and fetched data from the 'celula' table
-// $result contains the fetched data
+
         
-        // Define an array to store the table data
-        $tableData = array(
-            'Sopa' => array('segunda' => '', 'terca' => '', 'quarta' => '', 'quinta' => '', 'sexta' => ''),
-            'Prato' => array('segunda' => '', 'terca' => '', 'quarta' => '', 'quinta' => '', 'sexta' => ''),
-            'Dieta' => array('segunda' => '', 'terca' => '', 'quarta' => '', 'quinta' => '', 'sexta' => ''),
-            'Vegetariano' => array('segunda' => '', 'terca' => '', 'quarta' => '', 'quinta' => '', 'sexta' => ''),
-            'Sobremesa' => array('segunda' => '', 'terca' => '', 'quarta' => '', 'quinta' => '', 'sexta' => ''),
-            'Lanche' => array('segunda' => '', 'terca' => '', 'quarta' => '', 'quinta' => '', 'sexta' => '')
-        );
+        <table class="table">
+            <tr>
+                <th></th>
+                <th>Segunda-feira</th>
+                <th>Terça-feira</th>
+                <th>Quarta-feira</th>
+                <th>Quinta-feira</th>
+                <th>Sexta-feira</th>
+            </tr>
+            <tr>
+                <th>Sopa</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Prato</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
 
-        // Loop through the fetched data and populate the $tableData array
-        while ($row = mysqli_fetch_assoc($result)) {
-            $tipo = $row['tipo'];
-            $dia = $row['dia'];
-            $tableData[$tipo][$dia] = $row['id_celula']; // Assuming you want to fill the cell with id_celula
-        }
+            </tr>
+            <tr>
+                <th>Dieta</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
 
-        // Output the table with populated data
-        echo '<table class="table">';
-        echo '<tr>
-        <th></th>
-        <th>Segunda-feira</th>
-        <th>Terça-feira</th>
-        <th>Quarta-feira</th>
-        <th>Quinta-feira</th>
-        <th>Sexta-feira</th>
-      </tr>';
+            </tr>
+            <tr>
+                <th>Vegetariano</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
 
-        foreach ($tableData as $tipo => $dias) {
-            echo '<tr>';
-            echo '<th>' . $tipo . '</th>';
-            foreach ($dias as $dia => $value) {
-                echo '<td>' . $value . '</td>';
-            }
-            echo '</tr>';
-        }
+            </tr>
+            <tr>
+                <th>Sobremesa</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
 
-        echo '</table>';
-        ?>
+            </tr>
+            <tr>
+                <th>Lanche</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
 
-
+            </tr>
+        </table>
 
 </body>
 

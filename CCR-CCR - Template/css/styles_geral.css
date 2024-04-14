@@ -426,3 +426,12 @@ th, td{
       background-color: #993100;
     }
 }
+
+/* *************************
+        Styles 404
+************************* */
+.page-header-404 {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent),
+    url(../imagens/Geral/404.jpg) center center/cover no-repeat;
+  background-size: cover;
+}

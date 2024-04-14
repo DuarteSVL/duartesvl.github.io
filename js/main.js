@@ -1,19 +1,6 @@
 (function ($) {
   "use strict"; // Modo de funcionamento restrito para o JavaScript
 
-  // Iniciar a biblioteca WOW.js para animações baseadas no scroll
-  new WOW().init();
-
-  // Função para esconder o spinner após um determinado período de tempo
-  var spinner = function () {
-    setTimeout(function () {
-      if ($("#spinner").length > 0) {
-        $("#spinner").removeClass("show");
-      }
-    }, 1);
-  };
-  spinner();
-
   // Navbar Fixa - torna a barra de navegação fixa quando o utilizador rola a página
   $(window).scroll(function () {
     if ($(this).scrollTop() > 300) {
@@ -136,35 +123,33 @@
   });
 })(jQuery); // Fim do código, passando jQuery como parâmetro para a função anónima
 
-
 // *********************************************************************************************
 // *********************************************************************************************
 //Function Submenus das páginas de Contactos e das Ementas
 
-function mudarMenu(id) {       
-  var submenu = document.getElementsByClassName('submenu');
+function mudarMenu(id) {
+  var submenu = document.getElementsByClassName("submenu");
 
-  for (jar of submenu){
-      jar.style.display="none";
+  for (jar of submenu) {
+    jar.style.display = "none";
   }
 
-  document.getElementById(id).style.display="block"; 
+  document.getElementById(id).style.display = "block";
 
   //Este código muda a cor do botão selecionado nos submenus para dar relevância
-const btnElList = document.querySelectorAll('.btn');
+  const btnElList = document.querySelectorAll(".btn");
 
-const currentBtn = document.querySelector('.btn');
+  const currentBtn = document.querySelector(".btn");
 
-btnElList.forEach(btnEl => {
-  btnEl.addEventListener('click', () => {
-      document.querySelector('.visited')?.classList.remove('visited');
-      btnEl.classList.add('visited');
+  btnElList.forEach((btnEl) => {
+    btnEl.addEventListener("click", () => {
+      document.querySelector(".visited")?.classList.remove("visited");
+      btnEl.classList.add("visited");
+    });
   });
-});
 
-currentBtn.add('visited');
-};
-
+  currentBtn.add("visited");
+}
 
 // *********************************************************************************************
 // *********************************************************************************************
@@ -178,21 +163,19 @@ $(window).scroll(function () {
   }
 });
 
-
-
-
-
 const currentUrl = new URL(window.location.href);
-const isRedirected = !!currentUrl.searchParams.get('r');
+const isRedirected = !!currentUrl.searchParams.get("r");
 
 if (!isRedirected) {
-fetch(window.location.href, {
-  method: 'HEAD',
-}).then((response) => {
-  if (response.status !== 404) return;
+  fetch(window.location.href, {
+    method: "HEAD",
+  }).then((response) => {
+    if (response.status !== 404) return;
 
-  const redirectUrl = new URL([window.location.origin, '/posts', window.location.pathname].join(''));
-  redirectUrl.searchParams.set('r', 1);
-  window.location.href = redirectUrl.href;
-});
+    const redirectUrl = new URL(
+      [window.location.origin, "/posts", window.location.pathname].join("")
+    );
+    redirectUrl.searchParams.set("r", 1);
+    window.location.href = redirectUrl.href;
+  });
 }

@@ -31,7 +31,7 @@
         ?>
 
 
-        
+
         <table class="table">
             <tr>
                 <th></th>
@@ -43,11 +43,24 @@
             </tr>
             <tr>
                 <th>Sopa</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <?php
+                // Assuming you have established a database connection and fetched the data
+                // $result contains the fetched data
+                
+                // Query to fetch 'nome' values where 'tipo' is equal to 'Sopa', ordered by 'id_celula'
+                $query = "SELECT r.nome
+              FROM celula c
+              INNER JOIN refeicao r ON c.id_refeicao = r.id_refeicao
+              WHERE c.tipo = 'Sopa'
+              ORDER BY c.id_celula ASC";
+
+                $result = mysqli_query($ligacaoBD, $query);
+
+                // Loop through the fetched data and populate the table cells
+                while ($row = mysqli_fetch_assoc($result)) {
+                    echo '<td>' . $row['nome'] . '</td>';
+                }
+                ?>
             </tr>
             <tr>
                 <th>Prato</th>

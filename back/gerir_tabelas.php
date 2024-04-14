@@ -23,14 +23,11 @@
         <h2><a href="./make_ementas.php"> Ementas</a></h2>
 
 
-
         <?php
-
         include "db_conn.php";
-
         ?>
 
-<table class="table table-striped">
+        <table class="table table-striped">
             <thead>
                 <tr>
                     <th>Valência</th>
@@ -42,13 +39,11 @@
                 </tr>
             </thead>
             <tbody>
-
                 <?php
-
-                include "db_conn.php";
-
-                $sql = "SELECT * FROM celula ORDER BY id_celula asc";
-                
+                $sql = "SELECT c.valencia, c.dia, c.tipo, r.nome AS refeicao_nome, c.id_celula
+                FROM celula c
+                INNER JOIN refeicao r ON c.id_refeicao = r.id_refeicao
+                ORDER BY c.id_celula ASC";
 
                 $result = $ligacaoBD->query($sql);
 
@@ -62,10 +57,8 @@
                         echo "<td>" . $row['valencia'] . "</td>";
                         echo "<td>" . $row['dia'] . "</td>";
                         echo "<td>" . $row['tipo'] . "</td>";
-                        echo "<td>" . $row['refeicao'] . "</td>";
-                        echo "<td>"       . "</td>";
-
-        
+                        echo "<td>" . $row['refeicao_nome'] . "</td>"; // Display the nome value of refeicao
+                        echo "<td></td>"; // Placeholder for 'Nova Refeição'
                         echo "<td>";
                         echo "<a class='btn btn-primary btn-sm' href='./tabela_edit.php?id=" . $row['id_celula'] . "'>Editar</a>";
                         echo "</td>";
@@ -77,7 +70,6 @@
                 ?>
             </tbody>
         </table>
-
 
 
 </body>

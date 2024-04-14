@@ -73,13 +73,12 @@
                             echo "<option value='" . $row_refeicao_tipo['id_refeicao'] . "' $selected>" . $row_refeicao_tipo['nome'] . "</option>";
                         }
                         echo "</select>";
+                        echo "</td>";
+                        echo "<td>";
                         echo "<button type='submit'>Atualizar</button>";
                         echo "</form>";
-                        echo "</td>";
-
                         echo "<td>";
-                        echo "<a class='btn btn-primary btn-sm' href='./tabela_edit.php?id=" . $row['id_celula'] . "'>Editar</a>";
-                        echo "</td>";
+                       
                         echo "</tr>";
                     }
                 } else {

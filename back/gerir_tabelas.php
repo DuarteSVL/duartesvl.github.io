@@ -75,7 +75,7 @@
                         echo "</select>";
                         echo "</td>";
                         echo "<td>";
-                        echo "<button type='submit'>Atualizar</button>";
+                        echo "<button class='btn btn-primary btn-sm', type='submit'>Alterar</button>";
                         echo "</form>";
                         echo "</td>";
                        

@@ -44,8 +44,7 @@
             <tr>
                 <th>Sopa</th>
                 <?php
-                // Assuming you have established a database connection and fetched the data
-                // $result contains the fetched data
+             
                 
                 // Query to fetch 'nome' values where 'tipo' is equal to 'Sopa' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
                 $query = "SELECT r.nome
@@ -64,10 +63,8 @@
             </tr>
             <tr>
                 <th>Prato</th>
-                <th>Sopa</th>
                 <?php
-                // Assuming you have established a database connection and fetched the data
-                // $result contains the fetched data
+              
                 
                 // Query to fetch 'nome' values where 'tipo' is equal to 'Prato' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
                 $query = "SELECT r.nome
@@ -86,10 +83,8 @@
             </tr>
             <tr>
                 <th>Dieta</th>
-                <th>Sopa</th>
                 <?php
-                // Assuming you have established a database connection and fetched the data
-                // $result contains the fetched data
+                
                 
                 // Query to fetch 'nome' values where 'tipo' is equal to 'Dieta' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
                 $query = "SELECT r.nome
@@ -108,10 +103,7 @@
             </tr>
             <tr>
                 <th>Vegetariano</th>
-                <th>Sopa</th>
                 <?php
-                // Assuming you have established a database connection and fetched the data
-                // $result contains the fetched data
                 
                 // Query to fetch 'nome' values where 'tipo' is equal to 'Vegetariano' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
                 $query = "SELECT r.nome
@@ -130,10 +122,7 @@
             </tr>
             <tr>
                 <th>Sobremesa</th>
-                <th>Sopa</th>
                 <?php
-                // Assuming you have established a database connection and fetched the data
-                // $result contains the fetched data
                 
                 // Query to fetch 'nome' values where 'tipo' is equal to 'Sobremesa' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
                 $query = "SELECT r.nome
@@ -152,10 +141,7 @@
             </tr>
             <tr>
                 <th>Lanche</th>
-                <th>Sopa</th>
                 <?php
-                // Assuming you have established a database connection and fetched the data
-                // $result contains the fetched data
                 
                 // Query to fetch 'nome' values where 'tipo' is equal to 'Lanche' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
                 $query = "SELECT r.nome

@@ -28,6 +28,10 @@ section {
   margin-bottom: -150px;
   padding-bottom: 150px;
 
+  &.toc-title {
+    color: var(--cor-sideNav);
+  }
+
   & ul {
     list-style: none;
     border: solid 2px var(--cor-sideNav);
@@ -51,7 +55,6 @@ section {
     }
   }
 }
-
 
 /*************** Valência Jardim de Infância ***************/
 /*Page header - foto*/
@@ -272,4 +275,12 @@ section {
   height: 100%; /* Garante que o conteúdo esteja centralizado verticalmente */
   padding: 10px; /* Adiciona um espaçamento interno */
   box-sizing: border-box; /* Inclui padding no tamanho total do item */
+}
+
+/***valencia centro apoio escolar***/
+.page-header-apoio {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent),
+    url(../imagens/CentroEstudos/centroestudos.jpg) center center/cover
+      no-repeat;
+  background-size: cover;
 }

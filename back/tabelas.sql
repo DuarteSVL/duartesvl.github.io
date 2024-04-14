@@ -1,3 +1,7 @@
+
+
+
+
 INSERT INTO celula (id_celula, id_refeicao, valencia, tipo, dia) VALUES
 (1, NULL, 'Basico', 'Sopa', 'segunda'),
 (2, NULL, 'Basico', 'Sopa', 'terca'),
@@ -32,3 +36,10 @@ INSERT INTO celula (id_celula, id_refeicao, valencia, tipo, dia) VALUES
 (23, NULL, 'Basico', 'Sobremesa', 'quarta'),
 (24, NULL, 'Basico', 'Sobremesa', 'quinta'),
 (25, NULL, 'Basico', 'Sobremesa', 'sexta');
+
+INSERT INTO celula (id_celula, id_refeicao, valencia, tipo, dia) VALUES
+(26, 32, 'Basico', 'Lanche', 'segunda'),
+(27, 32, 'Basico', 'Lanche', 'terca'),
+(28, 32, 'Basico', 'Lanche', 'quarta'),
+(29, 32, 'Basico', 'Lanche', 'quinta'),
+(30, 32, 'Basico', 'Lanche', 'sexta');

@@ -30,118 +30,53 @@
 
         ?>
 
+<table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Valência</th>
+                    <th>Dia da semana</th>
+                    <th>Tipo</th>
+                    <th>Refeição</th>
+                    <th>Nova Refeição</th>
+                    <th>Editar</th>
+                </tr>
+            </thead>
+            <tbody>
 
-        <table class="table">
-            <tr>
-                <th></th>
-                <th>Segunda-feira</th>
-                <th>Terça-feira</th>
-                <th>Quarta-feira</th>
-                <th>Quinta-feira</th>
-                <th>Sexta-feira</th>
-            </tr>
-            <tr>
-                <th>Sopa</th>
-                <td>
-                    <?php
-                    // Establish a database connection
-                    include "db_conn.php";
+                <?php
 
+                include "db_conn.php";
 
-                    // Query to fetch the 'nome' value from the 'refeicao' table for the 'id_refeicao' of the first row where 'valencia' is equal to 'Basico' and 'id_celula' equals 1
-                    $query_default = "SELECT r.nome FROM refeicao r INNER JOIN celula c ON c.id_refeicao = r.id_refeicao WHERE c.id_celula = 1 AND c.valencia = 'Basico'";
-                    $result_default = mysqli_query($ligacaoBD, $query_default);
-                    $row_default = mysqli_fetch_assoc($result_default);
+                $sql = "SELECT * FROM celula ORDER BY id_celula asc";
+                
 
-                    // Query to fetch 'nome' values from the 'refeicao' table where 'tipo' is equal to 'Sopa'
-                    $query_refeicoes = "SELECT r.nome FROM refeicao r INNER JOIN celula c ON c.id_refeicao = r.id_refeicao WHERE c.tipo = 'Sopa' AND c.valencia = 'Basico'";
-                    $result_refeicoes = mysqli_query($ligacaoBD, $query_refeicoes);
+                $result = $ligacaoBD->query($sql);
 
-                    // Start building the select options
-                    echo "<select>";
-                    // Placeholder option with the default value
-                    echo '<option value="' . $row_default['nome'] . '" selected>' . $row_default['nome'] . '</option>';
-                    // Loop through fetched 'nome' values and populate select options
-                    while ($row_refeicao = mysqli_fetch_assoc($result_refeicoes)) {
-                        echo '<option value="' . $row_refeicao['nome'] . '">' . $row_refeicao['nome'] . '</option>';
+                if (!$result) {
+                    die("Invalid query: " . mysqli_error($ligacaoBD));
+                }
+
+                if (mysqli_num_rows($result) > 0) {
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        echo "<tr>";
+                        echo "<td>" . $row['valencia'] . "</td>";
+                        echo "<td>" . $row['dia'] . "</td>";
+                        echo "<td>" . $row['tipo'] . "</td>";
+                        echo "<td>" . $row['imagem'] . "</td>";
+
+        
+                        echo "<td>";
+                        echo "<a class='btn btn-primary btn-sm' href='./tabela_edit.php?id=" . $row['id_celula'] . "'>Editar</a>";
+                        echo "</td>";
+                        echo "</tr>";
                     }
-                    echo "</select>";
-                    ?>
-
-
-                </td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <th>Prato</th>
-                <td>
-
-                </td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-
-            </tr>
-            <tr>
-                <th>Dieta</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-
-            </tr>
-            <tr>
-                <th>Vegetariano</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-
-            </tr>
-            <tr>
-                <th>Sobremesa</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-
-            </tr>
-            <tr>
-                <th>Lanche</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-
-            </tr>
+                } else {
+                    echo "<tr><td colspan='6'>Sem resultados.</td></tr>";
+                }
+                ?>
+            </tbody>
         </table>
 
-
-
-
-        <a class="btn btn-primary" href="./refeicao_create.php">Actualizar Tabelas</a>
-
-        <?php
-
-        // $sql = "UPDATE noticia "
-        //     . "SET titulo = '$titulo', texto = '$texto'
-        //     "
-        //     . "WHERE id_noticia = $id";
-        
-
-
-        ?>
-
-
-    </div>
 
 
 </body>

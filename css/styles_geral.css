@@ -18,8 +18,8 @@
 }
 
 /*Acrescentar cor se necessario*/
-body {
-}
+/*body {
+}*/
 
 /* Texto */
 /*Light (300)*/
@@ -293,8 +293,7 @@ q {
   border: none;
 }
 
-.btn.btn-primary:hover,
-.btn-outline-primary:hover {
+.btn.btn-primary:hover {
   color: #ffffff; /* Nova cor do texto ao passar o mouse */
   background-color: var(
     --cor-botao-hover

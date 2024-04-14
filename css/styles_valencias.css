@@ -280,7 +280,6 @@ section {
 /***valencia centro apoio escolar***/
 .page-header-apoio {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent),
-    url(../imagens/CentroEstudos/centroestudos.jpg) center center/cover
-      no-repeat;
+    url(imagens/CentroEstudos/centroestudos.jpg) center center/cover no-repeat;
   background-size: cover;
 }

@@ -17,10 +17,9 @@
   --cor-sideNav: #02baf2;
 }
 
-/*Acrescentar cor se necessario
+/*Acrescentar cor se necessario*/
 body {
-
-}*/
+}
 
 /* Texto */
 /*Light (300)*/
@@ -108,7 +107,7 @@ q {
 /*** muda a transparência da imagem inicial ***/
 .page-header {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent),
-    url(../imagens/sobreNos/sobrenos.jpg) center center/cover no-repeat;
+    url(../images/sobrenos.jpg) center center/cover no-repeat;
   background-size: cover;
 }
 
@@ -177,7 +176,7 @@ q {
 /*Background de cards*/
 .bg-card {
   background-color: var(--cor-cards);
-  border-radius: 1rem;
+  border-radius: 2.5rem;
   overflow: hidden;
 }
 
@@ -279,21 +278,39 @@ q {
   transition: 0.5s;
 }
 
-.btn .btn-primary,
-.btn-outline-primary {
+.btn.btn-outline-custom.disabled {
+  color: var(--cor-botao-disabled);
+  border: 1px solid var(--cor-botao-disabled);
+}
+.btn.btn-primary.disabled {
+  background-color: var(--cor-botao-disabled);
+  border: none;
+}
+
+.btn.btn-primary {
   color: #ffffff;
   background-color: var(--cor-principal);
   border: none;
 }
 
-.btn-primary:hover,
+.btn.btn-primary:hover,
 .btn-outline-primary:hover {
-  color: white; /* Nova cor do texto ao passar o mouse */
+  color: #ffffff; /* Nova cor do texto ao passar o mouse */
   background-color: var(
     --cor-botao-hover
   ); /* Nova cor de fundo ao passar o mouse */
 }
 
+.btn-outline-custom {
+  color: var(--cor-principal); /* Text color */
+  border-color: var(--cor-principal); /* Border color */
+}
+/* Hover styles for the outline button */
+.btn-outline-custom:hover {
+  color: #ffffff; /* Text color on hover */
+  background-color: var(--cor-botao-hover); /* Background color on hover */
+  border-color: var(--cor-botao-hover); /* Border color on hover */
+}
 
 /*Back to top*/
 .btn-square {
@@ -328,7 +345,6 @@ q {
   bottom: 45px;
   z-index: 99;
 }
-
 /* *************************
         Styles Cookies
 ************************* */
@@ -337,18 +353,17 @@ q {
     url(../imagens/Geral/cookies.jpg) center center/cover no-repeat;
   background-size: cover;
 }
- 
- 
+
 /* *************************
         Styles contactos
 ************************* */
- 
+
 .page-header-contactos {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent),
     url(../imagens/Contactos/contactos.jpg) center center/cover no-repeat;
   background-size: cover;
 }
- 
+
 /*Formulário*/
 .form-container {
   display: flex;
@@ -357,65 +372,66 @@ q {
   align-items: center;
   text-align: center;
 }
- 
-#formContactos{
- width: 50%;
- background-color: #F1FFEB;
- border-radius: 15px;;
- padding: 1rem;
+
+#formContactos {
+  width: 50%;
+  background-color: #f1ffeb;
+  border-radius: 15px;
+  padding: 1rem;
 }
- 
-#submit{
+
+#submit {
   color: #ffffff;
   background-color: #ff874f;
   border: none;
 }
- 
+
 #submit:hover {
   color: white; /* Nova cor do texto ao passar o mouse */
   background-color: #993100; /* Nova cor de fundo ao passar o mouse */
 }
- 
+
 /* *************************
         Styles Submenus
 ************************* */
 /*Submenus de Contactos e das Ementas*/
-#btnContactos{
+#btnContactos {
   margin: auto;
-   background-color: transparent;
-   border-radius: 10px;
-   justify-content: center;
-   border-style: ridge;
-   width: fit-content;
- 
-   & :hover{
-       background-color: #FF874F;
-   }
+  background-color: transparent;
+  border-radius: 10px;
+  justify-content: center;
+  border-style: ridge;
+  width: fit-content;
+
+  & :hover {
+    background-color: #ff874f;
+  }
 }
- 
-.submenu{
- background-color: #fff3ed;
- border-radius: 15px;
- padding: 1rem;
- 
- & iframe{
-   border-radius: 15px;
- }
- 
- & p, h6{
-   margin-top: 2.5rem;
- }
+
+.submenu {
+  background-color: #fff3ed;
+  border-radius: 15px;
+  padding: 1rem;
+
+  & iframe {
+    border-radius: 15px;
+  }
+
+  & p,
+  h6 {
+    margin-top: 2.5rem;
+  }
 }
- 
+
 .visited {
- background-color: #FF874F;
+  background-color: #ff874f;
 }
- 
-th, td{
- text-align: center;
+
+th,
+td {
+  text-align: center;
 }
- 
- 
+
 /* *************************
         Styles precario
 ************************* */
@@ -424,31 +440,41 @@ th, td{
     url(../imagens/Precario/precario.jpg) center center/cover no-repeat;
   background-size: cover;
 }
- 
-  /*Lightbox galeria de imagens*/
-  .lightbox-gallery{
-    color: #000;
-    overflow-x: hidden}
-@media (max-width:767px){
-  .lightbox-gallery h2{margin-bottom:25px;padding-top:25px;font-size:24px}}
-.lightbox-gallery .photos{padding-bottom:20px}
-.lightbox-gallery .item{padding-bottom:30px}
- 
-.btnPdf{
+
+/*Lightbox galeria de imagens*/
+.lightbox-gallery {
+  color: #000;
+  overflow-x: hidden;
+}
+@media (max-width: 767px) {
+  .lightbox-gallery h2 {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
+  }
+}
+.lightbox-gallery .photos {
+  padding-bottom: 20px;
+}
+.lightbox-gallery .item {
+  padding-bottom: 30px;
+}
+
+.btnPdf {
   color: #ffffff;
   background-color: #ff874f;
   border: none;
   border-radius: 15px;
-    border: solid 1.5px #993100;
-    height: 3.5rem;
-    width: 16.5rem;
- 
-    &:hover{
-      transition: 0.5s;
-      background-color: #993100;
-    }
+  border: solid 1.5px #993100;
+  height: 3.5rem;
+  width: 16.5rem;
+
+  &:hover {
+    transition: 0.5s;
+    background-color: #993100;
+  }
 }
- 
+
 /* *************************
         Styles 404
 ************************* */
@@ -457,7 +483,6 @@ th, td{
     url(../imagens/Geral/404.jpg) center center/cover no-repeat;
   background-size: cover;
 }
-
 
 /* *************************
         Styles Ementa

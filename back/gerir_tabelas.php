@@ -56,6 +56,10 @@
 
                     $result = mysqli_query($ligacaoBD, $query);
 
+                    
+                    $query_refeicoes = "SELECT r.nome FROM refeicao r INNER JOIN celula c ON c.id_refeicao = r.id_refeicao WHERE c.tipo = 'Sopa' AND c.valencia = 'Basico'";
+                    $result_refeicoes = mysqli_query($ligacaoBD, $query_refeicoes);
+
                     // Start select option menu
                     echo "<select>";
                     // Loop through fetched 'nome' values and populate select options

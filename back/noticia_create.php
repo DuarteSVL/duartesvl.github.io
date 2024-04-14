@@ -116,7 +116,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
                 <label class="col-sm-3 col-form-label">Filename da imagem</label>
                 <div class="col-sm-6">
-                    <input type="text" class="form-control" name="titulo" value="<?php echo $imagem; ?>">
+                    <input type="text" class="form-control" name="imagem" value="<?php echo $imagem; ?>">
                 </div>
 
 

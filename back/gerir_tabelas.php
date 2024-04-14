@@ -47,24 +47,35 @@
                     // Establish a database connection
                     include "db_conn.php";
 
-                    // Query to fetch distinct 'tipo' values from the 'celula' table
+                    // Query to fetch distinct 'tipo' values from the 'celula' table where 'valencia' is equal to 'Basico'
                     $query_tipos = "SELECT DISTINCT tipo FROM celula WHERE valencia = 'Basico'";
                     $result_tipos = mysqli_query($ligacaoBD, $query_tipos);
 
-                    // Loop through distinct 'tipo' values
-                    while ($row_tipo = mysqli_fetch_assoc($result_tipos)) {
-                        $tipo = $row_tipo['tipo'];
-                        echo "<select>";
-                        // Query to fetch 'nome' values from the 'refeicoes' table where 'tipo' is equal to the current 'tipo' value
-                        $query_refeicoes = "SELECT nome FROM refeicoes WHERE tipo = '$tipo'";
-                        $result_refeicoes = mysqli_query($ligacaoBD, $query_refeicoes);
-                        // Loop through fetched 'nome' values and populate select options
-                        while ($row_refeicao = mysqli_fetch_assoc($result_refeicoes)) {
-                            echo '<option value="' . $row_refeicao['nome'] . '">' . $row_refeicao['nome'] . '</option>';
+                    // Check if the query was successful
+                    if ($result_tipos) {
+                        // Loop through distinct 'tipo' values
+                        while ($row_tipo = mysqli_fetch_assoc($result_tipos)) {
+                            $tipo = $row_tipo['tipo'];
+                            echo "<select>";
+                            // Query to fetch 'nome' values from the 'refeicoes' table where 'tipo' is equal to the current 'tipo' value
+                            $query_refeicoes = "SELECT nome FROM refeicoes WHERE tipo = '$tipo'";
+                            $result_refeicoes = mysqli_query($ligacaoBD, $query_refeicoes);
+                            // Check if the query was successful
+                            if ($result_refeicoes) {
+                                // Loop through fetched 'nome' values and populate select options
+                                while ($row_refeicao = mysqli_fetch_assoc($result_refeicoes)) {
+                                    echo '<option value="' . $row_refeicao['nome'] . '">' . $row_refeicao['nome'] . '</option>';
+                                }
+                            } else {
+                                echo '<option value="">No options available</option>';
+                            }
+                            echo "</select>";
                         }
-                        echo "</select>";
+                    } else {
+                        echo "Failed to fetch data";
                     }
                     ?>
+
 
 
 

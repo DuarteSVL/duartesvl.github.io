@@ -176,7 +176,7 @@ q {
 /*Background de cards*/
 .bg-card {
   background-color: var(--cor-cards);
-  border-radius: 2.5rem;
+  border-radius: 15px;
   overflow: hidden;
 }
 

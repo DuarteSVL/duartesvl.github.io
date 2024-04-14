@@ -56,6 +56,8 @@ img {
 #paginacao {
   display: flex;
   justify-content: center;
+  color: #ffffff;
+  background-color: #ff874f;
 
   & a {
     border-radius: 50%;
@@ -66,7 +68,7 @@ img {
   }
 
   & a:hover {
-    background-color: #ff874f;
+    background-color:#993100;
   }
 
   & a:active,

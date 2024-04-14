@@ -77,7 +77,7 @@
                         echo "<td>";
                         echo "<button type='submit'>Atualizar</button>";
                         echo "</form>";
-                        echo "<td>";
+                        echo "</td>";
                        
                         echo "</tr>";
                     }

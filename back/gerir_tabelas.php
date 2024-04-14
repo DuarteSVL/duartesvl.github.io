@@ -21,6 +21,8 @@
     <div class="container my-5">
         <h2><a href="./gerir_tabelas.php"> Lista de Ementas</a></h2>
         <h2><a href="./make_ementas.php"> Ementas</a></h2>
+
+
         <?php
         include "db_conn.php";
         ?>
@@ -38,7 +40,7 @@
             </thead>
             <tbody>
                 <?php
-                $sql = "SELECT c.valencia, c.dia, c.tipo, r.nome AS refeicao_nome, c.id_celula
+                $sql = "SELECT c.valencia, c.dia, c.tipo, r.nome AS refeicao_nome, c.id_celula, c.id_refeicao
                 FROM celula c
                 INNER JOIN refeicao r ON c.id_refeicao = r.id_refeicao
                 ORDER BY c.id_celula ASC";
@@ -58,16 +60,21 @@
                         echo "<td>" . $row['refeicao_nome'] . "</td>"; // Display the nome value of refeicao
                 
                         // Query to fetch all 'nome' values from the 'refeicao' table where 'tipo' matches the current row's 'tipo'
-                        $query_refeicoes_tipo = "SELECT nome FROM refeicao WHERE tipo = '" . $row['tipo'] . "'";
+                        $query_refeicoes_tipo = "SELECT nome, id_refeicao FROM refeicao WHERE tipo = '" . $row['tipo'] . "'";
                         $result_refeicoes_tipo = mysqli_query($ligacaoBD, $query_refeicoes_tipo);
 
                         echo "<td>";
-                        // Loop through fetched 'nome' values and display as options in select
-                        echo "<select>";
+                        // Display form with select dropdown for updating id_refeicao
+                        echo "<form action='update_id_refeicao.php' method='post'>";
+                        echo "<input type='hidden' name='id_celula' value='" . $row['id_celula'] . "'>";
+                        echo "<select name='nova_refeicao'>";
                         while ($row_refeicao_tipo = mysqli_fetch_assoc($result_refeicoes_tipo)) {
-                            echo "<option value='" . $row_refeicao_tipo['nome'] . "'>" . $row_refeicao_tipo['nome'] . "</option>";
+                            $selected = ($row['id_refeicao'] == $row_refeicao_tipo['id_refeicao']) ? "selected" : "";
+                            echo "<option value='" . $row_refeicao_tipo['id_refeicao'] . "' $selected>" . $row_refeicao_tipo['nome'] . "</option>";
                         }
                         echo "</select>";
+                        echo "<button type='submit'>Atualizar</button>";
+                        echo "</form>";
                         echo "</td>";
 
                         echo "<td>";
@@ -81,6 +88,8 @@
                 ?>
             </tbody>
         </table>
+
+
 
 
 </body>

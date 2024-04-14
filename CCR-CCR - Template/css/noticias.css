@@ -14,15 +14,21 @@
 }
 
 .btn {
-  background-color: #5abfe1;
+  background-color: #ff874f;
   color: #fff; /* cor do texto branca */
   border-radius: 5px; /* bordas arredondadas */
+  border-color: #ff874f;
   padding: 5px 10px; /* padding interno */
   text-decoration: none; /* remove sublinhado padrão */
-  display: inline-block; /* exibe como um bloco */
+  display: inline-block; /* exibe como um bloco */ 
 }
 
-.border {
+.btn:hover {
+  background-color: #993100;
+  border-color: #993100;
+}
+
+#imgNoticia {
   border-radius: 15px;
   background-color: #fef4ae;
 }
@@ -56,19 +62,20 @@ img {
 #paginacao {
   display: flex;
   justify-content: center;
-  color: #ffffff;
-  background-color: #ff874f;
-
+  
   & a {
+    color: #ffffff;
+    background-color: #ff874f;
+    border-color: #ff874f;
     border-radius: 50%;
     display: inline-block;
     margin: 1rem;
     padding: 0.5rem 1rem;
-    border: 1px solid #ddd;
   }
 
   & a:hover {
     background-color:#993100;
+    border-color: #993100;
   }
 
   & a:active,

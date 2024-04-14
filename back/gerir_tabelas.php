@@ -47,21 +47,20 @@
                     // Establish a database connection
                     include "db_conn.php";
 
-                    // Query to fetch 'nome' values where 'tipo' is equal to 'Sopa' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
-                    $query = "SELECT r.nome
-                    FROM celula c
-          INNER JOIN refeicao r ON c.id_refeicao = r.id_refeicao
-          WHERE c.tipo = 'Sopa' AND c.valencia = 'Basico'
-          ORDER BY c.id_celula ASC";
 
-                    $result = mysqli_query($ligacaoBD, $query);
+                    // Query to fetch the 'nome' value from the 'refeicao' table for the 'id_refeicao' of the first row where 'valencia' is equal to 'Basico' and 'id_celula' equals 1
+                    $query_default = "SELECT r.nome FROM refeicao r INNER JOIN celula c ON c.id_refeicao = r.id_refeicao WHERE c.id_celula = 1 AND c.valencia = 'Basico'";
+                    $result_default = mysqli_query($ligacaoBD, $query_default);
+                    $row_default = mysqli_fetch_assoc($result_default);
 
-                    
+                    // Query to fetch 'nome' values from the 'refeicao' table where 'tipo' is equal to 'Sopa'
                     $query_refeicoes = "SELECT r.nome FROM refeicao r INNER JOIN celula c ON c.id_refeicao = r.id_refeicao WHERE c.tipo = 'Sopa' AND c.valencia = 'Basico'";
                     $result_refeicoes = mysqli_query($ligacaoBD, $query_refeicoes);
 
-                    // Start select option menu
+                    // Start building the select options
                     echo "<select>";
+                    // Placeholder option with the default value
+                    echo '<option value="' . $row_default['nome'] . '" selected>' . $row_default['nome'] . '</option>';
                     // Loop through fetched 'nome' values and populate select options
                     while ($row_refeicao = mysqli_fetch_assoc($result_refeicoes)) {
                         echo '<option value="' . $row_refeicao['nome'] . '">' . $row_refeicao['nome'] . '</option>';

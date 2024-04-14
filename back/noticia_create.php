@@ -106,7 +106,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <div class="col-sm-6">
                     <input type="text" class="form-control" name="titulo" value="<?php echo $titulo ?>">
                 </div>
-                
+
                 <label class="col-sm-3 col-form-label">Texto</label>
                 <div class="col-sm-6">
                     <textarea class="form-control" name="texto" rows="5"><?php echo $texto ?></textarea>
@@ -114,17 +114,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
 
-                <div class="row-mb-3">
-                    <label class="col-sm-3 col-form-label">Imagem</label>
-                    <div class="col-sm-6">
-                        <!-- Select drop-down option -->
-                        <select class="form-select" name="imagem" id="imagem-select">
-                            <option value="<?php echo $imagem; ?>"><?php echo $imagem; ?></option>
-                            <!-- Add other options if needed -->
-                        </select>
-                    </div>
+                <label class="col-sm-3 col-form-label">Filename da imagem</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="titulo" value="<?php echo $imagem; ?>">
                 </div>
-
 
 
 

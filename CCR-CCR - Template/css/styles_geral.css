@@ -5,9 +5,22 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/*Acrescentar cor se necessario*/
-body {
+
+:root {
+  --cor-principal: #ff874f;
+  --cor-cards: #f1ffeb;
+  --cor-botao-hover: #993100;
+  --cor-botaoTexto-hover: #ffffff;
+  --cor-botao-focus: #feeb71;
+  --cor-botao-disabled: #8a8a8a;
+  --cor-accordionBg: #fff3ed;
+  --cor-sideNav: #02baf2;
 }
+
+/*Acrescentar cor se necessario
+body {
+
+}*/
 
 /* Texto */
 /*Light (300)*/
@@ -95,7 +108,7 @@ q {
 /*** muda a transparência da imagem inicial ***/
 .page-header {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent),
-    url(../images/sobrenos.jpg) center center/cover no-repeat;
+    url(../imagens/sobreNos/sobrenos.jpg) center center/cover no-repeat;
   background-size: cover;
 }
 
@@ -104,7 +117,7 @@ q {
 }
 
 .breadcrumb-item a {
-  color: #ff874f; /* Cor do texto dos links das breadcrumbs */
+  color: var(--cor-principal); /* Cor do texto dos links das breadcrumbs */
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -119,7 +132,9 @@ q {
     cursor: default;
 
     &:hover {
-      color: #ff874f; /* Muda a cor do link quando passa o mouse por cima */
+      color: var(
+        --cor-principal
+      ); /* Muda a cor do link quando passa o mouse por cima */
     }
   }
 
@@ -131,8 +146,10 @@ q {
     background-color: none;
 
     &.collapsed show {
-      background-color: #ff874f; /* Altera a cor do botão quando está em estado "collapsed" */
-      color: white; /* Altera a cor do texto */
+      background-color: var(
+        --cor-principal
+      ); /* Altera a cor do botão quando está em estado "collapsed" */
+      color: var(--cor-botaoTexto-hover); /* Altera a cor do texto */
     }
   }
 
@@ -148,13 +165,20 @@ q {
   }
 
   .accordion-button:not(.collapsed) {
-    background-color: #ff874f !important;
+    background-color: var(--cor-principal) !important;
     color: white;
   }
 
   .accordion-body {
-    background-color: #fff3ed !important;
+    background-color: var(--cor-accordionBg) !important;
   }
+}
+
+/*Background de cards*/
+.bg-card {
+  background-color: var(--cor-cards);
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
 /*Homepage styles*/
@@ -167,17 +191,18 @@ q {
   margin-top: -10px;
 }
 .btnValencias {
-  border-color: #ff874f;
-  color: #ff874f;
+  border-color: var(--cor-principal);
+  color: var(--cor-principal);
 
   &:hover {
-    background-color: #ff874f;
-    color: #fff;
+    background-color: var(--cor-principal);
+    color: var(--cor-botaoTexto-hover);
   }
 }
+
 /*** Vantagens homepage***/
 .bgVantagens {
-  background-color: #ff874f;
+  background-color: var(--cor-principal);
   margin-bottom: 50px;
 }
 
@@ -195,7 +220,7 @@ q {
 }
 
 .owl-carousel.noticias-carousel .owl-item .border {
-  border: 1px dashed rgba(0, 185, 142, 0.3) !important;
+  border: 1px solid !important;
 }
 
 .owl-carousel.noticias-carousel .owl-nav {
@@ -219,16 +244,16 @@ q {
   align-items: center;
   justify-content: center;
   color: white;
-  background: var(--primary);
+  background: var(--cor-principal);
   border-radius: 50%; /* Alterado para 50% para criar um círculo */
-  background-color: #ff874f;
+  background-color: var(--cor-principal);
   font-size: 20px;
   transition: 0.5s;
 }
 
 .owl-carousel.noticias-carousel .owl-nav .owl-prev:hover,
 .owl-carousel.noticias-carousel .owl-nav .owl-next:hover {
-  background: #993100;
+  background: var(--cor-botao-hover);
 }
 
 /* Card consultar ementas */
@@ -257,20 +282,18 @@ q {
 .btn .btn-primary,
 .btn-outline-primary {
   color: #ffffff;
-  background-color: #ff874f;
+  background-color: var(--cor-principal);
   border: none;
 }
 
 .btn-primary:hover,
 .btn-outline-primary:hover {
   color: white; /* Nova cor do texto ao passar o mouse */
-  background-color: #993100; /* Nova cor de fundo ao passar o mouse */
+  background-color: var(
+    --cor-botao-hover
+  ); /* Nova cor de fundo ao passar o mouse */
 }
 
-/*** Formulário Voluntariado ***/
-.bg-form {
-  background-color: #fff3ed; /* Cor de fundo desejada */
-}
 
 /*Back to top*/
 .btn-square {
@@ -306,7 +329,6 @@ q {
   z-index: 99;
 }
 
-
 /* *************************
         Styles Cookies
 ************************* */
@@ -315,18 +337,18 @@ q {
     url(../imagens/Geral/cookies.jpg) center center/cover no-repeat;
   background-size: cover;
 }
-
-
+ 
+ 
 /* *************************
         Styles contactos
 ************************* */
-
+ 
 .page-header-contactos {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent),
     url(../imagens/Contactos/contactos.jpg) center center/cover no-repeat;
   background-size: cover;
 }
-
+ 
 /*Formulário*/
 .form-container {
   display: flex;
@@ -335,27 +357,27 @@ q {
   align-items: center;
   text-align: center;
 }
-
+ 
 #formContactos{
  width: 50%;
- background-color: #F1FFEB; 
+ background-color: #F1FFEB;
  border-radius: 15px;;
  padding: 1rem;
 }
-
+ 
 #submit{
   color: #ffffff;
   background-color: #ff874f;
   border: none;
 }
-
-#submit:hover { 
+ 
+#submit:hover {
   color: white; /* Nova cor do texto ao passar o mouse */
   background-color: #993100; /* Nova cor de fundo ao passar o mouse */
 }
-
+ 
 /* *************************
-        Styles Submenus 
+        Styles Submenus
 ************************* */
 /*Submenus de Contactos e das Ementas*/
 #btnContactos{
@@ -365,35 +387,35 @@ q {
    justify-content: center;
    border-style: ridge;
    width: fit-content;
-
+ 
    & :hover{
        background-color: #FF874F;
    }
 }
-
+ 
 .submenu{
  background-color: #fff3ed;
  border-radius: 15px;
  padding: 1rem;
-
+ 
  & iframe{
    border-radius: 15px;
  }
-
+ 
  & p, h6{
    margin-top: 2.5rem;
  }
 }
-
+ 
 .visited {
  background-color: #FF874F;
 }
-
+ 
 th, td{
  text-align: center;
 }
-
-
+ 
+ 
 /* *************************
         Styles precario
 ************************* */
@@ -402,7 +424,7 @@ th, td{
     url(../imagens/Precario/precario.jpg) center center/cover no-repeat;
   background-size: cover;
 }
-
+ 
   /*Lightbox galeria de imagens*/
   .lightbox-gallery{
     color: #000;
@@ -411,7 +433,7 @@ th, td{
   .lightbox-gallery h2{margin-bottom:25px;padding-top:25px;font-size:24px}}
 .lightbox-gallery .photos{padding-bottom:20px}
 .lightbox-gallery .item{padding-bottom:30px}
-
+ 
 .btnPdf{
   color: #ffffff;
   background-color: #ff874f;
@@ -420,13 +442,13 @@ th, td{
     border: solid 1.5px #993100;
     height: 3.5rem;
     width: 16.5rem;
-
+ 
     &:hover{
       transition: 0.5s;
       background-color: #993100;
     }
 }
-
+ 
 /* *************************
         Styles 404
 ************************* */

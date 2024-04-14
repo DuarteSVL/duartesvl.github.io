@@ -1,3 +1,14 @@
+:root {
+  --cor-principal: #ff874f;
+  --cor-cards: #f1ffeb;
+  --cor-botao-hover: #993100;
+  --cor-botaoTexto-hover: #ffffff;
+  --cor-botao-focus: #feeb71;
+  --cor-botao-disabled: #8a8a8a;
+  --cor-accordionBg: #fff3ed;
+  --cor-sideNav: #02baf2;
+}
+
 /*** Side Nav ***/
 .content-container {
   top: 200px;
@@ -19,34 +30,30 @@ section {
 
   & ul {
     list-style: none;
-    border: solid 2px #dddcdc;
-    border-radius: 15px;
-    padding: 0;
+    border: solid 2px var(--cor-sideNav);
+    border-radius: 2.5rem;
+    padding: 1rem;
+    overflow: hidden;
 
     & a {
       text-decoration: none;
       color: black;
       & li {
         padding: 0.8rem;
-        transition-duration: 0.5s;
+        transition-duration: 0.2s;
       }
     }
     & li:hover {
-      background-color: #dddcdc; /*mudar cor do botão*/
+      background-color: var(--cor-sideNav); /*mudar cor do botão*/
+      color: var(--cor-botaoTexto-hover);
       border-radius: 15px;
       font-weight: bold;
     }
   }
 }
 
-/* Card secção */
-.imgCard {
-  @media (max-width: 992px) {
-    min-height: 200px;
-  }
-}
 
-/*Valência Jardim de Infância*/
+/*************** Valência Jardim de Infância ***************/
 /*Page header - foto*/
 .page-header-jardim {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent),
@@ -54,7 +61,7 @@ section {
   background-size: cover;
 }
 
-/*Valência Area desportiva e recreativa*/
+/*************** Valência Area desportiva e recreativa ***************/
 /*Page header - foto*/
 .page-header-desporto {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent),
@@ -63,7 +70,7 @@ section {
   background-size: cover;
 }
 
-/*Carousel insatalações*/
+/**Carousel instalações**/
 /*Carousel Container Styles */
 .instalacao-carousel {
   padding-left: 1.5rem;
@@ -168,7 +175,7 @@ section {
   background: #993100;
 }
 
-/*Area desporto e recreativa*/
+/*************** Area desporto e recreativa ***************/
 .judoImg {
   max-width: 60%; /* Ensure the image does not exceed its parent container's width */
   height: auto; /* Maintain aspect ratio while adjusting width */
@@ -188,7 +195,7 @@ section {
   background-color: white;
 }
 
-/*valencia terceira idade*/
+/*************** valencia terceira idade ***************/
 .page-header-terceiraIdade {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent),
     url(../imagens/TerceiraIdade/centroIdadeHeader.jpg) center center/cover
@@ -196,7 +203,7 @@ section {
   background-size: cover;
 }
 
-/*/*** Cantinho Carousel ***/
+/*** Cantinho Carousel ***/
 .cantinho-carousel {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -210,7 +217,7 @@ section {
 }
 
 .cantinho-carousel .cantinho-item .border {
-  border: 1px dashed rgba(0, 185, 142, 0.3) !important;
+  border: 1px !important;
 }
 
 .cantinho-carousel .owl-nav {

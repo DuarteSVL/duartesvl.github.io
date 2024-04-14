@@ -2,33 +2,21 @@
         Styles notícias
 ************************* */
 
-.page-header-noticias {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent),
-    url(../imagens/noticias/noticiasHeader.jpg) center center/cover no-repeat;
-  background-size: cover;
-}
-
 .slideIn {
   -webkit-animation-name: slideIn;
   animation-name: slideIn;
 }
 
 .btn {
-  background-color: #ff874f;
+  background-color: #5abfe1;
   color: #fff; /* cor do texto branca */
   border-radius: 5px; /* bordas arredondadas */
-  border-color: #ff874f;
   padding: 5px 10px; /* padding interno */
   text-decoration: none; /* remove sublinhado padrão */
-  display: inline-block; /* exibe como um bloco */ 
+  display: inline-block; /* exibe como um bloco */
 }
 
-.btn:hover {
-  background-color: #993100;
-  border-color: #993100;
-}
-
-#imgNoticia {
+.border {
   border-radius: 15px;
   background-color: #fef4ae;
 }
@@ -48,6 +36,10 @@ img {
   height: auto;
 }
 
+a {
+  margin-left: 35%;
+}
+
 .card-title {
   display: flex;
   text-align: center;
@@ -62,20 +54,17 @@ img {
 #paginacao {
   display: flex;
   justify-content: center;
-  
+
   & a {
-    color: #ffffff;
-    background-color: #ff874f;
-    border-color: #ff874f;
     border-radius: 50%;
     display: inline-block;
     margin: 1rem;
     padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
   }
 
   & a:hover {
-    background-color:#993100;
-    border-color: #993100;
+    background-color: #ff874f;
   }
 
   & a:active,
@@ -83,8 +72,6 @@ img {
     background-color: #fff3ed;
   }
 }
-
-
 
 /* Styles Filtros */
 #filtros {
@@ -96,122 +83,4 @@ img {
   border-radius: 15px;
   color: black;
   padding: 0.8rem;
-}
-
-/* *************************
-        Styles Gerais 
-************************* */
-
-
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-/*Acrescentar cor se necessario*/
-body {
-}
-
-/* Texto */
-/*Light (300)*/
-@font-face {
-  font-family: "NunitoSans";
-  src: url("fonts/nunitoSans/NunitoSans_10pt-Light.ttf") format("truetype");
-  font-weight: 300;
-}
-/*Regular (400)*/
-@font-face {
-  font-family: "NunitoSans";
-  src: url("fonts/nunitoSans/NunitoSans_10pt-Regular.ttf") format("truetype");
-  font-weight: 400;
-}
-/*Medium (500)*/
-@font-face {
-  font-family: "NunitoSans";
-  src: url("fonts/nunitoSans/NunitoSans_10pt-Medium.ttf") format("truetype");
-  font-weight: 500;
-}
-/*Bold (700)*/
-@font-face {
-  font-family: "NunitoSans";
-  src: url("fonts/nunitoSans/NunitoSans_10pt-Bold.ttf") format("truetype");
-  font-weight: 700;
-}
-/*Italic (400)*/
-@font-face {
-  font-family: "NunitoSans Italic";
-  src: url("fonts/nunitoSans/NunitoSans_10pt-Italic.ttf") format("truetype");
-  font-weight: 400;
-}
-
-/* Titulos h1-h6 */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-.display-1,
-.display-2,
-.display-3,
-.display-4,
-.display-5,
-.display-6 {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 700;
-}
-
-/* Texto */
-p {
-  font-family: "NunitoSans", sans-serif;
-  font-weight: 400;
-}
-
-/* Quotes */
-q {
-  font-family: "NunitoSans Italic", sans-serif;
-  font-style: italic;
-  font-weight: 400;
-}
-
-/*** Spinner loading ***/
-#spinner {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
-  z-index: 99999;
-}
-
-#spinner.show {
-  transition: opacity 0.5s ease-out, visibility 0s linear 0s;
-  visibility: visible;
-  opacity: 1;
-}
-
-/*** Header ***/
-/*** muda a transparência da imagem inicial ***/
-.page-header {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent),
-    url(../images/sobrenos.jpg) center center/cover no-repeat;
-  background-size: cover;
-}
-
-.breadcrumb-item {
-  color: #ffffff !important; /* Cor do texto das breadcrumbs */
-}
-
-.breadcrumb-item a {
-  color: #ff874f; /* Cor do texto dos links das breadcrumbs */
-}
-
-.breadcrumb-item + .breadcrumb-item::before {
-  color: rgba(255, 255, 255, 0.5);
 }

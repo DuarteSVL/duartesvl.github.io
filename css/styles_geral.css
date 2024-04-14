@@ -107,7 +107,7 @@ q {
 /*** muda a transparência da imagem inicial ***/
 .page-header {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent),
-    url(../images/sobrenos.jpg) center center/cover no-repeat;
+    url(../imagens/sobreNos/sobrenos.jpg) center center/cover no-repeat;
   background-size: cover;
 }
 

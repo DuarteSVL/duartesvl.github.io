@@ -38,16 +38,7 @@
 
 <body>
     <div class="container-xxl all-content bg-white p-0">
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-        </div>
         
-        <!-- Spinner End -->
-
-
         <!-- Navbar -->
    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
 
@@ -63,7 +54,7 @@
         <p>Centro Cultural Recreativo <br> das Crianças do Cruzeiro e Rio-Seco</p>
       </div>
   
-        <!-- button menu mobile -->
+    <!-- button menu mobile -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -74,14 +65,14 @@
   
       <!-- Homepage/Início -->
     <li class="nav-item m-2">
-    <a class="nav-link active" aria-current="page" href="homepage.html">Início</a>
+    <a class="nav-link active" aria-current="page" href="index.html">Início</a>
     </li>
   
     <!-- CCR CCR/Sobre nós  -->
     <li class="nav-item dropdown m-2">
     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">CCR CCR</a>
     <ul class="dropdown-menu animate slideIn">
-    <li><a class="dropdown-item" href="about.html">Sobre nós</a></li>
+    <li><a class="dropdown-item" href="sobreNos.html">Sobre nós</a></li>
     <li><a class="dropdown-item" href="voluntariado.html">Voluntariado</a></li>
     <li><a class="dropdown-item" href="planoContigencia.html">Plano de contingência Covid-19</a></li>
     </ul>
@@ -91,8 +82,8 @@
     <li class="nav-item dropdown m-2">
     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Valências</a>
     <ul class="dropdown-menu animate slideIn">
-    <li><a class="dropdown-item" href="valencia_bercarioCreche 1.html">Berçário e creche</a></li>
-    <li><a class="dropdown-item" href="valencia_jardimInfancia 1.html">Jardim de infância</a></li>
+    <li><a class="dropdown-item" href="valencia_bercarioCreche.html">Berçário e creche</a></li>
+    <li><a class="dropdown-item" href="valencia_jardimInfancia.html">Jardim de infância</a></li>
     <li><a class="dropdown-item" href="valencia_cicloBasico.html">1º Ciclo</a></li>
     <li><a class="dropdown-item" href="valencia_centroApoioEscolar.html">Centro de Apoio Escolar</a></li>
     <li><a class="dropdown-item" href="#">Centro Apoio Terceira Idade</a></li>
@@ -170,7 +161,7 @@
 <!-- Forms Voluntariado -->
 <div class="container-xxl py-5">
   <div class="container">
-    <div class="bg-light rounded">
+    <div class="bg-card">
       <div class="row g-0">
         <!-- Coluna da imagem -->
         <div class="col-lg-4 order-lg-last wow fadeIn">
@@ -179,39 +170,32 @@
           </div>
         </div>
         <!-- Coluna do formulário -->
-        <div class="col-lg-8 order-lg-first wow fadeIn" data-wow-delay="0.1s">
+        <div class="col-lg-8 order-lg-first">
           <div class="h-100 d-flex flex-column justify-content-center p-5">
-            <form>
-              <div class="row g-3">
-                <div class="col-sm-12">
-                  <div class="form-floating">
-                    <label for="exampleInputEmail1">Nome Completo</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escreva aqui o seu nome">
-                  </div>
-                </div>
-                <div class="col-sm-12">
-                  <div class="form-floating">
-                    <label for="exampleInputEmail1">Endereço de e-mail</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escreva aqui o seu e-mail">
-                  </div>
-                </div>
-                <div class="col-sm-12">
-                  <div class="form-floating">
-                    <label for="exampleInputPassword1">Número de telefone/telemóvel</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Escreva aqui o seu contacto">
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-floating">
-                    <label for="exampleFormControlTextarea1">Porque gostaria de fazer voluntariado connosco?</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <button class="btn btn-outline-primary w-100 py-3" type="submit">Enviar</button>
+            <form action="/submit-form" method="POST" id="inscriptionForm">
+              <div class="mb-3 col-8 mx-auto">
+                  <label for="firstName" class="form-label">Primeiro e último nome:</label>
+                  <input type="text" class="form-control" id="firstName" name="firstName" required>
+              </div>
+              <div class="mb-3 col-8 mx-auto">
+                  <label for="lastName" class="form-label">Número de telefone/telemóvel:</label>
+                  <input type="text" class="form-control" id="lastName" name="lastName">
+              </div>
+              <div class="mb-3 col-8 mx-auto">
+                  <label for="email" class="form-label">Email:</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+
+              <div class="mb-3 col-8 mx-auto">
+                  <label for="message" class="form-label">Porque gostaria de fazer voluntariado connosco?</label>
+                  <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+              </div>
+
+              <div class="col-12 d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary mx-auto">Enviar</button>
                 </div>
               </div>
-            </form>
+          </form>
           </div>
         </div>
       </div>
@@ -272,7 +256,7 @@
 
 
         <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-outline-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
 </div>
 </div><!-- Não apagar é do loading -->

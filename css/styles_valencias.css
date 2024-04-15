@@ -35,7 +35,7 @@ section {
   & ul {
     list-style: none;
     border: solid 2px var(--cor-sideNav);
-    border-radius: 2.5rem;
+    border-radius: 15px;
     padding: 1rem;
     overflow: hidden;
 
@@ -289,5 +289,12 @@ section {
 .page-header-basico {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent),
     url(../imagens/CicloBasico/ensinobasico.jpg) center center/cover no-repeat;
+  background-size: cover;
+}
+
+/***valencia bercario e creche***/
+.page-header-bercario {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent),
+    url(../imagens/Bercario/foto06.jpg) center center/cover no-repeat;
   background-size: cover;
 }

@@ -32,7 +32,7 @@
 
 
 
-        <table class="table" style="border: 4px solid red;">
+        <table class="table";">
             <tr>
                 <th></th>
                 <th>Segunda-feira</th>

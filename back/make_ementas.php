@@ -32,7 +32,7 @@
 
 
 
-        <table class="table" id="tabelaR">
+        <table class="table" style="border: 4px solid red;">
             <tr>
                 <th></th>
                 <th>Segunda-feira</th>
@@ -44,8 +44,8 @@
             <tr>
                 <th>Sopa</th>
                 <?php
-             
-                
+
+
                 // Query to fetch 'nome' values where 'tipo' is equal to 'Sopa' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
                 $query = "SELECT r.nome
                   FROM celula c
@@ -64,8 +64,8 @@
             <tr>
                 <th>Prato</th>
                 <?php
-              
-                
+
+
                 // Query to fetch 'nome' values where 'tipo' is equal to 'Prato' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
                 $query = "SELECT r.nome
                   FROM celula c
@@ -84,8 +84,8 @@
             <tr>
                 <th>Dieta</th>
                 <?php
-                
-                
+
+
                 // Query to fetch 'nome' values where 'tipo' is equal to 'Dieta' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
                 $query = "SELECT r.nome
                   FROM celula c
@@ -104,7 +104,7 @@
             <tr>
                 <th>Vegetariano</th>
                 <?php
-                
+
                 // Query to fetch 'nome' values where 'tipo' is equal to 'Vegetariano' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
                 $query = "SELECT r.nome
                   FROM celula c
@@ -123,7 +123,7 @@
             <tr>
                 <th>Sobremesa</th>
                 <?php
-                
+
                 // Query to fetch 'nome' values where 'tipo' is equal to 'Sobremesa' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
                 $query = "SELECT r.nome
                   FROM celula c
@@ -142,7 +142,7 @@
             <tr>
                 <th>Lanche</th>
                 <?php
-                
+
                 // Query to fetch 'nome' values where 'tipo' is equal to 'Lanche' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
                 $query = "SELECT r.nome
                   FROM celula c

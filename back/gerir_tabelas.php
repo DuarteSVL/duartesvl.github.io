@@ -23,125 +23,72 @@
         <h2><a href="./make_ementas.php"> Ementas</a></h2>
 
 
-
         <?php
-
         include "db_conn.php";
-
         ?>
 
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Valência</th>
+                    <th>Dia da semana</th>
+                    <th>Tipo</th>
+                    <th>Refeição</th>
+                    <th>Nova Refeição</th>
+                    <th>Editar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                $sql = "SELECT c.valencia, c.dia, c.tipo, r.nome AS refeicao_nome, c.id_celula, c.id_refeicao
+                FROM celula c
+                INNER JOIN refeicao r ON c.id_refeicao = r.id_refeicao
+                ORDER BY c.id_celula ASC";
 
-        <table class="table">
-            <tr>
-                <th></th>
-                <th>Segunda-feira</th>
-                <th>Terça-feira</th>
-                <th>Quarta-feira</th>
-                <th>Quinta-feira</th>
-                <th>Sexta-feira</th>
-            </tr>
-            <tr>
-                <th>Sopa</th>
-                <td>
-                    <?php
-                    // Establish a database connection
-                    include "db_conn.php";
+                $result = $ligacaoBD->query($sql);
 
+                if (!$result) {
+                    die("Invalid query: " . mysqli_error($ligacaoBD));
+                }
 
-                    // Query to fetch the 'nome' value from the 'refeicao' table for the 'id_refeicao' of the first row where 'valencia' is equal to 'Basico' and 'id_celula' equals 1
-                    $query_default = "SELECT r.nome FROM refeicao r INNER JOIN celula c ON c.id_refeicao = r.id_refeicao WHERE c.id_celula = 1 AND c.valencia = 'Basico'";
-                    $result_default = mysqli_query($ligacaoBD, $query_default);
-                    $row_default = mysqli_fetch_assoc($result_default);
+                if (mysqli_num_rows($result) > 0) {
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        echo "<tr>";
+                        echo "<td>" . $row['valencia'] . "</td>";
+                        echo "<td>" . ucfirst($row['dia']) . "</td>"; // Capitalize the first character of $row['dia']
+                        echo "<td>" . $row['tipo'] . "</td>";
+                        echo "<td>" . $row['refeicao_nome'] . "</td>"; // Display the nome value of refeicao
+                
+                        // Query to fetch all 'nome' values from the 'refeicao' table where 'tipo' matches the current row's 'tipo'
+                        $query_refeicoes_tipo = "SELECT nome, id_refeicao FROM refeicao WHERE tipo = '" . $row['tipo'] . "'";
+                        $result_refeicoes_tipo = mysqli_query($ligacaoBD, $query_refeicoes_tipo);
 
-                    // Query to fetch 'nome' values from the 'refeicao' table where 'tipo' is equal to 'Sopa'
-                    $query_refeicoes = "SELECT r.nome FROM refeicao r INNER JOIN celula c ON c.id_refeicao = r.id_refeicao WHERE c.tipo = 'Sopa' AND c.valencia = 'Basico'";
-                    $result_refeicoes = mysqli_query($ligacaoBD, $query_refeicoes);
-
-                    // Start building the select options
-                    echo "<select>";
-                    // Placeholder option with the default value
-                    echo '<option value="' . $row_default['nome'] . '" selected>' . $row_default['nome'] . '</option>';
-                    // Loop through fetched 'nome' values and populate select options
-                    while ($row_refeicao = mysqli_fetch_assoc($result_refeicoes)) {
-                        echo '<option value="' . $row_refeicao['nome'] . '">' . $row_refeicao['nome'] . '</option>';
+                        echo "<td>";
+                        // Display form with select dropdown for updating id_refeicao
+                        echo "<form action='update_id_refeicao.php' method='post'>";
+                        echo "<input type='hidden' name='id_celula' value='" . $row['id_celula'] . "'>";
+                        echo "<select name='nova_refeicao'>";
+                        while ($row_refeicao_tipo = mysqli_fetch_assoc($result_refeicoes_tipo)) {
+                            $selected = ($row['id_refeicao'] == $row_refeicao_tipo['id_refeicao']) ? "selected" : "";
+                            echo "<option value='" . $row_refeicao_tipo['id_refeicao'] . "' $selected>" . $row_refeicao_tipo['nome'] . "</option>";
+                        }
+                        echo "</select>";
+                        echo "</td>";
+                        echo "<td>";
+                        echo "<button class='btn btn-primary btn-sm', type='submit'>Alterar</button>";
+                        echo "</form>";
+                        echo "</td>";
+                       
+                        echo "</tr>";
                     }
-                    echo "</select>";
-                    ?>
-
-
-                </td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <th>Prato</th>
-                <td>
-
-                </td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-
-            </tr>
-            <tr>
-                <th>Dieta</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-
-            </tr>
-            <tr>
-                <th>Vegetariano</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-
-            </tr>
-            <tr>
-                <th>Sobremesa</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-
-            </tr>
-            <tr>
-                <th>Lanche</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-
-            </tr>
+                } else {
+                    echo "<tr><td colspan='6'>Sem resultados.</td></tr>";
+                }
+                ?>
+            </tbody>
         </table>
 
 
-
-
-        <a class="btn btn-primary" href="./refeicao_create.php">Actualizar Tabelas</a>
-
-        <?php
-
-        // $sql = "UPDATE noticia "
-        //     . "SET titulo = '$titulo', texto = '$texto'
-        //     "
-        //     . "WHERE id_noticia = $id";
-        
-
-
-        ?>
-
-
-    </div>
 
 
 </body>

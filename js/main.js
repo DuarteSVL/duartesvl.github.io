@@ -1,5 +1,5 @@
 (function ($) {
-  "use strict"; // Modo de funcionamento restrito para o JavaScript
+  ("use strict"); // Modo de funcionamento restrito para o JavaScript
 
   // Navbar Fixa - torna a barra de navegação fixa quando o utilizador rola a página
   $(window).scroll(function () {
@@ -26,6 +26,30 @@
 
   // Carousel de noticias
   $(".owl-carousel.noticias-carousel").owlCarousel({
+    autoplay: true,
+    autoplayTimeout: 5000, // Tempo de reprodução de cada slide em milissegundos
+    autoplayHoverPause: true, // Pausa a reprodução do carrossel quando o mouse está sobre ele
+    smartSpeed: 1000, // Velocidade de animação em milissegundos
+    margin: 24, // Margem entre os itens do carrossel
+    dots: false, // Oculta os pontos de navegação
+    loop: true, // Ativa o modo de loop
+    nav: true, // Mostra a navegação
+    navText: [
+      '<i class="bi bi-arrow-left"></i>',
+      '<i class="bi bi-arrow-right"></i>',
+    ], // Texto para os botões de navegação
+    responsive: {
+      0: {
+        items: 1,
+      },
+      992: {
+        items: 2,
+      },
+    }, // Responsividade do carrossel
+  });
+
+  // Carousel do Cantinho
+  $(".owl-carousel.cantinho-carousel").owlCarousel({
     autoplay: true,
     autoplayTimeout: 5000, // Tempo de reprodução de cada slide em milissegundos
     autoplayHoverPause: true, // Pausa a reprodução do carrossel quando o mouse está sobre ele

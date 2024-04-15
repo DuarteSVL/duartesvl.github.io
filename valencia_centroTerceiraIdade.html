@@ -33,12 +33,6 @@
       referrerpolicy="no-referrer"
     />
 
-    <!--SWIPER-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-
     <!--Owl Carousel-->
     <link
       rel="stylesheet"
@@ -56,33 +50,13 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate.css/animate.min.css" rel="stylesheet" />
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="/css/main.min.css" rel="stylesheet" />
-
     <!-- Stylesheet -->
-    <link href="css/styles_valencia.css" rel="stylesheet" />
+    <link href="css/styles_geral.css" rel="stylesheet" />
+    <link href="css/styles_valencias.css" rel="stylesheet" />
   </head>
 
   <body>
     <div class="container-xxl bg-white p-0">
-      <!-- Spinner Start -->
-      <div
-        id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-      >
-        <div
-          class="spinner-border text-primary"
-          style="width: 3rem; height: 3rem"
-          role="status"
-        >
-          <span class="sr-only">Loading...</span>
-        </div>
-      </div>
-      <!-- Spinner End -->
-
       <!-- Page Header End -->
       <div
         class="container-xxl py-5 page-header-terceiraIdade position-relative mb-5"
@@ -104,7 +78,7 @@
       <!-- Page Header End -->
 
       <!--Container sidenav e conteudo-->
-      <div class="container position-relative">
+      <div class="container position-relative gx-5">
         <div class="row">
           <!--Sidenav (table of contents)-->
           <div class="d-none d-md-block col-md-4 col-lg-3">
@@ -135,12 +109,12 @@
             </div>
           </div>
           <!--FIM Sidenav (table of contents)-->
-
+          <div class="d-none d-md-block col-md-1 col-lg-1"></div>
           <!--Conteúdo/textos da pagina Start-->
-          <div class="col-12 col-md-8 col-lg-9">
+          <div class="col-12 col-md-7 col-lg-8">
             <div class="row">
               <!-- Sobre Start -->
-              <div class="col-12 mx-auto mb-5">
+              <div class="col-12 mx-auto mb-3">
                 <section id="sobre">
                   <h1 class="mb-3 text-center">Sobre</h1>
                 </section>
@@ -149,14 +123,14 @@
                   capacidade para 50 pessoas, que frequentam o centro
                   gratuitamente.
                 </p>
-                <p class="mb-4">
+                <p>
                   Neste espaço existe um número diversificado de atividades para
                   os utentes, durante os dias úteis.
                 </p>
               </div>
               <!--Tabela sobre start-->
               <div class="col-12 col-lg-8 mx-auto mb-4">
-                <div class="bg-light rounded p-4">
+                <div class="bg-card p-4">
                   <div class="row g-1">
                     <div class="col-12 text-center mb-3">
                       <div class="border-top border-3 border-primary pt-2">
@@ -227,7 +201,7 @@
               <!-- Plano atividades start -->
               <div class="container-xxl py-5">
                 <div class="container">
-                  <div class="bg-light rounded">
+                  <div class="bg-card">
                     <div class="row g-0">
                       <div
                         class="col-lg-6 d-block d-lg-none"
@@ -250,7 +224,7 @@
                           </section>
                           <p class="mb-4">Plano anual de atividades</p>
                           <a
-                            class="btn btn-outline-primary py-3 px-5"
+                            class="btn btn-outline-custom py-3 px-5"
                             href="PDFs-valencias/TerceiraIdade/plano-de-atividades_3idade.pdf"
                             target="_blank"
                             >Ver plano
@@ -278,248 +252,113 @@
               </div>
               <!-- Plano atividades End -->
 
-              <!-- Galeria de fotos start -->
-              <div class="container-xxl py-5">
-                <div class="container">
-                  <div
-                    class="text-center mx-auto mb-5"
-                    style="max-width: 600px"
-                  >
-                    <h1 class="mb-3">Cantinho das Fotos</h1>
-                  </div>
-                  <div class="owl-carousel cantinho-carousel">
-                    <div class="item">
-                      <div class="cantinho-item bg-light rounded p-5">
-                        <p class="fs-5">Época balnear (2015)</p>
-                        <div
-                          class="d-flex align-items-center bg-white justify-content-center mb-3"
-                          style="height: 200px; overflow: hidden"
-                        >
-                          <img
-                            class="img-fluid"
-                            src="images/judo.jpg"
-                            alt="Judo"
-                          />
-                        </div>
-                        <div class="text-center">
-                          <a class="btn btn-primary py-2 px-4" href=""
-                            >Ver fotos</a
-                          >
-                        </div>
-                      </div>
-                    </div>
+            <!-- Cantinho das Fotos -->
+<div class="container-xxl py-5">
+  <div class="container">
+    <div class="text-center mx-auto mb-5" style="max-width: 600px">
+      <h1 class="mb-3">Cantinho das Fotos</h1>
+    </div>
+    <div class="owl-carousel owl-theme cantinho-carousel">
 
-                    <div class="item">
-                      <div class="cantinho-item bg-light rounded p-5">
-                        <p class="fs-5">Marcha Popular - Ajuda (2015)</p>
-                        <div
-                          class="d-flex align-items-center bg-white justify-content-center mb-3"
-                          style="height: 200px; overflow: hidden"
-                        >
-                          <img
-                            class="img-fluid"
-                            src="images/POP-DANCE.jpg"
-                            alt="POP Dance"
-                          />
-                        </div>
-                        <div class="text-center">
-                          <a class="btn btn-primary py-2 px-4" href=""
-                            >Ver fotos</a
-                          >
-                        </div>
-                      </div>
-                    </div>
+      <div class="item">
+        <div class="cantinho-item bg-light rounded p-5">
+          <p class="fs-5">Época balnear (2015)</p>
+          <div class="d-flex align-items-center bg-white justify-content-center mb-3" style="height: 200px; overflow: hidden">
+            <img class="img-fluid" src="images/judo.jpg" alt="Judo" />
+          </div>
+          <div class="text-center">
+            <a class="btn btn-outline-custom py-2 px-4" href="">Ver fotos</a>
+          </div>
+        </div>
+      </div>
 
-                    <div class="item">
-                      <div class="cantinho-item bg-light rounded p-5">
-                        <p class="fs-5">25 de abril (2015)</p>
-                        <div
-                          class="d-flex align-items-center bg-white justify-content-center mb-3"
-                          style="height: 200px; overflow: hidden"
-                        >
-                          <img
-                            class="img-fluid"
-                            src="imagens/TerceiraIdade/abril2015/abril2015-01.jpg"
-                            alt="Início do Ano Letivo"
-                          />
-                        </div>
-                        <div class="text-center">
-                          <a class="btn btn-primary py-2 px-4" href=""
-                            >Ver fotos</a
-                          >
-                        </div>
-                      </div>
-                    </div>
+      <div class="item">
+        <div class="cantinho-item bg-light rounded p-5">
+          <p class="fs-5">Marcha Popular - Ajuda (2015)</p>
+          <div class="d-flex align-items-center bg-white justify-content-center mb-3" style="height: 200px; overflow: hidden">
+            <img class="img-fluid" src="images/POP-DANCE.jpg" alt="POP Dance" />
+          </div>
+          <div class="text-center">
+            <a class="btn btn-outline-custom py-2 px-4" href="">Ver fotos</a>
+          </div>
+        </div>
+      </div>
 
-                    <div class="item">
-                      <div class="cantinho-item bg-light rounded p-5">
-                        <p class="fs-5">Centenário Francisquinha (2015)</p>
-                        <div
-                          class="d-flex align-items-center bg-white justify-content-center mb-3"
-                          style="height: 200px; overflow: hidden"
-                        >
-                          <img
-                            class="img-fluid"
-                            src="imagens/TerceiraIdade/aniversario100/aniver-01.jpg"
-                            alt="Início do Ano Letivo"
-                          />
-                        </div>
-                        <div class="text-center">
-                          <a class="btn btn-primary py-2 px-4" href=""
-                            >Ver fotos</a
-                          >
-                        </div>
-                      </div>
-                    </div>
+      <div class="item">
+        <div class="cantinho-item bg-light rounded p-5">
+          <p class="fs-5">25 de abril (2015)</p>
+          <div class="d-flex align-items-center bg-white justify-content-center mb-3" style="height: 200px; overflow: hidden">
+            <img class="img-fluid" src="imagens/TerceiraIdade/abril2015/abril2015-01.jpg" alt="25 de abril" />
+          </div>
+          <div class="text-center">
+            <a class="btn btn-outline-custom py-2 px-4" href="">Ver fotos</a>
+          </div>
+        </div>
+      </div>
 
-                    <div class="item">
-                      <div class="cantinho-item bg-light rounded p-5">
-                        <p class="fs-5">Carnaval(2015)</p>
-                        <div
-                          class="d-flex align-items-center bg-white justify-content-center mb-3"
-                          style="height: 200px; overflow: hidden"
-                        >
-                          <img
-                            class="img-fluid"
-                            src="imagens/TerceiraIdade/carnaval2015/carnaval2015-01.jpg"
-                            alt="Início do Ano Letivo"
-                          />
-                        </div>
-                        <div class="text-center">
-                          <a class="btn btn-primary py-2 px-4" href=""
-                            >Ver fotos</a
-                          >
-                        </div>
-                      </div>
-                    </div>
+      <div class="item">
+        <div class="cantinho-item bg-light rounded p-5">
+          <p class="fs-5">Centenário Francisquinha (2015)</p>
+          <div class="d-flex align-items-center bg-white justify-content-center mb-3" style="height: 200px; overflow: hidden">
+            <img class="img-fluid" src="imagens/TerceiraIdade/aniversario100/aniver-01.jpg" alt="Centenário Francisquinha" />
+          </div>
+          <div class="text-center">
+            <a class="btn btn-outline-custom py-2 px-4" href="">Ver fotos</a>
+          </div>
+        </div>
+      </div>
 
-                    <div class="item">
-                      <div class="cantinho-item bg-light rounded p-5">
-                        <p class="fs-5">Caminhada em Monsanto</p>
-                        <div
-                          class="d-flex align-items-center bg-white justify-content-center mb-3"
-                          style="height: 200px; overflow: hidden"
-                        >
-                          <img
-                            class="img-fluid"
-                            src="imagens/TerceiraIdade/caminhadaMonsanto/monsanto-01.jpg"
-                            alt="Início do Ano Letivo"
-                          />
-                        </div>
-                        <div class="text-center">
-                          <a class="btn btn-primary py-2 px-4" href=""
-                            >Ver fotos</a
-                          >
-                        </div>
-                      </div>
-                    </div>
+      <div class="item">
+        <div class="cantinho-item bg-light rounded p-5">
+          <p class="fs-5">Carnaval (2015)</p>
+          <div class="d-flex align-items-center bg-white justify-content-center mb-3" style="height: 200px; overflow: hidden">
+            <img class="img-fluid" src="imagens/TerceiraIdade/carnaval2015/carnaval2015-01.jpg" alt="Carnaval" />
+          </div>
+          <div class="text-center">
+            <a class="btn btn-outline-custom py-2 px-4" href="">Ver fotos</a>
+          </div>
+        </div>
+      </div>
 
-                    <div class="item">
-                      <div class="cantinho-item bg-light rounded p-5">
-                        <p class="fs-5">Grupo de Danças Tradicionais</p>
-                        <div
-                          class="d-flex align-items-center bg-white justify-content-center mb-3"
-                          style="height: 200px; overflow: hidden"
-                        >
-                          <img
-                            class="img-fluid"
-                            src="imagens/TerceiraIdade/grupoDancas/grupoDancas-01.jpg"
-                            alt="Início do Ano Letivo"
-                          />
-                        </div>
-                        <div class="text-center">
-                          <a class="btn btn-primary py-2 px-4" href=""
-                            >Ver fotos</a
-                          >
-                        </div>
-                      </div>
-                    </div>
+      <div class="item">
+        <div class="cantinho-item bg-light rounded p-5">
+          <p class="fs-5">Caminhada em Monsanto</p>
+          <div class="d-flex align-items-center bg-white justify-content-center mb-3" style="height: 200px; overflow: hidden">
+            <img class="img-fluid" src="imagens/TerceiraIdade/caminhadaMonsanto/monsanto-01.jpg" alt="Caminhada em Monsanto" />
+          </div>
+          <div class="text-center">
+            <a class="btn btn-outline-custom py-2 px-4" href="">Ver fotos</a>
+          </div>
+        </div>
+      </div>
 
-                    <div class="item">
-                      <div class="cantinho-item bg-light rounded p-5">
-                        <p class="fs-5">Carnaval (2014)</p>
-                        <div
-                          class="d-flex align-items-center bg-white justify-content-center mb-3"
-                          style="height: 200px; overflow: hidden"
-                        >
-                          <img
-                            class="img-fluid"
-                            src="imagens/TerceiraIdade/carnaval2014/carnaval2014-01.jpg"
-                            alt="Início do Ano Letivo"
-                          />
-                        </div>
-                        <div class="text-center">
-                          <a class="btn btn-primary py-2 px-4" href=""
-                            >Ver fotos</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <div class="item">
+        <div class="cantinho-item bg-light rounded p-5">
+          <p class="fs-5">Grupo de Danças Tradicionais</p>
+          <div class="d-flex align-items-center bg-white justify-content-center mb-3" style="height: 200px; overflow: hidden">
+            <img class="img-fluid" src="imagens/TerceiraIdade/grupoDancas/grupoDancas-01.jpg" alt="Grupo de Danças Tradicionais" />
+          </div>
+          <div class="text-center">
+            <a class="btn btn-outline-custom py-2 px-4" href="">Ver fotos</a>
+          </div>
+        </div>
+      </div>
 
-              <!-- Modal para a galeria de fotos -->
-              <div
-                class="modal fade"
-                id="photoGalleryModal"
-                tabindex="-1"
-                aria-labelledby="photoGalleryModalLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog modal-xl modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="photoGalleryModalLabel">
-                        Galeria de Fotos
-                      </h5>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div class="modal-body">
-                      <div
-                        id="photoCarousel"
-                        class="carousel slide"
-                        data-bs-ride="carousel"
-                      >
-                        <div class="carousel-inner" id="carouselInner">
-                          <!-- As imagens da galeria serão carregadas aqui dinamicamente -->
-                        </div>
-                        <button
-                          class="carousel-control-prev"
-                          type="button"
-                          data-bs-target="#photoCarousel"
-                          data-bs-slide="prev"
-                        >
-                          <span
-                            class="carousel-control-prev-icon"
-                            aria-hidden="true"
-                          ></span>
-                          <span class="visually-hidden">Anterior</span>
-                        </button>
-                        <button
-                          class="carousel-control-next"
-                          type="button"
-                          data-bs-target="#photoCarousel"
-                          data-bs-slide="next"
-                        >
-                          <span
-                            class="carousel-control-next-icon"
-                            aria-hidden="true"
-                          ></span>
-                          <span class="visually-hidden">Próximo</span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
-              <!-- Galeria de fotos end -->
+      <div class="item">
+        <div class="cantinho-item bg-light rounded p-5">
+          <p class="fs-5">Carnaval (2014)</p>
+          <div class="d-flex align-items-center bg-white justify-content-center mb-3" style="height: 200px; overflow: hidden">
+            <img class="img-fluid" src="imagens/TerceiraIdade/carnaval2014/carnaval2014-01.jpg" alt="Carnaval" />
+          </div>
+          <div class="text-center">
+            <a class="btn btn-outline-custom py-2 px-4" href="">Ver fotos</a>
+          </div>
+        </div>
+      </div>
+
+  
+              
             </div>
           </div>
           <!--Conteúdo/textos da pagina End-->
@@ -544,18 +383,13 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
       integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <!-- Template Javascript -->
+    <!-- Javascript -->
     <script src="js/main.js"></script>
-    <!--Javascript-->
-    <script src="app_valencia.js"></script>
   </body>
 </html>

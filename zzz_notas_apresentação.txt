@@ -22,7 +22,9 @@ Infinityfree para hosting (explicar que este é temporário e vai ser subtituíd
 Para fazer o deployment no infinityfree directamente através da sincronização com o Github, 
 foi utilizado a FTP-Deplo-Action do seguinte repositório: https://github.com/SamKirkland/FTP-Deploy-Action
 
-Figma para criação do mockup do site
+Figma para criação do mockup do site, mas que no entanto já não reflecte o desenho final do site em alguns aspectos,
+seja por melhoria dos mesmos ou por incompactibilidade com o design geral
 
+mencionar que usamos metodologia Agile para realização do projecto
 
 

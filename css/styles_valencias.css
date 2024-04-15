@@ -244,7 +244,7 @@ section {
   align-items: center;
   justify-content: center;
   color: white;
-  background-color: #ff874f;
+  background-color: var(--cor-principal);
   border-radius: 50%; /* Changed to 50% to create a circle */
   font-size: 20px;
   transition: 0.5s;
@@ -252,7 +252,7 @@ section {
 
 .cantinho-carousel .owl-nav button.owl-prev:hover,
 .cantinho-carousel .owl-nav button.owl-next:hover {
-  background: #993100;
+  background: var(--cor-botao-hover);
 }
 
 /* Estilo para os itens do carrossel */

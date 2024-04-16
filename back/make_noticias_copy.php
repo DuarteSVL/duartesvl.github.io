@@ -22,6 +22,11 @@ if (!$result) {
 
 <head>
 
+ <!-- Próprios -->
+ <link href="css/noticias.css" rel="stylesheet">
+   <link href="css/headerFooter.css" rel="stylesheet">
+   <script src="js/main.js"></script>
+
  <!-- Navbar Aqui Dentro -->
  <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
   <div class="container-fluid">

@@ -17,7 +17,7 @@
     <div class="container my-5">
 
         <div class="d-flex justify-content-end mb-3">
-            <h2 class="btn btn-primary"><a href="./main.php" class="text-white">Main</a></h2>
+            <h2 class="btn btn-primary"><a href="./main.php" class="text-white" style="text-decoration: none">Main</a></h2>
         </div>
 
         <h2><a href="./gerir_ementas.php"> Lista de refeições</a></h2>

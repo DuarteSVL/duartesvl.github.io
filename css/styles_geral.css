@@ -386,13 +386,6 @@ a {
   text-align: center;
 }
 
-#formContactos {
-  width: 50%;
-  background-color: #f1ffeb;
-  border-radius: 15px;
-  padding: 1rem;
-}
-
 #submit {
   color: #ffffff;
   background-color: #ff874f;
@@ -504,4 +497,8 @@ td {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent),
     url(../imagens/Geral/ementa2.jpg) center center/cover no-repeat;
   background-size: cover;
+}
+
+.submenu{
+  background-color: #ff874f;
 }

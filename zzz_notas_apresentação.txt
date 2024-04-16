@@ -27,20 +27,6 @@ seja por melhoria dos mesmos ou por incompactibilidade com o design geral
 
 mencionar que usamos metodologia Agile para realização do projecto
 
-01
-Apresentação do grupo;
-02
-Identificação do cliente e apresentação da ideia;
--apresentar o site antigo 
-03
-Apresentação da versão final e variantes;
-04
-Identificar metodologia/tecnologias;
-05
-Identificar como contornaram as expectativas/receios;
-06
-Conclusão.
-
 
 -----------------------------------------------------------------------
 Partes da apresentação:

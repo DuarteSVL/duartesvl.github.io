@@ -30,7 +30,7 @@ if (isset($_POST['username']) && isset($_POST['password'])){
             exit();
         } else {
             // Authentication failed
-            header("Location: login.php?error=Dados incorrectos.");
+            header("Location: login.php?error=Dados errados.");
             exit();
         }
     }

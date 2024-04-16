@@ -38,8 +38,49 @@ INSERT INTO celula (id_celula, id_refeicao, valencia, tipo, dia) VALUES
 (25, NULL, 'Basico', 'Sobremesa', 'sexta');
 
 INSERT INTO celula (id_celula, id_refeicao, valencia, tipo, dia) VALUES
-(26, 32, 'Basico', 'Lanche', 'segunda'),
-(27, 32, 'Basico', 'Lanche', 'terca'),
-(28, 32, 'Basico', 'Lanche', 'quarta'),
-(29, 32, 'Basico', 'Lanche', 'quinta'),
-(30, 32, 'Basico', 'Lanche', 'sexta');
+(26, NULL, 'Basico', 'Lanche', 'segunda'),
+(27, NULL, 'Basico', 'Lanche', 'terca'),
+(28, NULL, 'Basico', 'Lanche', 'quarta'),
+(29, NULL, 'Basico', 'Lanche', 'quinta'),
+(30, NULL, 'Basico', 'Lanche', 'sexta');
+
+
+
+INSERT INTO celula (id_celula, id_refeicao, valencia, tipo, dia) VALUES
+(31, NULL, 'Bercario', 'Reforço_Matinal', 'segunda'),
+(32, NULL, 'Bercario', 'Reforço_Matinal', 'terca'),
+(33, NULL, 'Bercario', 'Reforço_Matinal', 'quarta'),
+(34, NULL, 'Bercario', 'Reforço_Matinal', 'quinta'),
+(35, NULL, 'Bercario', 'Reforço_Matinal', 'sexta');
+
+
+INSERT INTO celula (id_celula, id_refeicao, valencia, tipo, dia) VALUES
+(36, NULL, 'Bercario', 'Sopa', 'segunda'),
+(37, NULL, 'Bercario', 'Sopa', 'terca'),
+(38, NULL, 'Bercario', 'Sopa', 'quarta'),
+(39, NULL, 'Bercario', 'Sopa', 'quinta'),
+(40, NULL, 'Bercario', 'Sopa', 'sexta');
+
+INSERT INTO celula (id_celula, id_refeicao, valencia, tipo, dia) VALUES
+(41, NULL, 'Bercario', 'Prato', 'segunda'),
+(41, NULL, 'Bercario', 'Prato', 'terca'),
+(41, NULL, 'Bercario', 'Prato', 'quarta'),
+(41, NULL, 'Bercario', 'Prato', 'quinta'),
+(41, NULL, 'Bercario', 'Prato', 'sexta'),
+
+
+INSERT INTO celula (id_celula, id_refeicao, valencia, tipo, dia) VALUES
+(46, NULL, 'Bercario', 'Sobremesa', 'segunda'),
+(46, NULL, 'Bercario', 'Sobremesa', 'terca'),
+(46, NULL, 'Bercario', 'Sobremesa', 'quarta'),
+(46, NULL, 'Bercario', 'Sobremesa', 'quinta'),
+(46, NULL, 'Bercario', 'Sobremesa', 'sexta'),
+
+
+INSERT INTO celula (id_celula, id_refeicao, valencia, tipo, dia) VALUES
+(51, NULL, 'Bercario', 'Lanche', 'segunda'),
+(51, NULL, 'Bercario', 'Lanche', 'terca'),
+(51, NULL, 'Bercario', 'Lanche', 'quarta'),
+(51, NULL, 'Bercario', 'Lanche', 'quinta'),
+(51, NULL, 'Bercario', 'Lanche', 'sexta'),
+

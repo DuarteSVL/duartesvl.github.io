@@ -114,3 +114,9 @@ h2 {
     display: flex;
     align-items: center;
 }
+
+.input-group {
+    margin-bottom: 20px;
+    height: 40px; /* Specify the desired height */
+    align-items: stretch; /* Make both elements occupy full height */
+}

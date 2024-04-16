@@ -31,27 +31,17 @@ if (isset($_GET['id'])) {
         $imagem = $row['imagem'];
         $texto = $row['texto'];
 ?>
-
 <!DOCTYPE html>
 <html lang="pt-pt">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?php echo $titulo; ?></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo $titulo; ?></title>
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-
-  <!-- Próprios -->
-  <link rel="stylesheet" href="noticias.css">
-  <script src="app.js"></script>
-
-
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
@@ -59,7 +49,7 @@ if (isset($_GET['id'])) {
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="../index.html">Início</a></li>
-            <li class="breadcrumb-item"><a href="/make_noticias.php">Notícias e Eventos</a></li>
+            <li class="breadcrumb-item"><a href="./make_noticias.php">Notícias e Eventos</a></li>
             <li class="breadcrumb-item active" aria-current="page">
                 <?php echo $titulo; ?>
             </li>
@@ -69,30 +59,22 @@ if (isset($_GET['id'])) {
     <!-- Container for content -->
     <div class="container my-5">
         <div class="bg-light p-4 rounded">
-            <!-- Título -->
-            <div class="d-flex justify-content-center">
-                <h3>
-                    <?php echo $titulo; ?>
-                </h3>
+            <!-- Título and Data -->
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h3 class="mb-0"><?php echo $titulo; ?></h3>
+                <h5 class="text-end mb-0"><?php echo $data; ?></h5>
             </div>
 
-            <!-- Data -->
-            <h5 class="text-center">
-                <?php echo $data; ?>
-            </h5>
+            <!-- Imagem -->
+            <div class="border col-md-4 float-md-end mb-3 mx-auto p-3" id="imgNoticia">
+                <img src="../img_noticia/<?php echo $imagem; ?>" class="img-fluid" alt="">
+            </div>
 
-            <div class="row">
-                <!-- Imagem -->
-                <div class="border col-md-4 float-md-end mb-3 mx-auto p-3" id="imgNoticia">
-                    <img src="../img_noticia/<?php echo $imagem; ?>" class="img-fluid" alt="">
-                </div>
-
-                <!-- Texto -->
-                <div class="col-md-8"> <!-- Adjust the width as needed -->
-                    <p>
-                        <?php echo $texto; ?>
-                    </p>
-                </div>
+            <!-- Texto -->
+            <div class="col-md-8 mx-auto">
+                <p class="text-justify">
+                    <?php echo $texto; ?>
+                </p>
             </div>
         </div>
     </div>
@@ -103,8 +85,8 @@ if (isset($_GET['id'])) {
         crossorigin="anonymous"></script>
 </body>
 
-
 </html>
+
 
 <?php
     } else {

@@ -226,6 +226,8 @@
             </tr>
         </table>
 
+    </div>
+    
     <div class="container-fluid g-0">
       <footer>
         <div class="container d-flex pt-4">
@@ -355,7 +357,6 @@
           </div>
         </div>
       </footer>
-    </div>
 </body>
 
 </html>

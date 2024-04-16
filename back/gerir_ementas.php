@@ -6,11 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerir refeições</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 
     <link rel="stylesheet" href="gerir_ementas.css">
@@ -24,19 +21,17 @@
         </div>
 
         <h2><a href="./gerir_ementas.php"> Lista de refeições</a></h2>
-
+       
         <a class="btn btn-primary" href="./refeicao_create.php">Nova Refeição</a>
 
         <form action="" method="GET">
-            <div class="input-group input-group-lg mb-3">
+            <div class="input-group mb-3">
                 <input type="text" name="search" required value="<?php if (isset($_GET['search'])) {
-                    echo $_GET['search'];
-                } ?>" class="form-control"
-                    placeholder="Procurar palavras.">
+                                                                        echo $_GET['search'];
+                                                                    } ?>" class="form-control" placeholder="Procurar palavras.">
                 <button type="submit" class="btn btn-primary">Procurar</button>
             </div>
         </form>
-
 
         <table class="table table-striped">
             <thead>
@@ -50,7 +45,7 @@
             </thead>
             <tbody>
                 <?php
-                include "db_conn.php";
+               include "db_conn.php";
 
                 if (isset($_GET['search'])) {
                     $filtervalues = $_GET['search'];

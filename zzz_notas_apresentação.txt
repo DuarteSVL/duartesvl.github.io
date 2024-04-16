@@ -47,9 +47,14 @@ Partes da apresentação:
 -----------------------------------------------------------------------
 
 -introdução: Tomás
+ -Tópico 01 introduzir a equipa 
+ -introuzir o site antigo (site de uma escola com vários graus de ensino)
+ -Tópico 02 introduzir o projecto (reestruturação do site com foco numa interface simples e
+                         com base de dados para gerir ementas e notícias)
+ -
 
 -mostrar o site novo:
 
 -backoffice/base de dados: Duarte
 
--final: Tomás
+-conclusão: Tomás

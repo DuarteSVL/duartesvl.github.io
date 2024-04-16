@@ -180,7 +180,7 @@ if (!$result) {
 
 
     <!--Titulo-->
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center" style="margin-bottom: 2rem";>
         <h1>
             <a href="?">Notícias e Eventos</a>
         </h1>

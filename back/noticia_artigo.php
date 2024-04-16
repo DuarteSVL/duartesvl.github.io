@@ -70,7 +70,7 @@ if (isset($_GET['id'])) {
       <div class="container my-5">
         <div class="bg-light p-4 rounded">
           <!-- Título -->
-          <div class="d-flex justify-content-center">
+          <div class="d-flex justify-content-center mb-4"> <!-- Added margin bottom -->
             <h3>
               <?php echo $titulo; ?>
             </h3>
@@ -89,7 +89,7 @@ if (isset($_GET['id'])) {
 
             <!-- Texto -->
             <div class="col-md-8"> <!-- Adjust the width as needed -->
-              <p>
+              <p style="max-width: 100%;"> <!-- Limiting the width -->
                 <?php echo $texto; ?>
               </p>
             </div>

@@ -182,135 +182,146 @@
 
     ?>
 
+    <style>
+      @media (max-width: 768px) {
+
+        /* Adjust the width of table cells for smaller screens */
+        table th,
+        table td {
+          width: 50%;
+        }
+      }
+    </style>
+
+    <div class="table-responsive">
+      <table class="table">
+        <tr>
+          <th></th>
+          <th>Segunda-feira</th>
+          <th>Terça-feira</th>
+          <th>Quarta-feira</th>
+          <th>Quinta-feira</th>
+          <th>Sexta-feira</th>
+        </tr>
+        <tr>
+          <th>Sopa</th>
+          <?php
 
 
-    <table class="table" ;">
-      <tr>
-        <th></th>
-        <th>Segunda-feira</th>
-        <th>Terça-feira</th>
-        <th>Quarta-feira</th>
-        <th>Quinta-feira</th>
-        <th>Sexta-feira</th>
-      </tr>
-      <tr>
-        <th>Sopa</th>
-        <?php
-
-
-        // Query to fetch 'nome' values where 'tipo' is equal to 'Sopa' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
-        $query = "SELECT r.nome
+          // Query to fetch 'nome' values where 'tipo' is equal to 'Sopa' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
+          $query = "SELECT r.nome
                   FROM celula c
                   INNER JOIN refeicao r ON c.id_refeicao = r.id_refeicao
                   WHERE c.tipo = 'Sopa' AND c.valencia = 'Basico'
                   ORDER BY c.id_celula ASC";
 
-        $result = mysqli_query($ligacaoBD, $query);
+          $result = mysqli_query($ligacaoBD, $query);
 
-        // Loop through the fetched data and populate the table cells
-        while ($row = mysqli_fetch_assoc($result)) {
-          echo '<td>' . $row['nome'] . '</td>';
-        }
-        ?>
-      </tr>
-      <tr>
-        <th>Prato</th>
-        <?php
+          // Loop through the fetched data and populate the table cells
+          while ($row = mysqli_fetch_assoc($result)) {
+            echo '<td>' . $row['nome'] . '</td>';
+          }
+          ?>
+        </tr>
+        <tr>
+          <th>Prato</th>
+          <?php
 
 
-        // Query to fetch 'nome' values where 'tipo' is equal to 'Prato' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
-        $query = "SELECT r.nome
+          // Query to fetch 'nome' values where 'tipo' is equal to 'Prato' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
+          $query = "SELECT r.nome
                   FROM celula c
                   INNER JOIN refeicao r ON c.id_refeicao = r.id_refeicao
                   WHERE c.tipo = 'Prato' AND c.valencia = 'Basico'
                   ORDER BY c.id_celula ASC";
 
-        $result = mysqli_query($ligacaoBD, $query);
+          $result = mysqli_query($ligacaoBD, $query);
 
-        // Loop through the fetched data and populate the table cells
-        while ($row = mysqli_fetch_assoc($result)) {
-          echo '<td>' . $row['nome'] . '</td>';
-        }
-        ?>
-      </tr>
-      <tr>
-        <th>Dieta</th>
-        <?php
+          // Loop through the fetched data and populate the table cells
+          while ($row = mysqli_fetch_assoc($result)) {
+            echo '<td>' . $row['nome'] . '</td>';
+          }
+          ?>
+        </tr>
+        <tr>
+          <th>Dieta</th>
+          <?php
 
 
-        // Query to fetch 'nome' values where 'tipo' is equal to 'Dieta' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
-        $query = "SELECT r.nome
+          // Query to fetch 'nome' values where 'tipo' is equal to 'Dieta' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
+          $query = "SELECT r.nome
                   FROM celula c
                   INNER JOIN refeicao r ON c.id_refeicao = r.id_refeicao
                   WHERE c.tipo = 'Dieta' AND c.valencia = 'Basico'
                   ORDER BY c.id_celula ASC";
 
-        $result = mysqli_query($ligacaoBD, $query);
+          $result = mysqli_query($ligacaoBD, $query);
 
-        // Loop through the fetched data and populate the table cells
-        while ($row = mysqli_fetch_assoc($result)) {
-          echo '<td>' . $row['nome'] . '</td>';
-        }
-        ?>
-      </tr>
-      <tr>
-        <th>Vegetariano</th>
-        <?php
+          // Loop through the fetched data and populate the table cells
+          while ($row = mysqli_fetch_assoc($result)) {
+            echo '<td>' . $row['nome'] . '</td>';
+          }
+          ?>
+        </tr>
+        <tr>
+          <th>Vegetariano</th>
+          <?php
 
-        // Query to fetch 'nome' values where 'tipo' is equal to 'Vegetariano' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
-        $query = "SELECT r.nome
+          // Query to fetch 'nome' values where 'tipo' is equal to 'Vegetariano' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
+          $query = "SELECT r.nome
                   FROM celula c
                   INNER JOIN refeicao r ON c.id_refeicao = r.id_refeicao
                   WHERE c.tipo = 'Vegetariano' AND c.valencia = 'Basico'
                   ORDER BY c.id_celula ASC";
 
-        $result = mysqli_query($ligacaoBD, $query);
+          $result = mysqli_query($ligacaoBD, $query);
 
-        // Loop through the fetched data and populate the table cells
-        while ($row = mysqli_fetch_assoc($result)) {
-          echo '<td>' . $row['nome'] . '</td>';
-        }
-        ?>
-      </tr>
-      <tr>
-        <th>Sobremesa</th>
-        <?php
+          // Loop through the fetched data and populate the table cells
+          while ($row = mysqli_fetch_assoc($result)) {
+            echo '<td>' . $row['nome'] . '</td>';
+          }
+          ?>
+        </tr>
+        <tr>
+          <th>Sobremesa</th>
+          <?php
 
-        // Query to fetch 'nome' values where 'tipo' is equal to 'Sobremesa' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
-        $query = "SELECT r.nome
+          // Query to fetch 'nome' values where 'tipo' is equal to 'Sobremesa' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
+          $query = "SELECT r.nome
                   FROM celula c
                   INNER JOIN refeicao r ON c.id_refeicao = r.id_refeicao
                   WHERE c.tipo = 'Sobremesa' AND c.valencia = 'Basico'
                   ORDER BY c.id_celula ASC";
 
-        $result = mysqli_query($ligacaoBD, $query);
+          $result = mysqli_query($ligacaoBD, $query);
 
-        // Loop through the fetched data and populate the table cells
-        while ($row = mysqli_fetch_assoc($result)) {
-          echo '<td>' . $row['nome'] . '</td>';
-        }
-        ?>
-      </tr>
-      <tr>
-        <th>Lanche</th>
-        <?php
+          // Loop through the fetched data and populate the table cells
+          while ($row = mysqli_fetch_assoc($result)) {
+            echo '<td>' . $row['nome'] . '</td>';
+          }
+          ?>
+        </tr>
+        <tr>
+          <th>Lanche</th>
+          <?php
 
-        // Query to fetch 'nome' values where 'tipo' is equal to 'Lanche' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
-        $query = "SELECT r.nome
+          // Query to fetch 'nome' values where 'tipo' is equal to 'Lanche' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
+          $query = "SELECT r.nome
                   FROM celula c
                   INNER JOIN refeicao r ON c.id_refeicao = r.id_refeicao
                   WHERE c.tipo = 'Lanche' AND c.valencia = 'Basico'
                   ORDER BY c.id_celula ASC";
 
-        $result = mysqli_query($ligacaoBD, $query);
+          $result = mysqli_query($ligacaoBD, $query);
 
-        // Loop through the fetched data and populate the table cells
-        while ($row = mysqli_fetch_assoc($result)) {
-          echo '<td>' . $row['nome'] . '</td>';
-        }
-        ?>
-      </tr>
-    </table>
+          // Loop through the fetched data and populate the table cells
+          while ($row = mysqli_fetch_assoc($result)) {
+            echo '<td>' . $row['nome'] . '</td>';
+          }
+          ?>
+        </tr>
+      </table>
+    </div>
 
   </div>
 

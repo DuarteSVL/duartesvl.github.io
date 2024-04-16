@@ -31,10 +31,11 @@ mencionar que usamos metodologia Agile para realização do projecto
 Apresentação do grupo;
 02
 Identificação do cliente e apresentação da ideia;
+-apresentar o site antigo 
 03
-Identificar metodologia/tecnologias;
-04
 Apresentação da versão final e variantes;
+04
+Identificar metodologia/tecnologias;
 05
 Identificar como contornaram as expectativas/receios;
 06
@@ -46,6 +47,8 @@ Partes da apresentação:
 -----------------------------------------------------------------------
 
 -introdução: Tomás
+
+-mostrar o site novo:
 
 -backoffice/base de dados: Duarte
 

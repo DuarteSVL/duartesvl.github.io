@@ -14,7 +14,7 @@ if (isset($_POST['username']) && isset($_POST['password'])){
     $password = validate($_POST['password']);
 
     if (empty($username) || empty($password)){
-        header("Location: login.php?error=Username e password necessarios");
+        header("Location: login.php?error=Dados em falta.");
         exit();
     } else {
         // Hash the password before comparing

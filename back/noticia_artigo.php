@@ -58,7 +58,7 @@ if (isset($_GET['id'])) {
   <!-- Breadcrumbs para a página -->
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="./index.html">Início</a></li>
+      <li class="breadcrumb-item"><a href="../index.html">Início</a></li>
       <li class="breadcrumb-item"><a href="/make_noticias.php">Notícias e Eventos</a></li>
       <li class="breadcrumb-item active" aria-current="page">
         <?php echo $titulo; ?>

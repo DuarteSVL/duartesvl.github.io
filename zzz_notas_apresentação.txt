@@ -27,15 +27,17 @@ seja por melhoria dos mesmos ou por incompactibilidade com o design geral
 
 mencionar que usamos metodologia Agile para realização do projecto
 
-
+01
 Apresentação do grupo;
-Identificação do cliente;
-Apresentação da ideia/Briefing inicial;
-(Neste caso podem mostrar o site inicial, como falamos)
-Identificar expectativas/receios;
-Apresentação da metodologia;
+02
+Identificação do cliente e apresentação da ideia;
+03
+Identificar metodologia/tecnologias;
+04
 Apresentação da versão final e variantes;
+05
 Identificar como contornaram as expectativas/receios;
+06
 Conclusão.
 
 

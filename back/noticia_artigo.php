@@ -88,8 +88,8 @@ if (isset($_GET['id'])) {
             </div>
 
             <!-- Texto -->
-            <div class="col-md-6"> <!-- Adjust width -->
-              <p style="max-width: 100%;"> 
+            <div class="col-md-8"> <!-- Adjust width -->
+              <p style="max-width: 100%; margin-left: 8px; margin-right: 8px;"> 
                 <?php echo $texto; ?>
               </p>
             </div>

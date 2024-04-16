@@ -55,6 +55,11 @@
 
 </head>
 
+<?php
+
+include "header.php";
+
+?>
 
 <body>
     <!-- Navbar -->
@@ -538,6 +543,13 @@
         </div>
     </div>
   </footer>
+
+
+<?php
+
+include "footer.php";
+
+?>
   
   <!--Fim do Footer-->
 

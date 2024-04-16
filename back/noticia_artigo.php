@@ -38,7 +38,7 @@ if (isset($_GET['id'])) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Artigo</title>
+  <title><?php echo $titulo; ?></title>
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -58,48 +58,47 @@ if (isset($_GET['id'])) {
   <!-- Breadcrumbs para a página -->
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="index.html">Início</a></li>
-      <li class="breadcrumb-item"><a href="noticias.html">Notícias e Eventos</a></li>
+      <li class="breadcrumb-item"><a href="./index.html">Início</a></li>
+      <li class="breadcrumb-item"><a href="/make_noticias.php">Notícias e Eventos</a></li>
       <li class="breadcrumb-item active" aria-current="page">
         <?php echo $titulo; ?>
       </li>
     </ol>
   </nav>
 
-  <!-- Título -->
-  <div class="d-flex justify-content-center">
-    <h3>
-      <?php echo $titulo; ?>
-    </h3>
-  </div>
-  <br><br><br>
+  <!-- Container for content -->
+  <div class="container my-5">
+    <div class="bg-light p-4 rounded">
+      <!-- Título -->
+      <div class="d-flex justify-content-center">
+        <h3>
+          <?php echo $titulo; ?>
+        </h3>
+      </div>
+      <br><br><br>
 
-  <!-- Data -->
-  <h5>
-    <?php echo $data; ?>
-  </h5>
+      <!-- Data -->
+      <h5>
+        <?php echo $data; ?>
+      </h5>
 
-  <div class="row">
+      <div class="row">
+        <!-- Imagem -->
+        <div class="border col-md-4 float-md-end mb-3 mx-auto p-3" id="imgNoticia">
+          <img src="../img_noticia/<?php echo $imagem; ?>" class="img-fluid" alt="">
+        </div>
 
-    <!-- Imagem -->
-    <div class="border col-md-4 float-md-end mb-3 mx-auto p-3" id="imgNoticia">
-      <img 
-      src="../img_noticia/<?php echo $imagem; ?>" 
-      class="img-fluid" alt="">
+        <!-- Texto -->
+        <div>
+          <p>
+            <?php echo $texto; ?>
+          </p>
+        </div>
+      </div>
     </div>
-
-
-    <div>
-
-      <p>
-        <?php echo $texto; ?>
-      </p>
-
-    </div>
-
   </div>
-
 </body>
+
 
 </html>
 

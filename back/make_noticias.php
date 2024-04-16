@@ -105,7 +105,7 @@ if (!$result) {
                         }
                         echo '</p>';
                         echo '</div>';
-                        echo '<div class="card-footer">';
+                        echo '<div class="card-footer text-end">'; // Align "Ver Mais" to the right
                         // Data
                         echo '<small class="text-muted">' . $row['data'] . '</small>';
                         // Link para página da noticia com ID como parâmetro
@@ -121,6 +121,7 @@ if (!$result) {
                 }
                 ?>
             </div>
+
             <!-- Fim Noticias -->
         </div>
 

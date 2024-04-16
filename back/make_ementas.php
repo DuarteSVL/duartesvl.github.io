@@ -182,16 +182,7 @@
 
     ?>
 
-    <style>
-      @media (max-width: 768px) {
-
-        /* Adjust the width of table cells for smaller screens */
-        table th,
-        table td {
-          width: 50%;
-        }
-      }
-    </style>
+    
 
     <div class="table-responsive">
       <table class="table">
@@ -322,6 +313,17 @@
         </tr>
       </table>
     </div>
+
+    <style>
+      @media (max-width: 768px) {
+
+        /* Adjust the width of table cells for smaller screens */
+        table th,
+        table td {
+          width: 50%;
+        }
+      }
+    </style>
 
   </div>
 

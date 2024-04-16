@@ -7,76 +7,126 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ementas</title>
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
-    <!-- Próprios -->
-    <link rel="stylesheet" href="noticias.css">
-    <script src="app.js"></script>
+  <!-- Próprios -->
+  <link rel="stylesheet" href="noticias.css">
+  <script src="app.js"></script>
 
-    <style>
-        .card {
-            margin-bottom: 10px;
-            /* Space between cards */
-        }
-    </style>
+  <style>
+    html {
+      font-family: sans-serif;
+    }
 
-    
-    <!-- Favicon -->
-    <link rel="icon" type="images" href="images/logo2.png">
-    
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    table {
+      border-collapse: collapse;
+      border: 2px solid rgb(200, 200, 200);
+      letter-spacing: 1px;
+      font-size: 0.8rem;
+    }
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    td,
+    th {
+      border: 1px solid rgb(190, 190, 190);
+      padding: 10px 20px;
+    }
 
-    <!--BOOTSTRAP-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+    td {
+      text-align: center;
+    }
 
-    <!--BOOTSTRAP JS-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    caption {
+      padding: 10px;
+    }
 
-      <!--Owl Carousel-->
-      <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    body {
+      background-color: #f8f9fa;
+    }
 
-    <!--FONTAWESOME-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Template Stylesheet -->
-    <link href="css/styles_geral.css" rel="stylesheet">
-    <link href="css/headerFooter.css" rel="stylesheet">
-        <link href="css/styles_footer.css" rel="stylesheet">
+    .container {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .btn-primary {
+      margin-bottom: 10px;
+      margin-right: 10px;
+    }
+
+    .btn {
+      margin-right: 10px;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+    }
+
+    .table {
+      background-color: #ffffff;
+    }
+
+    /* Centering header */
+    .header-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    /* Centering table headers */
+    .table thead th {
+      text-align: center;
+    }
+  </style>
 
 
-         <!-- Próprios -->
-    <link rel="stylesheet" href="noticias.css">
-    <script src="app.js"></script>
+  <!-- Favicon -->
+  <link rel="icon" type="images" href="images/logo2.png">
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+  <!--BOOTSTRAP-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+  <!--BOOTSTRAP JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <!--Owl Carousel-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--FONTAWESOME-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Template Stylesheet -->
+  <link href="css/styles_geral.css" rel="stylesheet">
+  <link href="css/headerFooter.css" rel="stylesheet">
+  <link href="css/styles_footer.css" rel="stylesheet">
+
+
+  <!-- Próprios -->
+  <link rel="stylesheet" href="noticias.css">
+  <script src="app.js"></script>
 
 </head>
 
@@ -292,136 +342,108 @@
 
   </div>
 
-  
+
   <div class="container-fluid g-0">
-      <footer>
-        <div class="container d-flex pt-4">
-          <div class="row d-flex justify-content-center">
-            <div class="col-12 col-md-3 col-lg-3 mb-4">
-              <div class="row mx-auto">
-                <div class="col-12 linkTitulo mb-2">
-                  <h6>Links úteis</h6>
-                </div>
-                <div class="col-12 text-justify">
-                  <div class="footerLink">
-                    <a href="contactos.html">Localizações</a>
-                  </div>
-                  <div class="footerLink">
-                    <a href="sobreNos.html">Sobre nós</a>
-                  </div>
-                  <div class="footerLink">
-                    <a href="PrivCookies.html"
-                      >Política de Privacidade e Cookies</a
-                    >
-                  </div>
-                  <div class="footerLink">
-                    <a href="voluntariado.html">Voluntariado</a>
-                  </div>
-                </div>
+    <footer>
+      <div class="container d-flex pt-4">
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-md-3 col-lg-3 mb-4">
+            <div class="row mx-auto">
+              <div class="col-12 linkTitulo mb-2">
+                <h6>Links úteis</h6>
               </div>
-            </div>
-
-            <div class="col-12 col-md-3 col-lg-3 mb-4">
-              <div class="row">
-                <div class="col-12 text-center mb-2">
-                  <h6>Entre em contacto connosco</h6>
+              <div class="col-12 text-justify">
+                <div class="footerLink">
+                  <a href="contactos.html">Localizações</a>
                 </div>
-                <div class="col-12 text-center">
-                  <a href="contactos.html" class="btn btn-footer px-4 py-2"
-                    >Contacte-nos</a
-                  >
+                <div class="footerLink">
+                  <a href="sobreNos.html">Sobre nós</a>
                 </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-3 col-lg-3 mb-4">
-              <div class="row">
-                <div class="col-12 text-center mb-2">
-                  <h6>Siga as nossas redes</h6>
+                <div class="footerLink">
+                  <a href="PrivCookies.html">Política de Privacidade e Cookies</a>
                 </div>
-                <div class="col-12 text-center mb-4">
-                  <div class="row">
-                    <div class="col-4 col-lg-12 mb-lg-4">
-                      <a
-                        class="icone-redes"
-                        href="https://www.facebook.com/CCRCCR.Colegio"
-                        target="_blank"
-                        ><i class="fa-brands fa-square-facebook fa-2xl"></i
-                      ></a>
-                    </div>
-
-                    <div class="col-4 col-lg-12 mb-lg-4">
-                      <a
-                        class="icone-redes"
-                        href="https://www.instagram.com/ccrccr.colegio/"
-                        target="_blank"
-                        ><i class="fab fa-square-instagram fa-2xl"></i
-                      ></a>
-                    </div>
-
-                    <div class="col-4 col-lg-12">
-                      <a
-                        class="icone-redes"
-                        href="https://www.youtube.com/@CCRCCR.Colegio"
-                        target="_blank"
-                        ><i class="fab fa-youtube fa-2xl"></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-3 col-lg-3">
-              <div class="row">
-                <div class="col-12">
-                  <div class="reclamacoesContainer text-center">
-                    <a
-                      href="https://www.livroreclamacoes.pt/Inicio/"
-                      target="_blank"
-                    >
-                      <img
-                        class="img-fluid"
-                        src="imagens/Geral/livro_reclamacoes.png"
-                        alt=""
-                    /></a>
-                  </div>
-                </div>
-
-                <div class="col-12 entidadeReguladora mb-4">
-                  <p>Entidade Reguladora: ISS Centro Distrital de Lisboa</p>
+                <div class="footerLink">
+                  <a href="voluntariado.html">Voluntariado</a>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="container-fluid containerLogoNome">
-          <div class="col-12 pt-2 gx-5">
+          <div class="col-12 col-md-3 col-lg-3 mb-4">
             <div class="row">
+              <div class="col-12 text-center mb-2">
+                <h6>Entre em contacto connosco</h6>
+              </div>
               <div class="col-12 text-center">
-                <div class="logo-container">
-                  <img
-                    class="img-fluid"
-                    src="imagens/Geral/logo2.png"
-                    alt=""
-                    id="imgFoot"
-                  />
+                <a href="contactos.html" class="btn btn-footer px-4 py-2">Contacte-nos</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-3 col-lg-3 mb-4">
+            <div class="row">
+              <div class="col-12 text-center mb-2">
+                <h6>Siga as nossas redes</h6>
+              </div>
+              <div class="col-12 text-center mb-4">
+                <div class="row">
+                  <div class="col-4 col-lg-12 mb-lg-4">
+                    <a class="icone-redes" href="https://www.facebook.com/CCRCCR.Colegio" target="_blank"><i
+                        class="fa-brands fa-square-facebook fa-2xl"></i></a>
+                  </div>
+
+                  <div class="col-4 col-lg-12 mb-lg-4">
+                    <a class="icone-redes" href="https://www.instagram.com/ccrccr.colegio/" target="_blank"><i
+                        class="fab fa-square-instagram fa-2xl"></i></a>
+                  </div>
+
+                  <div class="col-4 col-lg-12">
+                    <a class="icone-redes" href="https://www.youtube.com/@CCRCCR.Colegio" target="_blank"><i
+                        class="fab fa-youtube fa-2xl"></i></a>
+                  </div>
                 </div>
               </div>
-              <div class="col-12 text-center logoTexto">
-                <p>
-                  CCR CCR - Centro Cultural Recreativo das Crianças do Cruzeiro
-                  e Rio-Seco
-                </p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-3 col-lg-3">
+            <div class="row">
+              <div class="col-12">
+                <div class="reclamacoesContainer text-center">
+                  <a href="https://www.livroreclamacoes.pt/Inicio/" target="_blank">
+                    <img class="img-fluid" src="imagens/Geral/livro_reclamacoes.png" alt="" /></a>
+                </div>
               </div>
-              <div class="col-12 text-center pt-2 direitosReservados">
-                <p>2024 Todos os Direitos Reservados&copy;</p>
+
+              <div class="col-12 entidadeReguladora mb-4">
+                <p>Entidade Reguladora: ISS Centro Distrital de Lisboa</p>
               </div>
             </div>
           </div>
         </div>
-      </footer>
+      </div>
+
+      <div class="container-fluid containerLogoNome">
+        <div class="col-12 pt-2 gx-5">
+          <div class="row">
+            <div class="col-12 text-center">
+              <div class="logo-container">
+                <img class="img-fluid" src="imagens/Geral/logo2.png" alt="" id="imgFoot" />
+              </div>
+            </div>
+            <div class="col-12 text-center logoTexto">
+              <p>
+                CCR CCR - Centro Cultural Recreativo das Crianças do Cruzeiro
+                e Rio-Seco
+              </p>
+            </div>
+            <div class="col-12 text-center pt-2 direitosReservados">
+              <p>2024 Todos os Direitos Reservados&copy;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
 
 </body>

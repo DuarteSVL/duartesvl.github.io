@@ -302,6 +302,7 @@ a {
 }
 
 /*Back to top*/
+/* Define button styles for different sizes */
 .btn-square {
   width: 38px;
   height: 38px;
@@ -317,23 +318,45 @@ a {
   height: 48px;
 }
 
+/* Apply common button styles */
 .btn-square,
 .btn-sm-square,
 .btn-lg-square {
-  padding: 0;
+  padding: 0; /* Remove default padding */
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: normal;
-  border-radius: 50px;
+  border-radius: 50%; /* Ensure button is circular */
+  text-decoration: none; /* Remove default underline for anchor tag */
+  transition: background-color 0.3s ease; /* Add transition effect */
 }
+
+/* Back to top button */
 .back-to-top {
   position: fixed;
   display: none;
   right: 45px;
   bottom: 45px;
   z-index: 99;
+  background-color: #007bff; /* Set default background color */
+  color: white; /* Set default text color */
 }
+
+/* Icon inside the button */
+.back-to-top i {
+  font-size: 1.5rem; /* Adjust icon size as needed */
+}
+
+/* Hover effect for the button */
+.back-to-top:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+
+.back-to-top .bi::before {
+  vertical-align: middle;
+}
+
 /* *************************
         Styles Cookies
 ************************* */

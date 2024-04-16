@@ -53,6 +53,7 @@ if (isset($_GET['id'])) {
 
 
 </head>
+
 <body>
     <!-- Breadcrumbs para a página -->
     <nav aria-label="breadcrumb">
@@ -100,41 +101,6 @@ if (isset($_GET['id'])) {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-</body>
-    </ol>
-  </nav>
-
-  <!-- Container for content -->
-  <div class="container my-5">
-    <div class="bg-light p-4 rounded">
-      <!-- Título -->
-      <div class="d-flex justify-content-center">
-        <h3>
-          <?php echo $titulo; ?>
-        </h3>
-      </div>
-      <br><br><br>
-
-      <!-- Data -->
-      <h5>
-        <?php echo $data; ?>
-      </h5>
-
-      <div class="row">
-        <!-- Imagem -->
-        <div class="border col-md-4 float-md-end mb-3 mx-auto p-3" id="imgNoticia">
-          <img src="../img_noticia/<?php echo $imagem; ?>" class="img-fluid" alt="">
-        </div>
-
-        <!-- Texto -->
-        <div>
-          <p>
-            <?php echo $texto; ?>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
 </body>
 
 

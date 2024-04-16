@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-pt">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Sobre Nós - CCR CCR</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
 
     <!-- Favicon -->
-    <link rel="icon" type="images" href="images/logo2.png">
-    
+    <link rel="icon" type="images" href="images/logo2.png" />
+
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
     <!--BOOTSTRAP-->
     <link
@@ -39,451 +44,929 @@
       referrerpolicy="no-referrer"
     />
     <!-- Template Stylesheet -->
-    <link href="css/styles_geral.css" rel="stylesheet"/>
-    <link href="css/styles_valencias.css" rel="stylesheet"/>
-    <link href="css/headerFooter.css" rel="stylesheet">
-</head>
+    <link href="css/styles_geral.css" rel="stylesheet" />
+    <link href="css/styles_valencias.css" rel="stylesheet" />
+    <link href="css/headerFooter.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles_footer.css" />
+  </head>
 
-
-<body>
+  <body>
     <!-- Navbar Aqui Dentro -->
-<nav class="navbar navbar-expand-lg sticky-top" id="navbar">
-    <div class="container-fluid">
-      <!-- Logotipo e Texto -->
-      <div class="col-1" id="navLogo">
-        <a href="index.html"><img class="col-lg-12 col-md-8 col-sm-6" src="imagens/Geral/logo2.png" id="logo"></a>
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+      <div class="container-fluid">
+        <!-- Logotipo e Texto -->
+        <div class="col-1" id="navLogo">
+          <a href="index.html"
+            ><img
+              class="col-lg-12 col-md-8 col-sm-6"
+              src="imagens/Geral/logo2.png"
+              id="logo"
+          /></a>
+        </div>
+        <div class="col-md-2 d-flex d-none d-lg-block" id="navTexto">
+          <h5>CCR-CCR</h5>
+          <p>
+            Centro Cultural Recreativo <br />
+            das Crianças do Cruzeiro e Rio-Seco
+          </p>
+        </div>
+        <!-- button menu mobile -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Lista botões -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav">
+            <!-- Itens do menu aqui -->
+            <li class="nav-item m-2">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Início</a
+              >
+            </li>
+            <li class="nav-item dropdown m-2">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >CCR CCR</a
+              >
+              <ul class="dropdown-menu animate slideIn">
+                <li>
+                  <a class="dropdown-item" href="sobreNos.html">Sobre nós</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="voluntariado.html"
+                    >Voluntariado</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="PrivCookies.html"
+                    >Política de Privacidade e Cookies</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="planoContigencia.html"
+                    >Plano de contingência Covid-19</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown m-2">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Valências</a
+              >
+              <ul class="dropdown-menu animate slideIn">
+                <li>
+                  <a class="dropdown-item" href="valencia_bercarioCreche.html"
+                    >Berçário e creche</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="valencia_jardimInfancia.html"
+                    >Jardim de infância</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="valencia_cicloBasico.html"
+                    >1º Ciclo</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="valencia_centroApoioEscolar.html"
+                    >Centro de Apoio Escolar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="valencia_centroTerceiraIdade.html"
+                    >Centro Apoio Terceira Idade</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="valencia_areaDesportivaRecreativa.html"
+                    >Área Desportiva e Recreativa</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item m-2">
+              <a class="nav-link" href="ementas.html">Ementas</a>
+            </li>
+            <li class="nav-item m-2">
+              <a class="nav-link" href="precario.html">Preçário</a>
+            </li>
+            <li class="nav-item m-2">
+              <a class="nav-link" href="noticias.html">Notícias</a>
+            </li>
+            <li class="nav-item m-2">
+              <a class="nav-link" href="contactos.html">Contactos</a>
+            </li>
+            <div class="d-flex">
+              <a href="https://www.educabiz.com/" target="_blank">
+                <img src="imagens/Geral/educabiz 2.png" alt="" id="educabiz" />
+              </a>
+            </div>
+          </ul>
+        </div>
       </div>
-      <div class="col-md-2 d-flex d-none d-lg-block" id="navTexto">
-        <h5>CCR-CCR</h5>
-        <p>Centro Cultural Recreativo <br> das Crianças do Cruzeiro e Rio-Seco</p>
-      </div>
-      <!-- button menu mobile -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- Lista botões -->
-      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <!-- Itens do menu aqui -->
-          <li class="nav-item m-2">
-            <a class="nav-link active" aria-current="page" href="index.html">Início</a>
-          </li>
-          <li class="nav-item dropdown m-2">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">CCR CCR</a>
-            <ul class="dropdown-menu animate slideIn">
-              <li><a class="dropdown-item" href="sobreNos.html">Sobre nós</a></li>
-              <li><a class="dropdown-item" href="voluntariado.html">Voluntariado</a></li>
-              <li><a class="dropdown-item" href="PrivCookies.html">Política de Privacidade e Cookies</a></li>
-              <li><a class="dropdown-item" href="planoContigencia.html">Plano de contingência Covid-19</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown m-2">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Valências</a>
-            <ul class="dropdown-menu animate slideIn">
-              <li><a class="dropdown-item" href="valencia_bercarioCreche.html">Berçário e creche</a></li>
-              <li><a class="dropdown-item" href="valencia_jardimInfancia.html">Jardim de infância</a></li>
-              <li><a class="dropdown-item" href="valencia_cicloBasico.html">1º Ciclo</a></li>
-              <li><a class="dropdown-item" href="valencia_centroApoioEscolar.html">Centro de Apoio Escolar</a></li>
-              <li><a class="dropdown-item" href="valencia_centroTerceiraIdade.html">Centro Apoio Terceira Idade</a></li>
-              <li><a class="dropdown-item" href="valencia_areaDesportivaRecreativa.html">Área Desportiva e Recreativa</a></li>
-            </ul>
-          </li>
-          <li class="nav-item m-2">
-            <a class="nav-link" href="ementas.html">Ementas</a>
-          </li>
-          <li class="nav-item m-2">
-            <a class="nav-link" href="precario.html">Preçário</a>
-          </li>
-          <li class="nav-item m-2">
-            <a class="nav-link" href="noticias.html">Notícias</a>
-          </li>
-          <li class="nav-item m-2">
-            <a class="nav-link" href="contactos.html">Contactos</a>
-          </li>
-          <div class="d-flex">
-            <a href="https://www.educabiz.com/" target="_blank">
-              <img src="imagens/Geral/educabiz 2.png" alt="" id="educabiz">
-            </a>
-          </div>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- Fim da Navbar -->
-
+    </nav>
+    <!-- Fim da Navbar -->
 
     <div class="container-xxl all-content bg-white p-0">
-        <!-- Page Header End -->
-        <div class="container-xxl py-5 page-header position-relative mb-5">
-            <div class="container py-5">
-                <h1 class="display-2 text-white animated slideInDown mb-4">Sobre Nós</h1>
-                <nav aria-label="breadcrumb animated slideInDown">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Ínicio</a></li>
-                        <li class="breadcrumb-item"><a href="sobreNos.html">CCR CCR</a></li>
-                        <li class="breadcrumb-item text-white active" aria-current="page">Sobre Nós</li>
-                    </ol>
-                </nav>
-            </div>
+      <!-- Page Header End -->
+      <div class="container-xxl py-5 page-header position-relative mb-5">
+        <div class="container py-5">
+          <h1 class="display-2 text-white animated slideInDown mb-4">
+            Sobre Nós
+          </h1>
+          <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Ínicio</a></li>
+              <li class="breadcrumb-item">
+                <a href="sobreNos.html">CCR CCR</a>
+              </li>
+              <li class="breadcrumb-item text-white active" aria-current="page">
+                Sobre Nós
+              </li>
+            </ol>
+          </nav>
         </div>
-        <!-- Page Header End -->
+      </div>
+      <!-- Page Header End -->
 
-        <!-- Container Side Nav e Conteúdo -->
-    <div class="container position-relative gx-5" >
+      <!-- Container Side Nav e Conteúdo -->
+      <div class="container position-relative gx-5">
         <div class="row">
+          <!--Sidenav (table of contents)-->
 
-        <!--Sidenav (table of contents)-->   
-    
-        <div class="d-none d-md-block col-md-4 col-lg-3">
-          <div class="toc-container sticky-top">
-            <div>
-              <!--Titulo da sidenav-->
-              <div class="toc-header text-center">
-                <span class="toc-title">
-                  <h3>Conteúdos</h3>
-                </span>
+          <div class="d-none d-md-block col-md-4 col-lg-3">
+            <div class="toc-container sticky-top">
+              <div>
+                <!--Titulo da sidenav-->
+                <div class="toc-header text-center">
+                  <span class="toc-title">
+                    <h3>Conteúdos</h3>
+                  </span>
+                </div>
+
+                <!--Conteudo da sidenav-->
+                <ul class="toc">
+                  <a href="#historia"><li class="toc-item">História</li></a>
+
+                  <a href="#missao"
+                    ><li class="toc-item">Missão, Visão e Valores</li></a
+                  >
+
+                  <a href="#hino"><li class="toc-item">Hino</li></a>
+
+                  <a href="#organograma"
+                    ><li class="toc-item">Organograma</li></a
+                  >
+
+                  <a href="#estatutos"><li class="toc-item">Estatutos</li></a>
+
+                  <a href="#qualidade"
+                    ><li class="toc-item">Política de Qualidade</li></a
+                  >
+
+                  <a href="#testemunhos"
+                    ><li class="toc-item">Testemunho da Direção</li></a
+                  >
+
+                  <a href="#contas"
+                    ><li class="toc-item">Atas, Relatórios e Contas</li></a
+                  >
+                </ul>
               </div>
- 
-              <!--Conteudo da sidenav-->
-              <ul class="toc">
-                <a href="#historia"><li class="toc-item">História</li></a>
-   
-                <a href="#missao"><li class="toc-item">Missão, Visão e Valores</li></a>
-   
-                <a href="#hino"><li class="toc-item">Hino</li></a>
-   
-                <a href="#organograma"><li class="toc-item">Organograma</li></a>
-   
-                <a href="#estatutos"><li class="toc-item">Estatutos</li></a>
-   
-                <a href="#qualidade"><li class="toc-item">Política de Qualidade</li></a>
-   
-                <a href="#testemunhos"><li class="toc-item">Testemunho da Direção</li></a>
-   
-                <a href="#contas"><li class="toc-item">Atas, Relatórios e Contas</li></a>
-              </ul>
             </div>
           </div>
-      </div>
-        <!--FIM Sidenav (table of contents)-->
-        <div class="d-none d-md-block col-md-1 col-lg-1"></div>
+          <!--FIM Sidenav (table of contents)-->
+          <div class="d-none d-md-block col-md-1 col-lg-1"></div>
 
-
-        <!-- Sobre Nós -->
-        <div class="col-12 col-md-7 col-lg-8">
+          <!-- Sobre Nós -->
+          <div class="col-12 col-md-7 col-lg-8">
             <div class="row align-items-center">
-                <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
-                    <section class="text-center" id="historia"><h1 class="mb-4">A nossa História</h1></section>
-                        <p>O CCR CCR deu os seus primeiros passos no ano de 1976 tendo tido como pilares as áreas Recreativa e Desportiva.</p>
-                        <p>O surgimento deste tipo de associações era comum na época, uma vez que as pessoas sentiam a necessidade de desenvolver as atividades físicas e as aptidões gímnicas das suas crianças. </p>
-                        <p>O espaço onde decorriam as atividades era somente um pavilhão, com um palco e balneários; ao qual estavam ligadas umas estruturas que serviam como gabinete de apoio e posto médico.
-                            No ano subsequente, sentiu-se a necessidade de alargar o período de permanência as crianças mais pequenas que frequentavam o centro pois a oferta socioeducativa era escassa na época.</p>
-                        <p>Assim, entre os anos de 1977/78 ficaram à disposição duas salas para o pré-escolar, que acolhiam as crianças entre os 3 e os 5 anos.
-                            No ano de 1982 foram abertas as instalações do pré-escolar, distintas do centro recreativo, de modo a assegurar as condições necessárias para receber mais crianças.</p>    
-                        <p>Acompanhando sempre o crescimento das crianças e as necessidades das suas famílias, no ano de 1984 procede-se à inauguração do 1.º ciclo do Ensino Básico em instalações construídas para o efeito. 
-                            No entanto, as famílias necessitam de colocar também as suas crianças com idades inferiores aos três anos, pelo que, mais uma vez, se expande o espaço para novas instalações que vão albergar a valência de creche, em 1985.</p>    
-                        <p>Em 1987, abre o Centro de Apoio Escolar, com o intuito de prestar apoio pedagógico aos alunos após o 1.º ciclo EB e acompanhá-los no seu percurso escolar, até que estes, atinjam a autonomia desejável.
-                            E porque também a área de 3ª idade constitui uma lacuna nesta área da cidade, também aqui o CCRCCR pretendeu dar resposta com a abertura de um Centro de Convívio com a capacidade de 50 utentes.</p>    
-                        <p>Em 2014, a Instituição abre as suas portas à comunidade com a inauguração do novo pavilhão desportivo da Rua José Magro.  Este pavilhão constitui, para a história do CCR CCR, o marco para o seu desenvolvimento, dando inicio à existência de atividades regulares, acessíveis a todos.</p> 
-                </div>
-                <div class="col-lg-4 col-md-2 col-sm-2 about-img wow fadeInUp" data-wow-delay="0.5s">
-                    <img class="img-fluid" src="imagens/Geral/logo2.png" alt="">
-                </div>
-        <!-- Sobre Nós End -->
+              <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
+                <section class="text-center" id="historia">
+                  <h1 class="mb-4">A nossa História</h1>
+                </section>
+                <p>
+                  O CCR CCR deu os seus primeiros passos no ano de 1976 tendo
+                  tido como pilares as áreas Recreativa e Desportiva.
+                </p>
+                <p>
+                  O surgimento deste tipo de associações era comum na época, uma
+                  vez que as pessoas sentiam a necessidade de desenvolver as
+                  atividades físicas e as aptidões gímnicas das suas crianças.
+                </p>
+                <p>
+                  O espaço onde decorriam as atividades era somente um pavilhão,
+                  com um palco e balneários; ao qual estavam ligadas umas
+                  estruturas que serviam como gabinete de apoio e posto médico.
+                  No ano subsequente, sentiu-se a necessidade de alargar o
+                  período de permanência as crianças mais pequenas que
+                  frequentavam o centro pois a oferta socioeducativa era escassa
+                  na época.
+                </p>
+                <p>
+                  Assim, entre os anos de 1977/78 ficaram à disposição duas
+                  salas para o pré-escolar, que acolhiam as crianças entre os 3
+                  e os 5 anos. No ano de 1982 foram abertas as instalações do
+                  pré-escolar, distintas do centro recreativo, de modo a
+                  assegurar as condições necessárias para receber mais crianças.
+                </p>
+                <p>
+                  Acompanhando sempre o crescimento das crianças e as
+                  necessidades das suas famílias, no ano de 1984 procede-se à
+                  inauguração do 1.º ciclo do Ensino Básico em instalações
+                  construídas para o efeito. No entanto, as famílias necessitam
+                  de colocar também as suas crianças com idades inferiores aos
+                  três anos, pelo que, mais uma vez, se expande o espaço para
+                  novas instalações que vão albergar a valência de creche, em
+                  1985.
+                </p>
+                <p>
+                  Em 1987, abre o Centro de Apoio Escolar, com o intuito de
+                  prestar apoio pedagógico aos alunos após o 1.º ciclo EB e
+                  acompanhá-los no seu percurso escolar, até que estes, atinjam
+                  a autonomia desejável. E porque também a área de 3ª idade
+                  constitui uma lacuna nesta área da cidade, também aqui o
+                  CCRCCR pretendeu dar resposta com a abertura de um Centro de
+                  Convívio com a capacidade de 50 utentes.
+                </p>
+                <p>
+                  Em 2014, a Instituição abre as suas portas à comunidade com a
+                  inauguração do novo pavilhão desportivo da Rua José Magro.
+                  Este pavilhão constitui, para a história do CCR CCR, o marco
+                  para o seu desenvolvimento, dando inicio à existência de
+                  atividades regulares, acessíveis a todos.
+                </p>
+              </div>
+              <div
+                class="col-lg-4 col-md-2 col-sm-2 about-img wow fadeInUp"
+                data-wow-delay="0.5s"
+              >
+                <img class="img-fluid" src="imagens/Geral/logo2.png" alt="" />
+              </div>
+              <!-- Sobre Nós End -->
 
-
-        <!-- Missão, Visão e Valores -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <section id="missao"><h1 class="mb-3">Missão, Visão e Valores</h1></section>
-                </div>
-                <div class="row g-4 bg-card p-2">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="team-text">
-                                <h3>Missão</h3>
-                                <p>Apoiar o desenvolvimento sócio-educativo-desportivo-recreativo das comunidades da zona de Lisboa Ocidental e freguesias ou concelhos limítrofes, em especial, dos seus grupos mais vulneráveis.</p>
-                            </div>
-                        </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="team-text">
-                                <h3>Visão</h3>
-                                <p>Ser reconhecida como uma Instituição de referência com intervenções apropriadas e estruturadas que garantam o crescimento sustentável da Instituição.</p>
-                            </div>
+              <!-- Missão, Visão e Valores -->
+              <div class="container-xxl py-5">
+                <div class="container">
+                  <div
+                    class="text-center mx-auto mb-5 wow fadeInUp"
+                    data-wow-delay="0.1s"
+                    style="max-width: 600px"
+                  >
+                    <section id="missao">
+                      <h1 class="mb-3">Missão, Visão e Valores</h1>
+                    </section>
+                  </div>
+                  <div class="row g-4 bg-card p-2">
+                    <div
+                      class="col-lg-4 col-md-6 wow fadeInUp"
+                      data-wow-delay="0.1s"
+                    >
+                      <div class="team-text">
+                        <h3>Missão</h3>
+                        <p>
+                          Apoiar o desenvolvimento
+                          sócio-educativo-desportivo-recreativo das comunidades
+                          da zona de Lisboa Ocidental e freguesias ou concelhos
+                          limítrofes, em especial, dos seus grupos mais
+                          vulneráveis.
+                        </p>
+                      </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                            <div class="team-text">
-                                <h3>Valores</h3>
-                                <p>Respeito; Solidariedade; Compromisso; Responsabilidade.</p>
-                            </div>
+                    <div
+                      class="col-lg-4 col-md-6 wow fadeInUp"
+                      data-wow-delay="0.3s"
+                    >
+                      <div class="team-text">
+                        <h3>Visão</h3>
+                        <p>
+                          Ser reconhecida como uma Instituição de referência com
+                          intervenções apropriadas e estruturadas que garantam o
+                          crescimento sustentável da Instituição.
+                        </p>
+                      </div>
                     </div>
+                    <div
+                      class="col-lg-4 col-md-6 wow fadeInUp"
+                      data-wow-delay="0.5s"
+                    >
+                      <div class="team-text">
+                        <h3>Valores</h3>
+                        <p>
+                          Respeito; Solidariedade; Compromisso;
+                          Responsabilidade.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-        <!-- Missão, Visão e Valores End -->
+              </div>
+              <!-- Missão, Visão e Valores End -->
 
-        <!-- Hino -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+              <!-- Hino -->
+              <div class="container-xxl py-5">
+                <div class="container">
+                  <div
+                    class="text-center mx-auto mb-5 wow fadeInUp"
+                    data-wow-delay="0.1s"
+                    style="max-width: 600px"
+                  >
                     <section id="hino"><h1 class="mb-3">Hino</h1></section>
+                  </div>
+                  <div class="text-center mb-2">
+                    <div class="text-center mb-2 clearfix">
+                      <audio controls>
+                        <source
+                          src="caminho_para_o_arquivo_de_musica/musica.mp3"
+                          type="audio/mpeg"
+                        />
+                        Seu navegador não suporta o elemento de áudio.
+                      </audio>
+                    </div>
+                    <p>
+                      Tudo começou no dia <br />
+                      Em que entrámos a gatinhar <br />
+                       foi contigo que crescemos <br />
+                      E aprendemos a caminhar. <br />
+                      Descobrimos o valor da Amizade, <br />
+                      no desporto,  estudo,  e educação <br />
+                      Caminhamos sempre  unidos <br />
+                      Tendo o futuro como ambição. <br />
+                      <strong
+                        >Navegando no Oceano de ternura <br />
+                        Vamos quebrando as ondas uma a uma <br />
+                        Até alcançar, aos poucos o areal <br />
+                        Como a branquidão da espuma. <br />
+                         Em Alcântara e n´Ajuda vamos gritar <br />
+                        Pró azul do céu, <br />
+                        CCR CCR, tu, és… a razão do meu cantar </strong
+                      ><br />
+                       Como tu não há igual, <br />
+                      És razão do meu sonhar <br />
+                      Educaste-nos pro bem <br />
+                      O teu nome, vamos fazer brilhar! <br />
+                      Mas o dia vai chegar, <br />
+                      Que crescidos partiremos <br />
+                      Preparados para a vida <br />
+                      CCR CCR, não mais te esqueceremos. <br />
+                      <br />
+                      <strong>Música:</strong> Dino Rodrigues <br />
+                      <strong>Letra:</strong> Alda Ramos (Dinha) <br />
+                      <strong>Intérprete:</strong> Ana Rita Inácio
+                    </p>
+                  </div>
                 </div>
-                <div class="text-center mb-2">
-                  <div class="text-center mb-2 clearfix">
-                    <audio controls>
-                      <source src="caminho_para_o_arquivo_de_musica/musica.mp3" type="audio/mpeg">
-                      Seu navegador não suporta o elemento de áudio.
-                    </audio>
-                  </div>
-                    <p> Tudo começou no dia <br>
-                      Em que entrámos a gatinhar <br>
-                       foi contigo que crescemos <br>
-                      E aprendemos a caminhar. <br>
-                      Descobrimos o valor da Amizade, <br>
-                      no desporto,  estudo,  e educação <br>
-                      Caminhamos sempre  unidos <br>
-                      Tendo o futuro como ambição. <br>
-                      <strong>Navegando no Oceano de ternura <br>
-                      Vamos quebrando as ondas uma a uma <br>
-                      Até alcançar, aos poucos o areal <br>
-                      Como a branquidão da espuma. <br>
-                       Em Alcântara e n´Ajuda vamos gritar <br>
-                      Pró azul do céu, <br>
-                      CCR CCR, tu, és… a razão do meu cantar </strong><br>
-                       Como tu não há igual, <br>
-                      És razão do meu sonhar <br>
-                      Educaste-nos pro bem <br>
-                      O teu nome, vamos fazer brilhar! <br>
-                      Mas o dia vai chegar, <br>
-                      Que crescidos partiremos <br>
-                      Preparados para a vida <br>
-                      CCR CCR, não mais te esqueceremos. <br>
-                      <br>
-                      <strong>Música:</strong> Dino Rodrigues <br>
-                      <strong>Letra:</strong> Alda Ramos (Dinha) <br>
-                      <strong>Intérprete:</strong> Ana Rita Inácio</p>
-                  </div>
-            </div>
-        </div>
-        <!-- Hino End -->
+              </div>
+              <!-- Hino End -->
 
-        <!-- Organograma -->
-<div class="container-xxl py-5">
-    <div class="container">
-        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-            <section id="organograma">
-                <h1 class="mb-3">Organograma</h1>
-            </section>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-8 col-md-10 col-sm-12 text-center wow fadeInUp" data-wow-delay="0.1s">
-                <img src="imagens/Geral/organograma.png" alt="logo" class="img-fluid">
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Organograma End -->
+              <!-- Organograma -->
+              <div class="container-xxl py-5">
+                <div class="container">
+                  <div
+                    class="text-center mx-auto mb-5 wow fadeInUp"
+                    data-wow-delay="0.1s"
+                    style="max-width: 600px"
+                  >
+                    <section id="organograma">
+                      <h1 class="mb-3">Organograma</h1>
+                    </section>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div
+                      class="col-lg-8 col-md-10 col-sm-12 text-center wow fadeInUp"
+                      data-wow-delay="0.1s"
+                    >
+                      <img
+                        src="imagens/Geral/organograma.png"
+                        alt="logo"
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Organograma End -->
 
-         <!-- Estatutos -->
-         <div class="container-xxl py-5">
-            <div class="container">
-                <div class="bg-card">
+              <!-- Estatutos -->
+              <div class="container-xxl py-5">
+                <div class="container">
+                  <div class="bg-card">
                     <div class="row g-0">
-                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="min-height: 500px;">
-                            <div class="position-relative h-100">
-                                <img class="position-absolute w-100 h-100" src="imagens/sobreNos/estatutos.jpg" style="object-fit: cover;">
-                            </div>
+                      <div
+                        class="col-lg-6 wow fadeIn"
+                        data-wow-delay="0.1s"
+                        style="min-height: 500px"
+                      >
+                        <div class="position-relative h-100">
+                          <img
+                            class="position-absolute w-100 h-100"
+                            src="imagens/sobreNos/estatutos.jpg"
+                            style="object-fit: cover"
+                          />
                         </div>
-                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                            <div class="h-100 d-flex flex-column justify-content-center p-5">
-                                <section id="estatutos"><h1 class="mb-4">Estatutos</h1></section>
-                                <p class="mb-4">Pode consultar aqui os estatutos oficiais da CCR CCR.</p>
-                                <a class="btn btn-primary py-3 px-5" href="">PDF Estatutos  <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            </div>
+                      </div>
+                      <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <div
+                          class="h-100 d-flex flex-column justify-content-center p-5"
+                        >
+                          <section id="estatutos">
+                            <h1 class="mb-4">Estatutos</h1>
+                          </section>
+                          <p class="mb-4">
+                            Pode consultar aqui os estatutos oficiais da CCR
+                            CCR.
+                          </p>
+                          <a class="btn btn-primary py-3 px-5" href=""
+                            >PDF Estatutos
+                            <i
+                              class="fa-solid fa-arrow-up-right-from-square"
+                            ></i
+                          ></a>
                         </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-        <!-- Estatutos End -->
+              </div>
+              <!-- Estatutos End -->
 
-<!-- Política de Qualidade -->
-<div class="container-xxl py-5">
-    <div class="container">
-        <div class="bg-card">
-            <div class="row g-0">
-                <div class="col-lg-6 d-block d-lg-none" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100 rounded" src="imagens/sobreNos/qualidade.jpg" style="object-fit: cover;">
+              <!-- Política de Qualidade -->
+              <div class="container-xxl py-5">
+                <div class="container">
+                  <div class="bg-card">
+                    <div class="row g-0">
+                      <div
+                        class="col-lg-6 d-block d-lg-none"
+                        style="min-height: 400px"
+                      >
+                        <div class="position-relative h-100">
+                          <img
+                            class="position-absolute w-100 h-100 rounded"
+                            src="imagens/sobreNos/qualidade.jpg"
+                            style="object-fit: cover"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <div
+                          class="h-100 d-flex flex-column justify-content-center p-5"
+                        >
+                          <section id="qualidade">
+                            <h1 class="mb-4">Política de Qualidade</h1>
+                          </section>
+                          <p class="mb-4">
+                            A Política de Qualidade da Instituição está
+                            orientada na satisfação das necessidades dos
+                            clientes, suportada pela Flexibilidade, Competência,
+                            Técnica, Segurança e Busca Incessante de Excelência
+                            dos nossos colaboradores e dirigentes.
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="col-lg-6 d-none d-lg-block"
+                        style="min-height: 400px"
+                      >
+                        <div class="position-relative h-100">
+                          <img
+                            class="position-absolute w-100 h-100"
+                            src="imagens/sobreNos/qualidade.jpg"
+                            style="object-fit: cover"
+                          />
+                        </div>
+                      </div>
                     </div>
-                    </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="h-100 d-flex flex-column justify-content-center p-5">
-                        <section id="qualidade"><h1 class="mb-4">Política de Qualidade</h1></section>
-                        <p class="mb-4">A Política de Qualidade da Instituição está orientada na satisfação das  necessidades dos clientes, suportada pela Flexibilidade, Competência,  
-                            Técnica, Segurança e Busca Incessante de Excelência dos nossos  colaboradores e dirigentes.</p>
-                    </div>
+                  </div>
                 </div>
-                <div class="col-lg-6 d-none d-lg-block" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="imagens/sobreNos/qualidade.jpg" style="object-fit: cover;">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Política de Qualidade End -->
+              </div>
+              <!-- Política de Qualidade End -->
 
-<!-- Testemunhos -->
-<div class="container-xxl py-5">
-    <div class="container">
-        <div class="bg-card">
-            <div class="row g-0">
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="imagens/sobreNos/direcao.jpg" style="object-fit: cover;">
+              <!-- Testemunhos -->
+              <div class="container-xxl py-5">
+                <div class="container">
+                  <div class="bg-card">
+                    <div class="row g-0">
+                      <div
+                        class="col-lg-6 wow fadeIn"
+                        data-wow-delay="0.1s"
+                        style="min-height: 400px"
+                      >
+                        <div class="position-relative h-100">
+                          <img
+                            class="position-absolute w-100 h-100"
+                            src="imagens/sobreNos/direcao.jpg"
+                            style="object-fit: cover"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <div
+                          class="h-100 d-flex flex-column justify-content-center p-5"
+                        >
+                          <section id="testemunhos">
+                            <h1 class="mb-4">Testemunho da Direção</h1>
+                          </section>
+                          <p class="mb-4">
+                            Consulte aqui o testemunho da nossa Diretora
+                            Pedagógica, Drª Cristina Coelho, intitulado
+                            “Reflexão sobre os Saberes Curriculares
+                            Humanizantes”.
+                          </p>
+                          <a class="btn btn-primary py-3 px-5" href=""
+                            >PDF Testemunhos
+                            <i
+                              class="fa-solid fa-arrow-up-right-from-square"
+                            ></i
+                          ></a>
+                        </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="h-100 d-flex flex-column justify-content-center p-5">
-                        <section id="testemunhos"><h1 class="mb-4">Testemunho da Direção</h1></section>
-                        <p class="mb-4">Consulte aqui o testemunho da nossa Diretora Pedagógica, Drª Cristina  Coelho, 
-                            intitulado “Reflexão sobre os Saberes Curriculares  Humanizantes”.</p>
-                        <a class="btn btn-primary py-3 px-5" href="">PDF Testemunhos  <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Testemunhos End -->
+              </div>
+              <!-- Testemunhos End -->
 
+              <!-- Atas, Relatórios e Contas -->
+              <div
+                class="container-xxl py-5 d-flex align-items-center justify-content-center"
+              >
+                <div class="container text">
+                  <div class="bg-card">
+                    <div class="row g-0">
+                      <div class="col-lg-12 wow fadeIn" data-wow-delay="0.5s">
+                        <div
+                          class="d-flex flex-column justify-content-center p-5"
+                        >
+                          <section id="contas">
+                            <h1 class="mb-4 text-center">
+                              Atas, Relatórios e Contas
+                            </h1>
+                          </section>
+                          <p class="mb-4 text-center">
+                            Consulte as nossas Atas, Relatórios e Contas no menu
+                            abaixo:
+                          </p>
 
-<!-- Atas, Relatórios e Contas -->
-<div class="container-xxl py-5 d-flex align-items-center justify-content-center">
-    <div class="container text">
-        <div class="bg-card">
-            <div class="row g-0">
-                <div class="col-lg-12 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="d-flex flex-column justify-content-center p-5">
-                        <section id="contas"><h1 class="mb-4 text-center">Atas, Relatórios e Contas</h1></section>
-                        <p class="mb-4 text-center">Consulte as nossas Atas, Relatórios e Contas no menu abaixo:</p>
-                        
-                        <!--Accordion Atas, Relatórios e Contas-->
-                        <div class="col-12 col-lg-6 mx-auto">
+                          <!--Accordion Atas, Relatórios e Contas-->
+                          <div class="col-12 col-lg-6 mx-auto">
                             <div class="accordion" id="accordionContas">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header text-center">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#collapseAtas" aria-expanded="true"
-                                                aria-controls="collapseAtas">
-                                            Atas
-                                        </button>
-                                    </h2>
-                                    <div id="collapseAtas" class="accordion-collapse collapse"
-                                         data-bs-parent="#accordionContas">
-                                        <div class="accordion-body">
-                                            <ul>
-                                                <li><a href="path_para_o_arquivo_pdf/ata_aprovacao_orcamento_2024.pdf"
-                                                       target="_blank">Ata_Aprovação Orçamento 2024</a></li>
-                                                <li><a href="path_para_o_arquivo_pdf/ata_aprovacao_orcamento_2023.pdf"
-                                                       target="_blank">Ata aprovação orçamento 2023</a></li>
-                                                <li><a href="path_para_o_arquivo_pdf/ata_conselho_fiscal_orcamento_2023.pdf"
-                                                       target="_blank">Ata Conselho Fiscal - Orçamento 2023</a></li>
-                                                <li><a href="path_para_o_arquivo_pdf/ata_conselho_fiscal_contas_2022.pdf"
-                                                       target="_blank">Ata Conselho Fiscal_Contas 2022</a></li>
-                                                <!--Falta pôr os links para o pdf-->
-                                            </ul>
-                                        </div>
-                                    </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header text-center">
+                                  <button
+                                    class="accordion-button"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseAtas"
+                                    aria-expanded="true"
+                                    aria-controls="collapseAtas"
+                                  >
+                                    Atas
+                                  </button>
+                                </h2>
+                                <div
+                                  id="collapseAtas"
+                                  class="accordion-collapse collapse"
+                                  data-bs-parent="#accordionContas"
+                                >
+                                  <div class="accordion-body">
+                                    <ul>
+                                      <li>
+                                        <a
+                                          href="path_para_o_arquivo_pdf/ata_aprovacao_orcamento_2024.pdf"
+                                          target="_blank"
+                                          >Ata_Aprovação Orçamento 2024</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href="path_para_o_arquivo_pdf/ata_aprovacao_orcamento_2023.pdf"
+                                          target="_blank"
+                                          >Ata aprovação orçamento 2023</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href="path_para_o_arquivo_pdf/ata_conselho_fiscal_orcamento_2023.pdf"
+                                          target="_blank"
+                                          >Ata Conselho Fiscal - Orçamento
+                                          2023</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href="path_para_o_arquivo_pdf/ata_conselho_fiscal_contas_2022.pdf"
+                                          target="_blank"
+                                          >Ata Conselho Fiscal_Contas 2022</a
+                                        >
+                                      </li>
+                                      <!--Falta pôr os links para o pdf-->
+                                    </ul>
+                                  </div>
                                 </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse"
-                                                data-bs-target="#collapseRelatorios" aria-expanded="false"
-                                                aria-controls="collapseRelatorios">
-                                            Relatórios
-                                        </button>
-                                    </h2>
-                                    <div id="collapseRelatorios" class="accordion-collapse collapse"
-                                         data-bs-parent="#accordionContas">
-                                        <div class="accordion-body">
-                                            <ul>
-                                                <li><a href="path_para_o_arquivo_pdf/ata_aprovacao_orcamento_2024.pdf"
-                                                       target="_blank">Ata_Aprovação Orçamento 2024</a></li>
-                                                <li><a href="path_para_o_arquivo_pdf/ata_aprovacao_orcamento_2023.pdf"
-                                                       target="_blank">Ata aprovação orçamento 2023</a></li>
-                                                <li><a href="path_para_o_arquivo_pdf/ata_conselho_fiscal_orcamento_2023.pdf"
-                                                       target="_blank">Ata Conselho Fiscal - Orçamento 2023</a></li>
-                                                <li><a href="path_para_o_arquivo_pdf/ata_conselho_fiscal_contas_2022.pdf"
-                                                       target="_blank">Ata Conselho Fiscal_Contas 2022</a></li>
-                                                <!--Falta pôr os links para o pdf-->
-                                            </ul>
-                                        </div>
-                                    </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                  <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseRelatorios"
+                                    aria-expanded="false"
+                                    aria-controls="collapseRelatorios"
+                                  >
+                                    Relatórios
+                                  </button>
+                                </h2>
+                                <div
+                                  id="collapseRelatorios"
+                                  class="accordion-collapse collapse"
+                                  data-bs-parent="#accordionContas"
+                                >
+                                  <div class="accordion-body">
+                                    <ul>
+                                      <li>
+                                        <a
+                                          href="path_para_o_arquivo_pdf/ata_aprovacao_orcamento_2024.pdf"
+                                          target="_blank"
+                                          >Ata_Aprovação Orçamento 2024</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href="path_para_o_arquivo_pdf/ata_aprovacao_orcamento_2023.pdf"
+                                          target="_blank"
+                                          >Ata aprovação orçamento 2023</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href="path_para_o_arquivo_pdf/ata_conselho_fiscal_orcamento_2023.pdf"
+                                          target="_blank"
+                                          >Ata Conselho Fiscal - Orçamento
+                                          2023</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href="path_para_o_arquivo_pdf/ata_conselho_fiscal_contas_2022.pdf"
+                                          target="_blank"
+                                          >Ata Conselho Fiscal_Contas 2022</a
+                                        >
+                                      </li>
+                                      <!--Falta pôr os links para o pdf-->
+                                    </ul>
+                                  </div>
                                 </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse"
-                                                data-bs-target="#collapseContas" aria-expanded="false"
-                                                aria-controls="collapseContas">
-                                            Contas
-                                        </button>
-                                    </h2>
-                                    <div id="collapseContas" class="accordion-collapse collapse"
-                                         data-bs-parent="#accordionContas">
-                                        <div class="accordion-body">
-                                            <ul>
-                                                <li><a href="path_para_o_arquivo_pdf/ata_aprovacao_orcamento_2024.pdf"
-                                                       target="_blank">Ata_Aprovação Orçamento 2024</a></li>
-                                                <li><a href="path_para_o_arquivo_pdf/ata_aprovacao_orcamento_2023.pdf"
-                                                       target="_blank">Ata aprovação orçamento 2023</a></li>
-                                                <li><a href="path_para_o_arquivo_pdf/ata_conselho_fiscal_orcamento_2023.pdf"
-                                                       target="_blank">Ata Conselho Fiscal - Orçamento 2023</a></li>
-                                                <li><a href="path_para_o_arquivo_pdf/ata_conselho_fiscal_contas_2022.pdf"
-                                                       target="_blank">Ata Conselho Fiscal_Contas 2022</a></li>
-                                                <!--Falta pôr os pdfs-->
-                                            </ul>
-                                        </div>
-                                    </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                  <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseContas"
+                                    aria-expanded="false"
+                                    aria-controls="collapseContas"
+                                  >
+                                    Contas
+                                  </button>
+                                </h2>
+                                <div
+                                  id="collapseContas"
+                                  class="accordion-collapse collapse"
+                                  data-bs-parent="#accordionContas"
+                                >
+                                  <div class="accordion-body">
+                                    <ul>
+                                      <li>
+                                        <a
+                                          href="path_para_o_arquivo_pdf/ata_aprovacao_orcamento_2024.pdf"
+                                          target="_blank"
+                                          >Ata_Aprovação Orçamento 2024</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href="path_para_o_arquivo_pdf/ata_aprovacao_orcamento_2023.pdf"
+                                          target="_blank"
+                                          >Ata aprovação orçamento 2023</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href="path_para_o_arquivo_pdf/ata_conselho_fiscal_orcamento_2023.pdf"
+                                          target="_blank"
+                                          >Ata Conselho Fiscal - Orçamento
+                                          2023</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href="path_para_o_arquivo_pdf/ata_conselho_fiscal_contas_2022.pdf"
+                                          target="_blank"
+                                          >Ata Conselho Fiscal_Contas 2022</a
+                                        >
+                                      </li>
+                                      <!--Falta pôr os pdfs-->
+                                    </ul>
+                                  </div>
                                 </div>
+                              </div>
                             </div>
+                          </div>
+                          <!--FIM Accordion-->
                         </div>
-                        <!--FIM Accordion-->
+                      </div>
                     </div>
+                  </div>
+                  <!-- Atas, Relatórios e Contas End -->
                 </div>
+              </div>
             </div>
+            <!-- Não apagar div do container -->
+          </div>
+          <!-- Não apagar div do container -->
+
+          <!--Inicio do Footer Aqui Dentro -->
+
+          <!--Fim do Footer-->
+
+          <!-- Back to Top -->
+          <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+            ><i class="bi bi-arrow-up"></i
+          ></a>
         </div>
-        <!-- Atas, Relatórios e Contas End -->
+      </div>
+    <!--footer-->
+    <div class="container-fluid g-0">
+      <footer>
+        <div class="container d-flex pt-4">
+          <div class="row d-flex justify-content-center">
+            <div class="col-12 col-md-3 col-lg-3 mb-4">
+              <div class="row mx-auto">
+                <div class="col-12 linkTitulo mb-2">
+                  <h6>Links úteis</h6>
+                </div>
+                <div class="col-12 text-justify">
+                  <div class="footerLink">
+                    <a href="contactos.html">Localizações</a>
+                  </div>
+                  <div class="footerLink">
+                    <a href="sobreNos.html">Sobre nós</a>
+                  </div>
+                  <div class="footerLink">
+                    <a href="PrivCookies.html"
+                      >Política de Privacidade e Cookies</a
+                    >
+                  </div>
+                  <div class="footerLink">
+                    <a href="voluntariado.html">Voluntariado</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-3 col-lg-3 mb-4">
+              <div class="row">
+                <div class="col-12 text-center mb-2">
+                  <h6>Entre em contacto connosco</h6>
+                </div>
+                <div class="col-12 text-center">
+                  <a href="contactos.html" class="btn btn-footer px-4 py-2"
+                    >Contacte-nos</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-3 col-lg-3 mb-4">
+              <div class="row">
+                <div class="col-12 text-center mb-2">
+                  <h6>Siga as nossas redes</h6>
+                </div>
+                <div class="col-12 text-center mb-4">
+                  <div class="row">
+                    <div class="col-4 col-lg-12 mb-lg-4">
+                      <a
+                        class="icone-redes"
+                        href="https://www.facebook.com/CCRCCR.Colegio"
+                        target="_blank"
+                        ><i class="fa-brands fa-square-facebook fa-2xl"></i
+                      ></a>
+                    </div>
+
+                    <div class="col-4 col-lg-12 mb-lg-4">
+                      <a
+                        class="icone-redes"
+                        href="https://www.instagram.com/ccrccr.colegio/"
+                        target="_blank"
+                        ><i class="fab fa-square-instagram fa-2xl"></i
+                      ></a>
+                    </div>
+
+                    <div class="col-4 col-lg-12">
+                      <a
+                        class="icone-redes"
+                        href="https://www.youtube.com/@CCRCCR.Colegio"
+                        target="_blank"
+                        ><i class="fab fa-youtube fa-2xl"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-3 col-lg-3">
+              <div class="row">
+                <div class="col-12">
+                  <div class="reclamacoesContainer text-center">
+                    <a
+                      href="https://www.livroreclamacoes.pt/Inicio/"
+                      target="_blank"
+                    >
+                      <img
+                        class="img-fluid"
+                        src="imagens/Geral/livro_reclamacoes.png"
+                        alt=""
+                    /></a>
+                  </div>
+                </div>
+
+                <div class="col-12 entidadeReguladora mb-4">
+                  <p>Entidade Reguladora: ISS Centro Distrital de Lisboa</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid containerLogoNome">
+          <div class="col-12 pt-2 gx-5">
+            <div class="row">
+              <div class="col-12 text-center">
+                <div class="logo-container">
+                  <img
+                    class="img-fluid"
+                    src="imagens/Geral/logo2.png"
+                    alt=""
+                    id="imgFoot"
+                  />
+                </div>
+              </div>
+              <div class="col-12 text-center logoTexto">
+                <p>
+                  CCR CCR - Centro Cultural Recreativo das Crianças do Cruzeiro
+                  e Rio-Seco
+                </p>
+              </div>
+              <div class="col-12 text-center pt-2 direitosReservados">
+                <p>2024 Todos os Direitos Reservados&copy;</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-</div>
-
-
-        </div><!-- Não apagar div do container -->
-    </div><!-- Não apagar div do container -->
-        
-  <!--Inicio do Footer Aqui Dentro -->
-  
-    <!--Fim do Footer-->
-
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-    </div>
-</div>
-</div><!-- Não apagar é do loading -->
+    <!--footer fim-->
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+ <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>

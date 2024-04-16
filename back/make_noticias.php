@@ -201,7 +201,7 @@ if (!$result) {
                         <input type="text" name="search" required value="<?php if (isset($_GET['search'])) {
                             echo $_GET['search'];
                         } ?>" class="form-control" placeholder="">
-                        <button type="submit" class="btn btn-outline-success my-2 my-sm-0">Procurar</button>
+                        <button type="submit" class="btn btn-outline-success my-2 my-sm-0">Procurar palavras</button>
                     </div>
                 </form>
 

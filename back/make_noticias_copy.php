@@ -42,7 +42,7 @@ if (!$result) {
         }
         /* Adjust height of the search bar */
         #filtros {
-            margin-top: 50px; /* Adjust the value as needed */
+            margin-top: 200px; /* Adjust the value as needed */
         }
     </style>
 </head>
@@ -63,8 +63,7 @@ if (!$result) {
 
             <!--Filtros-->
             <div class="navbar-form navbar-left sticky-top d-none d-md-block" id="filtros">
-                <h6>Procurar</h6>
-                <hr>
+                
 
                 <form action="" method="GET">
                     <div class="input-group form-control mr-sm-2">

@@ -90,6 +90,24 @@ if (!$result) {
     <link href="css/styles_geral.css" rel="stylesheet">
     <link href="css/headerFooter.css" rel="stylesheet">
         <link href="css/styles_footer.css" rel="stylesheet">
+
+
+         <!-- Próprios -->
+    <link rel="stylesheet" href="noticias.css">
+    <script src="app.js"></script>
+
+    <style>
+        .card {
+            margin-bottom: 10px;
+            /* Space between cards */
+        }
+        /* Adjust height of the search bar */
+        #filtros {
+            margin-top: 50px; /* Adjust the value as needed */
+        }
+    </style>
+</head>
+
 </head>
 
 <body>
@@ -162,7 +180,7 @@ if (!$result) {
 
 
     <!--Titulo-->
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center" style="margin-bottom: 2rem";>
         <h1>
             <a href="?">Notícias e Eventos</a>
         </h1>
@@ -183,7 +201,7 @@ if (!$result) {
                         <input type="text" name="search" required value="<?php if (isset($_GET['search'])) {
                             echo $_GET['search'];
                         } ?>" class="form-control" placeholder="">
-                        <button type="submit" class="btn btn-outline-success my-2 my-sm-0">Procurar</button>
+                        <button type="submit" class="btn btn-outline-success my-2 my-sm-0">Procurar palavras</button>
                     </div>
                 </form>
 

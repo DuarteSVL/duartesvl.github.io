@@ -19,9 +19,7 @@
   <script src="app.js"></script>
 
   <style>
-    html {
-      font-family: sans-serif;
-    }
+    
 
     table {
       border-collapse: collapse;
@@ -44,10 +42,6 @@
       padding: 10px;
     }
 
-    body {
-      background-color: #f8f9fa;
-    }
-
     .container {
       background-color: #ffffff;
       padding: 20px;
@@ -55,33 +49,13 @@
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
-    h2 {
-      margin-bottom: 20px;
-    }
 
-    .btn-primary {
-      margin-bottom: 10px;
-      margin-right: 10px;
-    }
-
-    .btn {
-      margin-right: 10px;
-    }
-
-    .input-group {
-      margin-bottom: 20px;
-    }
 
     .table {
       background-color: #ffffff;
     }
 
-    /* Centering header */
-    .header-container {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 20px;
-    }
+  
 
     /* Centering table headers */
     .table thead th {

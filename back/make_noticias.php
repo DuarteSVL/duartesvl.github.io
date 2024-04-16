@@ -193,7 +193,7 @@ if (!$result) {
 
             <!--Filtros-->
             <div class="navbar-form navbar-left sticky-top d-none d-md-block" id="filtros">
-                <h6>Procurar palavras</h6>
+                <h6 style="text-align:center">Procurar palavras</h6>
                 <hr>
 
                 <form action="" method="GET">

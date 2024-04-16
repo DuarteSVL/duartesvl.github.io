@@ -77,7 +77,6 @@
          <!-- Próprios -->
     <link rel="stylesheet" href="noticias.css">
     <script src="app.js"></script>
-    <link rel="stylesheet" href="gerir_tabelas.css">
 
 </head>
 

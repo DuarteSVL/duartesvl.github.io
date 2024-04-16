@@ -169,7 +169,7 @@
     </div>
   </nav>
   <!-- Fim da Navbar -->
-  <div class="container my-5">
+  <div class="container my-5 tablesE">
 
     <h2><a href="./make_ementas.php"> Ementas </a></h2>
 

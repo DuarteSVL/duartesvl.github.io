@@ -78,7 +78,6 @@ if (!$result) {
         <div class="col">
             <!-- Noticias -->
 
-            <!-- Aviso, as imagens têm que ter as mesmas dimensões para não desalinhar o texto das cartas -->
 
             <!-- Card Deck 1 -->
             <div class="container-fluid justify-content-start">
@@ -95,8 +94,7 @@ if (!$result) {
                         echo '<img class="card-img-top" src="../img_noticia/' . $row['imagem'] . '" alt="Card image cap">';
                         echo '<div class="card-body">';
                         // Título
-                        echo '<h5 class="card-title">' . $row['titulo'] . '</h5>';
-                        // Texto
+                        echo '<h5 class="card-title text-center">' . $row['titulo'] . '</h5>';
                         echo '<p class="card-text">';
                         if (strlen($row['texto']) > 100) {
                             echo substr($row['texto'], 0, 100) . '...';
@@ -105,11 +103,11 @@ if (!$result) {
                         }
                         echo '</p>';
                         echo '</div>';
-                        echo '<div class="card-footer text-end">'; // Align "Ver Mais" to the right
+                        echo '<div class="card-footer d-flex justify-content-between">'; // Align "Ver Mais" to the right
                         // Data
-                        echo '<small class="text-muted">' . $row['data'] . '</small>';
+                        echo '<small class="text-muted text-start">' . $row['data'] . '</small>';
                         // Link para página da noticia com ID como parâmetro
-                        echo '<a href="./noticia_artigo.php?id=' . $row['id_noticia'] . '" class="card-link">Ver Mais</a>';
+                        echo '<a href="./noticia_artigo.php?id=' . $row['id_noticia'] . '" class="card-link text-end">Ver Mais</a>';
                         echo '</div>';
                         echo '</div>';
                         echo '</div>';
@@ -121,6 +119,7 @@ if (!$result) {
                 }
                 ?>
             </div>
+
 
             <!-- Fim Noticias -->
         </div>

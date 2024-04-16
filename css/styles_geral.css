@@ -498,3 +498,7 @@ td {
     url(../imagens/Geral/ementa2.jpg) center center/cover no-repeat;
   background-size: cover;
 }
+
+.submenu{
+  background-color: #ff874f;
+}

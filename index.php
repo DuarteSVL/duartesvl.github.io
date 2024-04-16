@@ -8,8 +8,8 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
 
-    <!-- Favicon -->
-    <link rel="icon" type="images" href="images/logo2.png">
+      <!-- Favicon -->
+      <link rel="icon" type="images" href="images/logo2.png">
     
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
@@ -52,6 +52,7 @@
     />
     <!-- Template Stylesheet -->
     <link href="css/styles_geral.css" rel="stylesheet">
+    <link href="css/headerFooter.css" rel="stylesheet">
 
 </head>
 
@@ -65,13 +66,8 @@ include "header.php";
 
 ?>
 
-    <!-- Navbar
-    
-
-  <!-- Fim da Navbar -->
-
-
-        <!-- Page Header End -->
+<div class="container-xxl all-content bg-white p-0">
+   <!-- Page Header End -->
         <div class="container-xxl py-5 page-header position-relative mb-5">
             <div class="container py-5">
                 <h1 class="display-2 text-white animated slideInDown mb-4">Bem-vindo ao Centro Cultural Recreativo das Crianças do Cruzeiro e Rio-Seco</h1>
@@ -427,53 +423,9 @@ include "header.php";
 </div>
 <!-- local e contactos End -->
 
-<!--Inicio do Footer-->
-<!-- <footer>
-    <div class="container d-flex">
-        <div class="row justify-content-md-center">
-        <div class="col-sm p-0 align-self-center">
-            <img class="img-fluid mx-auto" src="images/logo2.png" alt="" id="imgFoot">
-        </div>
+<!--Inicio do Footer Aqui Dentro -->
   
-        <div class="col-sm d-none d-md-block align-self-center text-align-center" id="footText">
-            <p>CCR CCR <br>
-            Centro Cultural Recreativo das Crianças Cruzeiro Rio-Seco </p>
-        </div>
-  
-        <div class="col-sm social-icons align-self-center">
-            <div class="row d-flex mx-auto socialLink">
-            <a class="col-sm" href="https://www.facebook.com/CCRCCR.Colegio" target="_blank"><i class="fa-brands fa-square-facebook fa-2xl" id="social-icons"></i></a>
-            <a class="col-sm" href="https://www.youtube.com/@CCRCCR.Colegio" target="_blank"><i class="fab fa-youtube fa-2xl" id="social-icons"></i></a>
-            <a class="col-sm" href="https://www.instagram.com/ccrccr.colegio/" target="_blank"><i class="fab fa-square-instagram fa-2xl" id="social-icons"></i></a>
-            </div>
-        </div>
-        
-  
-        <div class="col-sm align-self-center d-flex justify-content-md-center">
-            <a href="#" class="btn contact-button border border-dark rounded" id="footButton">Contacte-nos</a>
-        </div>
-  
-        <div class="col-sm align-self-center">
-            <a class="d-flex justify-content-end" href="https://www.livroreclamacoes.pt/Inicio/" target="_blank">
-                <img class="img-fluid" src="images/livro_reclamacoes.png" alt="" style="width: 55%;"></a>
-            
-        </div>
-  
-        <div class="col-sm  align-self-center" id="footText">
-            Entidade Reguladora: ISS <br>
-            Centro Distrital de Lisboa
-        </div>
-    </div>
-  </footer> -->
-
-
-<?php
-
-include "footer.php";
-
-?>
-  
-  <!--Fim do Footer-->
+<!--Fim do Footer-->
 
     </div><!-- Não apagar div do container -->
 </div><!-- Não apagar div do container -->

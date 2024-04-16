@@ -33,99 +33,78 @@
     />
     <!-- Template Stylesheet -->
     <link href="css/styles_geral.css" rel="stylesheet"/>
+    <link href="css/headerFooter.css" rel="stylesheet">
 </head>
 
 
 <body>
-    <div class="container-xxl all-content bg-white p-0">
-        
-        <!-- Navbar -->
-   <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
-
-    <div class="container-fluid"> 
-  
-        <!-- Logotipo e Texto -->
-      <div class="col-1" id="navLogo"> 
-        <img class="img-fluid" src="imagens/logo2.png" id="logo">
-      </div>
-
-      <div class="col d-flex d-none d-md-block" id="navTexto"> 
-        <h5>CCR-CCR</h5> 
-        <p>Centro Cultural Recreativo <br> das Crianças do Cruzeiro e Rio-Seco</p>
-      </div>
-  
+  <!-- Navbar Aqui Dentro -->
+<nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+  <div class="container-fluid">
+    <!-- Logotipo e Texto -->
+    <div class="col-1" id="navLogo">
+      <a href="index.html"><img class="col-lg-12 col-md-8 col-sm-6" src="imagens/Geral/logo2.png" id="logo"></a>
+    </div>
+    <div class="col-md-2 d-flex d-none d-lg-block" id="navTexto">
+      <h5>CCR-CCR</h5>
+      <p>Centro Cultural Recreativo <br> das Crianças do Cruzeiro e Rio-Seco</p>
+    </div>
     <!-- button menu mobile -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-  
     <!-- Lista botões -->
-    <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
-    <ul class="navbar-nav">
-  
-      <!-- Homepage/Início -->
-    <li class="nav-item m-2">
-    <a class="nav-link active" aria-current="page" href="index.html">Início</a>
-    </li>
-  
-    <!-- CCR CCR/Sobre nós  -->
-    <li class="nav-item dropdown m-2">
-    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">CCR CCR</a>
-    <ul class="dropdown-menu animate slideIn">
-    <li><a class="dropdown-item" href="sobreNos.html">Sobre nós</a></li>
-    <li><a class="dropdown-item" href="voluntariado.html">Voluntariado</a></li>
-    <li><a class="dropdown-item" href="planoContigencia.html">Plano de contingência Covid-19</a></li>
-    </ul>
-    </li>
-  
-    <!-- Valências -->
-    <li class="nav-item dropdown m-2">
-    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Valências</a>
-    <ul class="dropdown-menu animate slideIn">
-    <li><a class="dropdown-item" href="valencia_bercarioCreche.html">Berçário e creche</a></li>
-    <li><a class="dropdown-item" href="valencia_jardimInfancia.html">Jardim de infância</a></li>
-    <li><a class="dropdown-item" href="valencia_cicloBasico.html">1º Ciclo</a></li>
-    <li><a class="dropdown-item" href="valencia_centroApoioEscolar.html">Centro de Apoio Escolar</a></li>
-    <li><a class="dropdown-item" href="#">Centro Apoio Terceira Idade</a></li>
-    <li><a class="dropdown-item" href="#">Área Desportiva e Recreativa</a></li>
-    </ul>
-    </li>
-  
-    <!-- Ementas -->
-    <li class="nav-item m-2">
-    <a class="nav-link" href="#">Ementas</a>
-    </li>
-  
-    <!-- Preçários -->
-    <li class="nav-item m-2">
-    <a class="nav-link" href="#">Preçário</a>
-    </li>
-  
-    <!-- Noticias -->
-    <li class="nav-item m-2">
-    <a class="nav-link" href="#">Notícias</a>
-    </li>
-  
-    <!-- Contactos -->
-    <li class="nav-item m-2">
-    <a class="nav-link" href="#">Contactos</a>
-    </li>
-  
-     <!-- Educabiz -->
-      <div>
-        <a href="https://www.educabiz.com/" target="_blank">
-          <img src="imgs/educabiz.png" alt="" id="educabiz">
-        </a>
-      </div>
-  
-    </ul>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <!-- Itens do menu aqui -->
+        <li class="nav-item m-2">
+          <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+        </li>
+        <li class="nav-item dropdown m-2">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">CCR CCR</a>
+          <ul class="dropdown-menu animate slideIn">
+            <li><a class="dropdown-item" href="sobreNos.html">Sobre nós</a></li>
+            <li><a class="dropdown-item" href="voluntariado.html">Voluntariado</a></li>
+            <li><a class="dropdown-item" href="PrivCookies.html">Política de Privacidade e Cookies</a></li>
+            <li><a class="dropdown-item" href="planoContigencia.html">Plano de contingência Covid-19</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown m-2">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Valências</a>
+          <ul class="dropdown-menu animate slideIn">
+            <li><a class="dropdown-item" href="valencia_bercarioCreche.html">Berçário e creche</a></li>
+            <li><a class="dropdown-item" href="valencia_jardimInfancia.html">Jardim de infância</a></li>
+            <li><a class="dropdown-item" href="valencia_cicloBasico.html">1º Ciclo</a></li>
+            <li><a class="dropdown-item" href="valencia_centroApoioEscolar.html">Centro de Apoio Escolar</a></li>
+            <li><a class="dropdown-item" href="valencia_centroTerceiraIdade.html">Centro Apoio Terceira Idade</a></li>
+            <li><a class="dropdown-item" href="valencia_areaDesportivaRecreativa.html">Área Desportiva e Recreativa</a></li>
+          </ul>
+        </li>
+        <li class="nav-item m-2">
+          <a class="nav-link" href="ementas.html">Ementas</a>
+        </li>
+        <li class="nav-item m-2">
+          <a class="nav-link" href="precario.html">Preçário</a>
+        </li>
+        <li class="nav-item m-2">
+          <a class="nav-link" href="noticias.html">Notícias</a>
+        </li>
+        <li class="nav-item m-2">
+          <a class="nav-link" href="contactos.html">Contactos</a>
+        </li>
+        <div class="d-flex">
+          <a href="https://www.educabiz.com/" target="_blank">
+            <img src="imagens/Geral/educabiz 2.png" alt="" id="educabiz">
+          </a>
+        </div>
+      </ul>
     </div>
-    </div>
-    </nav>
+  </div>
+</nav>
+<!-- Fim da Navbar -->
 
-  <!-- Fim da Navbar -->
-
-
+    <div class="container-xxl all-content bg-white p-0">
+        
         <!-- Page Header End -->
         <div class="container-xxl py-5 page-header position-relative mb-5">
             <div class="container py-5">
@@ -214,43 +193,6 @@
     </div><!-- Não apagar div do container -->
    
 <!--Inicio do Footer-->
-<footer>
-  <div class="container d-flex">
-      <div class="row justify-content-md-center">
-      <div class="col-sm p-0 align-self-center">
-          <img class="img-fluid mx-auto" src="images/logo2.png" alt="" id="imgFoot">
-      </div>
-
-      <div class="col-sm d-none d-md-block align-self-center text-align-center" id="footText">
-          <p>CCR CCR <br>
-          Centro Cultural Recreativo das Crianças Cruzeiro Rio-Seco </p>
-      </div>
-
-      <div class="col-sm social-icons align-self-center">
-          <div class="row d-flex mx-auto socialLink">
-          <a class="col-sm" href="https://www.facebook.com/CCRCCR.Colegio" target="_blank"><i class="fa-brands fa-square-facebook fa-2xl" id="social-icons"></i></a>
-          <a class="col-sm" href="https://www.youtube.com/@CCRCCR.Colegio" target="_blank"><i class="fab fa-youtube fa-2xl" id="social-icons"></i></a>
-          <a class="col-sm" href="https://www.instagram.com/ccrccr.colegio/" target="_blank"><i class="fab fa-square-instagram fa-2xl" id="social-icons"></i></a>
-          </div>
-      </div>
-      
-
-      <div class="col-sm align-self-center d-flex justify-content-md-center">
-          <a href="#" class="btn contact-button border border-dark rounded" id="footButton">Contacte-nos</a>
-      </div>
-
-      <div class="col-sm align-self-center">
-          <a class="d-flex justify-content-end" href="https://www.livroreclamacoes.pt/Inicio/" target="_blank">
-              <img class="img-fluid" src="images/livro_reclamacoes.png" alt="" style="width: 55%;"></a>
-          
-      </div>
-
-      <div class="col-sm  align-self-center" id="footText">
-          Entidade Reguladora: ISS <br>
-          Centro Distrital de Lisboa
-      </div>
-  </div>
-</footer>
 
 <!--Fim do Footer-->
 

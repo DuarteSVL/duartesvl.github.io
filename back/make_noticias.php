@@ -193,7 +193,7 @@ if (!$result) {
 
             <!--Filtros-->
             <div class="navbar-form navbar-left sticky-top d-none d-md-block" id="filtros">
-                <h6>Procurar</h6>
+                <h6 style="text-align:center">Procurar palavras</h6>
                 <hr>
 
                 <form action="" method="GET">
@@ -201,7 +201,7 @@ if (!$result) {
                         <input type="text" name="search" required value="<?php if (isset($_GET['search'])) {
                             echo $_GET['search'];
                         } ?>" class="form-control" placeholder="">
-                        <button type="submit" class="btn btn-outline-success my-2 my-sm-0">Procurar palavras</button>
+                        <button type="submit" class="btn btn-outline-success my-2 my-sm-0">Procurar</button>
                     </div>
                 </form>
 

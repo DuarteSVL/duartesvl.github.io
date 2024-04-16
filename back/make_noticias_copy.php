@@ -194,25 +194,53 @@ if (!$result) {
    <!-- Aviso, as imagens têm que ter as mesmas dimensões para não desalinhar as cartas, 800px height e 1000px width -->
 
    <!-- Card Deck 1 -->
-   <div class="card-deck d-flex justify-content-between">
+ <div class="card-deck d-flex justify-content-between">
 
     <!-- Noticia 1 -->
-    <div class="card">
-      <!-- Imagem -->
-      <img class="card-img-top" src="../imagens/noticias/POP-DANCE.jpg" alt="Card image cap">
-      <div class="card-body">
-        <!-- Titulo -->
-        <h5 class="card-title">A POP Dance chegou ao CCRCCR!</h5>
-        <!-- Subtitulo/texto -->
-        <p class="card-text">Nas aulas de Pop Dance, podes contar dançar aos ritmos contagiantes da Pop, Hip Hop, RNB e Dancehall, entre outros.</p>
-      </div>
-      <div class="card-footer">
-        <!-- Data -->
-        <small class="text-muted">11 Outubro 2023</small>
-        <!-- Link para página da noticia -->
-        <a href="noticia_exemplo.html" class="card-link">Ver Mais</a>
-      </div>
-    </div>
+    <div class="container-fluid justify-content-start">
+
+                <?php
+                $count = 0;
+                if (mysqli_num_rows($result) > 0) {
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        if ($count % 3 == 0) {
+                            echo '<div class="row">';
+                        }
+                        echo '<div class="col-md-4 mb-4">';
+                        echo '<div class="card h-100">';
+                        // Imagem
+                        echo '<img class="card-img-top" src="' . '../img_noticia/' . $row['imagem'] . '" alt="Card image cap">';
+                        echo '<div class="card-body">';
+                        echo '<h5 class="card-title">';
+                        // Título
+                        echo $row['titulo'];
+                        echo '</h5>';
+                        echo '<p class="card-text">';
+                        // Texto
+                        if (strlen($row['texto']) > 100) {
+                            echo substr($row['texto'], 0, 100) . '...';
+                        } else {
+                            echo $row['texto'];
+                        }
+                        echo '</p>';
+                        echo '</div>';
+                        echo '<div class="card-footer">';
+                        // Data
+                        echo '<small class="text-muted">';
+                        echo $row['data'];
+                        echo '</small>';
+                        // Link para página da noticia com ID como parâmetro
+                        echo '<a href="./noticia_artigo.php?id=' . $row['id_noticia'] . '" class="card-link">Ver Mais</a>';
+                        echo '</div>';
+                        echo '</div>';
+                        echo '</div>';
+                        if ($count % 3 == 2) {
+                            echo '</div>';
+                        }
+                        $count++;
+                    }
+                }
+                ?>
 
     <!-- Noticia 1 -->
     <div class="card">
@@ -386,7 +414,7 @@ if (!$result) {
 
             <!-- Aviso, as imagens têm que ter as mesmas dimensões para não desalinhar o texto das cartas -->
 
-            <!-- Card Deck 1 -->
+
             <div class="container-fluid justify-content-start">
 
                 <?php

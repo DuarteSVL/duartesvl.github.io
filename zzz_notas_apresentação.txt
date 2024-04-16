@@ -28,6 +28,17 @@ seja por melhoria dos mesmos ou por incompactibilidade com o design geral
 mencionar que usamos metodologia Agile para realização do projecto
 
 
+Apresentação do grupo;
+Identificação do cliente;
+Apresentação da ideia/Briefing inicial;
+(Neste caso podem mostrar o site inicial, como falamos)
+Identificar expectativas/receios;
+Apresentação da metodologia;
+Apresentação da versão final e variantes;
+Identificar como contornaram as expectativas/receios;
+Conclusão.
+
+
 -----------------------------------------------------------------------
 Partes da apresentação:
 -----------------------------------------------------------------------
@@ -36,3 +47,4 @@ Partes da apresentação:
 
 -backoffice/base de dados: Duarte
 
+-final: Tomás

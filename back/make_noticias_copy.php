@@ -23,9 +23,13 @@ if (!$result) {
 <head>
 
  <!-- Próprios -->
- <link href="css/noticias.css" rel="stylesheet">
-   <link href="css/headerFooter.css" rel="stylesheet">
-   <script src="js/main.js"></script>
+ <style>
+        <?php
+        $cssFile = file_get_contents('../css/headerFooter.css');
+        echo $cssFile;
+        ?>
+    </style>
+ 
 
  <!-- Navbar Aqui Dentro -->
  <nav class="navbar navbar-expand-lg sticky-top" id="navbar">

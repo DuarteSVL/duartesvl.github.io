@@ -28,3 +28,11 @@ seja por melhoria dos mesmos ou por incompactibilidade com o design geral
 mencionar que usamos metodologia Agile para realização do projecto
 
 
+-----------------------------------------------------------------------
+Partes da apresentação:
+-----------------------------------------------------------------------
+
+-introdução: Tomás
+
+-backoffice/base de dados: Duarte
+

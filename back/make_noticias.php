@@ -34,8 +34,6 @@ if (!$result) {
 
     <!-- Próprios -->
     <link rel="stylesheet" href="noticias.css">
-    <link href="css/headerFooter.css" rel="stylesheet">
-    <link href="css/styles_footer.css" rel="stylesheet">
     <script src="app.js"></script>
 
     <style>
@@ -44,10 +42,59 @@ if (!$result) {
             /* Space between cards */
         }
     </style>
+
+    
+    <!-- Favicon -->
+    <link rel="icon" type="images" href="images/logo2.png">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!--BOOTSTRAP-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!--BOOTSTRAP JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+      <!--Owl Carousel-->
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--FONTAWESOME-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Template Stylesheet -->
+    <link href="css/styles_geral.css" rel="stylesheet">
+    <link href="css/headerFooter.css" rel="stylesheet">
+        <link href="css/styles_footer.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Navbar Aqui Dentro -->
+
+<!-- Navbar Aqui Dentro -->
 <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
     <div class="container-fluid">
       <!-- Logotipo e Texto -->
@@ -111,6 +158,9 @@ if (!$result) {
     </div>
   </nav>
   <!-- Fim da Navbar -->
+
+
+
     <!--Titulo-->
     <div class="d-flex justify-content-center">
         <h1>
@@ -321,7 +371,8 @@ if (!$result) {
           </div>
         </div>
       </footer>
-    </div>
+
+
 
 </body>
 

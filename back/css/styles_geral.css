@@ -1,0 +1,500 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor-principal: #ff874f;
+  --cor-cards: #f1ffeb;
+  --cor-botao-hover: #993100;
+  --cor-botaoTexto-hover: #ffffff;
+  --cor-botao-focus: #feeb71;
+  --cor-botao-disabled: #8a8a8a;
+  --cor-accordionBg: #fff3ed;
+  --cor-sideNav: #02baf2;
+}
+
+/*Acrescentar cor se necessario*/
+/*body {
+}*/
+
+/* Texto */
+/*Light (300)*/
+@font-face {
+  font-family: "NunitoSans";
+  src: url("fonts/nunitoSans/NunitoSans_10pt-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+/*Regular (400)*/
+@font-face {
+  font-family: "NunitoSans";
+  src: url("fonts/nunitoSans/NunitoSans_10pt-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+/*Medium (500)*/
+@font-face {
+  font-family: "NunitoSans";
+  src: url("fonts/nunitoSans/NunitoSans_10pt-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+/*Bold (700)*/
+@font-face {
+  font-family: "NunitoSans";
+  src: url("fonts/nunitoSans/NunitoSans_10pt-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+/*Italic (400)*/
+@font-face {
+  font-family: "NunitoSans Italic";
+  src: url("fonts/nunitoSans/NunitoSans_10pt-Italic.ttf") format("truetype");
+  font-weight: 400;
+}
+
+/* Titulos h1-h6 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+}
+
+/* Texto */
+p {
+  font-family: "NunitoSans", sans-serif;
+  font-weight: 400;
+}
+
+/* Quotes */
+q {
+  font-family: "NunitoSans Italic", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*** Header ***/
+/*** muda a transparência da imagem inicial ***/
+.page-header {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent),
+    url(../imagens/sobreNos/sobrenos.jpg) center center/cover no-repeat;
+  background-size: cover;
+}
+
+.breadcrumb-item {
+  color: #ffffff !important; /* Cor do texto das breadcrumbs */
+}
+
+.breadcrumb-item a {
+  color: var(--cor-principal); /* Cor do texto dos links das breadcrumbs */
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/*Accordions de todas as páginas*/
+.accordion {
+  ul li a {
+    color: #000;
+    text-decoration: none;
+    cursor: default;
+
+    &:hover {
+      color: var(
+        --cor-principal
+      ); /* Muda a cor do link quando passa o mouse por cima */
+    }
+  }
+
+  .accordion-item .accordion-body ul {
+    text-align: justify;
+  }
+
+  .accordion-button {
+    background-color: none;
+
+    &.collapsed show {
+      background-color: var(
+        --cor-principal
+      ); /* Altera a cor do botão quando está em estado "collapsed" */
+      color: var(--cor-botaoTexto-hover); /* Altera a cor do texto */
+    }
+  }
+
+  &.accordion-header {
+    text-align: center;
+  }
+
+  .accordion-button:focus {
+    z-index: 3;
+    border-color: #f5f5f5 !important;
+    outline: 0;
+    box-shadow: none !important;
+  }
+
+  .accordion-button:not(.collapsed) {
+    background-color: var(--cor-principal) !important;
+    color: white;
+  }
+
+  .accordion-body {
+    background-color: var(--cor-accordionBg) !important;
+  }
+}
+
+/*Background de cards*/
+.bg-card {
+  background-color: var(--cor-cards);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/*Homepage styles*/
+/*** cards das valências ***/
+.valencias-item {
+  transition: 0.5s;
+}
+
+.valencias-item:hover {
+  margin-top: -10px;
+}
+.btnValencias {
+  border-color: var(--cor-principal);
+  color: var(--cor-principal);
+
+  &:hover {
+    background-color: var(--cor-principal);
+    color: var(--cor-botaoTexto-hover);
+  }
+}
+
+/*** Vantagens homepage***/
+.bgVantagens {
+  background-color: var(--cor-principal);
+  margin-bottom: 50px;
+}
+
+/*** Noticias Slider ***/
+.owl-carousel.noticias-carousel {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 576px) {
+  .owl-carousel.noticias-carousel {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+.owl-carousel.noticias-carousel .owl-item .border {
+  border: 1px solid !important;
+}
+
+.owl-carousel.noticias-carousel .owl-nav {
+  position: absolute;
+  width: 100%;
+  height: 45px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.owl-carousel.noticias-carousel .owl-nav .owl-prev,
+.owl-carousel.noticias-carousel .owl-nav .owl-next {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: var(--cor-principal);
+  border-radius: 50%; /* Alterado para 50% para criar um círculo */
+  background-color: var(--cor-principal);
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.owl-carousel.noticias-carousel .owl-nav .owl-prev:hover,
+.owl-carousel.noticias-carousel .owl-nav .owl-next:hover {
+  background: var(--cor-botao-hover);
+}
+
+/* Card consultar ementas */
+.consultar-ementas-card {
+  & .imgEmentasCard {
+    @media (max-width: 992px) {
+      min-height: 200px;
+    }
+    @media (min-width: 992px) {
+      min-height: 300px;
+    }
+  }
+  & h4 {
+    @media (max-width: 992px) {
+      text-align: center;
+    }
+  }
+}
+
+/*** Botões ***/
+.btn {
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.btn.btn-outline-custom.disabled {
+  color: var(--cor-botao-disabled);
+  border: 1px solid var(--cor-botao-disabled);
+}
+.btn.btn-primary.disabled {
+  background-color: var(--cor-botao-disabled);
+  border: none;
+}
+
+.btn.btn-primary {
+  color: #ffffff;
+  background-color: var(--cor-principal);
+  border: none;
+}
+
+.btn.btn-primary:hover {
+  color: #ffffff; /* Nova cor do texto ao passar o mouse */
+  background-color: var(
+    --cor-botao-hover
+  ); /* Nova cor de fundo ao passar o mouse */
+}
+
+.btn-outline-custom {
+  color: var(--cor-principal); /* Text color */
+  border-color: var(--cor-principal); /* Border color */
+}
+/* Hover styles for the outline button */
+.btn-outline-custom:hover {
+  color: #ffffff; /* Text color on hover */
+  background-color: var(--cor-botao-hover); /* Background color on hover */
+  border-color: var(--cor-botao-hover); /* Border color on hover */
+}
+
+/*Back to top*/
+/* Define estilos do botão para diferentes tamanhos */
+.btn-square {
+  width: 38px;
+  height: 38px;
+}
+
+.btn-sm-square {
+  width: 32px;
+  height: 32px;
+}
+
+.btn-lg-square {
+  width: 48px;
+  height: 48px;
+}
+
+/* Aplicar estilos comuns aos botões */
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+  padding: 0; /* Remover padding padrão */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+  border-radius: 50%; /* Garantir que o botão é circular */
+  text-decoration: none; /* Remover sublinhado padrão para tag âncora */
+  transition: background-color 0.3s ease; /* Adicionar efeito de transição */
+}
+
+/* Botão "Voltar ao Topo" */
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 45px;
+  bottom: 45px;
+  z-index: 99;
+  background-color: #007bff; /* Definir cor de fundo padrão */
+  color: white; /* Definir cor de texto padrão */
+}
+
+/* Ícone dentro do botão */
+.back-to-top i {
+  font-size: 1.5rem; /* Ajustar tamanho do ícone conforme necessário */
+}
+
+/* Efeito hover para o botão */
+.back-to-top:hover {
+  background-color: #0056b3; /* Alterar cor de fundo no hover */
+}
+
+/* Ajustar alinhamento vertical do ícone dentro do botão */
+.back-to-top .bi::before {
+  vertical-align: middle;
+}
+
+/* *************************
+        Styles Cookies
+************************* */
+.page-header-cookies {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent),
+    url(../imagens/Geral/cookies.jpg) center center/cover no-repeat;
+  background-size: cover;
+}
+
+/* *************************
+        Styles contactos
+************************* */
+
+.page-header-contactos {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent),
+    url(../imagens/Contactos/contactos.jpg) center center/cover no-repeat;
+  background-size: cover;
+}
+
+/*Formulário*/
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#submit {
+  color: #ffffff;
+  background-color: #ff874f;
+  border: none;
+}
+
+#submit:hover {
+  color: white; /* Nova cor do texto ao passar o mouse */
+  background-color: #993100; /* Nova cor de fundo ao passar o mouse */
+}
+
+/* *************************
+        Styles Submenus
+************************* */
+/*Submenus de Contactos e das Ementas*/
+#btnContactos {
+  margin: auto;
+  background-color: transparent;
+  border-radius: 10px;
+  justify-content: center;
+  border-style: ridge;
+  width: fit-content;
+
+  & :hover {
+    background-color: #ff874f;
+  }
+}
+
+.submenu {
+  background-color: #fff3ed;
+  border-radius: 15px;
+  padding: 1rem;
+
+  & iframe {
+    border-radius: 15px;
+  }
+
+  & p,
+  h6 {
+    margin-top: 2.5rem;
+  }
+}
+
+.visited {
+  background-color: #ff874f;
+}
+
+th,
+td {
+  text-align: center;
+}
+
+/* *************************
+        Styles precario
+************************* */
+.page-header-precario {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent),
+    url(../imagens/Precario/precario.jpg) center center/cover no-repeat;
+  background-size: cover;
+}
+
+/*Lightbox galeria de imagens*/
+.lightbox-gallery {
+  color: #000;
+  overflow-x: hidden;
+}
+@media (max-width: 767px) {
+  .lightbox-gallery h2 {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
+  }
+}
+.lightbox-gallery .photos {
+  padding-bottom: 20px;
+}
+.lightbox-gallery .item {
+  padding-bottom: 30px;
+}
+
+.btnPdf {
+  color: #ffffff;
+  background-color: #ff874f;
+  border: none;
+  border-radius: 15px;
+  border: solid 1.5px #993100;
+  height: 3.5rem;
+  width: 16.5rem;
+
+  &:hover {
+    transition: 0.5s;
+    background-color: #993100;
+  }
+}
+
+/* *************************
+        Styles 404
+************************* */
+.page-header-404 {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent),
+    url(../imagens/Geral/404.jpg) center center/cover no-repeat;
+  background-size: cover;
+}
+
+/* *************************
+        Styles Ementa
+************************* */
+.page-header-ementa {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent),
+    url(../imagens/Geral/ementa2.jpg) center center/cover no-repeat;
+  background-size: cover;
+}

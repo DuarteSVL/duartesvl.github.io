@@ -1,0 +1,86 @@
+/* *************************
+        Styles notícias
+************************* */
+
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
+
+.btn {
+  background-color: #5abfe1;
+  color: #fff; /* cor do texto branca */
+  border-radius: 5px; /* bordas arredondadas */
+  padding: 5px 10px; /* padding interno */
+  text-decoration: none; /* remove sublinhado padrão */
+  display: inline-block; /* exibe como um bloco */
+}
+
+.border {
+  border-radius: 15px;
+  background-color: #fef4ae;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Styles Cards */
+
+.card {
+  display: flex;
+  width: 30%;
+  height: auto;
+}
+
+a {
+  margin-left: 35%;
+}
+
+.card-title {
+  display: flex;
+  text-align: center;
+}
+
+.card-text {
+  margin-bottom: 0;
+  font-weight: 200;
+}
+
+/* Styles Paginação */
+#paginacao {
+  display: flex;
+  justify-content: center;
+
+  & a {
+    border-radius: 50%;
+    display: inline-block;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+  }
+
+  & a:hover {
+    background-color: #ff874f;
+  }
+
+  & a:active,
+  a:focus {
+    background-color: #fff3ed;
+  }
+}
+
+/* Styles Filtros */
+#filtros {
+  top: 80px; /*isto é a distância a que a sidenav fica do topo quando sticky*/
+  z-index: 700; /* Garante que a barra lateral esteja abaixo da barra superior */
+  margin-top: -80px; /* Truque para o sticky-top do con*/
+  padding-top: 80px;
+  border: solid 2px #dddcdc;
+  border-radius: 15px;
+  color: black;
+  padding: 0.8rem;
+}

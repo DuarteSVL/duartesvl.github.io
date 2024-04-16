@@ -16,6 +16,7 @@
 <body>
     <div class="container my-5">
         <h2><a href="./gerir_ementas.php"> Lista de refeições</a></h2>
+        <h2><a href="./main.php"> Main</a></h2>
         <a class="btn btn-primary" href="./refeicao_create.php">Nova Refeição</a>
 
         <form action="" method="GET">

@@ -92,238 +92,185 @@
   </div>
 </nav>
 <!-- Fim da Navbar -->
-
-  <!-- Page Header End -->
-  <div class="container-xxl py-5 page-header-contactos position-relative mb-5">
-    <div class="container py-5">
-        <h1 class="display-2 text-white animated slideInDown mb-4">Contactos</h1>
-        <nav aria-label="breadcrumb animated slideInDown">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Ínicio</a></li>
-                <li class="breadcrumb-item"><a href="contactos.html">Contactos</a></li>
-                <li class="breadcrumb-item text-white active" aria-current="page">Contactos</li>
-            </ol>
-        </nav>
-    </div>
-</div>
-<!-- Page Header End -->
-
-  <div class="container-xxl py-5 d-flex align-items-center justify-content-center">
-    <div class="container text">
-      <div class="row g-0">
-        <div class="col-lg-12 wow fadeIn" data-wow-delay="0.5s">
-          <div class="d-flex flex-column justify-content-center p-5">
-            <h1 style="text-align: center;">Contacte-nos</h1>
-    
-            <p></p>
-    <p style="text-align: center;">Se tiver questões, dúvidas, ou sugestões, não hesite em deixar-nos uma mensagem através do formulário abaixo.</p>
-        
-        <!-- Formulário -->
-        <div class="form-container bg-card py-3">
-        <form id="formContactos">
-            <div class="row">
-            <div class="col form-group">
-              <label for="exampleFormControlInput1"></label>
-              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nome">
+ <div class="container-xxl bg-white p-0">
+        <!-- Page Header -->
+        <div class="container-xxl py-5 page-header-contactos position-relative mb-5">
+            <div class="container py-5">
+                <h1 class="display-2 text-white animated slideInDown mb-4">Contactos</h1>
+                <nav aria-label="breadcrumb animated slideInDown">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Início</a></li>
+                        <li class="breadcrumb-item"><a href="contactos.html">Contactos</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">Contactos</li>
+                    </ol>
+                </nav>
             </div>
-            </div>
-
-            <div class="row">
-            <div class="col form-group">
-                <label for="exampleFormControlInput1"></label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
-              </div>
-              </div>
-
-              <div class="row">
-              <div class="col form-group">
-                <label for="exampleFormControlInput1"></label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Assunto">
-              </div>
-              </div>
-
-              <div class="row">
-              <div class="col form-group">
-              <div class="form-group">
-              <label for="exampleFormControlTextarea1"></label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="A sua mensagem"></textarea>
-            </div>
-            </div>
-            </div>
-            <br>
-            <button type="submit" class="btn mb-2" id="submit">Enviar</button>
-          </form>
         </div>
-        
-        <p></p>
-        <p></p>
-        <p></p>
-       
+        <!-- End Page Header -->
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 text-center mb-4">
+                    <h1>Contacte-nos</h1>
+                    <p>Se tiver questões, dúvidas, ou sugestões, não hesite em deixar-nos uma mensagem através do formulário abaixo.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-4 bg-card">
+                        <form action="/submit-form" method="POST" id="inscriptionForm">
+                            <div class="mb-3">
+                                <label for="firstName" class="form-label">Nome:</label>
+                                <input type="text" class="form-control" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="lastName" class="form-label">Email:</label>
+                                <input type="email" class="form-control" id="lastName" name="lastName">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Assunto:</label>
+                                <input type="text" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Mensagem:</label>
+                                <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Menu Contactos -->
-        <h1 style="text-align: center;">Localizações</h1>
-        <p></p>
-
-        <div class="btn-group-lg" id="btnContactos">
-          <button type="button" class="btn" onclick="mudarMenu('creche')">Berçário e Creche</button>
-          <button type="button" class="btn" onclick="mudarMenu('jardim')">Jardim de Infância</button>
-          <button type="button" class="btn" onclick="mudarMenu('1ciclo')">1º Ciclo</button>
-          <button type="button" class="btn" onclick="mudarMenu('centro')">Centro de Apoio Escolar</button>
-        </div>  
-
-        <p></p>
-        
-        <br><br>
-        <div class="contactos d-flex justify-content-center">
-
-            <!-- Berçário e Creche -->
-             <div style="display: block;" class="submenu" id="creche">
-              <div class="row">
-              <div class="col">
-              <h6>Morada</h6>
-             <p>R. Padre Manuel Alves Correia nº 14, 1300 Lisboa</p>
-              <h6>Telefone</h6>
-             <p>Tel. 213 636 418 (chamada para a rede fixa nacional)</p>
-             <h6>Telemovel</h6>
-             <p>Telem. 912 231 244 (chamada para a rede móvel nacional)</p>
+        <div class="container">
+            <h1 class="text-center mt-5">Localizações</h1>
+            <div class="btn-group-lg d-flex justify-content-center mt-3" id="btnContactos">
+                <button type="button" class="btn" onclick="mudarMenu('creche')">Berçário e Creche</button>
+                <button type="button" class="btn" onclick="mudarMenu('jardim')">Jardim de Infância</button>
+                <button type="button" class="btn" onclick="mudarMenu('1ciclo')">1º Ciclo</button>
+                <button type="button" class="btn" onclick="mudarMenu('centro')">Centro de Apoio Escolar</button>
             </div>
-            <div class="col">
-             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6226.98607474665!2d-9.191584723610406!3d38.70648795794542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1934ab25ca4cd9%3A0x19b2a268da32b751!2sCentro%20Cultural%20Recreativo%20Crian%C3%A7as%20Cruzeiro%20E%20Rio%20Seco%20Casa%20Juventude!5e0!3m2!1sen!2sus!4v1712182469775!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-          </div>
-        </div>
-             
-        <!-- Jardim de Infância -->
-             <div style="display: none;" class="submenu" id="jardim">
-              <div class="row">
-                <div class="col">
-              <h6>Morada</h6>
-             <p>R. D. João de Castro nº 86, 1300-163 Lisboa</p>
-              <h6>Telefone</h6>
-             <p>Tel. 213 644 465 (chamada para a rede fixa nacional)</p>
-             <h6>Telemovel</h6>
-             <p>Telem. 912 231 245 (chamada para a rede móvel nacional)</p>
-            </div>
-             <div class="col">
-             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6226.98607474665!2d-9.191584723610406!3d38.70648795794542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1934ab25ca4cd9%3A0x19b2a268da32b751!2sCentro%20Cultural%20Recreativo%20Crian%C3%A7as%20Cruzeiro%20E%20Rio%20Seco%20Casa%20Juventude!5e0!3m2!1sen!2sus!4v1712182469775!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-          </div>
         </div>
 
-        <!-- 1º Ciclo -->
-             <div style="display: none;" class="submenu" id="1ciclo">
-              <div class="row">
-                <div class="col">
-              <h6>Morada</h6>
-              <p>R. José Magro lote 12, 1300-059 Lisboa</p>
-               <h6>Telefone</h6>
-              <p>Tel. 213 644 624 (chamada para a rede fixa nacional)</p>
-              <h6>Telemovel</h6>
-              <p>Telem. 917 254 793 (chamada para a rede móvel nacional)</p>
-            </div>
-              <div class="col">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6226.935488639467!2d-9.189879900000001!3d38.707068799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1934aad4ae626b%3A0x68d8b3f17b2e5a6d!2sR.%20Jos%C3%A9%20Magro%2012%2C%201300-190%20Lisboa%2C%20Portugal!5e0!3m2!1sen!2sus!4v1713262871489!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-          </div>
-        </div>
+        <!-- Locations Content -->
+        <div class="container mt-5">
+            <div class="contactos">
+                <!-- Berçário e Creche -->
+                <div style="display: block;" class="submenu" id="creche">
+                    <div class="row">
+                        <div class="col">
+                            <h6>Morada</h6>
+                            <p>R. Padre Manuel Alves Correia nº 14, 1300 Lisboa</p>
+                            <h6>Telefone</h6>
+                            <p>Tel. 213 636 418 (chamada para a rede fixa nacional)</p>
+                            <h6>Telemóvel</h6>
+                            <p>Telem. 912 231 244 (chamada para a rede móvel nacional)</p>
+                        </div>
+                        <div class="col">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6226.98607474665!2d-9.191584723610406!3d38.70648795794542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1934ab25ca4cd9%3A0x19b2a268da32b751!2sCentro%20Cultural%20Recreativo%20Crian%C3%A7as%20Cruzeiro%20E%20Rio%20Seco%20Casa%20Juventude!5e0!3m2!1sen!2sus!4v1712182469775!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- Centro de Apoio Escolar -->
-             <div style="display: none;" class="submenu" id="centro">
-              <div class="row">
-                <div class="col">
-              <h6>Morada</h6>
-              <p>R. José Magro (Pavilhão do CCR CCR), 1300-059 Lisboa</p>
-               <h6>Telefone</h6>
-              <p>Tel. 213 644 624 (chamada para a rede fixa nacional)</p>
-              <h6>Telemovel</h6>
-              <p>Telem. 917 254 793 (chamada para a rede móvel nacional)</p>
-            </div>
-              <div class="col">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6226.935488639467!2d-9.189879900000001!3d38.707068799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1934aad4ae626b%3A0x68d8b3f17b2e5a6d!2sR.%20Jos%C3%A9%20Magro%2012%2C%201300-190%20Lisboa%2C%20Portugal!5e0!3m2!1sen!2sus!4v1713262871489!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-          </div>
-        </div>
+                <!-- Jardim de Infância -->
+                <div style="display: none;" class="submenu" id="jardim">
+                    <div class="row">
+                        <div class="col">
+                            <h6>Morada</h6>
+                            <p>R. D. João de Castro nº 86, 1300-163 Lisboa</p>
+                            <h6>Telefone</h6>
+                            <p>Tel. 213 644 465 (chamada para a rede fixa nacional)</p>
+                            <h6>Telemóvel</h6>
+                            <p>Telem. 912 231 245 (chamada para a rede móvel nacional)</p>
+                        </div>
+                        <div class="col">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6226.98607474665!2d-9.191584723610406!3d38.70648795794542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1934ab25ca4cd9%3A0x19b2a268da32b751!2sCentro%20Cultural%20Recreativo%20Crian%C3%A7as%20Cruzeiro%20E%20Rio%20Seco%20Casa%20Juventude!5e0!3m2!1sen!2sus!4v1712182469775!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- 1º Ciclo -->
+                <div style="display: none;" class="submenu" id="1ciclo">
+                    <div class="row">
+                        <div class="col">
+                            <h6>Morada</h6>
+                            <p>R. José Magro lote 12, 1300-059 Lisboa</p>
+                            <h6>Telefone</h6>
+                            <p>Tel. 213 644 624 (chamada para a rede fixa nacional)</p>
+                            <h6>Telemóvel</h6>
+                            <p>Telem. 917 254 793 (chamada para a rede móvel nacional)</p>
+                        </div>
+                        <div class="col">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6226.935488639467!2d-9.189879900000001!3d38.707068799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1934aad4ae626b%3A0x68d8b3f17b2e5a6d!2sR.%20Jos%C3%A9%20Magro%2012%2C%201300-190%20Lisboa%2C%20Portugal!5e0!3m2!1sen!2sus!4v1713262871489!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Centro de Apoio Escolar -->
+                <div style="display: none;" class="submenu" id="centro">
+                    <div class="row">
+                        <div class="col">
+                            <h6>Morada</h6>
+                            <p>R. José Magro (Pavilhão do CCR CCR), 1300-059 Lisboa</p>
+                            <h6>Telefone</h6>
+                            <p>Tel. 213 644 624 (chamada para a rede fixa nacional)</p>
+                            <h6>Telemóvel</h6>
+                            <p>Telem. 917 254 793 (chamada para a rede móvel nacional)</p>
+                        </div>
+                        <div class="col">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6226.935488639467!2d-9.189879900000001!3d38.707068799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1934aad4ae626b%3A0x68d8b3f17b2e5a6d!2sR.%20Jos%C3%A9%20Magro%2012%2C%201300-190%20Lisboa%2C%20Portugal!5e0!3m2!1sen!2sus!4v1713262871489!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
 
         <!-- Redes Sociais -->
-
-        <h1 style="text-align: center;">Redes Sociais</h1>
-        <p></p><p></p>
-
-       <p style="text-align: center;">Visite-nos e conheça mais sobre a CCR CCR nas nossas redes sociais.</p>
-       <p></p><p></p>
-
-
-       <div class="row">
-         <div class="col d-flex justify-content-center"> 
-           <a  href="https://www.facebook.com/CCRCCR.Colegio" target="_blank"><img src="imagens/Contactos/fb.png" alt=""></a>
-         </div>
-         <div class="col d-flex justify-content-center">
-           <a  href="https://www.youtube.com/@CCRCCR.Colegio" target="_blank"><img src="imagens/Contactos/yt.png" alt=""></a>
-         </div>
-         <div class="col d-flex justify-content-center">
-           <a  href="https://www.instagram.com/ccrccr.colegio/" target="_blank"><img src="imagens/Contactos/insta.png" alt=""></a>
-         </div>
-       </div>
-
-       <p></p>
-       <p></p>
-       <p></p>
-       <p></p>
-       <p></p>
-       <p></p>
-       <p></p>
-        <p></p>
-        <p></p>
-
-
-       
-        <!-- Litígios e livro de reclamações -->
-
-        <h1 style="text-align: center;">Resolução Alternativa de Litígios <br> e Livro de Reclamações</h1>
-        <p></p><p></p>
-
-        <p style="text-align: center;">Consulte aqui a informação relativa à Resolução Alternativa de Litígios e o nosso Livro de Reclamações.</p>
-        <p></p><p></p>
-
-        
-        <p></p><p></p>
-
-
-          <div class="d-flex text-align-center">
-          <a class="d-flex mx-auto" href="pdfs/pdfs - contactos/litigios.pdf" target="_blank"><button class="btnPdf">Resolução Alternativa de Litígios
-          <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
-          </div>
-
-      <p></p>
-      <p></p>
-
-      <div class="row">
-       <div class="col-3 d-flex mx-auto">
-        <a href="https://www.livroreclamacoes.pt/Inicio/" target="_blank">
-          <img class="img-fluid" src="imagens/Geral/livro_reclamacoes.png" alt=""></a>
+        <div class="container mt-5">
+            <h1 class="text-center">Redes Sociais</h1>
+            <p class="text-center">Visite-nos e conheça mais sobre a CCR CCR nas nossas redes sociais.</p>
+            <div class="row justify-content-center">
+                <div class="col-4 col-md-2 text-center">
+                    <a href="https://www.facebook.com/CCRCCR.Colegio" target="_blank">
+                        <img src="imagens/Contactos/fb.png" alt="">
+                    </a>
+                </div>
+                <div class="col-4 col-md-2 text-center">
+                    <a href="https://www.youtube.com/@CCRCCR.Colegio" target="_blank">
+                        <img src="imagens/Contactos/yt.png" alt="">
+                    </a>
+                </div>
+                <div class="col-4 col-md-2 text-center">
+                    <a href="https://www.instagram.com/ccrccr.colegio/" target="_blank">
+                        <img src="imagens/Contactos/insta.png" alt="">
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="col-0"></div>
-        <div class="col-10 d-flex mx-auto justify-content-center" style="text-align: center;">
-          <p>Entidade Reguladora: ISS 
-            Centro Distrital de Lisboa</p>
-          </div>
-      </div>
-           
+
+        <!-- Resolução Alternativa de Litígios -->
+        <div class="container mt-5">
+            <h1 class="text-center">Resolução Alternativa de Litígios e Livro de Reclamações</h1>
+            <p class="text-center">Consulte aqui a informação relativa à Resolução Alternativa de Litígios e o nosso Livro de Reclamações.</p>
+            <div class="d-flex justify-content-center mt-3">
+                <a href="pdfs/pdfs - contactos/litigios.pdf" target="_blank" class="btn btn-primary">Resolução Alternativa de Litígios <i class="fas fa-arrow-up-right"></i></a>
+            </div>
+            <div class="row mt-3 justify-content-center">
+                <div class="col-3 text-center">
+                    <a href="https://www.livroreclamacoes.pt/Inicio/" target="_blank">
+                        <img src="imagens/Geral/livro_reclamacoes.png" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-12 text-center mt-3">
+                    <p>Entidade Reguladora: ISS Centro Distrital de Lisboa</p>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-</div>
-</div>
-</div>
 <!-- Back to Top -->
 <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+</div>
 </div>
 </div>
 <!--footer-->

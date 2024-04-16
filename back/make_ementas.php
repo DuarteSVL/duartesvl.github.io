@@ -19,8 +19,6 @@
   <script src="app.js"></script>
 
   <style>
-    
-
     table {
       border-collapse: collapse;
       border: 2px solid rgb(200, 200, 200);
@@ -43,13 +41,17 @@
     }
 
 
+    .container {
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
 
     .table {
       background-color: #ffffff;
     }
 
-  
+
 
     /* Centering table headers */
     .table thead th {

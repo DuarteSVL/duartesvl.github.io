@@ -55,96 +55,18 @@
 
 </head>
 
+
+<body>
+
+
 <?php
 
 include "header.php";
 
 ?>
 
-<body>
-    <!-- Navbar -->
-   <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
-
-    <div class="container-fluid"> 
-  
-        <!-- Logotipo e Texto -->
-      <div class="col-1" id="navLogo"> 
-        <img class="img-fluid" src="imagens/Geral/logo2.png" id="logo">
-      </div>
-
-      <div class="col d-flex d-none d-md-block" id="navTexto"> 
-        <h5>CCR-CCR</h5> 
-        <p>Centro Cultural Recreativo <br> das Crianças do Cruzeiro e Rio-Seco</p>
-      </div>
-  
-        <!-- button menu mobile -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <!-- Lista botões -->
-    <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
-    <ul class="navbar-nav">
-  
-      <!-- Homepage/Início -->
-    <li class="nav-item m-2">
-    <a class="nav-link active" aria-current="page" href="index.html">Início</a>
-    </li>
-  
-    <!-- CCR CCR/Sobre nós  -->
-    <li class="nav-item dropdown m-2">
-    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">CCR CCR</a>
-    <ul class="dropdown-menu animate slideIn">
-    <li><a class="dropdown-item" href="about.html">Sobre nós</a></li>
-    <li><a class="dropdown-item" href="voluntariado.html">Voluntariado</a></li>
-    <li><a class="dropdown-item" href="planoContigencia.html">Plano de contingência Covid-19</a></li>
-    </ul>
-    </li>
-  
-    <!-- Valências -->
-    <li class="nav-item dropdown m-2">
-    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Valências</a>
-    <ul class="dropdown-menu animate slideIn">
-    <li><a class="dropdown-item" href="valencia_bercarioCreche.html">Berçário e creche</a></li>
-    <li><a class="dropdown-item" href="valencia_jardimInfancia.html">Jardim de infância</a></li>
-    <li><a class="dropdown-item" href="valencia_cicloBasico.html">1º Ciclo</a></li>
-    <li><a class="dropdown-item" href="valencia_centroApoioEscolar.html">Centro de Apoio Escolar</a></li>
-    <li><a class="dropdown-item" href="#">Centro Apoio Terceira Idade</a></li>
-    <li><a class="dropdown-item" href="#">Área Desportiva e Recreativa</a></li>
-    </ul>
-    </li>
-  
-    <!-- Ementas -->
-    <li class="nav-item m-2">
-    <a class="nav-link" href="#">Ementas</a>
-    </li>
-  
-    <!-- Preçários -->
-    <li class="nav-item m-2">
-    <a class="nav-link" href="#">Preçário</a>
-    </li>
-  
-    <!-- Noticias -->
-    <li class="nav-item m-2">
-    <a class="nav-link" href="#">Notícias</a>
-    </li>
-  
-    <!-- Contactos -->
-    <li class="nav-item m-2">
-    <a class="nav-link" href="#">Contactos</a>
-    </li>
-  
-     <!-- Educabiz -->
-      <div>
-        <a href="https://www.educabiz.com/" target="_blank">
-          <img src="imagens/Geral/educabiz 2.png" alt="" id="educabiz">
-        </a>
-      </div>
-  
-    </ul>
-    </div>
-    </div>
-    </nav>
+    <!-- Navbar
+    
 
   <!-- Fim da Navbar -->
 
@@ -506,7 +428,7 @@ include "header.php";
 <!-- local e contactos End -->
 
 <!--Inicio do Footer-->
-<footer>
+<!-- <footer>
     <div class="container d-flex">
         <div class="row justify-content-md-center">
         <div class="col-sm p-0 align-self-center">
@@ -542,7 +464,7 @@ include "header.php";
             Centro Distrital de Lisboa
         </div>
     </div>
-  </footer>
+  </footer> -->
 
 
 <?php

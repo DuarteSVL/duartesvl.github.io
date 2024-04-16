@@ -46,15 +46,46 @@ Conclusão.
 Partes da apresentação:
 -----------------------------------------------------------------------
 
--introdução: Tomás
- -Tópico 01 introduzir a equipa 
- -introuzir o site antigo (site de uma escola com vários graus de ensino)
- -Tópico 02 introduzir o projecto (reestruturação do site com foco numa interface simples e
+Topico 01 
+Tomás
+-introduzir a equipa
+ -introduzir o site antigo (site de uma escola com vários graus de ensino)
+
+
+Tópico 02 
+Tomás
+ -introduzir o projecto (reestruturação do site com foco numa interface simples e
                          com base de dados para gerir ementas e notícias)
- -
+ 
+Tópico 03  
+Tomás
+ -metodologias e tecnologias
+ (em cima)
 
--mostrar o site novo:
+Tópico 04 
+Tomás
+-linha de tempo do projecto (mudança de projecto apenas tem que ser mencionada)
+-desafios encontrados e superados
 
--backoffice/base de dados: Duarte
+Jéssica
+-mostrar o site antigo: 
+   dar relevo a 
+   -links sem conteúdo 
+   -mapeamento complicado
+   -pdfs excessivos
 
--conclusão: Tomás
+Jéssica
+-mostrar figma
+
+Cláudio 
+-mostrar site novo
+ -mapeamento do site
+ -responsividade do site (cuidado com páginas que realmente estão ou não responsivas)
+
+Duarte
+-mostrar backoffice
+
+Tópico 05
+Tomás
+-conclusão
+

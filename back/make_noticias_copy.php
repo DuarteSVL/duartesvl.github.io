@@ -63,8 +63,7 @@ if (!$result) {
 
             <!--Filtros-->
             <div class="navbar-form navbar-left sticky-top d-none d-md-block" id="filtros">
-                <h6>Procurar</h6>
-                <hr>
+                
 
                 <form action="" method="GET">
                     <div class="input-group form-control mr-sm-2">

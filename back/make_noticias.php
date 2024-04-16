@@ -49,7 +49,7 @@ if (!$result) {
     <!--Titulo-->
     <div class="d-flex justify-content-center">
         <h1>
-        <a href="?">Notícias e Eventos</a>    
+            <a href="?">Notícias e Eventos</a>
         </h1>
     </div>
 
@@ -78,11 +78,9 @@ if (!$result) {
         <div class="col">
             <!-- Noticias -->
 
-            <!-- Aviso, as imagens têm que ter as mesmas dimensões para não desalinhar o texto das cartas -->
 
             <!-- Card Deck 1 -->
             <div class="container-fluid justify-content-start">
-
                 <?php
                 $count = 0;
                 if (mysqli_num_rows($result) > 0) {
@@ -93,14 +91,11 @@ if (!$result) {
                         echo '<div class="col-md-4 mb-4">';
                         echo '<div class="card h-100">';
                         // Imagem
-                        echo '<img class="card-img-top" src="' . '../img_noticia/' . $row['imagem'] . '" alt="Card image cap">';
+                        echo '<img class="card-img-top" src="../img_noticia/' . $row['imagem'] . '" alt="Card image cap">';
                         echo '<div class="card-body">';
-                        echo '<h5 class="card-title">';
                         // Título
-                        echo $row['titulo'];
-                        echo '</h5>';
+                        echo '<h5 class="card-title text-center">' . $row['titulo'] . '</h5>';
                         echo '<p class="card-text">';
-                        // Texto
                         if (strlen($row['texto']) > 100) {
                             echo substr($row['texto'], 0, 100) . '...';
                         } else {
@@ -108,13 +103,11 @@ if (!$result) {
                         }
                         echo '</p>';
                         echo '</div>';
-                        echo '<div class="card-footer">';
+                        echo '<div class="card-footer d-flex justify-content-between">'; // Align "Ver Mais" to the right
                         // Data
-                        echo '<small class="text-muted">';
-                        echo $row['data'];
-                        echo '</small>';
+                        echo '<small class="text-muted text-start">' . $row['data'] . '</small>';
                         // Link para página da noticia com ID como parâmetro
-                        echo '<a href="./noticia_artigo.php?id=' . $row['id_noticia'] . '" class="card-link">Ver Mais</a>';
+                        echo '<a href="./noticia_artigo.php?id=' . $row['id_noticia'] . '" class="card-link text-end">Ver Mais</a>';
                         echo '</div>';
                         echo '</div>';
                         echo '</div>';
@@ -125,27 +118,15 @@ if (!$result) {
                     }
                 }
                 ?>
-
             </div>
+
+
             <!-- Fim Noticias -->
         </div>
 
         <!-- Fim row -->
     </div>
 
-    <br><br>
-
-    <!-- Paginação -->
-    <nav aria-label="...">
-        <ul class="pagination pagination-sm justify-content-center" id="paginacao">
-            <li class="page-item"><a class="page-link" href="#" tabindex="-1">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">4</a></li>
-            <li class="page-item"><a class="page-link" href="#">5</a></li>
-            <li class="page-item"><a class="page-link" href="#">6</a></li>
-        </ul>
-    </nav>
 
 
 </body>

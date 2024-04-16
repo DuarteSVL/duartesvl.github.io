@@ -1,73 +1,66 @@
-/* *************************
-        Styles notícias
-************************* */
+/* Custom CSS for the noticias.php page */
 
-.slideIn {
-    -webkit-animation-name: slideIn;
-    animation-name: slideIn;
+/* Style for the noticias title */
+h1 {
+  text-align: center;
+  margin-top: 20px;
 }
 
-.btn{
-    background-color: #5abfe1;
-    color: #fff; /* cor do texto branca */
-    border-radius: 5px; /* bordas arredondadas */
-    padding: 5px 10px; /* padding interno */
-    text-decoration: none; /* remove sublinhado padrão */
-    display: inline-block; /* exibe como um bloco */
+/* Style for the search input */
+.input-group {
+  margin-bottom: 20px;
 }
 
-.border{
-    border-radius: 15px;
-    background-color: #FEF4AE;
-}
-
-img{
-    display: block;
-    width: 100%; 
-    height: auto;
-    border-radius: 10px;
-    }
-
-/* Styles Cards */
-
+/* Style for the card deck */
 .card {
-    width: calc(30% - 20px); /* Adjust the width and margin to fit three cards in a row with space between them */
-    margin-right: 20px; /* Space between cards */
-    margin-bottom: 20px; /* Space below cards */
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.5rem;
 }
 
+/* Style for the card image */
+.card-img-top {
+  height: 200px; /* Set the height of the card image */
+  object-fit: cover; /* Ensure the image covers the entire space */
+}
+
+/* Style for the card title */
 .card-title {
-    text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
+/* Style for the card text */
 .card-text {
-    margin-bottom: 0;
-    font-weight: 200;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
-/* Styles Paginação */
-#paginacao{
-    display: flex;
-    justify-content: center;
-
-    & a{
-        border-radius: 50%;
-        display:inline-block;
-        margin: 1rem;
-        padding: 0.5rem 1rem;
-        border: 1px solid #ddd;
-    }
-
-    & a:hover{
-        background-color: #FF874F;
-    }
-
-    & a:active, a:focus{
-        background-color: #FFF3ED;
-    }
+/* Style for the card footer */
+.card-footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
 
-/* Styles Filtros */
+/* Style for the card footer link */
+.card-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Style for the card footer link on hover */
+.card-link:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/* Style for the search input */
+.input-group {
+  margin-bottom: 20px;
+}
+
+
 #filtros {
     top: 80px; /*isto é a distância a que a sidenav fica do topo quando sticky*/
     z-index: 700; /* Garante que a barra lateral esteja abaixo da barra superior */
@@ -78,128 +71,3 @@ img{
     color: black;
     padding: 0.8rem;
     }
-  
-
-
-* {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  
-  /* Fontes */
-  /* Titulos */
-  @font-face {
-    font-family: "Ubuntu";
-    src: url("fonts/Ubuntu/Ubuntu-Bold.ttf") format("truetype");
-    font-weight: 700;
-  }
-  
-  /* Texto */
-  @font-face {
-    font-family: "NunitoSans";
-    src: url("fonts/nunitoSans/NunitoSans_10pt-Light.ttf") format("truetype");
-    font-weight: 300;
-  }
-  @font-face {
-    font-family: "NunitoSans";
-    src: url("fonts/nunitoSans/NunitoSans_10pt-Regular.ttf") format("truetype");
-    font-weight: 400;
-  }
-  @font-face {
-    font-family: "NunitoSans";
-    src: url("fonts/nunitoSans/NunitoSans_10pt-Medium.ttf") format("truetype");
-    font-weight: 500;
-  }
-  @font-face {
-    font-family: "NunitoSans";
-    src: url("fonts/nunitoSans/NunitoSans_10pt-Bold.ttf") format("truetype");
-    font-weight: 700;
-  }
-  @font-face {
-    font-family: "NunitoSans Italic";
-    src: url("fonts/nunitoSans/NunitoSans_10pt-Italic.ttf") format("truetype");
-    font-weight: 400;
-  }
-  
-  /* Titulos h1-h6 */
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 700;
-  }
-  
-  /* Texto */
-  p {
-    font-family: "NunitoSans", sans-serif;
-    font-weight: 400;
-    text-align: center;
-  }
-  
-  /* Quotes */
-  q {
-    font-family: "NunitoSans Italic", sans-serif;
-    font-style: italic;
-    font-weight: 400;
-  }
-  
-  @media (min-width: 768px) {
-    h1 {
-      font-size: 2.125rem;
-    }
-    h2 {
-      font-size: 1.75rem;
-    }
-    h3 {
-      font-size: 1.375rem;
-    }
-    h4 {
-      font-size: 1.25rem;
-    }
-    h5 {
-      font-size: 1.063rem;
-    }
-    h6 {
-        text-align: center;
-      font-size: 1rem;
-    }
-    p {
-      font-size: 1rem;
-    }
-    q {
-      font-size: 1rem;
-    }
-  }
-  
-  @media (min-width: 992px) {
-    h1 {
-      font-size: 3.75rem;
-    }
-    h2 {
-      font-size: 3rem;
-    }
-    h3 {
-      font-size: 2.125rem;
-    }
-    h4 {
-      font-size: 1.5rem;
-    }
-    h5 {
-      font-size: 1.25rem;
-    }
-    h6 {
-      font-size: 1.125rem;
-    }
-    p {
-      font-size: 1.125rem;
-    }
-    q {
-      font-size: 1.125rem;
-    }
-  }

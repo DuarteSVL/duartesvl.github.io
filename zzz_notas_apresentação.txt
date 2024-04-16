@@ -56,9 +56,8 @@ Tomás
 Jéssica
 -mostrar o site antigo: 
    dar relevo a 
-   -links sem conteúdo 
    -mapeamento complicado
-   -pdfs excessivos
+   -pdfs em botões excessivos
 
 Jéssica
 -mostrar figma

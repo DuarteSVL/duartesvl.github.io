@@ -42,7 +42,7 @@ if (!$result) {
         }
         /* Adjust height of the search bar */
         #filtros {
-            margin-top: 50px; /* Adjust the value as needed */
+            margin-top: 200px; /* Adjust the value as needed */
         }
     </style>
 </head>

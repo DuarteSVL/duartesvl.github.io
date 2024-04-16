@@ -8,8 +8,8 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
 
-    <!-- Favicon -->
-    <link rel="icon" type="images" href="images/logo2.png">
+      <!-- Favicon -->
+      <link rel="icon" type="images" href="images/logo2.png">
     
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
@@ -52,6 +52,7 @@
     />
     <!-- Template Stylesheet -->
     <link href="css/styles_geral.css" rel="stylesheet">
+    <link href="css/headerFooter.css" rel="stylesheet">
 
 </head>
 

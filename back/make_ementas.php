@@ -3,26 +3,26 @@
 
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ementas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ementas</title>
 
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 
 
-    <link rel="stylesheet" href="gerir_tabelas.css">
-    <link href="css/headerFooter.css" rel="stylesheet">
-    <link href="css/styles_footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="gerir_tabelas.css">
+  <link href="css/headerFooter.css" rel="stylesheet">
+  <link href="css/styles_footer.css" rel="stylesheet">
 </head>
 
 <body>
-        <!-- Navbar Aqui Dentro -->
-<nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+  <!-- Navbar Aqui Dentro -->
+  <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
     <div class="container-fluid">
       <!-- Logotipo e Texto -->
       <div class="col-1" id="navLogo">
@@ -33,7 +33,8 @@
         <p>Centro Cultural Recreativo <br> das Crianças do Cruzeiro e Rio-Seco</p>
       </div>
       <!-- button menu mobile -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <!-- Lista botões -->
@@ -44,7 +45,8 @@
             <a class="nav-link active" aria-current="page" href="index.html">Início</a>
           </li>
           <li class="nav-item dropdown m-2">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">CCR CCR</a>
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">CCR CCR</a>
             <ul class="dropdown-menu animate slideIn">
               <li><a class="dropdown-item" href="sobreNos.html">Sobre nós</a></li>
               <li><a class="dropdown-item" href="voluntariado.html">Voluntariado</a></li>
@@ -53,14 +55,16 @@
             </ul>
           </li>
           <li class="nav-item dropdown m-2">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Valências</a>
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Valências</a>
             <ul class="dropdown-menu animate slideIn">
               <li><a class="dropdown-item" href="valencia_bercarioCreche.html">Berçário e creche</a></li>
               <li><a class="dropdown-item" href="valencia_jardimInfancia.html">Jardim de infância</a></li>
               <li><a class="dropdown-item" href="valencia_cicloBasico.html">1º Ciclo</a></li>
               <li><a class="dropdown-item" href="valencia_centroApoioEscolar.html">Centro de Apoio Escolar</a></li>
               <li><a class="dropdown-item" href="valencia_centroTerceiraIdade.html">Centro Apoio Terceira Idade</a></li>
-              <li><a class="dropdown-item" href="valencia_areaDesportivaRecreativa.html">Área Desportiva e Recreativa</a></li>
+              <li><a class="dropdown-item" href="valencia_areaDesportivaRecreativa.html">Área Desportiva e
+                  Recreativa</a></li>
             </ul>
           </li>
           <li class="nav-item m-2">
@@ -85,150 +89,151 @@
     </div>
   </nav>
   <!-- Fim da Navbar -->
-    <div class="container my-5">
+  <div class="container my-5">
 
-        <h2><a href="./make_ementas.php"> Ementas </a></h2>
+    <h2><a href="./make_ementas.php"> Ementas </a></h2>
 
 
+    <?php
+
+    include "db_conn.php";
+
+    ?>
+
+
+
+    <table class="table" ;">
+      <tr>
+        <th></th>
+        <th>Segunda-feira</th>
+        <th>Terça-feira</th>
+        <th>Quarta-feira</th>
+        <th>Quinta-feira</th>
+        <th>Sexta-feira</th>
+      </tr>
+      <tr>
+        <th>Sopa</th>
         <?php
 
-        include "db_conn.php";
 
-        ?>
-
-
-
-        <table class="table";">
-            <tr>
-                <th></th>
-                <th>Segunda-feira</th>
-                <th>Terça-feira</th>
-                <th>Quarta-feira</th>
-                <th>Quinta-feira</th>
-                <th>Sexta-feira</th>
-            </tr>
-            <tr>
-                <th>Sopa</th>
-                <?php
-
-
-                // Query to fetch 'nome' values where 'tipo' is equal to 'Sopa' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
-                $query = "SELECT r.nome
+        // Query to fetch 'nome' values where 'tipo' is equal to 'Sopa' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
+        $query = "SELECT r.nome
                   FROM celula c
                   INNER JOIN refeicao r ON c.id_refeicao = r.id_refeicao
                   WHERE c.tipo = 'Sopa' AND c.valencia = 'Basico'
                   ORDER BY c.id_celula ASC";
 
-                $result = mysqli_query($ligacaoBD, $query);
+        $result = mysqli_query($ligacaoBD, $query);
 
-                // Loop through the fetched data and populate the table cells
-                while ($row = mysqli_fetch_assoc($result)) {
-                    echo '<td>' . $row['nome'] . '</td>';
-                }
-                ?>
-            </tr>
-            <tr>
-                <th>Prato</th>
-                <?php
+        // Loop through the fetched data and populate the table cells
+        while ($row = mysqli_fetch_assoc($result)) {
+          echo '<td>' . $row['nome'] . '</td>';
+        }
+        ?>
+      </tr>
+      <tr>
+        <th>Prato</th>
+        <?php
 
 
-                // Query to fetch 'nome' values where 'tipo' is equal to 'Prato' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
-                $query = "SELECT r.nome
+        // Query to fetch 'nome' values where 'tipo' is equal to 'Prato' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
+        $query = "SELECT r.nome
                   FROM celula c
                   INNER JOIN refeicao r ON c.id_refeicao = r.id_refeicao
                   WHERE c.tipo = 'Prato' AND c.valencia = 'Basico'
                   ORDER BY c.id_celula ASC";
 
-                $result = mysqli_query($ligacaoBD, $query);
+        $result = mysqli_query($ligacaoBD, $query);
 
-                // Loop through the fetched data and populate the table cells
-                while ($row = mysqli_fetch_assoc($result)) {
-                    echo '<td>' . $row['nome'] . '</td>';
-                }
-                ?>
-            </tr>
-            <tr>
-                <th>Dieta</th>
-                <?php
+        // Loop through the fetched data and populate the table cells
+        while ($row = mysqli_fetch_assoc($result)) {
+          echo '<td>' . $row['nome'] . '</td>';
+        }
+        ?>
+      </tr>
+      <tr>
+        <th>Dieta</th>
+        <?php
 
 
-                // Query to fetch 'nome' values where 'tipo' is equal to 'Dieta' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
-                $query = "SELECT r.nome
+        // Query to fetch 'nome' values where 'tipo' is equal to 'Dieta' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
+        $query = "SELECT r.nome
                   FROM celula c
                   INNER JOIN refeicao r ON c.id_refeicao = r.id_refeicao
                   WHERE c.tipo = 'Dieta' AND c.valencia = 'Basico'
                   ORDER BY c.id_celula ASC";
 
-                $result = mysqli_query($ligacaoBD, $query);
+        $result = mysqli_query($ligacaoBD, $query);
 
-                // Loop through the fetched data and populate the table cells
-                while ($row = mysqli_fetch_assoc($result)) {
-                    echo '<td>' . $row['nome'] . '</td>';
-                }
-                ?>
-            </tr>
-            <tr>
-                <th>Vegetariano</th>
-                <?php
+        // Loop through the fetched data and populate the table cells
+        while ($row = mysqli_fetch_assoc($result)) {
+          echo '<td>' . $row['nome'] . '</td>';
+        }
+        ?>
+      </tr>
+      <tr>
+        <th>Vegetariano</th>
+        <?php
 
-                // Query to fetch 'nome' values where 'tipo' is equal to 'Vegetariano' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
-                $query = "SELECT r.nome
+        // Query to fetch 'nome' values where 'tipo' is equal to 'Vegetariano' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
+        $query = "SELECT r.nome
                   FROM celula c
                   INNER JOIN refeicao r ON c.id_refeicao = r.id_refeicao
                   WHERE c.tipo = 'Vegetariano' AND c.valencia = 'Basico'
                   ORDER BY c.id_celula ASC";
 
-                $result = mysqli_query($ligacaoBD, $query);
+        $result = mysqli_query($ligacaoBD, $query);
 
-                // Loop through the fetched data and populate the table cells
-                while ($row = mysqli_fetch_assoc($result)) {
-                    echo '<td>' . $row['nome'] . '</td>';
-                }
-                ?>
-            </tr>
-            <tr>
-                <th>Sobremesa</th>
-                <?php
+        // Loop through the fetched data and populate the table cells
+        while ($row = mysqli_fetch_assoc($result)) {
+          echo '<td>' . $row['nome'] . '</td>';
+        }
+        ?>
+      </tr>
+      <tr>
+        <th>Sobremesa</th>
+        <?php
 
-                // Query to fetch 'nome' values where 'tipo' is equal to 'Sobremesa' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
-                $query = "SELECT r.nome
+        // Query to fetch 'nome' values where 'tipo' is equal to 'Sobremesa' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
+        $query = "SELECT r.nome
                   FROM celula c
                   INNER JOIN refeicao r ON c.id_refeicao = r.id_refeicao
                   WHERE c.tipo = 'Sobremesa' AND c.valencia = 'Basico'
                   ORDER BY c.id_celula ASC";
 
-                $result = mysqli_query($ligacaoBD, $query);
+        $result = mysqli_query($ligacaoBD, $query);
 
-                // Loop through the fetched data and populate the table cells
-                while ($row = mysqli_fetch_assoc($result)) {
-                    echo '<td>' . $row['nome'] . '</td>';
-                }
-                ?>
-            </tr>
-            <tr>
-                <th>Lanche</th>
-                <?php
+        // Loop through the fetched data and populate the table cells
+        while ($row = mysqli_fetch_assoc($result)) {
+          echo '<td>' . $row['nome'] . '</td>';
+        }
+        ?>
+      </tr>
+      <tr>
+        <th>Lanche</th>
+        <?php
 
-                // Query to fetch 'nome' values where 'tipo' is equal to 'Lanche' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
-                $query = "SELECT r.nome
+        // Query to fetch 'nome' values where 'tipo' is equal to 'Lanche' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
+        $query = "SELECT r.nome
                   FROM celula c
                   INNER JOIN refeicao r ON c.id_refeicao = r.id_refeicao
                   WHERE c.tipo = 'Lanche' AND c.valencia = 'Basico'
                   ORDER BY c.id_celula ASC";
 
-                $result = mysqli_query($ligacaoBD, $query);
+        $result = mysqli_query($ligacaoBD, $query);
 
-                // Loop through the fetched data and populate the table cells
-                while ($row = mysqli_fetch_assoc($result)) {
-                    echo '<td>' . $row['nome'] . '</td>';
-                }
-                ?>
-            </tr>
-        </table>
+        // Loop through the fetched data and populate the table cells
+        while ($row = mysqli_fetch_assoc($result)) {
+          echo '<td>' . $row['nome'] . '</td>';
+        }
+        ?>
+      </tr>
+    </table>
 
-    </div>
-    
-    <div class="container-fluid g-0">
+  </div>
+
+  
+  <div class="container-fluid g-0">
       <footer>
         <div class="container d-flex pt-4">
           <div class="row d-flex justify-content-center">
@@ -357,6 +362,8 @@
           </div>
         </div>
       </footer>
+
+
 </body>
 
 </html>

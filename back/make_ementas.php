@@ -314,43 +314,36 @@
     </div>
 
     <style>
-      .table-responsive {
-        overflow-y: auto;
-        /* Enable vertical scrolling */
-        max-height: 400px;
-        /* Set max height as needed */
-      }
+    .table-responsive {
+        overflow-y: auto; /* Enable vertical scrolling */
+        max-height: 400px; /* Set max height as needed */
+    }
 
-      @media (max-width: 576px) {
-
-        /* Adjust breakpoint as needed */
+    @media (max-width: 576px) { /* Adjust breakpoint as needed */
         .table-responsive table {
-          display: block;
-          /* Change table layout to block */
-          width: 100%;
-          /* Ensure full width */
+            display: block; /* Change table layout to block */
+            width: 100%; /* Ensure full width */
         }
 
         .table-responsive tr {
-          display: block;
-          /* Change table rows to block */
-          margin-bottom: 20px;
-          /* Add space between rows */
+            display: flex; /* Change table rows to flex container */
+            flex-direction: column; /* Display rows as columns */
         }
 
         .table-responsive td,
         .table-responsive th {
-          display: block;
-          /* Change table cells to block */
-          text-align: left;
-          /* Align cell content */
-          padding: 8px;
-          /* Add padding */
-          border: none;
-          /* Remove borders */
+            display: block; /* Change table cells to block */
+            text-align: left; /* Align cell content */
+            padding: 8px; /* Add padding */
+            border: none; /* Remove borders */
         }
-      }
-    </style>
+
+        .table-responsive th {
+            font-weight: bold; /* Make header cells bold */
+        }
+    }
+</style>
+
 
 
 

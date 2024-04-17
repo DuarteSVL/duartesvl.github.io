@@ -60,10 +60,11 @@ session_start();
                     echo $_GET['search'];
                 } ?>" class="form-control" placeholder="Procurar palavras.">
                 <div class="input-group-append">
-                    <button type="submit" class="btn btn-primary">Procurar</button>
+                    <button type="submit" class="btn btn-primary" style="margin-right: 0;">Procurar</button>
                 </div>
             </div>
         </form>
+
 
 
 

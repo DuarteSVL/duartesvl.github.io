@@ -98,13 +98,34 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     <title>Editar notícia</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <style>
+   
+
+        <style>
         .submit-btn {
             width: 100%;
         }
 
         .cancel-btn {
             width: 100%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            background-color: rgba(0, 128, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .form-control,
+        .btn {
+            margin-bottom: 10px;
         }
     </style>
 </head>

@@ -78,6 +78,34 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
     <link rel="stylesheet" href="noticia_create.css">
+
+    <style>
+        .submit-btn {
+            width: 100%;
+        }
+
+        .cancel-btn {
+            width: 100%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            background-color: rgba(0, 128, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .form-control,
+        .btn {
+            margin-bottom: 10px;
+        }
 </head>
 
 <!DOCTYPE html>

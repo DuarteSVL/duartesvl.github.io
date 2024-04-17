@@ -322,7 +322,7 @@
 
 
 
-    <div id="table1"">
+    <div id="table1" style="display: none;">
 
       <div style="margin:2rem">
         <h5 style="text-align:center">Ensino Básico</h5>
@@ -471,7 +471,7 @@
 
 
 
-    <div id="table2">
+    <div id="table2" style="display: none;">
 
       <div style="margin:2rem">
         <h5 style="text-align:center">Creche</h5>
@@ -572,7 +572,7 @@
 
 
 
-    <div id="table3">
+    <div id="table3" style="display: none;">
 
       <div style="margin:2rem">
         <h5 style="text-align:center">Berçário</h5>
@@ -830,6 +830,17 @@
       </div>
     </footer>
 
+    <script>
+      // Function to toggle table visibility
+      function toggleTable(tableId) {
+        var table = document.getElementById(tableId);
+        if (table.style.display === "none") {
+          table.style.display = "block";
+        } else {
+          table.style.display = "none";
+        }
+      }
+    </script>
 
 
 </body>

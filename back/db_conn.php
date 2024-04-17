@@ -13,6 +13,19 @@
     
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
     $servidor = "sql206.infinityfree.com";
     $baseDados = "if0_36352104_ementas";
     $userBaseDados = "if0_36352104";

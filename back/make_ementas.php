@@ -123,8 +123,13 @@
 
     /* Margin for headers */
     h5 {
-      margin-top: 20px;
-      margin-bottom: 20px;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
     }
   </style>
 

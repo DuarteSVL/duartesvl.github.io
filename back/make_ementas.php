@@ -245,11 +245,11 @@
   <!-- Fim da Navbar -->
   <div class="container my-5 tablesE">
 
-    <div style="margin-bottom: 2rem" >
+    <div style="margin-bottom: 2rem">
       <h2 style="text-align:center"><a href="./make_ementas.php"> Ementas </a></h2>
     </div>
 
-  
+
 
 
     <?php
@@ -257,63 +257,62 @@
     include "db_conn.php";
 
     ?>
+    <!-- First button group visible on screens larger than extra small -->
+    <div class="btn-group-lg d-none d-sm-block" id="btnContactos">
+      <button type="button" class="btn" onclick="toggleTable('table3')">Berçário</button>
+      <button type="button" class="btn" onclick="toggleTable('table2')">Creche</button>
+      <button type="button" class="btn" onclick="toggleTable('table1')">Ensino Básico</button>
+    </div>
 
-<!-- First button group visible on large screens -->
-<div class="btn-group-lg d-none d-md-block" id="btnContactos">
-    <button type="button" class="btn" onclick="toggleTable('table3')">Berçário</button>
-    <button type="button" class="btn" onclick="toggleTable('table2')">Creche</button>
-    <button type="button" class="btn" onclick="toggleTable('table1')">Ensino Básico</button>
-</div> 
-
-<!-- Second button group visible on very small screens -->
-<div class="container d-block d-md-none" style="margin-left: 2rem;">
-    <div class="row justify-content-center mb-3">
-        <div class="col-lg-2 mb-2"> 
-            <button id="ensinoBasicoBtn" class="btn btn-primary btn-block" onclick="toggleTable('table1')">Ensino Básico</button>
-        </div>
-        <div class="col-lg-2 mb-2"> 
-            <button id="crecheBtn" class="btn btn-primary btn-block" onclick="toggleTable('table2')">Creche</button>
+    <!-- Second button group visible only on extra small screens -->
+    <div class="container d-block d-sm-none" style="margin-left: 2rem;">
+      <div class="row justify-content-center mb-3">
+        <div class="col-lg-2 mb-2">
+          <button id="ensinoBasicoBtn" class="btn btn-primary btn-block" onclick="toggleTable('table1')">Ensino
+            Básico</button>
         </div>
         <div class="col-lg-2 mb-2">
-            <button id="bercarioBtn" class="btn btn-primary btn-block" onclick="toggleTable('table3')">Berçário</button>
+          <button id="crecheBtn" class="btn btn-primary btn-block" onclick="toggleTable('table2')">Creche</button>
         </div>
+        <div class="col-lg-2 mb-2">
+          <button id="bercarioBtn" class="btn btn-primary btn-block" onclick="toggleTable('table3')">Berçário</button>
+        </div>
+      </div>
     </div>
-</div>
 
 
 
 
+    <style>
+      #ensinoBasicoBtn,
+      #crecheBtn,
+      #bercarioBtn {
+        margin: 0;
+      }
 
-<style>
-  #ensinoBasicoBtn,
-#crecheBtn,
-#bercarioBtn {
-  margin: 0; 
-}
 
+      #btnContactos {
+        margin: auto;
+        background-color: transparent;
+        border-radius: 10px;
+        justify-content: center;
+        border-style: ridge;
+        width: fit-content;
 
-#btnContactos {
-  margin: auto;
-  background-color: transparent;
-  border-radius: 10px;
-  justify-content: center;
-  border-style: ridge;
-  width: fit-content;
+        & :hover {
+          background-color: #ff874f;
+        }
+      }
 
-  & :hover {
-    background-color: #ff874f;
-  }
-}
+      }
 
-}
-
-@media (min-width: 992px) {
-  .mb-2:not(:last-child) {
-    margin-bottom: 0; /* Remove bottom margin for all elements except the last one */
-  }
-}
-
-</style>
+      @media (min-width: 992px) {
+        .mb-2:not(:last-child) {
+          margin-bottom: 0;
+          /* Remove bottom margin for all elements except the last one */
+        }
+      }
+    </style>
 
 
 

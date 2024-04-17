@@ -144,7 +144,7 @@
 
         <!-- Menu Contactos -->
         <div class="container">
-            <h1 class="text-center mt-5">Localizações</h1>
+            <h1 class="text-center mt-5">Localizações e contactos</h1>
             <div class="btn-group-lg d-flex justify-content-center mt-3" id="btnContactos">
                 <button type="button" class="btn" onclick="mudarMenu('creche')">Berçário e Creche</button>
                 <button type="button" class="btn" onclick="mudarMenu('jardim')">Jardim de Infância</button>
@@ -154,76 +154,95 @@
         </div>
 
         <!-- Locations Content -->
-        <div class="container mt-5">
-            <div class="contactos">
-                <!-- Berçário e Creche -->
-                <div style="display: block;" class="submenu" id="creche">
-                    <div class="row">
-                        <div class="col">
-                            <h6>Morada</h6>
-                            <p>R. Padre Manuel Alves Correia nº 14, 1300 Lisboa</p>
-                            <h6>Telefone</h6>
-                            <p>Tel. 213 636 418 (chamada para a rede fixa nacional)</p>
-                            <h6>Telemóvel</h6>
-                            <p>Telem. 912 231 244 (chamada para a rede móvel nacional)</p>
-                        </div>
-                        <div class="col">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6226.98607474665!2d-9.191584723610406!3d38.70648795794542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1934ab25ca4cd9%3A0x19b2a268da32b751!2sCentro%20Cultural%20Recreativo%20Crian%C3%A7as%20Cruzeiro%20E%20Rio%20Seco%20Casa%20Juventude!5e0!3m2!1sen!2sus!4v1712182469775!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
+<div class="container mt-5">
+
+        <!-- Berçário e Creche -->
+        <div  class="submenu" id="creche">
+            <div class="row">
+                <div class="col-12 col-lg-6 d-flex justify-content-center">
+                    <div class="content-wrapper">
+                        <h6>Morada</h6>
+                        <p>R. Padre Manuel Alves Correia nº 14, 1300 Lisboa</p>
+                        <h6>Telefone</h6>
+                        <p>Tel. 213 636 418 (chamada para a rede fixa nacional)</p>
+                        <h6>Telemóvel</h6>
+                        <p>Telem. 912 231 244 (chamada para a rede móvel nacional)</p>
                     </div>
                 </div>
-
-                <!-- Jardim de Infância -->
-                <div style="display: none;" class="submenu" id="jardim">
-                    <div class="row">
-                        <div class="col">
-                            <h6>Morada</h6>
-                            <p>R. D. João de Castro nº 86, 1300-163 Lisboa</p>
-                            <h6>Telefone</h6>
-                            <p>Tel. 213 644 465 (chamada para a rede fixa nacional)</p>
-                            <h6>Telemóvel</h6>
-                            <p>Telem. 912 231 245 (chamada para a rede móvel nacional)</p>
-                        </div>
-                        <div class="col">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6226.98607474665!2d-9.191584723610406!3d38.70648795794542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1934ab25ca4cd9%3A0x19b2a268da32b751!2sCentro%20Cultural%20Recreativo%20Crian%C3%A7as%20Cruzeiro%20E%20Rio%20Seco%20Casa%20Juventude!5e0!3m2!1sen!2sus!4v1712182469775!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 1º Ciclo -->
-                <div style="display: none;" class="submenu" id="1ciclo">
-                    <div class="row">
-                        <div class="col">
-                            <h6>Morada</h6>
-                            <p>R. José Magro lote 12, 1300-059 Lisboa</p>
-                            <h6>Telefone</h6>
-                            <p>Tel. 213 644 624 (chamada para a rede fixa nacional)</p>
-                            <h6>Telemóvel</h6>
-                            <p>Telem. 917 254 793 (chamada para a rede móvel nacional)</p>
-                        </div>
-                        <div class="col">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6226.935488639467!2d-9.189879900000001!3d38.707068799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1934aad4ae626b%3A0x68d8b3f17b2e5a6d!2sR.%20Jos%C3%A9%20Magro%2012%2C%201300-190%20Lisboa%2C%20Portugal!5e0!3m2!1sen!2sus!4v1713262871489!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Centro de Apoio Escolar -->
-                <div style="display: none;" class="submenu" id="centro">
-                    <div class="row">
-                        <div class="col">
-                            <h6>Morada</h6>
-                            <p>R. José Magro (Pavilhão do CCR CCR), 1300-059 Lisboa</p>
-                            <h6>Telefone</h6>
-                            <p>Tel. 213 644 624 (chamada para a rede fixa nacional)</p>
-                            <h6>Telemóvel</h6>
-                            <p>Telem. 917 254 793 (chamada para a rede móvel nacional)</p>
-                        </div>
-                        <div class="col">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6226.935488639467!2d-9.189879900000001!3d38.707068799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1934aad4ae626b%3A0x68d8b3f17b2e5a6d!2sR.%20Jos%C3%A9%20Magro%2012%2C%201300-190%20Lisboa%2C%20Portugal!5e0!3m2!1sen!2sus!4v1713262871489!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
+                <div class="col-12 col-lg-6 d-flex justify-content-center">
+                    <div class="iframe-wrapper">
+                        <iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6226.98607474665!2d-9.191584723610406!3d38.70648795794542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1934ab25ca4cd9%3A0x19b2a268da32b751!2sCentro%20Cultural%20Recreativo%20Crian%C3%A7as%20Cruzeiro%20E%20Rio%20Seco%20Casa%20Juventude!5e0!3m2!1sen!2sus!4v1712182469775!5m2!1sen!2sus" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!-- Jardim de Infância -->
+        <div style="display: none;" class="submenu" id="jardim">
+            <div class="row">
+                <div class="col-12 col-lg-6 d-flex justify-content-center">
+                    <div class="content-wrapper">
+                        <h6>Morada</h6>
+                        <p>R. D. João de Castro nº 86, 1300-163 Lisboa</p>
+                        <h6>Telefone</h6>
+                        <p>Tel. 213 644 465 (chamada para a rede fixa nacional)</p>
+                        <h6>Telemóvel</h6>
+                        <p>Telem. 912 231 245 (chamada para a rede móvel nacional)</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 d-flex justify-content-center">
+                    <div class="iframe-wrapper">
+                        <iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6226.98607474665!2d-9.191584723610406!3d38.70648795794542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1934ab25ca4cd9%3A0x19b2a268da32b751!2sCentro%20Cultural%20Recreativo%20Crian%C3%A7as%20Cruzeiro%20E%20Rio%20Seco%20Casa%20Juventude!5e0!3m2!1sen!2sus!4v1712182469775!5m2!1sen!2sus" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 1º Ciclo -->
+        <div style="display: none;" class="submenu" id="1ciclo">
+            <div class="row">
+                <div class="col-12 col-lg-6 d-flex justify-content-center">
+                    <div class="content-wrapper">
+                        <h6>Morada</h6>
+                        <p>R. José Magro lote 12, 1300-059 Lisboa</p>
+                        <h6>Telefone</h6>
+                        <p>Tel. 213 644 624 (chamada para a rede fixa nacional)</p>
+                        <h6>Telemóvel</h6>
+                        <p>Telem. 917 254 793 (chamada para a rede móvel nacional)</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 d-flex justify-content-center">
+                    <div class="iframe-wrapper">
+                        <iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6226.935488639467!2d-9.189879900000001!3d38.707068799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1934aad4ae626b%3A0x68d8b3f17b2e5a6d!2sR.%20Jos%C3%A9%20Magro%2012%2C%201300-190%20Lisboa%2C%20Portugal!5e0!3m2!1sen!2sus!4v1713262871489!5m2!1sen!2sus" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Centro de Apoio Escolar -->
+        <div style="display: none;" class="submenu" id="centro">
+            <div class="row">
+                <div class="col-12 col-lg-6 d-flex justify-content-center">
+                    <div class="content-wrapper">
+                        <h6>Morada</h6>
+                        <p>R. José Magro (Pavilhão do CCR CCR), 1300-059 Lisboa</p>
+                        <h6>Telefone</h6>
+                        <p>Tel. 213 644 624 (chamada para a rede fixa nacional)</p>
+                        <h6>Telemóvel</h6>
+                        <p>Telem. 917 254 793 (chamada para a rede móvel nacional)</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 d-flex justify-content-center">
+                    <div class="iframe-wrapper">
+                        <iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6226.935488639467!2d-9.189879900000001!3d38.707068799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1934aad4ae626b%3A0x68d8b3f17b2e5a6d!2sR.%20Jos%C3%A9%20Magro%2012%2C%201300-190%20Lisboa%2C%20Portugal!5e0!3m2!1sen!2sus!4v1713262871489!5m2!1sen!2sus" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</div>
+
+
         </div>
 
         <!-- Redes Sociais -->

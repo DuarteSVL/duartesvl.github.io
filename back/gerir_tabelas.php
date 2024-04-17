@@ -46,17 +46,21 @@
             <h2 style="text-align: center; margin-bottom: 50px;"><a href="./gerir_tabelas.php"> Lista de Ementas</a>
             </h2>
 
-            <!-- Anchor links to jump between tables -->
-            <ul class="nav nav-pills justify-content-center mb-3">
-                <li class="nav-item"><a class="nav-link" href="#basico">Básico</a></li>
-                <li class="nav-item"><a class="nav-link" href="#creche">Creche</a></li>
-                <li class="nav-item"><a class="nav-link" href="#bercario">Bercário</a></li>
-            </ul>
+            
+
+        <!-- Anchor links to jump between tables -->
+        <ul class="nav nav-pills justify-content-center mb-3">
+            <li class="nav-item mx-2"><a class="nav-link" href="#basico">Básico</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="#creche">Creche</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="#bercario">Bercário</a></li>
+        </ul>
 
 
 
 
             <h3 id="basico">Básico</h3>
+
+            <div class="my-5"></div>
 
             <table class="table table-striped">
                 <thead>
@@ -121,8 +125,11 @@
             </table>
 
 
+            <div class="my-5"></div>
 
             <h3 id="creche">Creche</h3>
+
+            <div class="my-5"></div>
 
             <table class="table table-striped">
                 <thead>
@@ -187,8 +194,11 @@
             </table>
 
 
+            <div class="my-5"></div>
 
             <h3 id="bercario">Bercário</h3>
+
+            <div class="my-5"></div>
 
 
             <table class="table table-striped">

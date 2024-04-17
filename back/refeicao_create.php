@@ -1,3 +1,16 @@
+
+<?php
+    session_start(); // Starting the session
+    
+    if (!isset($_SESSION['username'])) {
+        header("Location: login.php");
+        exit();
+    }
+    ?>
+
+
+
+
 <?php
 
 include "db_conn.php";

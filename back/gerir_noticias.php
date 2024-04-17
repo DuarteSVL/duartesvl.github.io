@@ -23,6 +23,16 @@ session_start();
 </head>
 
 <body>
+
+<?php
+    session_start(); // Starting the session
+    
+    if (!isset($_SESSION['username'])) {
+        header("Location: login.php");
+        exit();
+    }
+    ?>
+
     <div class="container my-5">
         <div class="d-flex justify-content-end mb-3">
             <h2 class="btn btn-primary"><a href="./main.php" class="text-white" style="text-decoration: none">Main</a>

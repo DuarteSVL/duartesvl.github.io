@@ -19,6 +19,16 @@
     <section class="container d-none d-lg-block" id="office-main">
         <div class="row">
 
+        <?php
+    session_start(); // Starting the session
+    
+    if (!isset($_SESSION['username'])) {
+        header("Location: login.php");
+        exit();
+    }
+    ?>
+
+
 
             <?php
 

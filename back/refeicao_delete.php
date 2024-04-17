@@ -1,3 +1,17 @@
+
+<?php
+    session_start(); // Starting the session
+    
+    if (!isset($_SESSION['username'])) {
+        header("Location: login.php");
+        exit();
+    }
+    ?>
+
+
+
+
+
 <?php
 
 if ( isset($_GET["id"])) {

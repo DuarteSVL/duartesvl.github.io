@@ -45,13 +45,14 @@ session_start();
         <a class="btn btn-primary" href="./noticia_create.php">Nova Notícia</a>
 
 
-        <div style="margin: 40px 0;"> <!-- Adjust the margin as needed -->
+        <div style="margin: 40px 0;">
+            <p style="display: block; margin-bottom: 10px;">Adicionar imagem:</p>
             <form action="upload.php" method="post" enctype="multipart/form-data">
-                Adicionar imagem:
                 <input type="file" name="fileToUpload" id="fileToUpload">
                 <input type="submit" value="Fazer upload" name="submit">
             </form>
         </div>
+
 
 
         <form action="" method="GET">

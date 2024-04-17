@@ -25,7 +25,7 @@
             </h2>
         </div>
 
-        <h2 style="text-align:center margin-bottom:20px"><a href="./gerir_tabelas.php"> Lista de Ementas</a></h2>
+        <h2 style="text-align:center, margin-bottom:20px"><a href="./gerir_tabelas.php"> Lista de Ementas</a></h2>
 
 
         <?php

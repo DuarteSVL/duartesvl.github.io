@@ -54,13 +54,14 @@ session_start();
         </div>
 
 
-
         <form action="" method="GET">
-            <div class="input-group">
+            <div class="input-group justify-content-end">
                 <input type="text" name="search" required value="<?php if (isset($_GET['search'])) {
                     echo $_GET['search'];
                 } ?>" class="form-control" placeholder="Procurar palavras.">
-                <button type="submit" class="btn btn-primary">Procurar</button>
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-primary">Procurar</button>
+                </div>
             </div>
         </form>
 

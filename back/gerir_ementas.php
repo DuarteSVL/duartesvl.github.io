@@ -45,7 +45,7 @@
                         echo $_GET['search'];
                     } ?>" class="form-control"
                     placeholder="Procurar palavras.">
-                <button type="submit" class="btn btn-primary input-group-text  style="margin-right: 0;">Procurar</button>
+                <button type="submit" class="btn btn-primary input-group-text"  style="margin-right: 0;">Procurar</button>
             </div>
         </form>
 

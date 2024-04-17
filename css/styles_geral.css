@@ -416,29 +416,41 @@ a {
   }
 }
 
-/* Style for the submenu container */
-.submenuLocal {
+.icone-redesContactos {
+  color: #000;
   border-radius: 15px;
-  padding: 1rem;
-  background-color: #02baf2;
+  padding: 15px;
+}
+.icone-redesContactos:hover {
+  color: #ffff;
+  background-color: var(--cor-botao-hover);
+  border-color: var(--cor-botao-hover);
+  border-radius: 15px;
+  transition-duration: 0.2s;
 }
 
-/* Style for the iframe within .submenu */
+.submenu {
+  border-radius: 15px;
+  padding: 1rem;
+}
+
 .submenu iframe {
   border-radius: 15px;
 }
 
-/* Additional styles for paragraphs and headings within .submenu */
 .submenu p,
 .submenu h6 {
   margin-top: 2.5rem;
 }
 
-/* Default styles for responsive iframe container */
+.submenu {
+  background-color: var(--cor-cards);
+}
+
 .iframe-wrapper {
   position: relative;
   width: 100%;
-  padding-bottom: 75%; /* Aspect ratio (height/width) = 450px / 600px = 0.75 */
+  padding-bottom: 75%;
   height: 0;
   overflow: hidden;
 }
@@ -451,20 +463,17 @@ a {
   height: 100%;
 }
 
-/* Media query for large screens (lg) */
 @media (min-width: 992px) {
   .iframe-wrapper {
-    width: 600px; /* Set specific width for large screens */
-    padding-bottom: 450px; /* Set specific height for large screens to maintain aspect ratio */
+    width: 600px;
+    padding-bottom: 450px;
   }
 }
 
-/* Style for the content wrapper within each column */
 .content-wrapper {
-  text-align: center; /* Center align text content */
-  padding: 20px; /* Add padding for spacing */
+  text-align: center;
+  padding: 20px;
 }
-
 .visited {
   background-color: var(--cor-principal);
 }
@@ -533,10 +542,6 @@ td {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent),
     url(../imagens/Geral/ementa2.jpg) center center/cover no-repeat;
   background-size: cover;
-}
-
-.submenu {
-  background-color: var(--cor-cards);
 }
 
 /* *************************

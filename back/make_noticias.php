@@ -33,7 +33,7 @@ if (!$result) {
         crossorigin="anonymous"></script>
 
     <!-- Próprios -->
-    <link rel="stylesheet" href="noticias.css">
+    <link rel="stylesheet" href="styles_geral.css">
     <script src="app.js"></script>
 
     <style>

@@ -50,6 +50,7 @@
 
 
         <div class="my-5"></div>
+        <div class="my-5"></div>
 
         <h3 id="basico" style="text-align:center">Básico</h3>
         <ul class="nav nav-pills justify-content-center mb-3">
@@ -123,6 +124,7 @@
         </table>
 
 
+        <div class="my-5"></div>
         <div class="my-5"></div>
 
         <h3 id="creche" style="text-align:center">Creche</h3>
@@ -198,6 +200,7 @@
         </table>
 
 
+        <div class="my-5"></div>
         <div class="my-5"></div>
 
         <h3 id="bercario" style="text-align:center">Bercário</h3>

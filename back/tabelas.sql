@@ -63,24 +63,24 @@ INSERT INTO celula (id_celula, id_refeicao, valencia, tipo, dia) VALUES
 
 INSERT INTO celula (id_celula, id_refeicao, valencia, tipo, dia) VALUES
 (41, NULL, 'Bercario', 'Prato', 'segunda'),
-(41, NULL, 'Bercario', 'Prato', 'terca'),
-(41, NULL, 'Bercario', 'Prato', 'quarta'),
-(41, NULL, 'Bercario', 'Prato', 'quinta'),
-(41, NULL, 'Bercario', 'Prato', 'sexta'),
+(42, NULL, 'Bercario', 'Prato', 'terca'),
+(43, NULL, 'Bercario', 'Prato', 'quarta'),
+(44, NULL, 'Bercario', 'Prato', 'quinta'),
+(45, NULL, 'Bercario', 'Prato', 'sexta');
 
 
 INSERT INTO celula (id_celula, id_refeicao, valencia, tipo, dia) VALUES
 (46, NULL, 'Bercario', 'Sobremesa', 'segunda'),
-(46, NULL, 'Bercario', 'Sobremesa', 'terca'),
-(46, NULL, 'Bercario', 'Sobremesa', 'quarta'),
-(46, NULL, 'Bercario', 'Sobremesa', 'quinta'),
-(46, NULL, 'Bercario', 'Sobremesa', 'sexta'),
+(47, NULL, 'Bercario', 'Sobremesa', 'terca'),
+(48, NULL, 'Bercario', 'Sobremesa', 'quarta'),
+(49, NULL, 'Bercario', 'Sobremesa', 'quinta'),
+(50, NULL, 'Bercario', 'Sobremesa', 'sexta');
 
 
 INSERT INTO celula (id_celula, id_refeicao, valencia, tipo, dia) VALUES
 (51, NULL, 'Bercario', 'Lanche', 'segunda'),
-(51, NULL, 'Bercario', 'Lanche', 'terca'),
-(51, NULL, 'Bercario', 'Lanche', 'quarta'),
-(51, NULL, 'Bercario', 'Lanche', 'quinta'),
-(51, NULL, 'Bercario', 'Lanche', 'sexta'),
+(52, NULL, 'Bercario', 'Lanche', 'terca'),
+(53, NULL, 'Bercario', 'Lanche', 'quarta'),
+(54, NULL, 'Bercario', 'Lanche', 'quinta'),
+(55, NULL, 'Bercario', 'Lanche', 'sexta'),
 

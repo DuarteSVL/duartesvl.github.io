@@ -1,10 +1,13 @@
-
 <?php
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
- 
+session_start(); // Starting the session
+
+// Unset all session variables
+$_SESSION = array();
+
+// Destroy the session
 session_destroy();
-header("Location: index.php");
-die();
- 
+
+// Redirect to login page
+header("Location: login.php");
+exit();
+

@@ -63,6 +63,16 @@
                 </div>
             </div>
         </div>
+
+        <div class="row" id="">
+            <div class="col d-flex justify-content-center align-items-center" id="">
+                <div>
+                    <button type="submit" class="btn btn-primary" id="noticias_button"
+                    href="./logout.php"">Gerir tabelas</button>
+                </div>
+            </div>
+        </div>
+
     </section>
 
 

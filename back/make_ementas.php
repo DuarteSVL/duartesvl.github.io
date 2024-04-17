@@ -258,17 +258,22 @@
 
 
 
-    <div class="row flex justify-content-center mb-3">
-      <div class="col-lg-4 mb-2">
-        <button class="btn btn-primary btn-block" onclick="toggleTable('table1')">Ensino Básico</button>
-      </div>
-      <div class="col-lg-4 mb-2">
-        <button class="btn btn-primary btn-block" onclick="toggleTable('table2')">Creche</button>
-      </div>
-      <div class="col-lg-4 mb-2">
-        <button class="btn btn-primary btn-block" onclick="toggleTable('table3')">Berçário</button>
+    <div class="row justify-content-center mb-3">
+      <div class="col-lg-8">
+        <div class="row">
+          <div class="col-lg-4 mb-2">
+            <button class="btn btn-primary btn-block" onclick="toggleTable('table1')">Ensino Básico</button>
+          </div>
+          <div class="col-lg-4 mb-2">
+            <button class="btn btn-primary btn-block" onclick="toggleTable('table2')">Creche</button>
+          </div>
+          <div class="col-lg-4 mb-2">
+            <button class="btn btn-primary btn-block" onclick="toggleTable('table3')">Berçário</button>
+          </div>
+        </div>
       </div>
     </div>
+
 
 
 

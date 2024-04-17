@@ -44,15 +44,7 @@
         ?>
 
 
-        <form action="" method="GET">
-            <div class="input-group mb-3 justify-content-end">
-                <input type="text" name="search" required value="<?php if (isset($_GET['search'])) {
-                    echo $_GET['search'];
-                } ?>" class="form-control" placeholder="Procurar palavras.">
-                <button type="submit" class="btn btn-primary input-group-text"
-                    style="margin-right: 0;">Procurar</button>
-            </div>
-        </form>
+
 
 
         <table class="table table-striped">

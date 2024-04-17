@@ -257,6 +257,8 @@
     include "db_conn.php";
 
     ?>
+
+
     <!-- First button group visible on screens larger than extra small -->
     <div class="btn-group-lg d-none d-sm-block" id="btnContactos">
       <button type="button" class="btn" onclick="toggleTable('table3')">Berçário</button>

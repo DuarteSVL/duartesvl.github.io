@@ -125,3 +125,18 @@ h2 {
 .table thead th {
     text-align: center;
 }
+
+/* Flex container for search bar and button */
+.search-bar-container {
+    display: flex;
+    align-items: stretch; /* Make both elements occupy full height */
+}
+
+.input-group {
+    margin-bottom: 20px;
+    align-items: stretch; /* Make both elements occupy full height */
+}
+
+.input-group .btn {
+    height: 100%; /* Set button height to 100% of the input group */
+}

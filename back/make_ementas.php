@@ -327,7 +327,7 @@
 
         .table-responsive tr {
             display: flex; /* Change table rows to flex container */
-            flex-direction: row; /* Display rows as columns */
+            flex-direction: column-reverse; /* Display rows as columns */
         }
 
         .table-responsive td,

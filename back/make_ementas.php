@@ -258,26 +258,29 @@
 
     ?>
 
-<!-- 
-<div class="container" style="margin-left: 2rem;">
-  <div class="row justify-content-center mb-3">
-    <div class="col-lg-2 mb-2"> 
-      <button id="ensinoBasicoBtn" class="btn btn-primary btn-block" onclick="toggleTable('table1')">Ensino Básico</button>
-    </div>
-    <div class="col-lg-2 mb-2"> 
-      <button id="crecheBtn" class="btn btn-primary btn-block" onclick="toggleTable('table2')">Creche</button>
-    </div>
-    <div class="col-lg-2 mb-2">
-      <button id="bercarioBtn" class="btn btn-primary btn-block" onclick="toggleTable('table3')">Berçário</button>
-    </div>
-  </div>
-</div> -->
 
-<div class="btn-group-lg" id="btnContactos">
-      <button type="button" class="btn" onclick="toggleTable('table3')">Berçário</button>
-      <button type="button" class="btn" onclick="toggleTable('table2')">Creche</button>
-      <button type="button" class="btn" onclick="toggleTable('table1')">Ensino Básico</button>
+
+<div class="container" style="margin-left: 2rem;">
+    <!-- Button group for large screens -->
+    <div class="btn-group-lg" id="btnContactos">
+        <button type="button" class="btn" onclick="toggleTable('table3')">Berçário</button>
+        <button type="button" class="btn" onclick="toggleTable('table2')">Creche</button>
+        <button type="button" class="btn" onclick="toggleTable('table1')">Ensino Básico</button>
     </div> 
+
+    <!-- Button group for small screens -->
+    <div class="row justify-content-center mb-3 d-none d-md-block">
+        <div class="col-lg-2 mb-2"> 
+            <button id="ensinoBasicoBtn" class="btn btn-primary btn-block" onclick="toggleTable('table1')">Ensino Básico</button>
+        </div>
+        <div class="col-lg-2 mb-2"> 
+            <button id="crecheBtn" class="btn btn-primary btn-block" onclick="toggleTable('table2')">Creche</button>
+        </div>
+        <div class="col-lg-2 mb-2">
+            <button id="bercarioBtn" class="btn btn-primary btn-block" onclick="toggleTable('table3')">Berçário</button>
+        </div>
+    </div>
+</div>
 
 
 

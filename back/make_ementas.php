@@ -325,7 +325,7 @@
           <th>Lanche</th>
         </tr>
         <?php
-        $days = array("Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira");
+        $days = array("segunda", "terca", "quarta", "quinta", "sexta");
         $meals = array("Sopa", "Prato", "Dieta", "Vegetariano", "Sobremesa", "Lanche");
 
         foreach ($days as $day) {

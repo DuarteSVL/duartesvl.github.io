@@ -62,3 +62,11 @@
     border-color: green;
     opacity: 85%;
 }
+
+#logout_button {
+    
+    margin-top: 2rem;
+    background-color: green;
+    border-color: green;
+    opacity: 85%;
+}

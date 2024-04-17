@@ -245,7 +245,7 @@
   <!-- Fim da Navbar -->
   <div class="container my-5 tablesE">
 
-    <div style="margin-bottom: 2rem" style="margin-top: 2rem">
+    <div style="margin-bottom: 2rem" >
       <h2 style="text-align:center"><a href="./make_ementas.php"> Ementas </a></h2>
     </div>
 
@@ -260,16 +260,24 @@
 <div class="container">
   <div class="row justify-content-center mb-3">
     <div class="col-lg-2 mb-2"> 
-      <button class="btn btn-primary btn-block" onclick="toggleTable('table1')">Ensino Básico</button>
+      <button id="ensinoBasicoBtn" class="btn btn-primary btn-block" onclick="toggleTable('table1')">Ensino Básico</button>
     </div>
     <div class="col-lg-2 mb-2"> 
-      <button class="btn btn-primary btn-block" onclick="toggleTable('table2')">Creche</button>
+      <button id="crecheBtn" class="btn btn-primary btn-block" onclick="toggleTable('table2')">Creche</button>
     </div>
     <div class="col-lg-2 mb-2">
-      <button class="btn btn-primary btn-block" onclick="toggleTable('table3')">Berçário</button>
+      <button id="bercarioBtn" class="btn btn-primary btn-block" onclick="toggleTable('table3')">Berçário</button>
     </div>
   </div>
 </div>
+
+
+<style>
+  #ensinoBasicoBtn,
+#crecheBtn,
+#bercarioBtn {
+  margin: 0; 
+</style>
 
 
 

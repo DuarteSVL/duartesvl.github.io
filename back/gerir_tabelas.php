@@ -125,7 +125,7 @@
 
         <div class="my-5"></div>
 
-        <h3 id="basico" style="text-align:center">Creche</h3>
+        <h3 id="creche" style="text-align:center">Creche</h3>
         <ul class="nav nav-pills justify-content-center mb-3">
             <li class="nav-item mx-2"><a class="nav-link" href="#basico">Básico</a></li>
             <li class="nav-item mx-2"><a class="nav-link" href="#creche">Creche</a></li>
@@ -200,7 +200,7 @@
 
         <div class="my-5"></div>
 
-        <h3 id="basico" style="text-align:center">Básico</h3>
+        <h3 id="bercario" style="text-align:center">Bercário</h3>
         <ul class="nav nav-pills justify-content-center mb-3">
             <li class="nav-item mx-2"><a class="nav-link" href="#basico">Básico</a></li>
             <li class="nav-item mx-2"><a class="nav-link" href="#creche">Creche</a></li>

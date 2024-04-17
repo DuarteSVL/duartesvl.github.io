@@ -313,7 +313,6 @@
       </table>
     </div>
 
-
     <div class="table-responsive">
       <table class="table">
         <tr>
@@ -329,10 +328,10 @@
         $days = array("Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira");
         $meals = array("Sopa", "Prato", "Dieta", "Vegetariano", "Sobremesa", "Lanche");
 
-        foreach ($meals as $meal) {
+        foreach ($days as $day) {
           echo "<tr>";
-          echo "<th>$meal</th>";
-          foreach ($days as $day) {
+          echo "<th>$day</th>";
+          foreach ($meals as $meal) {
             // Query to fetch 'nome' values based on $meal and $day
             $query = "SELECT r.nome
                           FROM celula c
@@ -342,18 +341,18 @@
 
             $result = mysqli_query($ligacaoBD, $query);
 
-            // Loop through the fetched data and populate the table cells
-            if ($row = mysqli_fetch_assoc($result)) {
-              echo '<td>' . $row['nome'] . '</td>';
-            } else {
-              echo '<td></td>'; // Empty cell if no data found
-            }
+            // Check if any data is fetched
+            $row = mysqli_fetch_assoc($result);
+
+            // Output the fetched data or an empty cell
+            echo '<td>' . ($row ? $row['nome'] : '') . '</td>';
           }
           echo "</tr>";
         }
         ?>
       </table>
     </div>
+
 
 
     <div class="table-responsive">

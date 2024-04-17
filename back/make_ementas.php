@@ -257,7 +257,7 @@
 
 
 
-<div class="container">
+<div class="container" style="margin-left: 2rem">
   <div class="row justify-content-center mb-3">
     <div class="col-lg-2 mb-2"> 
       <button id="ensinoBasicoBtn" class="btn btn-primary btn-block" onclick="toggleTable('table1')">Ensino Básico</button>

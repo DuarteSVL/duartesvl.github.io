@@ -67,11 +67,13 @@
         <div class="row" id="">
             <div class="col d-flex justify-content-center align-items-center" id="">
                 <div>
-                    <button type="submit" class="btn btn-primary" id="noticias_button"
-                    href="./logout.php"">Gerir tabelas</button>
+                    <form action="./logout.php" method="post">
+                        <button type="submit" class="btn btn-primary" id="logout_button">Logout</button>
+                    </form>
                 </div>
             </div>
         </div>
+
 
     </section>
 

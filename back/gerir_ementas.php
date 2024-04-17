@@ -39,7 +39,7 @@
         <a class="btn btn-primary" href="./refeicao_create.php">Nova Refeição</a>
 
         <form action="" method="GET">
-            <div class="input-group mb-3">
+            <div class="input-group mb-3 justify-content-end">
                 <input type="text" name="search" required
                     value="<?php if (isset($_GET['search'])) {
                         echo $_GET['search'];

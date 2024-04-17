@@ -129,14 +129,16 @@ h2 {
 /* Flex container for search bar and button */
 .search-bar-container {
     display: flex;
-    align-items: stretch; /* Make both elements occupy full height */
 }
 
 .input-group {
     margin-bottom: 20px;
-    align-items: stretch; /* Make both elements occupy full height */
+    position: relative; /* Add position relative for button positioning */
 }
 
 .input-group .btn {
-    height: 100%; /* Set button height to 100% of the input group */
+    position: absolute; /* Position the button */
+    top: 0; /* Align button to the top */
+    right: 0; /* Align button to the right */
+    height: 100%; /* Set button height to match input field */
 }

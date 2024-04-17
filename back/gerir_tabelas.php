@@ -29,15 +29,7 @@
     ?>
 
 
-    <div class="container my-5">
-
-        <div class="d-flex justify-content-end mb-3">
-            <h2 class="btn btn-primary"><a href="./main.php" class="text-white" style="text-decoration: none">Main</a>
-            </h2>
-        </div>
-
-        <h2 style="text-align: center; margin-bottom: 50px;"><a href="./gerir_tabelas.php"> Lista de Ementas</a></h2>
-
+   
 
         <?php
         include "db_conn.php";

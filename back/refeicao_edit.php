@@ -115,8 +115,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
                 <div class="col-sm-6">
                     <select name="tipo" id="tipo_select" class="select">
                         <optgroup label="Berçário">
-                            <option value="Reforço_Matinal" <?php echo ($tipo == 'Reforço_Matinal') ? 'selected' : ''; ?>>
-                                Reforço Matinal</option>
+                            <option value="Reforco_Matinal" <?php echo ($tipo == 'Reforco_Matinal') ? 'selected' : ''; ?>>
+                                Reforco Matinal</option>
                             <option value="Sopa" <?php echo ($tipo == 'Sopa') ? 'selected' : ''; ?>>Sopa</option>
                             <option value="Prato" <?php echo ($tipo == 'Prato') ? 'selected' : ''; ?>>Prato</option>
                             <option value="Sobremesa" <?php echo ($tipo == 'Sobremesa') ? 'selected' : ''; ?>>Sobremesa
@@ -124,8 +124,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
                             <option value="Lanche" <?php echo ($tipo == 'Lanche') ? 'selected' : ''; ?>>Lanche</option>
                         </optgroup>
                         <optgroup label="Creche">
-                            <option value="Reforço_Matinal" <?php echo ($tipo == 'Reforço_Matinal') ? 'selected' : ''; ?>>
-                                Reforço Matinal</option>
+                            <option value="Reforco_Matinal" <?php echo ($tipo == 'Reforco_Matinal') ? 'selected' : ''; ?>>
+                                Reforco Matinal</option>
                             <option value="Sopa" <?php echo ($tipo == 'Sopa') ? 'selected' : ''; ?>>Sopa</option>
                             <option value="Prato" <?php echo ($tipo == 'Prato') ? 'selected' : ''; ?>>Prato</option>
                             <option value="Merenda" <?php echo ($tipo == 'Merenda') ? 'selected' : ''; ?>>Merenda</option>

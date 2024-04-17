@@ -111,14 +111,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <div class="col-sm-6">
                     <select name="tipo" id="tipo_select" class="select">
                         <optgroup label="Berçário">
-                            <option value="Reforço_Matinal">Reforço Matinal</option>
+                            <option value="Reforco_Matinal">Reforco Matinal</option>
                             <option value="Sopa">Sopa</option>
                             <option value="Prato">Prato</option>
                             <option value="Sobremesa">Sobremesa</option>
                             <option value="Lanche">Lanche</option>
                         </optgroup>
                         <optgroup label="Creche">
-                            <option value="Reforço_Matinal">Reforço Matinal</option>
+                            <option value="Reforco_Matinal">Reforco Matinal</option>
                             <option value="Sopa">Sopa</option>
                             <option value="Prato">Prato</option>
                             <option value="Merenda">Merenda</option>

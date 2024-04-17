@@ -183,6 +183,8 @@
     ?>
 
 
+    <h5 style="text-align:center">Ensino Básico</h5>
+
     <div class="table-responsive">
       <table class="table">
         <tr>
@@ -326,7 +328,7 @@
 
 
 
-
+    <h5 style="text-align:center">Creche</h5>
 
     
     <div class="table-responsive">
@@ -380,7 +382,7 @@
           ?>
         </tr>
         <tr>
-          <th>Reforço Matinal</th>
+          <th>Reforco Matinal</th>
           <?php
 
 
@@ -388,7 +390,7 @@
           $query = "SELECT r.nome
                   FROM celula c
                   INNER JOIN refeicao r ON c.id_refeicao = r.id_refeicao
-                  WHERE c.tipo = 'Dieta' AND c.valencia = 'Reforço_Matinal'
+                  WHERE c.tipo = 'Dieta' AND c.valencia = 'Reforco_Matinal'
                   ORDER BY c.id_celula ASC";
 
           $result = mysqli_query($ligacaoBD, $query);
@@ -422,6 +424,9 @@
     </div>
 
 
+
+
+    <h5 style="text-align:center">Berçário</h5>
 
     <div class="table-responsive">
       <table class="table">
@@ -474,14 +479,14 @@
           ?>
         </tr>
         
-          <th>Reforço Matinal</th>
+          <th>Reforco Matinal</th>
           <?php
 
           // Query to fetch 'nome' values where 'tipo' is equal to 'Vegetariano' and 'valencia' is equal to 'Basico', ordered by 'id_celula'
           $query = "SELECT r.nome
                   FROM celula c
                   INNER JOIN refeicao r ON c.id_refeicao = r.id_refeicao
-                  WHERE c.tipo = 'Reforço Matinal' AND c.valencia = 'Bercario'
+                  WHERE c.tipo = 'Reforco Matinal' AND c.valencia = 'Bercario'
                   ORDER BY c.id_celula ASC";
 
           $result = mysqli_query($ligacaoBD, $query);

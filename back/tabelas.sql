@@ -47,11 +47,11 @@ INSERT INTO celula (id_celula, id_refeicao, valencia, tipo, dia) VALUES
 
 
 INSERT INTO celula (id_celula, id_refeicao, valencia, tipo, dia) VALUES
-(31, NULL, 'Bercario', 'Reforço_Matinal', 'segunda'),
-(32, NULL, 'Bercario', 'Reforço_Matinal', 'terca'),
-(33, NULL, 'Bercario', 'Reforço_Matinal', 'quarta'),
-(34, NULL, 'Bercario', 'Reforço_Matinal', 'quinta'),
-(35, NULL, 'Bercario', 'Reforço_Matinal', 'sexta');
+(31, NULL, 'Bercario', 'Reforco_Matinal', 'segunda'),
+(32, NULL, 'Bercario', 'Reforco_Matinal', 'terca'),
+(33, NULL, 'Bercario', 'Reforco_Matinal', 'quarta'),
+(34, NULL, 'Bercario', 'Reforco_Matinal', 'quinta'),
+(35, NULL, 'Bercario', 'Reforco_Matinal', 'sexta');
 
 
 INSERT INTO celula (id_celula, id_refeicao, valencia, tipo, dia) VALUES
@@ -88,11 +88,11 @@ INSERT INTO celula (id_celula, id_refeicao, valencia, tipo, dia) VALUES
 
 
 INSERT INTO celula (id_celula, id_refeicao, valencia, tipo, dia) VALUES
-(56, NULL, 'Creche', 'Reforço_Matinal', 'segunda'),
-(57, NULL, 'Creche', 'Reforço_Matinal', 'terca'),
-(58, NULL, 'Creche', 'Reforço_Matinal', 'quarta'),
-(59, NULL, 'Creche', 'Reforço_Matinal', 'quinta'),
-(60, NULL, 'Creche', 'Reforço_Matinal', 'sexta');
+(56, NULL, 'Creche', 'Reforco_Matinal', 'segunda'),
+(57, NULL, 'Creche', 'Reforco_Matinal', 'terca'),
+(58, NULL, 'Creche', 'Reforco_Matinal', 'quarta'),
+(59, NULL, 'Creche', 'Reforco_Matinal', 'quinta'),
+(60, NULL, 'Creche', 'Reforco_Matinal', 'sexta');
 
 INSERT INTO celula (id_celula, id_refeicao, valencia, tipo, dia) VALUES
 (61, NULL, 'Creche', 'Sopa', 'segunda'),

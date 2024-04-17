@@ -270,6 +270,14 @@
   </div>
 </div>
 
+<div class="btn-group-lg" id="btnContactos">
+      <button type="button" class="btn" onclick="mudarMenu('bercario')">Berçário</button>
+      <button type="button" class="btn" onclick="mudarMenu('creche')">Creche</button>
+      <button type="button" class="btn" onclick="mudarMenu('jardim')">Jardim de Infância</button>
+      <button type="button" class="btn" onclick="mudarMenu('1ciclo')">1º Ciclo</button>
+      <button type="button" class="btn" onclick="mudarMenu('centro')">Centro de Apoio Escolar</button>
+    </div> 
+
 
 
 <style>
@@ -277,6 +285,21 @@
 #crecheBtn,
 #bercarioBtn {
   margin: 0; 
+}
+
+
+#btnContactos {
+  margin: auto;
+  background-color: transparent;
+  border-radius: 10px;
+  justify-content: center;
+  border-style: ridge;
+  width: fit-content;
+
+  & :hover {
+    background-color: #ff874f;
+  }
+}
 
 }
 

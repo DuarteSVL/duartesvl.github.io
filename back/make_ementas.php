@@ -316,22 +316,27 @@
     </div>
 
     <style>
-      .scrollable-table {
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    .scrollable-table {
         overflow-x: auto;
         white-space: nowrap;
-      }
+    }
 
-      .scrollable-table table {
+    .scrollable-table table {
         width: auto;
         min-width: 100%;
-      }
+    }
 
-      .scrollable-table th,
-      .scrollable-table td {
+    .scrollable-table th,
+    .scrollable-table td {
         white-space: normal;
         vertical-align: top;
-      }
-    </style>
+    }
+</style>
+
 
   </div>
 

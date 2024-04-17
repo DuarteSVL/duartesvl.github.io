@@ -43,7 +43,7 @@
             <div class="col d-flex justify-content-center align-items-center" id="">
                 <div>
                     <button type="submit" class="btn btn-primary" id="ementas_button"
-                        onclick="document.location='./gerir_ementas.php'">Gerir ementas</button>
+                        onclick="document.location='./gerir_ementas.php'">Gerir refeições</button>
                 </div>
             </div>
         </div>
@@ -59,7 +59,7 @@
             <div class="col d-flex justify-content-center align-items-center" id="">
                 <div>
                     <button type="submit" class="btn btn-primary" id="noticias_button"
-                        onclick="document.location='./gerir_tabelas.php'">Gerir tabelas</button>
+                        onclick="document.location='./gerir_tabelas.php'">Gerir ementas</button>
                 </div>
             </div>
         </div>

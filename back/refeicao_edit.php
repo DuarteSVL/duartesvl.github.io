@@ -123,7 +123,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
 <body>
     <div class="container my-5">
-        <h2>Nova refeição</h2>
+        <h2>Editar refeição</h2>
         <?php
         if (!empty($errorMessage)) {
             echo "

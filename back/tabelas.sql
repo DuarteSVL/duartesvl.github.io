@@ -82,5 +82,35 @@ INSERT INTO celula (id_celula, id_refeicao, valencia, tipo, dia) VALUES
 (52, NULL, 'Bercario', 'Lanche', 'terca'),
 (53, NULL, 'Bercario', 'Lanche', 'quarta'),
 (54, NULL, 'Bercario', 'Lanche', 'quinta'),
-(55, NULL, 'Bercario', 'Lanche', 'sexta'),
+(55, NULL, 'Bercario', 'Lanche', 'sexta');
 
+
+
+
+INSERT INTO celula (id_celula, id_refeicao, valencia, tipo, dia) VALUES
+(56, NULL, 'Creche', 'Reforço_Matinal', 'segunda'),
+(57, NULL, 'Creche', 'Reforço_Matinal', 'terca'),
+(58, NULL, 'Creche', 'Reforço_Matinal', 'quarta'),
+(59, NULL, 'Creche', 'Reforço_Matinal', 'quinta'),
+(60, NULL, 'Creche', 'Reforço_Matinal', 'sexta');
+
+INSERT INTO celula (id_celula, id_refeicao, valencia, tipo, dia) VALUES
+(61, NULL, 'Creche', 'Sopa', 'segunda'),
+(62, NULL, 'Creche', 'Sopa', 'terca'),
+(63, NULL, 'Creche', 'Sopa', 'quarta'),
+(64, NULL, 'Creche', 'Sopa', 'quinta'),
+(65, NULL, 'Creche', 'Sopa', 'sexta');
+
+INSERT INTO celula (id_celula, id_refeicao, valencia, tipo, dia) VALUES
+(66, NULL, 'Creche', 'Prato', 'segunda'),
+(67, NULL, 'Creche', 'Prato', 'terca'),
+(68, NULL, 'Creche', 'Prato', 'quarta'),
+(69, NULL, 'Creche', 'Prato', 'quinta'),
+(70, NULL, 'Creche', 'Prato', 'sexta');
+
+INSERT INTO celula (id_celula, id_refeicao, valencia, tipo, dia) VALUES
+(71, NULL, 'Creche', 'Merenda', 'segunda'),
+(72, NULL, 'Creche', 'Merenda', 'terca'),
+(73, NULL, 'Creche', 'Merenda', 'quarta'),
+(74, NULL, 'Creche', 'Merenda', 'quinta'),
+(75, NULL, 'Creche', 'Merenda', 'sexta');

@@ -99,6 +99,25 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
         .cancel-btn {
             width: 100%;
         }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            background-color: rgba(0, 128, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .form-control,
+        .btn {
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 

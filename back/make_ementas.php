@@ -187,8 +187,8 @@
       <table class="table">
         <tr>
           <th></th>
-          <th>Sopa</th>
-          <th>Prato</th>
+          <th>Segunda</th>
+          <th>Terça</th>
           <th>Dieta</th>
           <th>Vegetariano</th>
           <th>Sobremesa</th>

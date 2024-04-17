@@ -36,7 +36,7 @@ session_start();
 
 
         <form action="upload.php" method="post" enctype="multipart/form-data">
-            Seleccione a imagem para adicionar:
+            Adicionar imagem:
             <input type="file" name="fileToUpload" id="fileToUpload">
             <input type="submit" value="Fazer upload" name="submit">
         </form>

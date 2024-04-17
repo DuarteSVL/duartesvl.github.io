@@ -319,48 +319,27 @@
 
 
     <style>
-      .table-responsive {
-        overflow-y: auto;
-        /* Enable vertical scrolling */
-        max-height: 400px;
-        /* Set max height as needed */
-      }
+    .table-responsive {
+        overflow-x: auto;
+        /* Enable horizontal scrolling */
+        max-width: 100%;
+        /* Set max width as needed */
+    }
 
-      @media (max-width: 576px) {
+    .table-responsive table {
+        width: 100%;
+        /* Ensure full width */
+    }
 
-        /* Adjust breakpoint as needed */
-        .table-responsive table {
-          display: block;
-          /* Change table layout to block */
-          width: 100%;
-          /* Ensure full width */
-        }
+    .table-responsive th,
+    .table-responsive td {
+        padding: 8px;
+        /* Add padding */
+        text-align: left;
+        /* Align cell content */
+    }
+</style>
 
-        .table-responsive tr {
-          display: flex;
-          /* Change table rows to flex container */
-          flex-direction: column-reverse;
-          /* Display rows as columns */
-        }
-
-        .table-responsive td,
-        .table-responsive th {
-          display: block;
-          /* Change table cells to block */
-          text-align: left;
-          /* Align cell content */
-          padding: 8px;
-          /* Add padding */
-          border: none;
-          /* Remove borders */
-        }
-
-        .table-responsive th {
-          font-weight: bold;
-          /* Make header cells bold */
-        }
-      }
-    </style>
 
 
 

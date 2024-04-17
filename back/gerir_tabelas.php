@@ -19,8 +19,13 @@
 
 <body>
     <div class="container my-5">
-        <h2><a href="./gerir_tabelas.php"> Lista de Ementas</a></h2>
-        <h2><a href="./make_ementas.php"> Ementas</a></h2>
+
+        <div class="d-flex justify-content-end mb-3">
+            <h2 class="btn btn-primary"><a href="./main.php" class="text-white" style="text-decoration: none">Main</a>
+            </h2>
+        </div>
+
+        <h2 style="text-align:center"><a href="./gerir_tabelas.php"> Lista de Ementas</a></h2>
 
 
         <?php
@@ -43,6 +48,7 @@
                 $sql = "SELECT c.valencia, c.dia, c.tipo, r.nome AS refeicao_nome, c.id_celula, c.id_refeicao
                 FROM celula c
                 INNER JOIN refeicao r ON c.id_refeicao = r.id_refeicao
+                WHERE c.valencia = 'Basico' 
                 ORDER BY c.id_celula ASC";
 
                 $result = $ligacaoBD->query($sql);

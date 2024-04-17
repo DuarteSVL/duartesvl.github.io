@@ -182,7 +182,7 @@
 
     ?>
 
-
+<!-- 
     <div class="table-responsive">
       <table class="table">
         <tr>
@@ -311,38 +311,87 @@
           ?>
         </tr>
       </table>
+    </div> -->
+
+    <div class="table-responsive">
+      <table class="table">
+        <tr>
+          <th></th>
+          <th>Sopa</th>
+          <th>Prato</th>
+          <th>Dieta</th>
+          <th>Vegetariano</th>
+          <th>Sobremesa</th>
+          <th>Lanche</th>
+        </tr>
+        <?php
+        // Loop through each meal type
+        $meal_types = ['Sopa', 'Prato', 'Dieta', 'Vegetariano', 'Sobremesa', 'Lanche'];
+        foreach ($meal_types as $meal_type) {
+          echo '<tr>';
+          // Display the meal type in the first column
+          echo '<th>' . $meal_type . '</th>';
+          // Query to fetch 'nome' values where 'tipo' is equal to the current meal type and 'valencia' is equal to 'Basico', ordered by 'id_celula'
+          $query = "SELECT r.nome
+                FROM celula c
+                INNER JOIN refeicao r ON c.id_refeicao = r.id_refeicao
+                WHERE c.tipo = '$meal_type' AND c.valencia = 'Basico'
+                ORDER BY c.id_celula ASC";
+          $result = mysqli_query($ligacaoBD, $query);
+          // Loop through the fetched data and populate the table cells
+          while ($row = mysqli_fetch_assoc($result)) {
+            echo '<td>' . $row['nome'] . '</td>';
+          }
+          echo '</tr>';
+        }
+        ?>
+      </table>
     </div>
 
-    <style>
-    .table-responsive {
-        overflow-y: auto; /* Enable vertical scrolling */
-        max-height: 400px; /* Set max height as needed */
-    }
 
-    @media (max-width: 576px) { /* Adjust breakpoint as needed */
+    <style>
+      .table-responsive {
+        overflow-y: auto;
+        /* Enable vertical scrolling */
+        max-height: 400px;
+        /* Set max height as needed */
+      }
+
+      @media (max-width: 576px) {
+
+        /* Adjust breakpoint as needed */
         .table-responsive table {
-            display: block; /* Change table layout to block */
-            width: 100%; /* Ensure full width */
+          display: block;
+          /* Change table layout to block */
+          width: 100%;
+          /* Ensure full width */
         }
 
         .table-responsive tr {
-            display: flex; /* Change table rows to flex container */
-            flex-direction: column-reverse; /* Display rows as columns */
+          display: flex;
+          /* Change table rows to flex container */
+          flex-direction: column-reverse;
+          /* Display rows as columns */
         }
 
         .table-responsive td,
         .table-responsive th {
-            display: block; /* Change table cells to block */
-            text-align: left; /* Align cell content */
-            padding: 8px; /* Add padding */
-            border: none; /* Remove borders */
+          display: block;
+          /* Change table cells to block */
+          text-align: left;
+          /* Align cell content */
+          padding: 8px;
+          /* Add padding */
+          border: none;
+          /* Remove borders */
         }
 
         .table-responsive th {
-            font-weight: bold; /* Make header cells bold */
+          font-weight: bold;
+          /* Make header cells bold */
         }
-    }
-</style>
+      }
+    </style>
 
 
 

@@ -390,7 +390,7 @@
           $query = "SELECT r.nome
                   FROM celula c
                   INNER JOIN refeicao r ON c.id_refeicao = r.id_refeicao
-                  WHERE c.tipo = 'Dieta' AND c.valencia = 'Reforco_Matinal'
+                  WHERE c.tipo = 'Reforco_Matinal' AND c.valencia = 'Creche'
                   ORDER BY c.id_celula ASC";
 
           $result = mysqli_query($ligacaoBD, $query);

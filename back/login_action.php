@@ -1,6 +1,7 @@
 <?php
-
 include "db_conn.php";
+
+session_start(); // Starting the session
 
 if (isset($_POST['username']) && isset($_POST['password'])){
     function validate($data){   
@@ -26,6 +27,7 @@ if (isset($_POST['username']) && isset($_POST['password'])){
 
         if (mysqli_num_rows($result) == 1){
             // Authentication successful
+            $_SESSION['username'] = $username; // Store username in session variable
             header('Location: ./main.php');
             exit();
         } else {
@@ -38,3 +40,4 @@ if (isset($_POST['username']) && isset($_POST['password'])){
     header("Location: login.php");
     exit();
 }
+

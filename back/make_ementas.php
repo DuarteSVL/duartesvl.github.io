@@ -15,7 +15,7 @@
     crossorigin="anonymous"></script>
 
   <!-- Próprios -->
-  <link rel="stylesheet" href="noticias.css">
+  <!-- <link rel="stylesheet" href="noticias.css"> -->
   <script src="app.js"></script>
 
   <style>
@@ -169,7 +169,7 @@
 
 
   <!-- Próprios -->
-  <link rel="stylesheet" href="noticias.css">
+  <!-- <link rel="stylesheet" href="noticias.css"> -->
   <script src="app.js"></script>
 
 </head>
@@ -258,13 +258,13 @@
 
 
 <div class="row justify-content-center mb-3">
-  <div class="col-lg-2 mb-2"> <!-- Adjusted column width -->
+  <div class="col-lg-2 mb-2"> 
     <button class="btn btn-primary btn-block" onclick="toggleTable('table1')">Ensino Básico</button>
   </div>
-  <div class="col-lg-2 mb-2"> <!-- Adjusted column width -->
+  <div class="col-lg-2 mb-2"> 
     <button class="btn btn-primary btn-block" onclick="toggleTable('table2')">Creche</button>
   </div>
-  <div class="col-lg-2 mb-2"> <!-- Adjusted column width -->
+  <div class="col-lg-2 mb-2">
     <button class="btn btn-primary btn-block" onclick="toggleTable('table3')">Berçário</button>
   </div>
 </div>

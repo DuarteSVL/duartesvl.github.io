@@ -68,3 +68,19 @@ h2 {
 .table thead th {
     text-align: center;
 }
+
+.search-bar-container {
+  display: flex;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  position: relative; /* Add position relative for button positioning */
+}
+
+.input-group .btn {
+  position: absolute; /* Position the button */
+  top: 0; /* Align button to the top */
+  right: 0; /* Align button to the right */
+  height: 100%; /* Set button height to match input field */
+}

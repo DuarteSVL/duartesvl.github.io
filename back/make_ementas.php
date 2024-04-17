@@ -61,6 +61,24 @@
     }
   </style>
 
+<style>
+    .table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    .table th,
+    .table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+
+    .table th {
+      background-color: #f2f2f2;
+    }
+  </style>
+
 
   <!-- Favicon -->
   <link rel="icon" type="images" href="images/logo2.png">

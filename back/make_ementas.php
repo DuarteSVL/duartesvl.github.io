@@ -255,22 +255,25 @@
 
     ?>
 
-
     <div class="row justify-content-center mb-3">
-      <div class="col-md-4">
+      <div class="col-md-4 mb-2">
         <button class="btn btn-primary btn-block" onclick="toggleTable('table1')">Ensino Básico</button>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 mb-2">
         <button class="btn btn-primary btn-block" onclick="toggleTable('table2')">Creche</button>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 mb-2">
         <button class="btn btn-primary btn-block" onclick="toggleTable('table3')">Berçário</button>
       </div>
     </div>
 
+
+
     <div id="table1" style="display: none;">
 
-      <h5 style="text-align:center">Ensino Básico</h5>
+      <div style="margin:2rem">
+        <h5 style="text-align:center">Ensino Básico</h5>
+      </div>
 
       <div class="table-responsive">
         <table class="table">
@@ -416,8 +419,10 @@
 
 
     <div id="table2" style="display: none;">
-      <h5 style="text-align:center">Creche</h5>
 
+      <div style="margin:2rem">
+        <h5 style="text-align:center">Creche</h5>
+      </div>
 
       <div class="table-responsive">
         <table class="table">
@@ -515,7 +520,11 @@
 
 
     <div id="table3" style="display: none;">
-      <h5 style="text-align:center">Berçário</h5>
+
+      <div style="margin:2rem">
+        <h5 style="text-align:center">Berçário</h5>
+      </div>
+
 
       <div class="table-responsive">
         <table class="table">

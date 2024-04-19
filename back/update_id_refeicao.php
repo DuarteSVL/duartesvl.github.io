@@ -1,7 +1,6 @@
 
 
 <?php
-// Include the database connection file
 include "db_conn.php";
 
 // Check if the form is submitted
@@ -21,15 +20,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("Location: {$_SERVER['HTTP_REFERER']}");
             exit();
         } else {
-            // Handle the case where the update query fails
             echo "Error updating record: " . mysqli_error($ligacaoBD);
         }
     } else {
-        // Handle the case where id_celula or nova_refeicao is not set
         echo "id_celula or nova_refeicao is not set";
     }
 } else {
-    // Handle the case where the form is not submitted
     echo "Form not submitted";
 }
 ?>

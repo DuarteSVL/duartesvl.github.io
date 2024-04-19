@@ -57,14 +57,12 @@ h2 {
     background-color: #ffffff;
 }
 
-/* Centering header */
 .header-container {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
 
-/* Centering table headers */
 .table thead th {
     text-align: center;
 }
@@ -87,7 +85,7 @@ h2 {
 
 .btn-primary {
     margin-bottom: 10px;
-    margin-right: 10px; /* Add space between buttons */
+    margin-right: 10px; 
 }
 
 .input-group {
@@ -98,19 +96,17 @@ h2 {
     background-color: #ffffff;
 }
 
-/* Centering header */
 .header-container {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
 
-/* Centering table headers */
 .table thead th {
     text-align: center;
 }
 
-/* Flex container for search bar and button */
+
 .search-bar-container {
     display: flex;
     align-items: center;
@@ -118,27 +114,26 @@ h2 {
 
 .input-group {
     margin-bottom: 20px;
-    height: 40px; /* Specify the desired height */
-    align-items: stretch; /* Make both elements occupy full height */
+    height: 40px;
+    align-items: stretch; 
 }
 
 .table thead th {
     text-align: center;
 }
 
-/* Flex container for search bar and button */
 .search-bar-container {
     display: flex;
 }
 
 .input-group {
     margin-bottom: 20px;
-    position: relative; /* Add position relative for button positioning */
+    position: relative;
 }
 
 .input-group .btn {
-    position: absolute; /* Position the button */
-    top: 0; /* Align button to the top */
-    right: 0; /* Align button to the right */
-    height: 100%; /* Set button height to match input field */
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    height: 100%;
 }

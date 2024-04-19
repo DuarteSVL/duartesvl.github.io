@@ -1,53 +1,45 @@
-/* Custom CSS for the noticias.php page */
 
-/* Style for the noticias title */
+
+
 h1 {
   text-align: center;
   margin-top: 20px;
 }
 
-/* Style for the search input */
 .input-group {
   margin-bottom: 20px;
 }
 
-/* Style for the card deck */
 .card {
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.5rem;
 }
 
-/* Style for the card image */
 .card-img-top {
-  height: 200px; /* Set the height of the card image */
-  object-fit: cover; /* Ensure the image covers the entire space */
+  height: 200px; 
+  object-fit: cover;
 }
 
-/* Style for the card title */
 .card-title {
   font-size: 1.25rem;
   font-weight: bold;
 }
 
-/* Style for the card text */
 .card-text {
   font-size: 1rem;
   line-height: 1.5;
 }
 
-/* Style for the card footer */
 .card-footer {
   background-color: #f8f9fa;
   border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
 
-/* Style for the card footer link */
 .card-link {
   color: #007bff;
   text-decoration: none;
 }
 
-/* Style for the card footer link on hover */
 .card-link:hover {
   text-decoration: underline;
 }
@@ -55,7 +47,6 @@ h1 {
 
 
 
-/* Style for the search input */
 .input-group {
   margin-bottom: 20px;
 }

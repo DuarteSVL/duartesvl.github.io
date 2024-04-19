@@ -160,7 +160,7 @@ if (isset($_GET['id'])) {
       <div class="container my-5">
         <div class="bg-light p-4 rounded">
           <!-- Título -->
-          <div class="d-flex justify-content-center mb-4"> <!-- Added margin bottom -->
+          <div class="d-flex justify-content-center mb-4">
             <h3>
               <?php echo $titulo; ?>
             </h3>
@@ -178,7 +178,7 @@ if (isset($_GET['id'])) {
             </div>
 
             <!-- Texto -->
-            <div class="col-md-8"> <!-- Adjust width -->
+            <div class="col-md-8">
               <p style="max-width: 100%; margin-left: 20px; margin-right: 20px;">
                 <?php echo $texto; ?>
               </p>
@@ -329,11 +329,9 @@ if (isset($_GET['id'])) {
 
     <?php
   } else {
-    // If no rows were returned, display an error message
     echo "Artigo não encontrado.";
   }
 } else {
-  // If id_noticia parameter is not set in the URL, display an error message
   echo "ID da notícia não especificado.";
 }
 ?>

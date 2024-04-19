@@ -18,7 +18,7 @@ if (isset($_POST['username']) && isset($_POST['password'])){
         header("Location: login.php?error=Dados em falta.");
         exit();
     } else {
-        // Hash the password before comparing
+        // Hash the password
         $hashed_password = md5($password);
 
         $sql = "SELECT * FROM users WHERE username='$username' AND password='$hashed_password'";
@@ -26,12 +26,11 @@ if (isset($_POST['username']) && isset($_POST['password'])){
         $result = mysqli_query($ligacaoBD, $sql);
 
         if (mysqli_num_rows($result) == 1){
-            // Authentication successful
-            $_SESSION['username'] = $username; // Store username in session variable
+            $_SESSION['username'] = $username;
             header('Location: ./main.php');
             exit();
         } else {
-            // Authentication failed
+
             header("Location: login.php?error=Dados errados.");
             exit();
         }

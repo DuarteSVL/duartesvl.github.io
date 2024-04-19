@@ -36,13 +36,11 @@
 
 
 
-            // Taking 3 values from the form data(input)
             $nome = $_REQUEST['nomeN'];
             $tipo = $_REQUEST['tipoN'];
             $descricao = $_REQUEST['descricaoN'];
 
 
-            // table name is refeicao
             $sql = "INSERT INTO refeicao (nome, tipo, descricao) 
             VALUES ('$nome', '$tipo', '$descricao')";
 
@@ -58,12 +56,12 @@
                         if (mysqli_query($ligacaoBD, $sql)) {
                             echo "<h3>Valores inseridos com sucesso na base de dados.</h3>";
 
-                            // echo nl2br("\n$nome\n $tipo\n " . "$descricao");
+
                         } else {
                             echo "ERROR" . mysqli_error($ligacaoBD);
                         }
 
-                        // Close connection
+
                         mysqli_close($ligacaoBD);
                         ?>
                     </div>

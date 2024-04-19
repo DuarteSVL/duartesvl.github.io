@@ -55,7 +55,6 @@
 
 
 
-    /* Centering table headers */
     .table thead th {
       text-align: center;
     }
@@ -116,12 +115,10 @@
 
 
 
-    /* Centering table headers */
     .table thead th {
       text-align: center;
     }
 
-    /* Margin for headers */
     h5 {
       margin-top: 2rem;
       margin-bottom: 2rem;
@@ -311,7 +308,6 @@
       @media (min-width: 992px) {
         .mb-2:not(:last-child) {
           margin-bottom: 0;
-          /* Remove bottom margin for all elements except the last one */
         }
       }
     </style>

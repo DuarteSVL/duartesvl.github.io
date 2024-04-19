@@ -49,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     $texto = $row['texto'];
     $imagem = $row['imagem'];
     $ordem = $row['ordem'];
-    // Check if 'data' and 'activo' are set in the row before assigning them
+
     $data = isset($row['data']) ? $row['data'] : '';
     $activo = isset($row['activo']) ? $row['activo'] : '';
 } else {
@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     $titulo = $_POST['titulo'];
     $texto = $_POST['texto'];
     $ordem = $_POST['ordem'];
-    // Check if 'data' and 'activo' are set in the $_POST array before assigning them
+
     $data = isset($_POST['data']) ? $_POST['data'] : '';
     $imagem = isset($_POST['imagem']) ? $_POST['imagem'] : '';
     $activo = isset($_POST['activo']) ? $_POST['activo'] : '';

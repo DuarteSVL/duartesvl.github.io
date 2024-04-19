@@ -90,9 +90,9 @@
                     while ($row = mysqli_fetch_assoc($result)) {
                         echo "<tr>";
                         echo "<td>" . $row['valencia'] . "</td>";
-                        echo "<td>" . ucfirst($row['dia']) . "</td>"; // Capitalize the first character of $row['dia']
+                        echo "<td>" . ucfirst($row['dia']) . "</td>"; 
                         echo "<td>" . $row['tipo'] . "</td>";
-                        echo "<td>" . $row['refeicao_nome'] . "</td>"; // Display the nome value of refeicao
+                        echo "<td>" . $row['refeicao_nome'] . "</td>";
                 
                         // Query to fetch all 'nome' values from the 'refeicao' table where 'tipo' matches the current row's 'tipo'
                         $query_refeicoes_tipo = "SELECT nome, id_refeicao FROM refeicao WHERE tipo = '" . $row['tipo'] . "'";
@@ -166,9 +166,9 @@
                     while ($row = mysqli_fetch_assoc($result)) {
                         echo "<tr>";
                         echo "<td>" . $row['valencia'] . "</td>";
-                        echo "<td>" . ucfirst($row['dia']) . "</td>"; // Capitalize the first character of $row['dia']
+                        echo "<td>" . ucfirst($row['dia']) . "</td>"; 
                         echo "<td>" . $row['tipo'] . "</td>";
-                        echo "<td>" . $row['refeicao_nome'] . "</td>"; // Display the nome value of refeicao
+                        echo "<td>" . $row['refeicao_nome'] . "</td>";
                 
                         // Query to fetch all 'nome' values from the 'refeicao' table where 'tipo' matches the current row's 'tipo'
                         $query_refeicoes_tipo = "SELECT nome, id_refeicao FROM refeicao WHERE tipo = '" . $row['tipo'] . "'";
@@ -243,9 +243,9 @@
                     while ($row = mysqli_fetch_assoc($result)) {
                         echo "<tr>";
                         echo "<td>" . $row['valencia'] . "</td>";
-                        echo "<td>" . ucfirst($row['dia']) . "</td>"; // Capitalize the first character of $row['dia']
+                        echo "<td>" . ucfirst($row['dia']) . "</td>"; 
                         echo "<td>" . $row['tipo'] . "</td>";
-                        echo "<td>" . $row['refeicao_nome'] . "</td>"; // Display the nome value of refeicao
+                        echo "<td>" . $row['refeicao_nome'] . "</td>";
                 
                         // Query to fetch all 'nome' values from the 'refeicao' table where 'tipo' matches the current row's 'tipo'
                         $query_refeicoes_tipo = "SELECT nome, id_refeicao FROM refeicao WHERE tipo = '" . $row['tipo'] . "'";
